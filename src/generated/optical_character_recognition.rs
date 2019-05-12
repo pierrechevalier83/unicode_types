@@ -1,5 +1,5 @@
-/// \u{2440} → \u{245f}\
-///\
+/// \u{2440} → \u{245f}
+///
 /// ⑀ ⑁ ⑂ ⑃ ⑄ ⑅ ⑆ ⑇ ⑈ ⑉ ⑊\
 
 /// A number of constants to give a name to all characters in this block.

@@ -1,5 +1,5 @@
-/// \u{16fe0} → \u{16fff}\
-///\
+/// \u{16fe0} → \u{16fff}
+///
 /// 𖿠 𖿡 𖿢 𖿣\
 
 /// A number of constants to give a name to all characters in this block.

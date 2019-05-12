@@ -1,5 +1,5 @@
-/// \u{10190} → \u{101cf}\
-///\
+/// \u{10190} → \u{101cf}
+///
 /// 𐆐 𐆑 𐆒 𐆓 𐆔 𐆕 𐆖 𐆗 𐆘 𐆙 𐆚 𐆛 𐆠\
 
 /// A number of constants to give a name to all characters in this block.

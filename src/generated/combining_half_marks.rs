@@ -1,5 +1,5 @@
-/// \u{fe20} → \u{fe2f}\
-///\
+/// \u{fe20} → \u{fe2f}
+///
 /// ︠ ︡ ︢ ︣ ︤ ︥ ︦ ︧ ︨ ︩ ︪ ︫ ︬ ︭ ︮\
 
 /// A number of constants to give a name to all characters in this block.

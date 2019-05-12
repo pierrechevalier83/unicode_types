@@ -1,5 +1,5 @@
-/// \u{27f0} → \u{27ff}\
-///\
+/// \u{27f0} → \u{27ff}
+///
 /// ⟰ ⟱ ⟲ ⟳ ⟴ ⟵ ⟶ ⟷ ⟸ ⟹ ⟺ ⟻ ⟼ ⟽ ⟾\
 
 /// A number of constants to give a name to all characters in this block.

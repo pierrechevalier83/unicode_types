@@ -1,5 +1,5 @@
-/// \u{3190} → \u{319f}\
-///\
+/// \u{3190} → \u{319f}
+///
 /// ㆐ ㆑ ㆒ ㆓ ㆔ ㆕ ㆖ ㆗ ㆘ ㆙ ㆚ ㆛ ㆜ ㆝ ㆞\
 
 /// A number of constants to give a name to all characters in this block.

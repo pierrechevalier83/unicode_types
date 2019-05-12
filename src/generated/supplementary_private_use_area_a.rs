@@ -1,5 +1,5 @@
-/// \u{f0000} → \u{fffff}\
-///\
+/// \u{f0000} → \u{fffff}
+///
 /// 󰀀 󿿽\
 
 /// A number of constants to give a name to all characters in this block.

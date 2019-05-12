@@ -1,5 +1,5 @@
-/// \u{100000} → \u{10ffff}\
-///\
+/// \u{100000} → \u{10ffff}
+///
 /// 􀀀 􏿽\
 
 /// A number of constants to give a name to all characters in this block.

@@ -1,5 +1,5 @@
-/// \u{e000} → \u{f8ff}\
-///\
+/// \u{e000} → \u{f8ff}
+///
 /// \
 
 /// A number of constants to give a name to all characters in this block.

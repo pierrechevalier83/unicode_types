@@ -1,5 +1,5 @@
-/// \u{fe10} → \u{fe1f}\
-///\
+/// \u{fe10} → \u{fe1f}
+///
 /// ︐ ︑ ︒ ︓ ︔ ︕ ︖ ︗ ︘ ︙\
 
 /// A number of constants to give a name to all characters in this block.

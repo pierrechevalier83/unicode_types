@@ -1,5 +1,5 @@
-/// \u{2ceb0} → \u{2ebef}\
-///\
+/// \u{2ceb0} → \u{2ebef}
+///
 /// 𬺰 𮯠\
 
 /// A number of constants to give a name to all characters in this block.

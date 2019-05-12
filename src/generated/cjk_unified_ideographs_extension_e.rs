@@ -1,5 +1,5 @@
-/// \u{2b820} → \u{2ceaf}\
-///\
+/// \u{2b820} → \u{2ceaf}
+///
 /// 𫠠 𬺡\
 
 /// A number of constants to give a name to all characters in this block.

@@ -1,5 +1,5 @@
-/// \u{1b130} → \u{1b16f}\
-///\
+/// \u{1b130} → \u{1b16f}
+///
 /// 𛅐 𛅑 𛅒 𛅤 𛅥 𛅦 𛅧\
 
 /// A number of constants to give a name to all characters in this block.
