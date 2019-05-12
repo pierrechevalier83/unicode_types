@@ -286,66 +286,9 @@ impl Ahom {
         Ahom::LetterKa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Ahom::LetterKa => "ahom letter ka",
-            Ahom::LetterKha => "ahom letter kha",
-            Ahom::LetterNga => "ahom letter nga",
-            Ahom::LetterNa => "ahom letter na",
-            Ahom::LetterTa => "ahom letter ta",
-            Ahom::LetterAlternateTa => "ahom letter alternate ta",
-            Ahom::LetterPa => "ahom letter pa",
-            Ahom::LetterPha => "ahom letter pha",
-            Ahom::LetterBa => "ahom letter ba",
-            Ahom::LetterMa => "ahom letter ma",
-            Ahom::LetterJa => "ahom letter ja",
-            Ahom::LetterCha => "ahom letter cha",
-            Ahom::LetterTha => "ahom letter tha",
-            Ahom::LetterRa => "ahom letter ra",
-            Ahom::LetterLa => "ahom letter la",
-            Ahom::LetterSa => "ahom letter sa",
-            Ahom::LetterNya => "ahom letter nya",
-            Ahom::LetterHa => "ahom letter ha",
-            Ahom::LetterA => "ahom letter a",
-            Ahom::LetterDa => "ahom letter da",
-            Ahom::LetterDha => "ahom letter dha",
-            Ahom::LetterGa => "ahom letter ga",
-            Ahom::LetterAlternateGa => "ahom letter alternate ga",
-            Ahom::LetterGha => "ahom letter gha",
-            Ahom::LetterBha => "ahom letter bha",
-            Ahom::LetterJha => "ahom letter jha",
-            Ahom::LetterAlternateBa => "ahom letter alternate ba",
-            Ahom::ConsonantSignMedialLa => "ahom consonant sign medial la",
-            Ahom::ConsonantSignMedialRa => "ahom consonant sign medial ra",
-            Ahom::ConsonantSignMedialLigatingRa => "ahom consonant sign medial ligating ra",
-            Ahom::VowelSignA => "ahom vowel sign a",
-            Ahom::VowelSignAa => "ahom vowel sign aa",
-            Ahom::VowelSignI => "ahom vowel sign i",
-            Ahom::VowelSignIi => "ahom vowel sign ii",
-            Ahom::VowelSignU => "ahom vowel sign u",
-            Ahom::VowelSignUu => "ahom vowel sign uu",
-            Ahom::VowelSignE => "ahom vowel sign e",
-            Ahom::VowelSignAw => "ahom vowel sign aw",
-            Ahom::VowelSignO => "ahom vowel sign o",
-            Ahom::VowelSignAi => "ahom vowel sign ai",
-            Ahom::VowelSignAm => "ahom vowel sign am",
-            Ahom::SignKiller => "ahom sign killer",
-            Ahom::DigitZero => "ahom digit zero",
-            Ahom::DigitOne => "ahom digit one",
-            Ahom::DigitTwo => "ahom digit two",
-            Ahom::DigitThree => "ahom digit three",
-            Ahom::DigitFour => "ahom digit four",
-            Ahom::DigitFive => "ahom digit five",
-            Ahom::DigitSix => "ahom digit six",
-            Ahom::DigitSeven => "ahom digit seven",
-            Ahom::DigitEight => "ahom digit eight",
-            Ahom::DigitNine => "ahom digit nine",
-            Ahom::NumberTen => "ahom number ten",
-            Ahom::NumberTwenty => "ahom number twenty",
-            Ahom::SignSmallSection => "ahom sign small section",
-            Ahom::SignSection => "ahom sign section",
-            Ahom::SignRulai => "ahom sign rulai",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Ahom{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

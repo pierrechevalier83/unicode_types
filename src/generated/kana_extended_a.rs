@@ -182,40 +182,9 @@ impl KanaExtendedA {
         KanaExtendedA::HentaiganaLetterReDash3
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            KanaExtendedA::HentaiganaLetterReDash3 => "hentaigana letter re-3",
-            KanaExtendedA::HentaiganaLetterReDash4 => "hentaigana letter re-4",
-            KanaExtendedA::HentaiganaLetterRoDash1 => "hentaigana letter ro-1",
-            KanaExtendedA::HentaiganaLetterRoDash2 => "hentaigana letter ro-2",
-            KanaExtendedA::HentaiganaLetterRoDash3 => "hentaigana letter ro-3",
-            KanaExtendedA::HentaiganaLetterRoDash4 => "hentaigana letter ro-4",
-            KanaExtendedA::HentaiganaLetterRoDash5 => "hentaigana letter ro-5",
-            KanaExtendedA::HentaiganaLetterRoDash6 => "hentaigana letter ro-6",
-            KanaExtendedA::HentaiganaLetterWaDash1 => "hentaigana letter wa-1",
-            KanaExtendedA::HentaiganaLetterWaDash2 => "hentaigana letter wa-2",
-            KanaExtendedA::HentaiganaLetterWaDash3 => "hentaigana letter wa-3",
-            KanaExtendedA::HentaiganaLetterWaDash4 => "hentaigana letter wa-4",
-            KanaExtendedA::HentaiganaLetterWaDash5 => "hentaigana letter wa-5",
-            KanaExtendedA::HentaiganaLetterWiDash1 => "hentaigana letter wi-1",
-            KanaExtendedA::HentaiganaLetterWiDash2 => "hentaigana letter wi-2",
-            KanaExtendedA::HentaiganaLetterWiDash3 => "hentaigana letter wi-3",
-            KanaExtendedA::HentaiganaLetterWiDash4 => "hentaigana letter wi-4",
-            KanaExtendedA::HentaiganaLetterWiDash5 => "hentaigana letter wi-5",
-            KanaExtendedA::HentaiganaLetterWeDash1 => "hentaigana letter we-1",
-            KanaExtendedA::HentaiganaLetterWeDash2 => "hentaigana letter we-2",
-            KanaExtendedA::HentaiganaLetterWeDash3 => "hentaigana letter we-3",
-            KanaExtendedA::HentaiganaLetterWeDash4 => "hentaigana letter we-4",
-            KanaExtendedA::HentaiganaLetterWoDash1 => "hentaigana letter wo-1",
-            KanaExtendedA::HentaiganaLetterWoDash2 => "hentaigana letter wo-2",
-            KanaExtendedA::HentaiganaLetterWoDash3 => "hentaigana letter wo-3",
-            KanaExtendedA::HentaiganaLetterWoDash4 => "hentaigana letter wo-4",
-            KanaExtendedA::HentaiganaLetterWoDash5 => "hentaigana letter wo-5",
-            KanaExtendedA::HentaiganaLetterWoDash6 => "hentaigana letter wo-6",
-            KanaExtendedA::HentaiganaLetterWoDash7 => "hentaigana letter wo-7",
-            KanaExtendedA::HentaiganaLetterNDashMuDashMoDash1 => "hentaigana letter n-mu-mo-1",
-            KanaExtendedA::HentaiganaLetterNDashMuDashMoDash2 => "hentaigana letter n-mu-mo-2",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("KanaExtendedA{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

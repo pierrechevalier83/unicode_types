@@ -214,48 +214,9 @@ impl ControlPictures {
         ControlPictures::SymbolForNull
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            ControlPictures::SymbolForNull => "symbol for null",
-            ControlPictures::SymbolForStartOfHeading => "symbol for start of heading",
-            ControlPictures::SymbolForStartOfText => "symbol for start of text",
-            ControlPictures::SymbolForEndOfText => "symbol for end of text",
-            ControlPictures::SymbolForEndOfTransmission => "symbol for end of transmission",
-            ControlPictures::SymbolForEnquiry => "symbol for enquiry",
-            ControlPictures::SymbolForAcknowledge => "symbol for acknowledge",
-            ControlPictures::SymbolForBell => "symbol for bell",
-            ControlPictures::SymbolForBackspace => "symbol for backspace",
-            ControlPictures::SymbolForHorizontalTabulation => "symbol for horizontal tabulation",
-            ControlPictures::SymbolForLineFeed => "symbol for line feed",
-            ControlPictures::SymbolForVerticalTabulation => "symbol for vertical tabulation",
-            ControlPictures::SymbolForFormFeed => "symbol for form feed",
-            ControlPictures::SymbolForCarriageReturn => "symbol for carriage return",
-            ControlPictures::SymbolForShiftOut => "symbol for shift out",
-            ControlPictures::SymbolForShiftIn => "symbol for shift in",
-            ControlPictures::SymbolForDataLinkEscape => "symbol for data link escape",
-            ControlPictures::SymbolForDeviceControlOne => "symbol for device control one",
-            ControlPictures::SymbolForDeviceControlTwo => "symbol for device control two",
-            ControlPictures::SymbolForDeviceControlThree => "symbol for device control three",
-            ControlPictures::SymbolForDeviceControlFour => "symbol for device control four",
-            ControlPictures::SymbolForNegativeAcknowledge => "symbol for negative acknowledge",
-            ControlPictures::SymbolForSynchronousIdle => "symbol for synchronous idle",
-            ControlPictures::SymbolForEndOfTransmissionBlock => "symbol for end of transmission block",
-            ControlPictures::SymbolForCancel => "symbol for cancel",
-            ControlPictures::SymbolForEndOfMedium => "symbol for end of medium",
-            ControlPictures::SymbolForSubstitute => "symbol for substitute",
-            ControlPictures::SymbolForEscape => "symbol for escape",
-            ControlPictures::SymbolForFileSeparator => "symbol for file separator",
-            ControlPictures::SymbolForGroupSeparator => "symbol for group separator",
-            ControlPictures::SymbolForRecordSeparator => "symbol for record separator",
-            ControlPictures::SymbolForUnitSeparator => "symbol for unit separator",
-            ControlPictures::SymbolForSpace => "symbol for space",
-            ControlPictures::SymbolForDelete => "symbol for delete",
-            ControlPictures::BlankSymbol => "blank symbol",
-            ControlPictures::OpenBox => "open box",
-            ControlPictures::SymbolForNewline => "symbol for newline",
-            ControlPictures::SymbolForDeleteFormTwo => "symbol for delete form two",
-            ControlPictures::SymbolForSubstituteFormTwo => "symbol for substitute form two",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("ControlPictures{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

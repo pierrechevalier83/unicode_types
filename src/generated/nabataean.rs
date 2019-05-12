@@ -214,48 +214,9 @@ impl Nabataean {
         Nabataean::LetterFinalAleph
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Nabataean::LetterFinalAleph => "nabataean letter final aleph",
-            Nabataean::LetterAleph => "nabataean letter aleph",
-            Nabataean::LetterFinalBeth => "nabataean letter final beth",
-            Nabataean::LetterBeth => "nabataean letter beth",
-            Nabataean::LetterGimel => "nabataean letter gimel",
-            Nabataean::LetterDaleth => "nabataean letter daleth",
-            Nabataean::LetterFinalHe => "nabataean letter final he",
-            Nabataean::LetterHe => "nabataean letter he",
-            Nabataean::LetterWaw => "nabataean letter waw",
-            Nabataean::LetterZayin => "nabataean letter zayin",
-            Nabataean::LetterHeth => "nabataean letter heth",
-            Nabataean::LetterTeth => "nabataean letter teth",
-            Nabataean::LetterFinalYodh => "nabataean letter final yodh",
-            Nabataean::LetterYodh => "nabataean letter yodh",
-            Nabataean::LetterFinalKaph => "nabataean letter final kaph",
-            Nabataean::LetterKaph => "nabataean letter kaph",
-            Nabataean::LetterFinalLamedh => "nabataean letter final lamedh",
-            Nabataean::LetterLamedh => "nabataean letter lamedh",
-            Nabataean::LetterFinalMem => "nabataean letter final mem",
-            Nabataean::LetterMem => "nabataean letter mem",
-            Nabataean::LetterFinalNun => "nabataean letter final nun",
-            Nabataean::LetterNun => "nabataean letter nun",
-            Nabataean::LetterSamekh => "nabataean letter samekh",
-            Nabataean::LetterAyin => "nabataean letter ayin",
-            Nabataean::LetterPe => "nabataean letter pe",
-            Nabataean::LetterSadhe => "nabataean letter sadhe",
-            Nabataean::LetterQoph => "nabataean letter qoph",
-            Nabataean::LetterResh => "nabataean letter resh",
-            Nabataean::LetterFinalShin => "nabataean letter final shin",
-            Nabataean::LetterShin => "nabataean letter shin",
-            Nabataean::LetterTaw => "nabataean letter taw",
-            Nabataean::NumberOne => "nabataean number one",
-            Nabataean::NumberTwo => "nabataean number two",
-            Nabataean::NumberThree => "nabataean number three",
-            Nabataean::NumberFour => "nabataean number four",
-            Nabataean::CruciformNumberFour => "nabataean cruciform number four",
-            Nabataean::NumberFive => "nabataean number five",
-            Nabataean::NumberTen => "nabataean number ten",
-            Nabataean::NumberTwenty => "nabataean number twenty",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Nabataean{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

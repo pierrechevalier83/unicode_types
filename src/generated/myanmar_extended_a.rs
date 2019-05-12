@@ -182,40 +182,9 @@ impl MyanmarExtendedA {
         MyanmarExtendedA::MyanmarLetterKhamtiGa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            MyanmarExtendedA::MyanmarLetterKhamtiGa => "myanmar letter khamti ga",
-            MyanmarExtendedA::MyanmarLetterKhamtiCa => "myanmar letter khamti ca",
-            MyanmarExtendedA::MyanmarLetterKhamtiCha => "myanmar letter khamti cha",
-            MyanmarExtendedA::MyanmarLetterKhamtiJa => "myanmar letter khamti ja",
-            MyanmarExtendedA::MyanmarLetterKhamtiJha => "myanmar letter khamti jha",
-            MyanmarExtendedA::MyanmarLetterKhamtiNya => "myanmar letter khamti nya",
-            MyanmarExtendedA::MyanmarLetterKhamtiTta => "myanmar letter khamti tta",
-            MyanmarExtendedA::MyanmarLetterKhamtiTtha => "myanmar letter khamti ttha",
-            MyanmarExtendedA::MyanmarLetterKhamtiDda => "myanmar letter khamti dda",
-            MyanmarExtendedA::MyanmarLetterKhamtiDdha => "myanmar letter khamti ddha",
-            MyanmarExtendedA::MyanmarLetterKhamtiDha => "myanmar letter khamti dha",
-            MyanmarExtendedA::MyanmarLetterKhamtiNa => "myanmar letter khamti na",
-            MyanmarExtendedA::MyanmarLetterKhamtiSa => "myanmar letter khamti sa",
-            MyanmarExtendedA::MyanmarLetterKhamtiHa => "myanmar letter khamti ha",
-            MyanmarExtendedA::MyanmarLetterKhamtiHha => "myanmar letter khamti hha",
-            MyanmarExtendedA::MyanmarLetterKhamtiFa => "myanmar letter khamti fa",
-            MyanmarExtendedA::MyanmarModifierLetterKhamtiReduplication => "myanmar modifier letter khamti reduplication",
-            MyanmarExtendedA::MyanmarLetterKhamtiXa => "myanmar letter khamti xa",
-            MyanmarExtendedA::MyanmarLetterKhamtiZa => "myanmar letter khamti za",
-            MyanmarExtendedA::MyanmarLetterKhamtiRa => "myanmar letter khamti ra",
-            MyanmarExtendedA::MyanmarLogogramKhamtiOay => "myanmar logogram khamti oay",
-            MyanmarExtendedA::MyanmarLogogramKhamtiQn => "myanmar logogram khamti qn",
-            MyanmarExtendedA::MyanmarLogogramKhamtiHm => "myanmar logogram khamti hm",
-            MyanmarExtendedA::MyanmarSymbolAitonExclamation => "myanmar symbol aiton exclamation",
-            MyanmarExtendedA::MyanmarSymbolAitonOne => "myanmar symbol aiton one",
-            MyanmarExtendedA::MyanmarSymbolAitonTwo => "myanmar symbol aiton two",
-            MyanmarExtendedA::MyanmarLetterAitonRa => "myanmar letter aiton ra",
-            MyanmarExtendedA::MyanmarSignPaoKarenTone => "myanmar sign pao karen tone",
-            MyanmarExtendedA::MyanmarSignTaiLaingToneDash2 => "myanmar sign tai laing tone-2",
-            MyanmarExtendedA::MyanmarSignTaiLaingToneDash5 => "myanmar sign tai laing tone-5",
-            MyanmarExtendedA::MyanmarLetterShwePalaungCha => "myanmar letter shwe palaung cha",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("MyanmarExtendedA{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -258,59 +258,9 @@ impl Thaana {
         Thaana::LetterHaa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Thaana::LetterHaa => "thaana letter haa",
-            Thaana::LetterShaviyani => "thaana letter shaviyani",
-            Thaana::LetterNoonu => "thaana letter noonu",
-            Thaana::LetterRaa => "thaana letter raa",
-            Thaana::LetterBaa => "thaana letter baa",
-            Thaana::LetterLhaviyani => "thaana letter lhaviyani",
-            Thaana::LetterKaafu => "thaana letter kaafu",
-            Thaana::LetterAlifu => "thaana letter alifu",
-            Thaana::LetterVaavu => "thaana letter vaavu",
-            Thaana::LetterMeemu => "thaana letter meemu",
-            Thaana::LetterFaafu => "thaana letter faafu",
-            Thaana::LetterDhaalu => "thaana letter dhaalu",
-            Thaana::LetterThaa => "thaana letter thaa",
-            Thaana::LetterLaamu => "thaana letter laamu",
-            Thaana::LetterGaafu => "thaana letter gaafu",
-            Thaana::LetterGnaviyani => "thaana letter gnaviyani",
-            Thaana::LetterSeenu => "thaana letter seenu",
-            Thaana::LetterDaviyani => "thaana letter daviyani",
-            Thaana::LetterZaviyani => "thaana letter zaviyani",
-            Thaana::LetterTaviyani => "thaana letter taviyani",
-            Thaana::LetterYaa => "thaana letter yaa",
-            Thaana::LetterPaviyani => "thaana letter paviyani",
-            Thaana::LetterJaviyani => "thaana letter javiyani",
-            Thaana::LetterChaviyani => "thaana letter chaviyani",
-            Thaana::LetterTtaa => "thaana letter ttaa",
-            Thaana::LetterHhaa => "thaana letter hhaa",
-            Thaana::LetterKhaa => "thaana letter khaa",
-            Thaana::LetterThaalu => "thaana letter thaalu",
-            Thaana::LetterZaa => "thaana letter zaa",
-            Thaana::LetterSheenu => "thaana letter sheenu",
-            Thaana::LetterSaadhu => "thaana letter saadhu",
-            Thaana::LetterDaadhu => "thaana letter daadhu",
-            Thaana::LetterTo => "thaana letter to",
-            Thaana::LetterZo => "thaana letter zo",
-            Thaana::LetterAinu => "thaana letter ainu",
-            Thaana::LetterGhainu => "thaana letter ghainu",
-            Thaana::LetterQaafu => "thaana letter qaafu",
-            Thaana::LetterWaavu => "thaana letter waavu",
-            Thaana::Abafili => "thaana abafili",
-            Thaana::Aabaafili => "thaana aabaafili",
-            Thaana::Ibifili => "thaana ibifili",
-            Thaana::Eebeefili => "thaana eebeefili",
-            Thaana::Ubufili => "thaana ubufili",
-            Thaana::Ooboofili => "thaana ooboofili",
-            Thaana::Ebefili => "thaana ebefili",
-            Thaana::Eybeyfili => "thaana eybeyfili",
-            Thaana::Obofili => "thaana obofili",
-            Thaana::Oaboafili => "thaana oaboafili",
-            Thaana::Sukun => "thaana sukun",
-            Thaana::LetterNaa => "thaana letter naa",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Thaana{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

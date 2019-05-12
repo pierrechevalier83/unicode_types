@@ -246,56 +246,9 @@ impl MiscellaneousMathematicalSymbolsA {
         MiscellaneousMathematicalSymbolsA::ThreeDimensionalAngle
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            MiscellaneousMathematicalSymbolsA::ThreeDimensionalAngle => "three dimensional angle",
-            MiscellaneousMathematicalSymbolsA::WhiteTriangleContainingSmallWhiteTriangle => "white triangle containing small white triangle",
-            MiscellaneousMathematicalSymbolsA::Perpendicular => "perpendicular",
-            MiscellaneousMathematicalSymbolsA::OpenSubset => "open subset",
-            MiscellaneousMathematicalSymbolsA::OpenSuperset => "open superset",
-            MiscellaneousMathematicalSymbolsA::LeftSDashShapedBagDelimiter => "left s-shaped bag delimiter",
-            MiscellaneousMathematicalSymbolsA::RightSDashShapedBagDelimiter => "right s-shaped bag delimiter",
-            MiscellaneousMathematicalSymbolsA::OrWithDotInside => "or with dot inside",
-            MiscellaneousMathematicalSymbolsA::ReverseSolidusPrecedingSubset => "reverse solidus preceding subset",
-            MiscellaneousMathematicalSymbolsA::SupersetPrecedingSolidus => "superset preceding solidus",
-            MiscellaneousMathematicalSymbolsA::VerticalBarWithHorizontalStroke => "vertical bar with horizontal stroke",
-            MiscellaneousMathematicalSymbolsA::MathematicalRisingDiagonal => "mathematical rising diagonal",
-            MiscellaneousMathematicalSymbolsA::LongDivision => "long division",
-            MiscellaneousMathematicalSymbolsA::MathematicalFallingDiagonal => "mathematical falling diagonal",
-            MiscellaneousMathematicalSymbolsA::SquaredLogicalAnd => "squared logical and",
-            MiscellaneousMathematicalSymbolsA::SquaredLogicalOr => "squared logical or",
-            MiscellaneousMathematicalSymbolsA::WhiteDiamondWithCentredDot => "white diamond with centred dot",
-            MiscellaneousMathematicalSymbolsA::AndWithDot => "and with dot",
-            MiscellaneousMathematicalSymbolsA::ElementOfOpeningUpwards => "element of opening upwards",
-            MiscellaneousMathematicalSymbolsA::LowerRightCornerWithDot => "lower right corner with dot",
-            MiscellaneousMathematicalSymbolsA::UpperLeftCornerWithDot => "upper left corner with dot",
-            MiscellaneousMathematicalSymbolsA::LeftOuterJoin => "left outer join",
-            MiscellaneousMathematicalSymbolsA::RightOuterJoin => "right outer join",
-            MiscellaneousMathematicalSymbolsA::FullOuterJoin => "full outer join",
-            MiscellaneousMathematicalSymbolsA::LargeUpTack => "large up tack",
-            MiscellaneousMathematicalSymbolsA::LargeDownTack => "large down tack",
-            MiscellaneousMathematicalSymbolsA::LeftAndRightDoubleTurnstile => "left and right double turnstile",
-            MiscellaneousMathematicalSymbolsA::LeftAndRightTack => "left and right tack",
-            MiscellaneousMathematicalSymbolsA::LeftMultimap => "left multimap",
-            MiscellaneousMathematicalSymbolsA::LongRightTack => "long right tack",
-            MiscellaneousMathematicalSymbolsA::LongLeftTack => "long left tack",
-            MiscellaneousMathematicalSymbolsA::UpTackWithCircleAbove => "up tack with circle above",
-            MiscellaneousMathematicalSymbolsA::LozengeDividedByHorizontalRule => "lozenge divided by horizontal rule",
-            MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamond => "white concave-sided diamond",
-            MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamondWithLeftwardsTick => "white concave-sided diamond with leftwards tick",
-            MiscellaneousMathematicalSymbolsA::WhiteConcaveDashSidedDiamondWithRightwardsTick => "white concave-sided diamond with rightwards tick",
-            MiscellaneousMathematicalSymbolsA::WhiteSquareWithLeftwardsTick => "white square with leftwards tick",
-            MiscellaneousMathematicalSymbolsA::WhiteSquareWithRightwardsTick => "white square with rightwards tick",
-            MiscellaneousMathematicalSymbolsA::MathematicalLeftWhiteSquareBracket => "mathematical left white square bracket",
-            MiscellaneousMathematicalSymbolsA::MathematicalRightWhiteSquareBracket => "mathematical right white square bracket",
-            MiscellaneousMathematicalSymbolsA::MathematicalLeftAngleBracket => "mathematical left angle bracket",
-            MiscellaneousMathematicalSymbolsA::MathematicalRightAngleBracket => "mathematical right angle bracket",
-            MiscellaneousMathematicalSymbolsA::MathematicalLeftDoubleAngleBracket => "mathematical left double angle bracket",
-            MiscellaneousMathematicalSymbolsA::MathematicalRightDoubleAngleBracket => "mathematical right double angle bracket",
-            MiscellaneousMathematicalSymbolsA::MathematicalLeftWhiteTortoiseShellBracket => "mathematical left white tortoise shell bracket",
-            MiscellaneousMathematicalSymbolsA::MathematicalRightWhiteTortoiseShellBracket => "mathematical right white tortoise shell bracket",
-            MiscellaneousMathematicalSymbolsA::MathematicalLeftFlattenedParenthesis => "mathematical left flattened parenthesis",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("MiscellaneousMathematicalSymbolsA{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

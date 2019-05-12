@@ -226,51 +226,9 @@ impl SuperscriptsandSubscripts {
         SuperscriptsandSubscripts::SuperscriptZero
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            SuperscriptsandSubscripts::SuperscriptZero => "superscript zero",
-            SuperscriptsandSubscripts::SuperscriptLatinSmallLetterI => "superscript latin small letter i",
-            SuperscriptsandSubscripts::SuperscriptFour => "superscript four",
-            SuperscriptsandSubscripts::SuperscriptFive => "superscript five",
-            SuperscriptsandSubscripts::SuperscriptSix => "superscript six",
-            SuperscriptsandSubscripts::SuperscriptSeven => "superscript seven",
-            SuperscriptsandSubscripts::SuperscriptEight => "superscript eight",
-            SuperscriptsandSubscripts::SuperscriptNine => "superscript nine",
-            SuperscriptsandSubscripts::SuperscriptPlusSign => "superscript plus sign",
-            SuperscriptsandSubscripts::SuperscriptMinus => "superscript minus",
-            SuperscriptsandSubscripts::SuperscriptEqualsSign => "superscript equals sign",
-            SuperscriptsandSubscripts::SuperscriptLeftParenthesis => "superscript left parenthesis",
-            SuperscriptsandSubscripts::SuperscriptRightParenthesis => "superscript right parenthesis",
-            SuperscriptsandSubscripts::SuperscriptLatinSmallLetterN => "superscript latin small letter n",
-            SuperscriptsandSubscripts::SubscriptZero => "subscript zero",
-            SuperscriptsandSubscripts::SubscriptOne => "subscript one",
-            SuperscriptsandSubscripts::SubscriptTwo => "subscript two",
-            SuperscriptsandSubscripts::SubscriptThree => "subscript three",
-            SuperscriptsandSubscripts::SubscriptFour => "subscript four",
-            SuperscriptsandSubscripts::SubscriptFive => "subscript five",
-            SuperscriptsandSubscripts::SubscriptSix => "subscript six",
-            SuperscriptsandSubscripts::SubscriptSeven => "subscript seven",
-            SuperscriptsandSubscripts::SubscriptEight => "subscript eight",
-            SuperscriptsandSubscripts::SubscriptNine => "subscript nine",
-            SuperscriptsandSubscripts::SubscriptPlusSign => "subscript plus sign",
-            SuperscriptsandSubscripts::SubscriptMinus => "subscript minus",
-            SuperscriptsandSubscripts::SubscriptEqualsSign => "subscript equals sign",
-            SuperscriptsandSubscripts::SubscriptLeftParenthesis => "subscript left parenthesis",
-            SuperscriptsandSubscripts::SubscriptRightParenthesis => "subscript right parenthesis",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterA => "latin subscript small letter a",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterE => "latin subscript small letter e",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterO => "latin subscript small letter o",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterX => "latin subscript small letter x",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterSchwa => "latin subscript small letter schwa",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterH => "latin subscript small letter h",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterK => "latin subscript small letter k",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterL => "latin subscript small letter l",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterM => "latin subscript small letter m",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterN => "latin subscript small letter n",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterP => "latin subscript small letter p",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterS => "latin subscript small letter s",
-            SuperscriptsandSubscripts::LatinSubscriptSmallLetterT => "latin subscript small letter t",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("SuperscriptsandSubscripts{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

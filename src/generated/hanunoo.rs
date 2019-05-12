@@ -150,32 +150,9 @@ impl Hanunoo {
         Hanunoo::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Hanunoo::LetterA => "hanunoo letter a",
-            Hanunoo::LetterI => "hanunoo letter i",
-            Hanunoo::LetterU => "hanunoo letter u",
-            Hanunoo::LetterKa => "hanunoo letter ka",
-            Hanunoo::LetterGa => "hanunoo letter ga",
-            Hanunoo::LetterNga => "hanunoo letter nga",
-            Hanunoo::LetterTa => "hanunoo letter ta",
-            Hanunoo::LetterDa => "hanunoo letter da",
-            Hanunoo::LetterNa => "hanunoo letter na",
-            Hanunoo::LetterPa => "hanunoo letter pa",
-            Hanunoo::LetterBa => "hanunoo letter ba",
-            Hanunoo::LetterMa => "hanunoo letter ma",
-            Hanunoo::LetterYa => "hanunoo letter ya",
-            Hanunoo::LetterRa => "hanunoo letter ra",
-            Hanunoo::LetterLa => "hanunoo letter la",
-            Hanunoo::LetterWa => "hanunoo letter wa",
-            Hanunoo::LetterSa => "hanunoo letter sa",
-            Hanunoo::LetterHa => "hanunoo letter ha",
-            Hanunoo::VowelSignI => "hanunoo vowel sign i",
-            Hanunoo::VowelSignU => "hanunoo vowel sign u",
-            Hanunoo::SignPamudpod => "hanunoo sign pamudpod",
-            Hanunoo::PhilippineSinglePunctuation => "philippine single punctuation",
-            Hanunoo::PhilippineDoublePunctuation => "philippine double punctuation",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Hanunoo{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

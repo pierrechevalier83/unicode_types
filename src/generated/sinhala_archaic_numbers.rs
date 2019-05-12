@@ -138,29 +138,9 @@ impl SinhalaArchaicNumbers {
         SinhalaArchaicNumbers::SinhalaArchaicDigitOne
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            SinhalaArchaicNumbers::SinhalaArchaicDigitOne => "sinhala archaic digit one",
-            SinhalaArchaicNumbers::SinhalaArchaicDigitTwo => "sinhala archaic digit two",
-            SinhalaArchaicNumbers::SinhalaArchaicDigitThree => "sinhala archaic digit three",
-            SinhalaArchaicNumbers::SinhalaArchaicDigitFour => "sinhala archaic digit four",
-            SinhalaArchaicNumbers::SinhalaArchaicDigitFive => "sinhala archaic digit five",
-            SinhalaArchaicNumbers::SinhalaArchaicDigitSix => "sinhala archaic digit six",
-            SinhalaArchaicNumbers::SinhalaArchaicDigitSeven => "sinhala archaic digit seven",
-            SinhalaArchaicNumbers::SinhalaArchaicDigitEight => "sinhala archaic digit eight",
-            SinhalaArchaicNumbers::SinhalaArchaicDigitNine => "sinhala archaic digit nine",
-            SinhalaArchaicNumbers::SinhalaArchaicNumberTen => "sinhala archaic number ten",
-            SinhalaArchaicNumbers::SinhalaArchaicNumberTwenty => "sinhala archaic number twenty",
-            SinhalaArchaicNumbers::SinhalaArchaicNumberThirty => "sinhala archaic number thirty",
-            SinhalaArchaicNumbers::SinhalaArchaicNumberForty => "sinhala archaic number forty",
-            SinhalaArchaicNumbers::SinhalaArchaicNumberFifty => "sinhala archaic number fifty",
-            SinhalaArchaicNumbers::SinhalaArchaicNumberSixty => "sinhala archaic number sixty",
-            SinhalaArchaicNumbers::SinhalaArchaicNumberSeventy => "sinhala archaic number seventy",
-            SinhalaArchaicNumbers::SinhalaArchaicNumberEighty => "sinhala archaic number eighty",
-            SinhalaArchaicNumbers::SinhalaArchaicNumberNinety => "sinhala archaic number ninety",
-            SinhalaArchaicNumbers::SinhalaArchaicNumberOneHundred => "sinhala archaic number one hundred",
-            SinhalaArchaicNumbers::SinhalaArchaicNumberOneThousand => "sinhala archaic number one thousand",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("SinhalaArchaicNumbers{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

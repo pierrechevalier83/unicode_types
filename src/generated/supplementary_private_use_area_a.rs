@@ -66,11 +66,9 @@ impl SupplementaryPrivateUseAreaA {
         SupplementaryPrivateUseAreaA::Plane15PrivateUseFirst
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            SupplementaryPrivateUseAreaA::Plane15PrivateUseFirst => "plane 15 private use first",
-            SupplementaryPrivateUseAreaA::Plane15PrivateUseLast => "plane 15 private use last",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("SupplementaryPrivateUseAreaA{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

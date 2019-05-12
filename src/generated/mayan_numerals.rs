@@ -138,29 +138,9 @@ impl MayanNumerals {
         MayanNumerals::MayanNumeralZero
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            MayanNumerals::MayanNumeralZero => "mayan numeral zero",
-            MayanNumerals::MayanNumeralOne => "mayan numeral one",
-            MayanNumerals::MayanNumeralTwo => "mayan numeral two",
-            MayanNumerals::MayanNumeralThree => "mayan numeral three",
-            MayanNumerals::MayanNumeralFour => "mayan numeral four",
-            MayanNumerals::MayanNumeralFive => "mayan numeral five",
-            MayanNumerals::MayanNumeralSix => "mayan numeral six",
-            MayanNumerals::MayanNumeralSeven => "mayan numeral seven",
-            MayanNumerals::MayanNumeralEight => "mayan numeral eight",
-            MayanNumerals::MayanNumeralNine => "mayan numeral nine",
-            MayanNumerals::MayanNumeralTen => "mayan numeral ten",
-            MayanNumerals::MayanNumeralEleven => "mayan numeral eleven",
-            MayanNumerals::MayanNumeralTwelve => "mayan numeral twelve",
-            MayanNumerals::MayanNumeralThirteen => "mayan numeral thirteen",
-            MayanNumerals::MayanNumeralFourteen => "mayan numeral fourteen",
-            MayanNumerals::MayanNumeralFifteen => "mayan numeral fifteen",
-            MayanNumerals::MayanNumeralSixteen => "mayan numeral sixteen",
-            MayanNumerals::MayanNumeralSeventeen => "mayan numeral seventeen",
-            MayanNumerals::MayanNumeralEighteen => "mayan numeral eighteen",
-            MayanNumerals::MayanNumeralNineteen => "mayan numeral nineteen",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("MayanNumerals{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

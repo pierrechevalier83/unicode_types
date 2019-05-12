@@ -182,40 +182,9 @@ impl MeroiticHieroglyphs {
         MeroiticHieroglyphs::MeroiticHieroglyphicLetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterA => "meroitic hieroglyphic letter a",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterE => "meroitic hieroglyphic letter e",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterI => "meroitic hieroglyphic letter i",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterO => "meroitic hieroglyphic letter o",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterYa => "meroitic hieroglyphic letter ya",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterWa => "meroitic hieroglyphic letter wa",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterBa => "meroitic hieroglyphic letter ba",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterBaDash2 => "meroitic hieroglyphic letter ba-2",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterPa => "meroitic hieroglyphic letter pa",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterMa => "meroitic hieroglyphic letter ma",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNa => "meroitic hieroglyphic letter na",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNaDash2 => "meroitic hieroglyphic letter na-2",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNe => "meroitic hieroglyphic letter ne",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterNeDash2 => "meroitic hieroglyphic letter ne-2",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterRa => "meroitic hieroglyphic letter ra",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterRaDash2 => "meroitic hieroglyphic letter ra-2",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterLa => "meroitic hieroglyphic letter la",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterKha => "meroitic hieroglyphic letter kha",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterHha => "meroitic hieroglyphic letter hha",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterSa => "meroitic hieroglyphic letter sa",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterSaDash2 => "meroitic hieroglyphic letter sa-2",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterSe => "meroitic hieroglyphic letter se",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterKa => "meroitic hieroglyphic letter ka",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterQa => "meroitic hieroglyphic letter qa",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTa => "meroitic hieroglyphic letter ta",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTaDash2 => "meroitic hieroglyphic letter ta-2",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTe => "meroitic hieroglyphic letter te",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTeDash2 => "meroitic hieroglyphic letter te-2",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterTo => "meroitic hieroglyphic letter to",
-            MeroiticHieroglyphs::MeroiticHieroglyphicLetterDa => "meroitic hieroglyphic letter da",
-            MeroiticHieroglyphs::MeroiticHieroglyphicSymbolVidj => "meroitic hieroglyphic symbol vidj",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("MeroiticHieroglyphs{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

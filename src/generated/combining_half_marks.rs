@@ -118,24 +118,9 @@ impl CombiningHalfMarks {
         CombiningHalfMarks::CombiningLigatureLeftHalf
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CombiningHalfMarks::CombiningLigatureLeftHalf => "combining ligature left half",
-            CombiningHalfMarks::CombiningLigatureRightHalf => "combining ligature right half",
-            CombiningHalfMarks::CombiningDoubleTildeLeftHalf => "combining double tilde left half",
-            CombiningHalfMarks::CombiningDoubleTildeRightHalf => "combining double tilde right half",
-            CombiningHalfMarks::CombiningMacronLeftHalf => "combining macron left half",
-            CombiningHalfMarks::CombiningMacronRightHalf => "combining macron right half",
-            CombiningHalfMarks::CombiningConjoiningMacron => "combining conjoining macron",
-            CombiningHalfMarks::CombiningLigatureLeftHalfBelow => "combining ligature left half below",
-            CombiningHalfMarks::CombiningLigatureRightHalfBelow => "combining ligature right half below",
-            CombiningHalfMarks::CombiningTildeLeftHalfBelow => "combining tilde left half below",
-            CombiningHalfMarks::CombiningTildeRightHalfBelow => "combining tilde right half below",
-            CombiningHalfMarks::CombiningMacronLeftHalfBelow => "combining macron left half below",
-            CombiningHalfMarks::CombiningMacronRightHalfBelow => "combining macron right half below",
-            CombiningHalfMarks::CombiningConjoiningMacronBelow => "combining conjoining macron below",
-            CombiningHalfMarks::CombiningCyrillicTitloLeftHalf => "combining cyrillic titlo left half",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CombiningHalfMarks{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -110,22 +110,9 @@ impl MongolianSupplement {
         MongolianSupplement::MongolianBirgaWithOrnament
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            MongolianSupplement::MongolianBirgaWithOrnament => "mongolian birga with ornament",
-            MongolianSupplement::MongolianRotatedBirga => "mongolian rotated birga",
-            MongolianSupplement::MongolianDoubleBirgaWithOrnament => "mongolian double birga with ornament",
-            MongolianSupplement::MongolianTripleBirgaWithOrnament => "mongolian triple birga with ornament",
-            MongolianSupplement::MongolianBirgaWithDoubleOrnament => "mongolian birga with double ornament",
-            MongolianSupplement::MongolianRotatedBirgaWithOrnament => "mongolian rotated birga with ornament",
-            MongolianSupplement::MongolianRotatedBirgaWithDoubleOrnament => "mongolian rotated birga with double ornament",
-            MongolianSupplement::MongolianInvertedBirga => "mongolian inverted birga",
-            MongolianSupplement::MongolianInvertedBirgaWithDoubleOrnament => "mongolian inverted birga with double ornament",
-            MongolianSupplement::MongolianSwirlBirga => "mongolian swirl birga",
-            MongolianSupplement::MongolianSwirlBirgaWithOrnament => "mongolian swirl birga with ornament",
-            MongolianSupplement::MongolianSwirlBirgaWithDoubleOrnament => "mongolian swirl birga with double ornament",
-            MongolianSupplement::MongolianTurnedSwirlBirgaWithDoubleOrnament => "mongolian turned swirl birga with double ornament",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("MongolianSupplement{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

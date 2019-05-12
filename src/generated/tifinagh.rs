@@ -290,67 +290,9 @@ impl Tifinagh {
         Tifinagh::LetterYa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Tifinagh::LetterYa => "tifinagh letter ya",
-            Tifinagh::LetterYab => "tifinagh letter yab",
-            Tifinagh::LetterYabh => "tifinagh letter yabh",
-            Tifinagh::LetterYag => "tifinagh letter yag",
-            Tifinagh::LetterYaghh => "tifinagh letter yaghh",
-            Tifinagh::LetterBerberAcademyYaj => "tifinagh letter berber academy yaj",
-            Tifinagh::LetterYaj => "tifinagh letter yaj",
-            Tifinagh::LetterYad => "tifinagh letter yad",
-            Tifinagh::LetterYadh => "tifinagh letter yadh",
-            Tifinagh::LetterYadd => "tifinagh letter yadd",
-            Tifinagh::LetterYaddh => "tifinagh letter yaddh",
-            Tifinagh::LetterYey => "tifinagh letter yey",
-            Tifinagh::LetterYaf => "tifinagh letter yaf",
-            Tifinagh::LetterYak => "tifinagh letter yak",
-            Tifinagh::LetterTuaregYak => "tifinagh letter tuareg yak",
-            Tifinagh::LetterYakhh => "tifinagh letter yakhh",
-            Tifinagh::LetterYah => "tifinagh letter yah",
-            Tifinagh::LetterBerberAcademyYah => "tifinagh letter berber academy yah",
-            Tifinagh::LetterTuaregYah => "tifinagh letter tuareg yah",
-            Tifinagh::LetterYahh => "tifinagh letter yahh",
-            Tifinagh::LetterYaa => "tifinagh letter yaa",
-            Tifinagh::LetterYakh => "tifinagh letter yakh",
-            Tifinagh::LetterTuaregYakh => "tifinagh letter tuareg yakh",
-            Tifinagh::LetterYaq => "tifinagh letter yaq",
-            Tifinagh::LetterTuaregYaq => "tifinagh letter tuareg yaq",
-            Tifinagh::LetterYi => "tifinagh letter yi",
-            Tifinagh::LetterYazh => "tifinagh letter yazh",
-            Tifinagh::LetterAhaggarYazh => "tifinagh letter ahaggar yazh",
-            Tifinagh::LetterTuaregYazh => "tifinagh letter tuareg yazh",
-            Tifinagh::LetterYal => "tifinagh letter yal",
-            Tifinagh::LetterYam => "tifinagh letter yam",
-            Tifinagh::LetterYan => "tifinagh letter yan",
-            Tifinagh::LetterTuaregYagn => "tifinagh letter tuareg yagn",
-            Tifinagh::LetterTuaregYang => "tifinagh letter tuareg yang",
-            Tifinagh::LetterYap => "tifinagh letter yap",
-            Tifinagh::LetterYu => "tifinagh letter yu",
-            Tifinagh::LetterYar => "tifinagh letter yar",
-            Tifinagh::LetterYarr => "tifinagh letter yarr",
-            Tifinagh::LetterYagh => "tifinagh letter yagh",
-            Tifinagh::LetterTuaregYagh => "tifinagh letter tuareg yagh",
-            Tifinagh::LetterAyerYagh => "tifinagh letter ayer yagh",
-            Tifinagh::LetterYas => "tifinagh letter yas",
-            Tifinagh::LetterYass => "tifinagh letter yass",
-            Tifinagh::LetterYash => "tifinagh letter yash",
-            Tifinagh::LetterYat => "tifinagh letter yat",
-            Tifinagh::LetterYath => "tifinagh letter yath",
-            Tifinagh::LetterYach => "tifinagh letter yach",
-            Tifinagh::LetterYatt => "tifinagh letter yatt",
-            Tifinagh::LetterYav => "tifinagh letter yav",
-            Tifinagh::LetterYaw => "tifinagh letter yaw",
-            Tifinagh::LetterYay => "tifinagh letter yay",
-            Tifinagh::LetterYaz => "tifinagh letter yaz",
-            Tifinagh::LetterTawellemetYaz => "tifinagh letter tawellemet yaz",
-            Tifinagh::LetterYazz => "tifinagh letter yazz",
-            Tifinagh::LetterYe => "tifinagh letter ye",
-            Tifinagh::LetterYo => "tifinagh letter yo",
-            Tifinagh::ModifierLetterLabializationMark => "tifinagh modifier letter labialization mark",
-            Tifinagh::SeparatorMark => "tifinagh separator mark",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Tifinagh{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

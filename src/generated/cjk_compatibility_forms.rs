@@ -182,40 +182,9 @@ impl CJKCompatibilityForms {
         CJKCompatibilityForms::PresentationFormForVerticalTwoDotLeader
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CJKCompatibilityForms::PresentationFormForVerticalTwoDotLeader => "presentation form for vertical two dot leader",
-            CJKCompatibilityForms::PresentationFormForVerticalEmDash => "presentation form for vertical em dash",
-            CJKCompatibilityForms::PresentationFormForVerticalEnDash => "presentation form for vertical en dash",
-            CJKCompatibilityForms::PresentationFormForVerticalLowLine => "presentation form for vertical low line",
-            CJKCompatibilityForms::PresentationFormForVerticalWavyLowLine => "presentation form for vertical wavy low line",
-            CJKCompatibilityForms::PresentationFormForVerticalLeftParenthesis => "presentation form for vertical left parenthesis",
-            CJKCompatibilityForms::PresentationFormForVerticalRightParenthesis => "presentation form for vertical right parenthesis",
-            CJKCompatibilityForms::PresentationFormForVerticalLeftCurlyBracket => "presentation form for vertical left curly bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalRightCurlyBracket => "presentation form for vertical right curly bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalLeftTortoiseShellBracket => "presentation form for vertical left tortoise shell bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalRightTortoiseShellBracket => "presentation form for vertical right tortoise shell bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalLeftBlackLenticularBracket => "presentation form for vertical left black lenticular bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalRightBlackLenticularBracket => "presentation form for vertical right black lenticular bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalLeftDoubleAngleBracket => "presentation form for vertical left double angle bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalRightDoubleAngleBracket => "presentation form for vertical right double angle bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalLeftAngleBracket => "presentation form for vertical left angle bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalRightAngleBracket => "presentation form for vertical right angle bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalLeftCornerBracket => "presentation form for vertical left corner bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalRightCornerBracket => "presentation form for vertical right corner bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalLeftWhiteCornerBracket => "presentation form for vertical left white corner bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalRightWhiteCornerBracket => "presentation form for vertical right white corner bracket",
-            CJKCompatibilityForms::SesameDot => "sesame dot",
-            CJKCompatibilityForms::WhiteSesameDot => "white sesame dot",
-            CJKCompatibilityForms::PresentationFormForVerticalLeftSquareBracket => "presentation form for vertical left square bracket",
-            CJKCompatibilityForms::PresentationFormForVerticalRightSquareBracket => "presentation form for vertical right square bracket",
-            CJKCompatibilityForms::DashedOverline => "dashed overline",
-            CJKCompatibilityForms::CentrelineOverline => "centreline overline",
-            CJKCompatibilityForms::WavyOverline => "wavy overline",
-            CJKCompatibilityForms::DoubleWavyOverline => "double wavy overline",
-            CJKCompatibilityForms::DashedLowLine => "dashed low line",
-            CJKCompatibilityForms::CentrelineLowLine => "centreline low line",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CJKCompatibilityForms{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

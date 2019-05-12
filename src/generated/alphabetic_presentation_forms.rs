@@ -286,66 +286,9 @@ impl AlphabeticPresentationForms {
         AlphabeticPresentationForms::LatinSmallLigatureFf
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            AlphabeticPresentationForms::LatinSmallLigatureFf => "latin small ligature ff",
-            AlphabeticPresentationForms::LatinSmallLigatureFi => "latin small ligature fi",
-            AlphabeticPresentationForms::LatinSmallLigatureFl => "latin small ligature fl",
-            AlphabeticPresentationForms::LatinSmallLigatureFfi => "latin small ligature ffi",
-            AlphabeticPresentationForms::LatinSmallLigatureFfl => "latin small ligature ffl",
-            AlphabeticPresentationForms::LatinSmallLigatureLongST => "latin small ligature long s t",
-            AlphabeticPresentationForms::LatinSmallLigatureSt => "latin small ligature st",
-            AlphabeticPresentationForms::ArmenianSmallLigatureMenNow => "armenian small ligature men now",
-            AlphabeticPresentationForms::ArmenianSmallLigatureMenEch => "armenian small ligature men ech",
-            AlphabeticPresentationForms::ArmenianSmallLigatureMenIni => "armenian small ligature men ini",
-            AlphabeticPresentationForms::ArmenianSmallLigatureVewNow => "armenian small ligature vew now",
-            AlphabeticPresentationForms::ArmenianSmallLigatureMenXeh => "armenian small ligature men xeh",
-            AlphabeticPresentationForms::HebrewLetterYodWithHiriq => "hebrew letter yod with hiriq",
-            AlphabeticPresentationForms::HebrewPointJudeoDashSpanishVarika => "hebrew point judeo-spanish varika",
-            AlphabeticPresentationForms::HebrewLigatureYiddishYodYodPatah => "hebrew ligature yiddish yod yod patah",
-            AlphabeticPresentationForms::HebrewLetterAlternativeAyin => "hebrew letter alternative ayin",
-            AlphabeticPresentationForms::HebrewLetterWideAlef => "hebrew letter wide alef",
-            AlphabeticPresentationForms::HebrewLetterWideDalet => "hebrew letter wide dalet",
-            AlphabeticPresentationForms::HebrewLetterWideHe => "hebrew letter wide he",
-            AlphabeticPresentationForms::HebrewLetterWideKaf => "hebrew letter wide kaf",
-            AlphabeticPresentationForms::HebrewLetterWideLamed => "hebrew letter wide lamed",
-            AlphabeticPresentationForms::HebrewLetterWideFinalMem => "hebrew letter wide final mem",
-            AlphabeticPresentationForms::HebrewLetterWideResh => "hebrew letter wide resh",
-            AlphabeticPresentationForms::HebrewLetterWideTav => "hebrew letter wide tav",
-            AlphabeticPresentationForms::HebrewLetterAlternativePlusSign => "hebrew letter alternative plus sign",
-            AlphabeticPresentationForms::HebrewLetterShinWithShinDot => "hebrew letter shin with shin dot",
-            AlphabeticPresentationForms::HebrewLetterShinWithSinDot => "hebrew letter shin with sin dot",
-            AlphabeticPresentationForms::HebrewLetterShinWithDageshAndShinDot => "hebrew letter shin with dagesh and shin dot",
-            AlphabeticPresentationForms::HebrewLetterShinWithDageshAndSinDot => "hebrew letter shin with dagesh and sin dot",
-            AlphabeticPresentationForms::HebrewLetterAlefWithPatah => "hebrew letter alef with patah",
-            AlphabeticPresentationForms::HebrewLetterAlefWithQamats => "hebrew letter alef with qamats",
-            AlphabeticPresentationForms::HebrewLetterAlefWithMapiq => "hebrew letter alef with mapiq",
-            AlphabeticPresentationForms::HebrewLetterBetWithDagesh => "hebrew letter bet with dagesh",
-            AlphabeticPresentationForms::HebrewLetterGimelWithDagesh => "hebrew letter gimel with dagesh",
-            AlphabeticPresentationForms::HebrewLetterDaletWithDagesh => "hebrew letter dalet with dagesh",
-            AlphabeticPresentationForms::HebrewLetterHeWithMapiq => "hebrew letter he with mapiq",
-            AlphabeticPresentationForms::HebrewLetterVavWithDagesh => "hebrew letter vav with dagesh",
-            AlphabeticPresentationForms::HebrewLetterZayinWithDagesh => "hebrew letter zayin with dagesh",
-            AlphabeticPresentationForms::HebrewLetterTetWithDagesh => "hebrew letter tet with dagesh",
-            AlphabeticPresentationForms::HebrewLetterYodWithDagesh => "hebrew letter yod with dagesh",
-            AlphabeticPresentationForms::HebrewLetterFinalKafWithDagesh => "hebrew letter final kaf with dagesh",
-            AlphabeticPresentationForms::HebrewLetterKafWithDagesh => "hebrew letter kaf with dagesh",
-            AlphabeticPresentationForms::HebrewLetterLamedWithDagesh => "hebrew letter lamed with dagesh",
-            AlphabeticPresentationForms::HebrewLetterMemWithDagesh => "hebrew letter mem with dagesh",
-            AlphabeticPresentationForms::HebrewLetterNunWithDagesh => "hebrew letter nun with dagesh",
-            AlphabeticPresentationForms::HebrewLetterSamekhWithDagesh => "hebrew letter samekh with dagesh",
-            AlphabeticPresentationForms::HebrewLetterFinalPeWithDagesh => "hebrew letter final pe with dagesh",
-            AlphabeticPresentationForms::HebrewLetterPeWithDagesh => "hebrew letter pe with dagesh",
-            AlphabeticPresentationForms::HebrewLetterTsadiWithDagesh => "hebrew letter tsadi with dagesh",
-            AlphabeticPresentationForms::HebrewLetterQofWithDagesh => "hebrew letter qof with dagesh",
-            AlphabeticPresentationForms::HebrewLetterReshWithDagesh => "hebrew letter resh with dagesh",
-            AlphabeticPresentationForms::HebrewLetterShinWithDagesh => "hebrew letter shin with dagesh",
-            AlphabeticPresentationForms::HebrewLetterTavWithDagesh => "hebrew letter tav with dagesh",
-            AlphabeticPresentationForms::HebrewLetterVavWithHolam => "hebrew letter vav with holam",
-            AlphabeticPresentationForms::HebrewLetterBetWithRafe => "hebrew letter bet with rafe",
-            AlphabeticPresentationForms::HebrewLetterKafWithRafe => "hebrew letter kaf with rafe",
-            AlphabeticPresentationForms::HebrewLetterPeWithRafe => "hebrew letter pe with rafe",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("AlphabeticPresentationForms{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

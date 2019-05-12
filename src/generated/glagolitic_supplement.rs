@@ -210,47 +210,9 @@ impl GlagoliticSupplement {
         GlagoliticSupplement::CombiningGlagoliticLetterAzu
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            GlagoliticSupplement::CombiningGlagoliticLetterAzu => "combining glagolitic letter azu",
-            GlagoliticSupplement::CombiningGlagoliticLetterBuky => "combining glagolitic letter buky",
-            GlagoliticSupplement::CombiningGlagoliticLetterVede => "combining glagolitic letter vede",
-            GlagoliticSupplement::CombiningGlagoliticLetterGlagoli => "combining glagolitic letter glagoli",
-            GlagoliticSupplement::CombiningGlagoliticLetterDobro => "combining glagolitic letter dobro",
-            GlagoliticSupplement::CombiningGlagoliticLetterYestu => "combining glagolitic letter yestu",
-            GlagoliticSupplement::CombiningGlagoliticLetterZhivete => "combining glagolitic letter zhivete",
-            GlagoliticSupplement::CombiningGlagoliticLetterZemlja => "combining glagolitic letter zemlja",
-            GlagoliticSupplement::CombiningGlagoliticLetterIzhe => "combining glagolitic letter izhe",
-            GlagoliticSupplement::CombiningGlagoliticLetterInitialIzhe => "combining glagolitic letter initial izhe",
-            GlagoliticSupplement::CombiningGlagoliticLetterI => "combining glagolitic letter i",
-            GlagoliticSupplement::CombiningGlagoliticLetterDjervi => "combining glagolitic letter djervi",
-            GlagoliticSupplement::CombiningGlagoliticLetterKako => "combining glagolitic letter kako",
-            GlagoliticSupplement::CombiningGlagoliticLetterLjudije => "combining glagolitic letter ljudije",
-            GlagoliticSupplement::CombiningGlagoliticLetterMyslite => "combining glagolitic letter myslite",
-            GlagoliticSupplement::CombiningGlagoliticLetterNashi => "combining glagolitic letter nashi",
-            GlagoliticSupplement::CombiningGlagoliticLetterOnu => "combining glagolitic letter onu",
-            GlagoliticSupplement::CombiningGlagoliticLetterPokoji => "combining glagolitic letter pokoji",
-            GlagoliticSupplement::CombiningGlagoliticLetterRitsi => "combining glagolitic letter ritsi",
-            GlagoliticSupplement::CombiningGlagoliticLetterSlovo => "combining glagolitic letter slovo",
-            GlagoliticSupplement::CombiningGlagoliticLetterTvrido => "combining glagolitic letter tvrido",
-            GlagoliticSupplement::CombiningGlagoliticLetterUku => "combining glagolitic letter uku",
-            GlagoliticSupplement::CombiningGlagoliticLetterFritu => "combining glagolitic letter fritu",
-            GlagoliticSupplement::CombiningGlagoliticLetterHeru => "combining glagolitic letter heru",
-            GlagoliticSupplement::CombiningGlagoliticLetterShta => "combining glagolitic letter shta",
-            GlagoliticSupplement::CombiningGlagoliticLetterTsi => "combining glagolitic letter tsi",
-            GlagoliticSupplement::CombiningGlagoliticLetterChrivi => "combining glagolitic letter chrivi",
-            GlagoliticSupplement::CombiningGlagoliticLetterSha => "combining glagolitic letter sha",
-            GlagoliticSupplement::CombiningGlagoliticLetterYeru => "combining glagolitic letter yeru",
-            GlagoliticSupplement::CombiningGlagoliticLetterYeri => "combining glagolitic letter yeri",
-            GlagoliticSupplement::CombiningGlagoliticLetterYati => "combining glagolitic letter yati",
-            GlagoliticSupplement::CombiningGlagoliticLetterYu => "combining glagolitic letter yu",
-            GlagoliticSupplement::CombiningGlagoliticLetterSmallYus => "combining glagolitic letter small yus",
-            GlagoliticSupplement::CombiningGlagoliticLetterYo => "combining glagolitic letter yo",
-            GlagoliticSupplement::CombiningGlagoliticLetterIotatedSmallYus => "combining glagolitic letter iotated small yus",
-            GlagoliticSupplement::CombiningGlagoliticLetterBigYus => "combining glagolitic letter big yus",
-            GlagoliticSupplement::CombiningGlagoliticLetterIotatedBigYus => "combining glagolitic letter iotated big yus",
-            GlagoliticSupplement::CombiningGlagoliticLetterFita => "combining glagolitic letter fita",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("GlagoliticSupplement{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

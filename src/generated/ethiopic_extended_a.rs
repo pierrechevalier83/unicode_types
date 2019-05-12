@@ -186,41 +186,9 @@ impl EthiopicExtendedA {
         EthiopicExtendedA::EthiopicSyllableTthu
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            EthiopicExtendedA::EthiopicSyllableTthu => "ethiopic syllable tthu",
-            EthiopicExtendedA::EthiopicSyllableTthi => "ethiopic syllable tthi",
-            EthiopicExtendedA::EthiopicSyllableTthaa => "ethiopic syllable tthaa",
-            EthiopicExtendedA::EthiopicSyllableTthee => "ethiopic syllable tthee",
-            EthiopicExtendedA::EthiopicSyllableTthe => "ethiopic syllable tthe",
-            EthiopicExtendedA::EthiopicSyllableTtho => "ethiopic syllable ttho",
-            EthiopicExtendedA::EthiopicSyllableDdhu => "ethiopic syllable ddhu",
-            EthiopicExtendedA::EthiopicSyllableDdhi => "ethiopic syllable ddhi",
-            EthiopicExtendedA::EthiopicSyllableDdhaa => "ethiopic syllable ddhaa",
-            EthiopicExtendedA::EthiopicSyllableDdhee => "ethiopic syllable ddhee",
-            EthiopicExtendedA::EthiopicSyllableDdhe => "ethiopic syllable ddhe",
-            EthiopicExtendedA::EthiopicSyllableDdho => "ethiopic syllable ddho",
-            EthiopicExtendedA::EthiopicSyllableDzu => "ethiopic syllable dzu",
-            EthiopicExtendedA::EthiopicSyllableDzi => "ethiopic syllable dzi",
-            EthiopicExtendedA::EthiopicSyllableDzaa => "ethiopic syllable dzaa",
-            EthiopicExtendedA::EthiopicSyllableDzee => "ethiopic syllable dzee",
-            EthiopicExtendedA::EthiopicSyllableDze => "ethiopic syllable dze",
-            EthiopicExtendedA::EthiopicSyllableDzo => "ethiopic syllable dzo",
-            EthiopicExtendedA::EthiopicSyllableCchha => "ethiopic syllable cchha",
-            EthiopicExtendedA::EthiopicSyllableCchhu => "ethiopic syllable cchhu",
-            EthiopicExtendedA::EthiopicSyllableCchhi => "ethiopic syllable cchhi",
-            EthiopicExtendedA::EthiopicSyllableCchhaa => "ethiopic syllable cchhaa",
-            EthiopicExtendedA::EthiopicSyllableCchhee => "ethiopic syllable cchhee",
-            EthiopicExtendedA::EthiopicSyllableCchhe => "ethiopic syllable cchhe",
-            EthiopicExtendedA::EthiopicSyllableCchho => "ethiopic syllable cchho",
-            EthiopicExtendedA::EthiopicSyllableBba => "ethiopic syllable bba",
-            EthiopicExtendedA::EthiopicSyllableBbu => "ethiopic syllable bbu",
-            EthiopicExtendedA::EthiopicSyllableBbi => "ethiopic syllable bbi",
-            EthiopicExtendedA::EthiopicSyllableBbaa => "ethiopic syllable bbaa",
-            EthiopicExtendedA::EthiopicSyllableBbee => "ethiopic syllable bbee",
-            EthiopicExtendedA::EthiopicSyllableBbe => "ethiopic syllable bbe",
-            EthiopicExtendedA::EthiopicSyllableBbo => "ethiopic syllable bbo",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("EthiopicExtendedA{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

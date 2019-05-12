@@ -262,60 +262,9 @@ impl Manichaean {
         Manichaean::LetterAleph
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Manichaean::LetterAleph => "manichaean letter aleph",
-            Manichaean::LetterBeth => "manichaean letter beth",
-            Manichaean::LetterBheth => "manichaean letter bheth",
-            Manichaean::LetterGimel => "manichaean letter gimel",
-            Manichaean::LetterGhimel => "manichaean letter ghimel",
-            Manichaean::LetterDaleth => "manichaean letter daleth",
-            Manichaean::LetterHe => "manichaean letter he",
-            Manichaean::LetterWaw => "manichaean letter waw",
-            Manichaean::SignUd => "manichaean sign ud",
-            Manichaean::LetterZayin => "manichaean letter zayin",
-            Manichaean::LetterZhayin => "manichaean letter zhayin",
-            Manichaean::LetterJayin => "manichaean letter jayin",
-            Manichaean::LetterJhayin => "manichaean letter jhayin",
-            Manichaean::LetterHeth => "manichaean letter heth",
-            Manichaean::LetterTeth => "manichaean letter teth",
-            Manichaean::LetterYodh => "manichaean letter yodh",
-            Manichaean::LetterKaph => "manichaean letter kaph",
-            Manichaean::LetterXaph => "manichaean letter xaph",
-            Manichaean::LetterKhaph => "manichaean letter khaph",
-            Manichaean::LetterLamedh => "manichaean letter lamedh",
-            Manichaean::LetterDhamedh => "manichaean letter dhamedh",
-            Manichaean::LetterThamedh => "manichaean letter thamedh",
-            Manichaean::LetterMem => "manichaean letter mem",
-            Manichaean::LetterNun => "manichaean letter nun",
-            Manichaean::LetterSamekh => "manichaean letter samekh",
-            Manichaean::LetterAyin => "manichaean letter ayin",
-            Manichaean::LetterAayin => "manichaean letter aayin",
-            Manichaean::LetterPe => "manichaean letter pe",
-            Manichaean::LetterFe => "manichaean letter fe",
-            Manichaean::LetterSadhe => "manichaean letter sadhe",
-            Manichaean::LetterQoph => "manichaean letter qoph",
-            Manichaean::LetterXoph => "manichaean letter xoph",
-            Manichaean::LetterQhoph => "manichaean letter qhoph",
-            Manichaean::LetterResh => "manichaean letter resh",
-            Manichaean::LetterShin => "manichaean letter shin",
-            Manichaean::LetterSshin => "manichaean letter sshin",
-            Manichaean::LetterTaw => "manichaean letter taw",
-            Manichaean::AbbreviationMarkAbove => "manichaean abbreviation mark above",
-            Manichaean::AbbreviationMarkBelow => "manichaean abbreviation mark below",
-            Manichaean::NumberOne => "manichaean number one",
-            Manichaean::NumberFive => "manichaean number five",
-            Manichaean::NumberTen => "manichaean number ten",
-            Manichaean::NumberTwenty => "manichaean number twenty",
-            Manichaean::NumberOneHundred => "manichaean number one hundred",
-            Manichaean::PunctuationStar => "manichaean punctuation star",
-            Manichaean::PunctuationFleuron => "manichaean punctuation fleuron",
-            Manichaean::PunctuationDoubleDotWithinDot => "manichaean punctuation double dot within dot",
-            Manichaean::PunctuationDotWithinDot => "manichaean punctuation dot within dot",
-            Manichaean::PunctuationDot => "manichaean punctuation dot",
-            Manichaean::PunctuationTwoDots => "manichaean punctuation two dots",
-            Manichaean::PunctuationLineFiller => "manichaean punctuation line filler",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Manichaean{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

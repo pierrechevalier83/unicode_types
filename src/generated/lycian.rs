@@ -174,38 +174,9 @@ impl Lycian {
         Lycian::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Lycian::LetterA => "lycian letter a",
-            Lycian::LetterE => "lycian letter e",
-            Lycian::LetterB => "lycian letter b",
-            Lycian::LetterBh => "lycian letter bh",
-            Lycian::LetterG => "lycian letter g",
-            Lycian::LetterD => "lycian letter d",
-            Lycian::LetterI => "lycian letter i",
-            Lycian::LetterW => "lycian letter w",
-            Lycian::LetterZ => "lycian letter z",
-            Lycian::LetterTh => "lycian letter th",
-            Lycian::LetterJ => "lycian letter j",
-            Lycian::LetterK => "lycian letter k",
-            Lycian::LetterQ => "lycian letter q",
-            Lycian::LetterL => "lycian letter l",
-            Lycian::LetterM => "lycian letter m",
-            Lycian::LetterN => "lycian letter n",
-            Lycian::LetterMm => "lycian letter mm",
-            Lycian::LetterNn => "lycian letter nn",
-            Lycian::LetterU => "lycian letter u",
-            Lycian::LetterP => "lycian letter p",
-            Lycian::LetterKk => "lycian letter kk",
-            Lycian::LetterR => "lycian letter r",
-            Lycian::LetterS => "lycian letter s",
-            Lycian::LetterT => "lycian letter t",
-            Lycian::LetterTt => "lycian letter tt",
-            Lycian::LetterAn => "lycian letter an",
-            Lycian::LetterEn => "lycian letter en",
-            Lycian::LetterH => "lycian letter h",
-            Lycian::LetterX => "lycian letter x",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Lycian{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

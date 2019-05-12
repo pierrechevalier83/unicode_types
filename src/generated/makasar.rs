@@ -158,34 +158,9 @@ impl Makasar {
         Makasar::LetterKa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Makasar::LetterKa => "makasar letter ka",
-            Makasar::LetterGa => "makasar letter ga",
-            Makasar::LetterNga => "makasar letter nga",
-            Makasar::LetterPa => "makasar letter pa",
-            Makasar::LetterBa => "makasar letter ba",
-            Makasar::LetterMa => "makasar letter ma",
-            Makasar::LetterTa => "makasar letter ta",
-            Makasar::LetterDa => "makasar letter da",
-            Makasar::LetterNa => "makasar letter na",
-            Makasar::LetterCa => "makasar letter ca",
-            Makasar::LetterJa => "makasar letter ja",
-            Makasar::LetterNya => "makasar letter nya",
-            Makasar::LetterYa => "makasar letter ya",
-            Makasar::LetterRa => "makasar letter ra",
-            Makasar::LetterLa => "makasar letter la",
-            Makasar::LetterVa => "makasar letter va",
-            Makasar::LetterSa => "makasar letter sa",
-            Makasar::LetterA => "makasar letter a",
-            Makasar::Angka => "makasar angka",
-            Makasar::VowelSignI => "makasar vowel sign i",
-            Makasar::VowelSignU => "makasar vowel sign u",
-            Makasar::VowelSignE => "makasar vowel sign e",
-            Makasar::VowelSignO => "makasar vowel sign o",
-            Makasar::Passimbang => "makasar passimbang",
-            Makasar::EndOfSection => "makasar end of section",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Makasar{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

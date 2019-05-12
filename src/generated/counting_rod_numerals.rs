@@ -158,34 +158,9 @@ impl CountingRodNumerals {
         CountingRodNumerals::CountingRodUnitDigitOne
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CountingRodNumerals::CountingRodUnitDigitOne => "counting rod unit digit one",
-            CountingRodNumerals::CountingRodUnitDigitTwo => "counting rod unit digit two",
-            CountingRodNumerals::CountingRodUnitDigitThree => "counting rod unit digit three",
-            CountingRodNumerals::CountingRodUnitDigitFour => "counting rod unit digit four",
-            CountingRodNumerals::CountingRodUnitDigitFive => "counting rod unit digit five",
-            CountingRodNumerals::CountingRodUnitDigitSix => "counting rod unit digit six",
-            CountingRodNumerals::CountingRodUnitDigitSeven => "counting rod unit digit seven",
-            CountingRodNumerals::CountingRodUnitDigitEight => "counting rod unit digit eight",
-            CountingRodNumerals::CountingRodUnitDigitNine => "counting rod unit digit nine",
-            CountingRodNumerals::CountingRodTensDigitOne => "counting rod tens digit one",
-            CountingRodNumerals::CountingRodTensDigitTwo => "counting rod tens digit two",
-            CountingRodNumerals::CountingRodTensDigitThree => "counting rod tens digit three",
-            CountingRodNumerals::CountingRodTensDigitFour => "counting rod tens digit four",
-            CountingRodNumerals::CountingRodTensDigitFive => "counting rod tens digit five",
-            CountingRodNumerals::CountingRodTensDigitSix => "counting rod tens digit six",
-            CountingRodNumerals::CountingRodTensDigitSeven => "counting rod tens digit seven",
-            CountingRodNumerals::CountingRodTensDigitEight => "counting rod tens digit eight",
-            CountingRodNumerals::CountingRodTensDigitNine => "counting rod tens digit nine",
-            CountingRodNumerals::IdeographicTallyMarkOne => "ideographic tally mark one",
-            CountingRodNumerals::IdeographicTallyMarkTwo => "ideographic tally mark two",
-            CountingRodNumerals::IdeographicTallyMarkThree => "ideographic tally mark three",
-            CountingRodNumerals::IdeographicTallyMarkFour => "ideographic tally mark four",
-            CountingRodNumerals::IdeographicTallyMarkFive => "ideographic tally mark five",
-            CountingRodNumerals::TallyMarkOne => "tally mark one",
-            CountingRodNumerals::TallyMarkFive => "tally mark five",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CountingRodNumerals{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -182,40 +182,9 @@ impl CyrillicExtendedA {
         CyrillicExtendedA::CombiningCyrillicLetterBe
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CyrillicExtendedA::CombiningCyrillicLetterBe => "combining cyrillic letter be",
-            CyrillicExtendedA::CombiningCyrillicLetterVe => "combining cyrillic letter ve",
-            CyrillicExtendedA::CombiningCyrillicLetterGhe => "combining cyrillic letter ghe",
-            CyrillicExtendedA::CombiningCyrillicLetterDe => "combining cyrillic letter de",
-            CyrillicExtendedA::CombiningCyrillicLetterZhe => "combining cyrillic letter zhe",
-            CyrillicExtendedA::CombiningCyrillicLetterZe => "combining cyrillic letter ze",
-            CyrillicExtendedA::CombiningCyrillicLetterKa => "combining cyrillic letter ka",
-            CyrillicExtendedA::CombiningCyrillicLetterEl => "combining cyrillic letter el",
-            CyrillicExtendedA::CombiningCyrillicLetterEm => "combining cyrillic letter em",
-            CyrillicExtendedA::CombiningCyrillicLetterEn => "combining cyrillic letter en",
-            CyrillicExtendedA::CombiningCyrillicLetterO => "combining cyrillic letter o",
-            CyrillicExtendedA::CombiningCyrillicLetterPe => "combining cyrillic letter pe",
-            CyrillicExtendedA::CombiningCyrillicLetterEr => "combining cyrillic letter er",
-            CyrillicExtendedA::CombiningCyrillicLetterEs => "combining cyrillic letter es",
-            CyrillicExtendedA::CombiningCyrillicLetterTe => "combining cyrillic letter te",
-            CyrillicExtendedA::CombiningCyrillicLetterHa => "combining cyrillic letter ha",
-            CyrillicExtendedA::CombiningCyrillicLetterTse => "combining cyrillic letter tse",
-            CyrillicExtendedA::CombiningCyrillicLetterChe => "combining cyrillic letter che",
-            CyrillicExtendedA::CombiningCyrillicLetterSha => "combining cyrillic letter sha",
-            CyrillicExtendedA::CombiningCyrillicLetterShcha => "combining cyrillic letter shcha",
-            CyrillicExtendedA::CombiningCyrillicLetterFita => "combining cyrillic letter fita",
-            CyrillicExtendedA::CombiningCyrillicLetterEsDashTe => "combining cyrillic letter es-te",
-            CyrillicExtendedA::CombiningCyrillicLetterA => "combining cyrillic letter a",
-            CyrillicExtendedA::CombiningCyrillicLetterIe => "combining cyrillic letter ie",
-            CyrillicExtendedA::CombiningCyrillicLetterDjerv => "combining cyrillic letter djerv",
-            CyrillicExtendedA::CombiningCyrillicLetterMonographUk => "combining cyrillic letter monograph uk",
-            CyrillicExtendedA::CombiningCyrillicLetterYat => "combining cyrillic letter yat",
-            CyrillicExtendedA::CombiningCyrillicLetterYu => "combining cyrillic letter yu",
-            CyrillicExtendedA::CombiningCyrillicLetterIotifiedA => "combining cyrillic letter iotified a",
-            CyrillicExtendedA::CombiningCyrillicLetterLittleYus => "combining cyrillic letter little yus",
-            CyrillicExtendedA::CombiningCyrillicLetterBigYus => "combining cyrillic letter big yus",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CyrillicExtendedA{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

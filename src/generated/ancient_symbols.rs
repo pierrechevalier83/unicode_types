@@ -110,22 +110,9 @@ impl AncientSymbols {
         AncientSymbols::RomanSextansSign
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            AncientSymbols::RomanSextansSign => "roman sextans sign",
-            AncientSymbols::RomanUnciaSign => "roman uncia sign",
-            AncientSymbols::RomanSemunciaSign => "roman semuncia sign",
-            AncientSymbols::RomanSextulaSign => "roman sextula sign",
-            AncientSymbols::RomanDimidiaSextulaSign => "roman dimidia sextula sign",
-            AncientSymbols::RomanSiliquaSign => "roman siliqua sign",
-            AncientSymbols::RomanDenariusSign => "roman denarius sign",
-            AncientSymbols::RomanQuinariusSign => "roman quinarius sign",
-            AncientSymbols::RomanSestertiusSign => "roman sestertius sign",
-            AncientSymbols::RomanDupondiusSign => "roman dupondius sign",
-            AncientSymbols::RomanAsSign => "roman as sign",
-            AncientSymbols::RomanCenturialSign => "roman centurial sign",
-            AncientSymbols::GreekSymbolTauRho => "greek symbol tau rho",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("AncientSymbols{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

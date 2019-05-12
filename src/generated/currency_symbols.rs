@@ -186,41 +186,9 @@ impl CurrencySymbols {
         CurrencySymbols::EuroDashCurrencySign
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CurrencySymbols::EuroDashCurrencySign => "euro-currency sign",
-            CurrencySymbols::ColonSign => "colon sign",
-            CurrencySymbols::CruzeiroSign => "cruzeiro sign",
-            CurrencySymbols::FrenchFrancSign => "french franc sign",
-            CurrencySymbols::LiraSign => "lira sign",
-            CurrencySymbols::MillSign => "mill sign",
-            CurrencySymbols::NairaSign => "naira sign",
-            CurrencySymbols::PesetaSign => "peseta sign",
-            CurrencySymbols::RupeeSign => "rupee sign",
-            CurrencySymbols::WonSign => "won sign",
-            CurrencySymbols::NewSheqelSign => "new sheqel sign",
-            CurrencySymbols::DongSign => "dong sign",
-            CurrencySymbols::EuroSign => "euro sign",
-            CurrencySymbols::KipSign => "kip sign",
-            CurrencySymbols::TugrikSign => "tugrik sign",
-            CurrencySymbols::DrachmaSign => "drachma sign",
-            CurrencySymbols::GermanPennySign => "german penny sign",
-            CurrencySymbols::PesoSign => "peso sign",
-            CurrencySymbols::GuaraniSign => "guarani sign",
-            CurrencySymbols::AustralSign => "austral sign",
-            CurrencySymbols::HryvniaSign => "hryvnia sign",
-            CurrencySymbols::CediSign => "cedi sign",
-            CurrencySymbols::LivreTournoisSign => "livre tournois sign",
-            CurrencySymbols::SpesmiloSign => "spesmilo sign",
-            CurrencySymbols::TengeSign => "tenge sign",
-            CurrencySymbols::IndianRupeeSign => "indian rupee sign",
-            CurrencySymbols::TurkishLiraSign => "turkish lira sign",
-            CurrencySymbols::NordicMarkSign => "nordic mark sign",
-            CurrencySymbols::ManatSign => "manat sign",
-            CurrencySymbols::RubleSign => "ruble sign",
-            CurrencySymbols::LariSign => "lari sign",
-            CurrencySymbols::BitcoinSign => "bitcoin sign",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CurrencySymbols{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

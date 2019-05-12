@@ -210,47 +210,9 @@ impl Multani {
         Multani::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Multani::LetterA => "multani letter a",
-            Multani::LetterI => "multani letter i",
-            Multani::LetterU => "multani letter u",
-            Multani::LetterE => "multani letter e",
-            Multani::LetterKa => "multani letter ka",
-            Multani::LetterKha => "multani letter kha",
-            Multani::LetterGa => "multani letter ga",
-            Multani::LetterGha => "multani letter gha",
-            Multani::LetterCa => "multani letter ca",
-            Multani::LetterCha => "multani letter cha",
-            Multani::LetterJa => "multani letter ja",
-            Multani::LetterJja => "multani letter jja",
-            Multani::LetterNya => "multani letter nya",
-            Multani::LetterTta => "multani letter tta",
-            Multani::LetterTtha => "multani letter ttha",
-            Multani::LetterDda => "multani letter dda",
-            Multani::LetterDdda => "multani letter ddda",
-            Multani::LetterDdha => "multani letter ddha",
-            Multani::LetterNna => "multani letter nna",
-            Multani::LetterTa => "multani letter ta",
-            Multani::LetterTha => "multani letter tha",
-            Multani::LetterDa => "multani letter da",
-            Multani::LetterDha => "multani letter dha",
-            Multani::LetterNa => "multani letter na",
-            Multani::LetterPa => "multani letter pa",
-            Multani::LetterPha => "multani letter pha",
-            Multani::LetterBa => "multani letter ba",
-            Multani::LetterBha => "multani letter bha",
-            Multani::LetterMa => "multani letter ma",
-            Multani::LetterYa => "multani letter ya",
-            Multani::LetterRa => "multani letter ra",
-            Multani::LetterLa => "multani letter la",
-            Multani::LetterVa => "multani letter va",
-            Multani::LetterSa => "multani letter sa",
-            Multani::LetterHa => "multani letter ha",
-            Multani::LetterRra => "multani letter rra",
-            Multani::LetterRha => "multani letter rha",
-            Multani::SectionMark => "multani section mark",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Multani{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

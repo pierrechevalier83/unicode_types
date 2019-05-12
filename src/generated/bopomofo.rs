@@ -226,51 +226,9 @@ impl Bopomofo {
         Bopomofo::LetterB
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Bopomofo::LetterB => "bopomofo letter b",
-            Bopomofo::LetterP => "bopomofo letter p",
-            Bopomofo::LetterM => "bopomofo letter m",
-            Bopomofo::LetterF => "bopomofo letter f",
-            Bopomofo::LetterD => "bopomofo letter d",
-            Bopomofo::LetterT => "bopomofo letter t",
-            Bopomofo::LetterN => "bopomofo letter n",
-            Bopomofo::LetterL => "bopomofo letter l",
-            Bopomofo::LetterG => "bopomofo letter g",
-            Bopomofo::LetterK => "bopomofo letter k",
-            Bopomofo::LetterH => "bopomofo letter h",
-            Bopomofo::LetterJ => "bopomofo letter j",
-            Bopomofo::LetterQ => "bopomofo letter q",
-            Bopomofo::LetterX => "bopomofo letter x",
-            Bopomofo::LetterZh => "bopomofo letter zh",
-            Bopomofo::LetterCh => "bopomofo letter ch",
-            Bopomofo::LetterSh => "bopomofo letter sh",
-            Bopomofo::LetterR => "bopomofo letter r",
-            Bopomofo::LetterZ => "bopomofo letter z",
-            Bopomofo::LetterC => "bopomofo letter c",
-            Bopomofo::LetterS => "bopomofo letter s",
-            Bopomofo::LetterA => "bopomofo letter a",
-            Bopomofo::LetterO => "bopomofo letter o",
-            Bopomofo::LetterE => "bopomofo letter e",
-            Bopomofo::LetterEh => "bopomofo letter eh",
-            Bopomofo::LetterAi => "bopomofo letter ai",
-            Bopomofo::LetterEi => "bopomofo letter ei",
-            Bopomofo::LetterAu => "bopomofo letter au",
-            Bopomofo::LetterOu => "bopomofo letter ou",
-            Bopomofo::LetterAn => "bopomofo letter an",
-            Bopomofo::LetterEn => "bopomofo letter en",
-            Bopomofo::LetterAng => "bopomofo letter ang",
-            Bopomofo::LetterEng => "bopomofo letter eng",
-            Bopomofo::LetterEr => "bopomofo letter er",
-            Bopomofo::LetterI => "bopomofo letter i",
-            Bopomofo::LetterU => "bopomofo letter u",
-            Bopomofo::LetterIu => "bopomofo letter iu",
-            Bopomofo::LetterV => "bopomofo letter v",
-            Bopomofo::LetterNg => "bopomofo letter ng",
-            Bopomofo::LetterGn => "bopomofo letter gn",
-            Bopomofo::LetterIh => "bopomofo letter ih",
-            Bopomofo::LetterOWithDotAbove => "bopomofo letter o with dot above",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Bopomofo{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

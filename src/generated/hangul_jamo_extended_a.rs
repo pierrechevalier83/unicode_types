@@ -174,38 +174,9 @@ impl HangulJamoExtendedA {
         HangulJamoExtendedA::HangulChoseongTikeutDashMieum
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            HangulJamoExtendedA::HangulChoseongTikeutDashMieum => "hangul choseong tikeut-mieum",
-            HangulJamoExtendedA::HangulChoseongTikeutDashPieup => "hangul choseong tikeut-pieup",
-            HangulJamoExtendedA::HangulChoseongTikeutDashSios => "hangul choseong tikeut-sios",
-            HangulJamoExtendedA::HangulChoseongTikeutDashCieuc => "hangul choseong tikeut-cieuc",
-            HangulJamoExtendedA::HangulChoseongRieulDashKiyeok => "hangul choseong rieul-kiyeok",
-            HangulJamoExtendedA::HangulChoseongRieulDashSsangkiyeok => "hangul choseong rieul-ssangkiyeok",
-            HangulJamoExtendedA::HangulChoseongRieulDashTikeut => "hangul choseong rieul-tikeut",
-            HangulJamoExtendedA::HangulChoseongRieulDashSsangtikeut => "hangul choseong rieul-ssangtikeut",
-            HangulJamoExtendedA::HangulChoseongRieulDashMieum => "hangul choseong rieul-mieum",
-            HangulJamoExtendedA::HangulChoseongRieulDashPieup => "hangul choseong rieul-pieup",
-            HangulJamoExtendedA::HangulChoseongRieulDashSsangpieup => "hangul choseong rieul-ssangpieup",
-            HangulJamoExtendedA::HangulChoseongRieulDashKapyeounpieup => "hangul choseong rieul-kapyeounpieup",
-            HangulJamoExtendedA::HangulChoseongRieulDashSios => "hangul choseong rieul-sios",
-            HangulJamoExtendedA::HangulChoseongRieulDashCieuc => "hangul choseong rieul-cieuc",
-            HangulJamoExtendedA::HangulChoseongRieulDashKhieukh => "hangul choseong rieul-khieukh",
-            HangulJamoExtendedA::HangulChoseongMieumDashKiyeok => "hangul choseong mieum-kiyeok",
-            HangulJamoExtendedA::HangulChoseongMieumDashTikeut => "hangul choseong mieum-tikeut",
-            HangulJamoExtendedA::HangulChoseongMieumDashSios => "hangul choseong mieum-sios",
-            HangulJamoExtendedA::HangulChoseongPieupDashSiosDashThieuth => "hangul choseong pieup-sios-thieuth",
-            HangulJamoExtendedA::HangulChoseongPieupDashKhieukh => "hangul choseong pieup-khieukh",
-            HangulJamoExtendedA::HangulChoseongPieupDashHieuh => "hangul choseong pieup-hieuh",
-            HangulJamoExtendedA::HangulChoseongSsangsiosDashPieup => "hangul choseong ssangsios-pieup",
-            HangulJamoExtendedA::HangulChoseongIeungDashRieul => "hangul choseong ieung-rieul",
-            HangulJamoExtendedA::HangulChoseongIeungDashHieuh => "hangul choseong ieung-hieuh",
-            HangulJamoExtendedA::HangulChoseongSsangcieucDashHieuh => "hangul choseong ssangcieuc-hieuh",
-            HangulJamoExtendedA::HangulChoseongSsangthieuth => "hangul choseong ssangthieuth",
-            HangulJamoExtendedA::HangulChoseongPhieuphDashHieuh => "hangul choseong phieuph-hieuh",
-            HangulJamoExtendedA::HangulChoseongHieuhDashSios => "hangul choseong hieuh-sios",
-            HangulJamoExtendedA::HangulChoseongSsangyeorinhieuh => "hangul choseong ssangyeorinhieuh",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("HangulJamoExtendedA{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

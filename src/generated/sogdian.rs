@@ -226,51 +226,9 @@ impl Sogdian {
         Sogdian::LetterAleph
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Sogdian::LetterAleph => "sogdian letter aleph",
-            Sogdian::LetterBeth => "sogdian letter beth",
-            Sogdian::LetterGimel => "sogdian letter gimel",
-            Sogdian::LetterHe => "sogdian letter he",
-            Sogdian::LetterWaw => "sogdian letter waw",
-            Sogdian::LetterZayin => "sogdian letter zayin",
-            Sogdian::LetterHeth => "sogdian letter heth",
-            Sogdian::LetterYodh => "sogdian letter yodh",
-            Sogdian::LetterKaph => "sogdian letter kaph",
-            Sogdian::LetterLamedh => "sogdian letter lamedh",
-            Sogdian::LetterMem => "sogdian letter mem",
-            Sogdian::LetterNun => "sogdian letter nun",
-            Sogdian::LetterSamekh => "sogdian letter samekh",
-            Sogdian::LetterAyin => "sogdian letter ayin",
-            Sogdian::LetterPe => "sogdian letter pe",
-            Sogdian::LetterSadhe => "sogdian letter sadhe",
-            Sogdian::LetterReshDashAyin => "sogdian letter resh-ayin",
-            Sogdian::LetterShin => "sogdian letter shin",
-            Sogdian::LetterTaw => "sogdian letter taw",
-            Sogdian::LetterFeth => "sogdian letter feth",
-            Sogdian::LetterLesh => "sogdian letter lesh",
-            Sogdian::IndependentShin => "sogdian independent shin",
-            Sogdian::CombiningDotBelow => "sogdian combining dot below",
-            Sogdian::CombiningTwoDotsBelow => "sogdian combining two dots below",
-            Sogdian::CombiningDotAbove => "sogdian combining dot above",
-            Sogdian::CombiningTwoDotsAbove => "sogdian combining two dots above",
-            Sogdian::CombiningCurveAbove => "sogdian combining curve above",
-            Sogdian::CombiningCurveBelow => "sogdian combining curve below",
-            Sogdian::CombiningHookAbove => "sogdian combining hook above",
-            Sogdian::CombiningHookBelow => "sogdian combining hook below",
-            Sogdian::CombiningLongHookBelow => "sogdian combining long hook below",
-            Sogdian::CombiningReshBelow => "sogdian combining resh below",
-            Sogdian::CombiningStrokeBelow => "sogdian combining stroke below",
-            Sogdian::NumberOne => "sogdian number one",
-            Sogdian::NumberTen => "sogdian number ten",
-            Sogdian::NumberTwenty => "sogdian number twenty",
-            Sogdian::NumberOneHundred => "sogdian number one hundred",
-            Sogdian::PunctuationTwoVerticalBars => "sogdian punctuation two vertical bars",
-            Sogdian::PunctuationTwoVerticalBarsWithDots => "sogdian punctuation two vertical bars with dots",
-            Sogdian::PunctuationCircleWithDot => "sogdian punctuation circle with dot",
-            Sogdian::PunctuationTwoCirclesWithDots => "sogdian punctuation two circles with dots",
-            Sogdian::PunctuationHalfCircleWithDot => "sogdian punctuation half circle with dot",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Sogdian{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

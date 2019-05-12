@@ -98,19 +98,9 @@ impl VerticalForms {
         VerticalForms::PresentationFormForVerticalComma
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            VerticalForms::PresentationFormForVerticalComma => "presentation form for vertical comma",
-            VerticalForms::PresentationFormForVerticalIdeographicComma => "presentation form for vertical ideographic comma",
-            VerticalForms::PresentationFormForVerticalIdeographicFullStop => "presentation form for vertical ideographic full stop",
-            VerticalForms::PresentationFormForVerticalColon => "presentation form for vertical colon",
-            VerticalForms::PresentationFormForVerticalSemicolon => "presentation form for vertical semicolon",
-            VerticalForms::PresentationFormForVerticalExclamationMark => "presentation form for vertical exclamation mark",
-            VerticalForms::PresentationFormForVerticalQuestionMark => "presentation form for vertical question mark",
-            VerticalForms::PresentationFormForVerticalLeftWhiteLenticularBracket => "presentation form for vertical left white lenticular bracket",
-            VerticalForms::PresentationFormForVerticalRightWhiteLenticularBrakcet => "presentation form for vertical right white lenticular brakcet",
-            VerticalForms::PresentationFormForVerticalHorizontalEllipsis => "presentation form for vertical horizontal ellipsis",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("VerticalForms{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

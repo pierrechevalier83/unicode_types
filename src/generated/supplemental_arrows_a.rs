@@ -118,24 +118,9 @@ impl SupplementalArrowsA {
         SupplementalArrowsA::UpwardsQuadrupleArrow
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            SupplementalArrowsA::UpwardsQuadrupleArrow => "upwards quadruple arrow",
-            SupplementalArrowsA::DownwardsQuadrupleArrow => "downwards quadruple arrow",
-            SupplementalArrowsA::AnticlockwiseGappedCircleArrow => "anticlockwise gapped circle arrow",
-            SupplementalArrowsA::ClockwiseGappedCircleArrow => "clockwise gapped circle arrow",
-            SupplementalArrowsA::RightArrowWithCircledPlus => "right arrow with circled plus",
-            SupplementalArrowsA::LongLeftwardsArrow => "long leftwards arrow",
-            SupplementalArrowsA::LongRightwardsArrow => "long rightwards arrow",
-            SupplementalArrowsA::LongLeftRightArrow => "long left right arrow",
-            SupplementalArrowsA::LongLeftwardsDoubleArrow => "long leftwards double arrow",
-            SupplementalArrowsA::LongRightwardsDoubleArrow => "long rightwards double arrow",
-            SupplementalArrowsA::LongLeftRightDoubleArrow => "long left right double arrow",
-            SupplementalArrowsA::LongLeftwardsArrowFromBar => "long leftwards arrow from bar",
-            SupplementalArrowsA::LongRightwardsArrowFromBar => "long rightwards arrow from bar",
-            SupplementalArrowsA::LongLeftwardsDoubleArrowFromBar => "long leftwards double arrow from bar",
-            SupplementalArrowsA::LongRightwardsDoubleArrowFromBar => "long rightwards double arrow from bar",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("SupplementalArrowsA{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

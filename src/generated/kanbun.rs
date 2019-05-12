@@ -118,24 +118,9 @@ impl Kanbun {
         Kanbun::IdeographicAnnotationLinkingMark
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Kanbun::IdeographicAnnotationLinkingMark => "ideographic annotation linking mark",
-            Kanbun::IdeographicAnnotationReverseMark => "ideographic annotation reverse mark",
-            Kanbun::IdeographicAnnotationOneMark => "ideographic annotation one mark",
-            Kanbun::IdeographicAnnotationTwoMark => "ideographic annotation two mark",
-            Kanbun::IdeographicAnnotationThreeMark => "ideographic annotation three mark",
-            Kanbun::IdeographicAnnotationFourMark => "ideographic annotation four mark",
-            Kanbun::IdeographicAnnotationTopMark => "ideographic annotation top mark",
-            Kanbun::IdeographicAnnotationMiddleMark => "ideographic annotation middle mark",
-            Kanbun::IdeographicAnnotationBottomMark => "ideographic annotation bottom mark",
-            Kanbun::IdeographicAnnotationFirstMark => "ideographic annotation first mark",
-            Kanbun::IdeographicAnnotationSecondMark => "ideographic annotation second mark",
-            Kanbun::IdeographicAnnotationThirdMark => "ideographic annotation third mark",
-            Kanbun::IdeographicAnnotationFourthMark => "ideographic annotation fourth mark",
-            Kanbun::IdeographicAnnotationHeavenMark => "ideographic annotation heaven mark",
-            Kanbun::IdeographicAnnotationEarthMark => "ideographic annotation earth mark",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Kanbun{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -90,17 +90,9 @@ impl SundaneseSupplement {
         SundaneseSupplement::SundanesePunctuationBinduSurya
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            SundaneseSupplement::SundanesePunctuationBinduSurya => "sundanese punctuation bindu surya",
-            SundaneseSupplement::SundanesePunctuationBinduPanglong => "sundanese punctuation bindu panglong",
-            SundaneseSupplement::SundanesePunctuationBinduPurnama => "sundanese punctuation bindu purnama",
-            SundaneseSupplement::SundanesePunctuationBinduCakra => "sundanese punctuation bindu cakra",
-            SundaneseSupplement::SundanesePunctuationBinduLeuSatanga => "sundanese punctuation bindu leu satanga",
-            SundaneseSupplement::SundanesePunctuationBinduKaSatanga => "sundanese punctuation bindu ka satanga",
-            SundaneseSupplement::SundanesePunctuationBinduDaSatanga => "sundanese punctuation bindu da satanga",
-            SundaneseSupplement::SundanesePunctuationBinduBaSatanga => "sundanese punctuation bindu ba satanga",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("SundaneseSupplement{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

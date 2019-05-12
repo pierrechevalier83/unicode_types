@@ -286,66 +286,9 @@ impl PauCinHau {
         PauCinHau::LetterPa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            PauCinHau::LetterPa => "pau cin hau letter pa",
-            PauCinHau::LetterKa => "pau cin hau letter ka",
-            PauCinHau::LetterLa => "pau cin hau letter la",
-            PauCinHau::LetterMa => "pau cin hau letter ma",
-            PauCinHau::LetterDa => "pau cin hau letter da",
-            PauCinHau::LetterZa => "pau cin hau letter za",
-            PauCinHau::LetterVa => "pau cin hau letter va",
-            PauCinHau::LetterNga => "pau cin hau letter nga",
-            PauCinHau::LetterHa => "pau cin hau letter ha",
-            PauCinHau::LetterGa => "pau cin hau letter ga",
-            PauCinHau::LetterKha => "pau cin hau letter kha",
-            PauCinHau::LetterSa => "pau cin hau letter sa",
-            PauCinHau::LetterBa => "pau cin hau letter ba",
-            PauCinHau::LetterCa => "pau cin hau letter ca",
-            PauCinHau::LetterTa => "pau cin hau letter ta",
-            PauCinHau::LetterTha => "pau cin hau letter tha",
-            PauCinHau::LetterNa => "pau cin hau letter na",
-            PauCinHau::LetterPha => "pau cin hau letter pha",
-            PauCinHau::LetterRa => "pau cin hau letter ra",
-            PauCinHau::LetterFa => "pau cin hau letter fa",
-            PauCinHau::LetterCha => "pau cin hau letter cha",
-            PauCinHau::LetterA => "pau cin hau letter a",
-            PauCinHau::LetterE => "pau cin hau letter e",
-            PauCinHau::LetterI => "pau cin hau letter i",
-            PauCinHau::LetterO => "pau cin hau letter o",
-            PauCinHau::LetterU => "pau cin hau letter u",
-            PauCinHau::LetterUa => "pau cin hau letter ua",
-            PauCinHau::LetterIa => "pau cin hau letter ia",
-            PauCinHau::LetterFinalP => "pau cin hau letter final p",
-            PauCinHau::LetterFinalK => "pau cin hau letter final k",
-            PauCinHau::LetterFinalT => "pau cin hau letter final t",
-            PauCinHau::LetterFinalM => "pau cin hau letter final m",
-            PauCinHau::LetterFinalN => "pau cin hau letter final n",
-            PauCinHau::LetterFinalL => "pau cin hau letter final l",
-            PauCinHau::LetterFinalW => "pau cin hau letter final w",
-            PauCinHau::LetterFinalNg => "pau cin hau letter final ng",
-            PauCinHau::LetterFinalY => "pau cin hau letter final y",
-            PauCinHau::RisingToneLong => "pau cin hau rising tone long",
-            PauCinHau::RisingTone => "pau cin hau rising tone",
-            PauCinHau::SandhiGlottalStop => "pau cin hau sandhi glottal stop",
-            PauCinHau::RisingToneLongFinal => "pau cin hau rising tone long final",
-            PauCinHau::RisingToneFinal => "pau cin hau rising tone final",
-            PauCinHau::SandhiGlottalStopFinal => "pau cin hau sandhi glottal stop final",
-            PauCinHau::SandhiToneLong => "pau cin hau sandhi tone long",
-            PauCinHau::SandhiTone => "pau cin hau sandhi tone",
-            PauCinHau::SandhiToneLongFinal => "pau cin hau sandhi tone long final",
-            PauCinHau::SandhiToneFinal => "pau cin hau sandhi tone final",
-            PauCinHau::MidDashLevelTone => "pau cin hau mid-level tone",
-            PauCinHau::GlottalStopVariant => "pau cin hau glottal stop variant",
-            PauCinHau::MidDashLevelToneLongFinal => "pau cin hau mid-level tone long final",
-            PauCinHau::MidDashLevelToneFinal => "pau cin hau mid-level tone final",
-            PauCinHau::LowDashFallingToneLong => "pau cin hau low-falling tone long",
-            PauCinHau::LowDashFallingTone => "pau cin hau low-falling tone",
-            PauCinHau::GlottalStop => "pau cin hau glottal stop",
-            PauCinHau::LowDashFallingToneLongFinal => "pau cin hau low-falling tone long final",
-            PauCinHau::LowDashFallingToneFinal => "pau cin hau low-falling tone final",
-            PauCinHau::GlottalStopFinal => "pau cin hau glottal stop final",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("PauCinHau{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

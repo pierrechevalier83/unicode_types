@@ -246,56 +246,9 @@ impl Lisu {
         Lisu::LetterBa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Lisu::LetterBa => "lisu letter ba",
-            Lisu::LetterPa => "lisu letter pa",
-            Lisu::LetterPha => "lisu letter pha",
-            Lisu::LetterDa => "lisu letter da",
-            Lisu::LetterTa => "lisu letter ta",
-            Lisu::LetterTha => "lisu letter tha",
-            Lisu::LetterGa => "lisu letter ga",
-            Lisu::LetterKa => "lisu letter ka",
-            Lisu::LetterKha => "lisu letter kha",
-            Lisu::LetterJa => "lisu letter ja",
-            Lisu::LetterCa => "lisu letter ca",
-            Lisu::LetterCha => "lisu letter cha",
-            Lisu::LetterDza => "lisu letter dza",
-            Lisu::LetterTsa => "lisu letter tsa",
-            Lisu::LetterTsha => "lisu letter tsha",
-            Lisu::LetterMa => "lisu letter ma",
-            Lisu::LetterNa => "lisu letter na",
-            Lisu::LetterLa => "lisu letter la",
-            Lisu::LetterSa => "lisu letter sa",
-            Lisu::LetterZha => "lisu letter zha",
-            Lisu::LetterZa => "lisu letter za",
-            Lisu::LetterNga => "lisu letter nga",
-            Lisu::LetterHa => "lisu letter ha",
-            Lisu::LetterXa => "lisu letter xa",
-            Lisu::LetterHha => "lisu letter hha",
-            Lisu::LetterFa => "lisu letter fa",
-            Lisu::LetterWa => "lisu letter wa",
-            Lisu::LetterSha => "lisu letter sha",
-            Lisu::LetterYa => "lisu letter ya",
-            Lisu::LetterGha => "lisu letter gha",
-            Lisu::LetterA => "lisu letter a",
-            Lisu::LetterAe => "lisu letter ae",
-            Lisu::LetterE => "lisu letter e",
-            Lisu::LetterEu => "lisu letter eu",
-            Lisu::LetterI => "lisu letter i",
-            Lisu::LetterO => "lisu letter o",
-            Lisu::LetterU => "lisu letter u",
-            Lisu::LetterUe => "lisu letter ue",
-            Lisu::LetterUh => "lisu letter uh",
-            Lisu::LetterOe => "lisu letter oe",
-            Lisu::LetterToneMyaTi => "lisu letter tone mya ti",
-            Lisu::LetterToneNaPo => "lisu letter tone na po",
-            Lisu::LetterToneMyaCya => "lisu letter tone mya cya",
-            Lisu::LetterToneMyaBo => "lisu letter tone mya bo",
-            Lisu::LetterToneMyaNa => "lisu letter tone mya na",
-            Lisu::LetterToneMyaJeu => "lisu letter tone mya jeu",
-            Lisu::PunctuationComma => "lisu punctuation comma",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Lisu{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -182,40 +182,9 @@ impl KhmerSymbols {
         KhmerSymbols::KhmerSymbolPathamasat
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            KhmerSymbols::KhmerSymbolPathamasat => "khmer symbol pathamasat",
-            KhmerSymbols::KhmerSymbolMuoyKoet => "khmer symbol muoy koet",
-            KhmerSymbols::KhmerSymbolPiiKoet => "khmer symbol pii koet",
-            KhmerSymbols::KhmerSymbolBeiKoet => "khmer symbol bei koet",
-            KhmerSymbols::KhmerSymbolBuonKoet => "khmer symbol buon koet",
-            KhmerSymbols::KhmerSymbolPramKoet => "khmer symbol pram koet",
-            KhmerSymbols::KhmerSymbolPramDashMuoyKoet => "khmer symbol pram-muoy koet",
-            KhmerSymbols::KhmerSymbolPramDashPiiKoet => "khmer symbol pram-pii koet",
-            KhmerSymbols::KhmerSymbolPramDashBeiKoet => "khmer symbol pram-bei koet",
-            KhmerSymbols::KhmerSymbolPramDashBuonKoet => "khmer symbol pram-buon koet",
-            KhmerSymbols::KhmerSymbolDapKoet => "khmer symbol dap koet",
-            KhmerSymbols::KhmerSymbolDapDashMuoyKoet => "khmer symbol dap-muoy koet",
-            KhmerSymbols::KhmerSymbolDapDashPiiKoet => "khmer symbol dap-pii koet",
-            KhmerSymbols::KhmerSymbolDapDashBeiKoet => "khmer symbol dap-bei koet",
-            KhmerSymbols::KhmerSymbolDapDashBuonKoet => "khmer symbol dap-buon koet",
-            KhmerSymbols::KhmerSymbolDapDashPramKoet => "khmer symbol dap-pram koet",
-            KhmerSymbols::KhmerSymbolTuteyasat => "khmer symbol tuteyasat",
-            KhmerSymbols::KhmerSymbolMuoyRoc => "khmer symbol muoy roc",
-            KhmerSymbols::KhmerSymbolPiiRoc => "khmer symbol pii roc",
-            KhmerSymbols::KhmerSymbolBeiRoc => "khmer symbol bei roc",
-            KhmerSymbols::KhmerSymbolBuonRoc => "khmer symbol buon roc",
-            KhmerSymbols::KhmerSymbolPramRoc => "khmer symbol pram roc",
-            KhmerSymbols::KhmerSymbolPramDashMuoyRoc => "khmer symbol pram-muoy roc",
-            KhmerSymbols::KhmerSymbolPramDashPiiRoc => "khmer symbol pram-pii roc",
-            KhmerSymbols::KhmerSymbolPramDashBeiRoc => "khmer symbol pram-bei roc",
-            KhmerSymbols::KhmerSymbolPramDashBuonRoc => "khmer symbol pram-buon roc",
-            KhmerSymbols::KhmerSymbolDapRoc => "khmer symbol dap roc",
-            KhmerSymbols::KhmerSymbolDapDashMuoyRoc => "khmer symbol dap-muoy roc",
-            KhmerSymbols::KhmerSymbolDapDashPiiRoc => "khmer symbol dap-pii roc",
-            KhmerSymbols::KhmerSymbolDapDashBeiRoc => "khmer symbol dap-bei roc",
-            KhmerSymbols::KhmerSymbolDapDashBuonRoc => "khmer symbol dap-buon roc",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("KhmerSymbols{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

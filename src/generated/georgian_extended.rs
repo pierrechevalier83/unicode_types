@@ -238,54 +238,9 @@ impl GeorgianExtended {
         GeorgianExtended::GeorgianMtavruliCapitalLetterAn
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            GeorgianExtended::GeorgianMtavruliCapitalLetterAn => "georgian mtavruli capital letter an",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterBan => "georgian mtavruli capital letter ban",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterGan => "georgian mtavruli capital letter gan",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterDon => "georgian mtavruli capital letter don",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterEn => "georgian mtavruli capital letter en",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterVin => "georgian mtavruli capital letter vin",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterZen => "georgian mtavruli capital letter zen",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterTan => "georgian mtavruli capital letter tan",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterIn => "georgian mtavruli capital letter in",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterKan => "georgian mtavruli capital letter kan",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterLas => "georgian mtavruli capital letter las",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterMan => "georgian mtavruli capital letter man",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterNar => "georgian mtavruli capital letter nar",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterOn => "georgian mtavruli capital letter on",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterPar => "georgian mtavruli capital letter par",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterZhar => "georgian mtavruli capital letter zhar",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterRae => "georgian mtavruli capital letter rae",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterSan => "georgian mtavruli capital letter san",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterTar => "georgian mtavruli capital letter tar",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterUn => "georgian mtavruli capital letter un",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterPhar => "georgian mtavruli capital letter phar",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterKhar => "georgian mtavruli capital letter khar",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterGhan => "georgian mtavruli capital letter ghan",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterQar => "georgian mtavruli capital letter qar",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterShin => "georgian mtavruli capital letter shin",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterChin => "georgian mtavruli capital letter chin",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterCan => "georgian mtavruli capital letter can",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterJil => "georgian mtavruli capital letter jil",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterCil => "georgian mtavruli capital letter cil",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterChar => "georgian mtavruli capital letter char",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterXan => "georgian mtavruli capital letter xan",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterJhan => "georgian mtavruli capital letter jhan",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHae => "georgian mtavruli capital letter hae",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHe => "georgian mtavruli capital letter he",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHie => "georgian mtavruli capital letter hie",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterWe => "georgian mtavruli capital letter we",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHar => "georgian mtavruli capital letter har",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHoe => "georgian mtavruli capital letter hoe",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterFi => "georgian mtavruli capital letter fi",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterYn => "georgian mtavruli capital letter yn",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterElifi => "georgian mtavruli capital letter elifi",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterTurnedGan => "georgian mtavruli capital letter turned gan",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterAin => "georgian mtavruli capital letter ain",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterAen => "georgian mtavruli capital letter aen",
-            GeorgianExtended::GeorgianMtavruliCapitalLetterHardSign => "georgian mtavruli capital letter hard sign",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("GeorgianExtended{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

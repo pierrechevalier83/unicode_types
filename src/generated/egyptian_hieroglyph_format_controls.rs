@@ -94,18 +94,9 @@ impl EgyptianHieroglyphFormatControls {
         EgyptianHieroglyphFormatControls::EgyptianHieroglyphVerticalJoiner
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphVerticalJoiner => "egyptian hieroglyph vertical joiner",
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphHorizontalJoiner => "egyptian hieroglyph horizontal joiner",
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtTopStart => "egyptian hieroglyph insert at top start",
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtBottomStart => "egyptian hieroglyph insert at bottom start",
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtTopEnd => "egyptian hieroglyph insert at top end",
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphInsertAtBottomEnd => "egyptian hieroglyph insert at bottom end",
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphOverlayMiddle => "egyptian hieroglyph overlay middle",
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphBeginSegment => "egyptian hieroglyph begin segment",
-            EgyptianHieroglyphFormatControls::EgyptianHieroglyphEndSegment => "egyptian hieroglyph end segment",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("EgyptianHieroglyphFormatControls{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

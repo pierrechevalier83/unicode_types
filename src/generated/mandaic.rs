@@ -174,38 +174,9 @@ impl Mandaic {
         Mandaic::LetterHalqa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Mandaic::LetterHalqa => "mandaic letter halqa",
-            Mandaic::LetterAb => "mandaic letter ab",
-            Mandaic::LetterAg => "mandaic letter ag",
-            Mandaic::LetterAd => "mandaic letter ad",
-            Mandaic::LetterAh => "mandaic letter ah",
-            Mandaic::LetterUshenna => "mandaic letter ushenna",
-            Mandaic::LetterAz => "mandaic letter az",
-            Mandaic::LetterIt => "mandaic letter it",
-            Mandaic::LetterAtt => "mandaic letter att",
-            Mandaic::LetterAksa => "mandaic letter aksa",
-            Mandaic::LetterAk => "mandaic letter ak",
-            Mandaic::LetterAl => "mandaic letter al",
-            Mandaic::LetterAm => "mandaic letter am",
-            Mandaic::LetterAn => "mandaic letter an",
-            Mandaic::LetterAs => "mandaic letter as",
-            Mandaic::LetterIn => "mandaic letter in",
-            Mandaic::LetterAp => "mandaic letter ap",
-            Mandaic::LetterAsz => "mandaic letter asz",
-            Mandaic::LetterAq => "mandaic letter aq",
-            Mandaic::LetterAr => "mandaic letter ar",
-            Mandaic::LetterAsh => "mandaic letter ash",
-            Mandaic::LetterAt => "mandaic letter at",
-            Mandaic::LetterDushenna => "mandaic letter dushenna",
-            Mandaic::LetterKad => "mandaic letter kad",
-            Mandaic::LetterAin => "mandaic letter ain",
-            Mandaic::AffricationMark => "mandaic affrication mark",
-            Mandaic::VocalizationMark => "mandaic vocalization mark",
-            Mandaic::GeminationMark => "mandaic gemination mark",
-            Mandaic::Punctuation => "mandaic punctuation",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Mandaic{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

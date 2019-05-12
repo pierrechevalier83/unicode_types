@@ -130,27 +130,9 @@ impl Tagbanwa {
         Tagbanwa::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Tagbanwa::LetterA => "tagbanwa letter a",
-            Tagbanwa::LetterI => "tagbanwa letter i",
-            Tagbanwa::LetterU => "tagbanwa letter u",
-            Tagbanwa::LetterKa => "tagbanwa letter ka",
-            Tagbanwa::LetterGa => "tagbanwa letter ga",
-            Tagbanwa::LetterNga => "tagbanwa letter nga",
-            Tagbanwa::LetterTa => "tagbanwa letter ta",
-            Tagbanwa::LetterDa => "tagbanwa letter da",
-            Tagbanwa::LetterNa => "tagbanwa letter na",
-            Tagbanwa::LetterPa => "tagbanwa letter pa",
-            Tagbanwa::LetterBa => "tagbanwa letter ba",
-            Tagbanwa::LetterMa => "tagbanwa letter ma",
-            Tagbanwa::LetterYa => "tagbanwa letter ya",
-            Tagbanwa::LetterLa => "tagbanwa letter la",
-            Tagbanwa::LetterWa => "tagbanwa letter wa",
-            Tagbanwa::LetterSa => "tagbanwa letter sa",
-            Tagbanwa::VowelSignI => "tagbanwa vowel sign i",
-            Tagbanwa::VowelSignU => "tagbanwa vowel sign u",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Tagbanwa{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

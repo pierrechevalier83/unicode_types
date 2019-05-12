@@ -118,24 +118,9 @@ impl VariationSelectors {
         VariationSelectors::VariationSelectorDash1
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            VariationSelectors::VariationSelectorDash1 => "variation selector-1",
-            VariationSelectors::VariationSelectorDash2 => "variation selector-2",
-            VariationSelectors::VariationSelectorDash3 => "variation selector-3",
-            VariationSelectors::VariationSelectorDash4 => "variation selector-4",
-            VariationSelectors::VariationSelectorDash5 => "variation selector-5",
-            VariationSelectors::VariationSelectorDash6 => "variation selector-6",
-            VariationSelectors::VariationSelectorDash7 => "variation selector-7",
-            VariationSelectors::VariationSelectorDash8 => "variation selector-8",
-            VariationSelectors::VariationSelectorDash9 => "variation selector-9",
-            VariationSelectors::VariationSelectorDash10 => "variation selector-10",
-            VariationSelectors::VariationSelectorDash11 => "variation selector-11",
-            VariationSelectors::VariationSelectorDash12 => "variation selector-12",
-            VariationSelectors::VariationSelectorDash13 => "variation selector-13",
-            VariationSelectors::VariationSelectorDash14 => "variation selector-14",
-            VariationSelectors::VariationSelectorDash15 => "variation selector-15",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("VariationSelectors{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

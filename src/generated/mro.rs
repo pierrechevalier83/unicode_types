@@ -226,51 +226,9 @@ impl Mro {
         Mro::LetterTa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Mro::LetterTa => "mro letter ta",
-            Mro::LetterNgi => "mro letter ngi",
-            Mro::LetterYo => "mro letter yo",
-            Mro::LetterMim => "mro letter mim",
-            Mro::LetterBa => "mro letter ba",
-            Mro::LetterDa => "mro letter da",
-            Mro::LetterA => "mro letter a",
-            Mro::LetterPhi => "mro letter phi",
-            Mro::LetterKhai => "mro letter khai",
-            Mro::LetterHao => "mro letter hao",
-            Mro::LetterDai => "mro letter dai",
-            Mro::LetterChu => "mro letter chu",
-            Mro::LetterKeaae => "mro letter keaae",
-            Mro::LetterOl => "mro letter ol",
-            Mro::LetterMaem => "mro letter maem",
-            Mro::LetterNin => "mro letter nin",
-            Mro::LetterPa => "mro letter pa",
-            Mro::LetterOo => "mro letter oo",
-            Mro::LetterO => "mro letter o",
-            Mro::LetterRo => "mro letter ro",
-            Mro::LetterShi => "mro letter shi",
-            Mro::LetterThea => "mro letter thea",
-            Mro::LetterEa => "mro letter ea",
-            Mro::LetterWa => "mro letter wa",
-            Mro::LetterE => "mro letter e",
-            Mro::LetterKo => "mro letter ko",
-            Mro::LetterLan => "mro letter lan",
-            Mro::LetterLa => "mro letter la",
-            Mro::LetterHai => "mro letter hai",
-            Mro::LetterRi => "mro letter ri",
-            Mro::LetterTek => "mro letter tek",
-            Mro::DigitZero => "mro digit zero",
-            Mro::DigitOne => "mro digit one",
-            Mro::DigitTwo => "mro digit two",
-            Mro::DigitThree => "mro digit three",
-            Mro::DigitFour => "mro digit four",
-            Mro::DigitFive => "mro digit five",
-            Mro::DigitSix => "mro digit six",
-            Mro::DigitSeven => "mro digit seven",
-            Mro::DigitEight => "mro digit eight",
-            Mro::DigitNine => "mro digit nine",
-            Mro::Danda => "mro danda",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Mro{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -290,67 +290,9 @@ impl Wancho {
         Wancho::LetterAa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Wancho::LetterAa => "wancho letter aa",
-            Wancho::LetterA => "wancho letter a",
-            Wancho::LetterBa => "wancho letter ba",
-            Wancho::LetterCa => "wancho letter ca",
-            Wancho::LetterDa => "wancho letter da",
-            Wancho::LetterGa => "wancho letter ga",
-            Wancho::LetterYa => "wancho letter ya",
-            Wancho::LetterPha => "wancho letter pha",
-            Wancho::LetterLa => "wancho letter la",
-            Wancho::LetterNa => "wancho letter na",
-            Wancho::LetterPa => "wancho letter pa",
-            Wancho::LetterTa => "wancho letter ta",
-            Wancho::LetterTha => "wancho letter tha",
-            Wancho::LetterFa => "wancho letter fa",
-            Wancho::LetterSa => "wancho letter sa",
-            Wancho::LetterSha => "wancho letter sha",
-            Wancho::LetterJa => "wancho letter ja",
-            Wancho::LetterZa => "wancho letter za",
-            Wancho::LetterWa => "wancho letter wa",
-            Wancho::LetterVa => "wancho letter va",
-            Wancho::LetterKa => "wancho letter ka",
-            Wancho::LetterO => "wancho letter o",
-            Wancho::LetterAu => "wancho letter au",
-            Wancho::LetterRa => "wancho letter ra",
-            Wancho::LetterMa => "wancho letter ma",
-            Wancho::LetterKha => "wancho letter kha",
-            Wancho::LetterHa => "wancho letter ha",
-            Wancho::LetterE => "wancho letter e",
-            Wancho::LetterI => "wancho letter i",
-            Wancho::LetterNga => "wancho letter nga",
-            Wancho::LetterU => "wancho letter u",
-            Wancho::LetterLlha => "wancho letter llha",
-            Wancho::LetterTsa => "wancho letter tsa",
-            Wancho::LetterTra => "wancho letter tra",
-            Wancho::LetterOng => "wancho letter ong",
-            Wancho::LetterAang => "wancho letter aang",
-            Wancho::LetterAng => "wancho letter ang",
-            Wancho::LetterIng => "wancho letter ing",
-            Wancho::LetterOn => "wancho letter on",
-            Wancho::LetterEn => "wancho letter en",
-            Wancho::LetterAan => "wancho letter aan",
-            Wancho::LetterNya => "wancho letter nya",
-            Wancho::LetterUen => "wancho letter uen",
-            Wancho::LetterYih => "wancho letter yih",
-            Wancho::ToneTup => "wancho tone tup",
-            Wancho::ToneTupni => "wancho tone tupni",
-            Wancho::ToneKoi => "wancho tone koi",
-            Wancho::ToneKoini => "wancho tone koini",
-            Wancho::DigitZero => "wancho digit zero",
-            Wancho::DigitOne => "wancho digit one",
-            Wancho::DigitTwo => "wancho digit two",
-            Wancho::DigitThree => "wancho digit three",
-            Wancho::DigitFour => "wancho digit four",
-            Wancho::DigitFive => "wancho digit five",
-            Wancho::DigitSix => "wancho digit six",
-            Wancho::DigitSeven => "wancho digit seven",
-            Wancho::DigitEight => "wancho digit eight",
-            Wancho::DigitNine => "wancho digit nine",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Wancho{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

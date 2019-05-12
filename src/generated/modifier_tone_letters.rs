@@ -182,40 +182,9 @@ impl ModifierToneLetters {
         ModifierToneLetters::ModifierLetterChineseToneYinPing
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            ModifierToneLetters::ModifierLetterChineseToneYinPing => "modifier letter chinese tone yin ping",
-            ModifierToneLetters::ModifierLetterChineseToneYangPing => "modifier letter chinese tone yang ping",
-            ModifierToneLetters::ModifierLetterChineseToneYinShang => "modifier letter chinese tone yin shang",
-            ModifierToneLetters::ModifierLetterChineseToneYangShang => "modifier letter chinese tone yang shang",
-            ModifierToneLetters::ModifierLetterChineseToneYinQu => "modifier letter chinese tone yin qu",
-            ModifierToneLetters::ModifierLetterChineseToneYangQu => "modifier letter chinese tone yang qu",
-            ModifierToneLetters::ModifierLetterChineseToneYinRu => "modifier letter chinese tone yin ru",
-            ModifierToneLetters::ModifierLetterChineseToneYangRu => "modifier letter chinese tone yang ru",
-            ModifierToneLetters::ModifierLetterExtraDashHighDottedToneBar => "modifier letter extra-high dotted tone bar",
-            ModifierToneLetters::ModifierLetterHighDottedToneBar => "modifier letter high dotted tone bar",
-            ModifierToneLetters::ModifierLetterMidDottedToneBar => "modifier letter mid dotted tone bar",
-            ModifierToneLetters::ModifierLetterLowDottedToneBar => "modifier letter low dotted tone bar",
-            ModifierToneLetters::ModifierLetterExtraDashLowDottedToneBar => "modifier letter extra-low dotted tone bar",
-            ModifierToneLetters::ModifierLetterExtraDashHighDottedLeftDashStemToneBar => "modifier letter extra-high dotted left-stem tone bar",
-            ModifierToneLetters::ModifierLetterHighDottedLeftDashStemToneBar => "modifier letter high dotted left-stem tone bar",
-            ModifierToneLetters::ModifierLetterMidDottedLeftDashStemToneBar => "modifier letter mid dotted left-stem tone bar",
-            ModifierToneLetters::ModifierLetterLowDottedLeftDashStemToneBar => "modifier letter low dotted left-stem tone bar",
-            ModifierToneLetters::ModifierLetterExtraDashLowDottedLeftDashStemToneBar => "modifier letter extra-low dotted left-stem tone bar",
-            ModifierToneLetters::ModifierLetterExtraDashHighLeftDashStemToneBar => "modifier letter extra-high left-stem tone bar",
-            ModifierToneLetters::ModifierLetterHighLeftDashStemToneBar => "modifier letter high left-stem tone bar",
-            ModifierToneLetters::ModifierLetterMidLeftDashStemToneBar => "modifier letter mid left-stem tone bar",
-            ModifierToneLetters::ModifierLetterLowLeftDashStemToneBar => "modifier letter low left-stem tone bar",
-            ModifierToneLetters::ModifierLetterExtraDashLowLeftDashStemToneBar => "modifier letter extra-low left-stem tone bar",
-            ModifierToneLetters::ModifierLetterDotVerticalBar => "modifier letter dot vertical bar",
-            ModifierToneLetters::ModifierLetterDotSlash => "modifier letter dot slash",
-            ModifierToneLetters::ModifierLetterDotHorizontalBar => "modifier letter dot horizontal bar",
-            ModifierToneLetters::ModifierLetterLowerRightCornerAngle => "modifier letter lower right corner angle",
-            ModifierToneLetters::ModifierLetterRaisedUpArrow => "modifier letter raised up arrow",
-            ModifierToneLetters::ModifierLetterRaisedDownArrow => "modifier letter raised down arrow",
-            ModifierToneLetters::ModifierLetterRaisedExclamationMark => "modifier letter raised exclamation mark",
-            ModifierToneLetters::ModifierLetterRaisedInvertedExclamationMark => "modifier letter raised inverted exclamation mark",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("ModifierToneLetters{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

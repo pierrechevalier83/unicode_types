@@ -182,40 +182,9 @@ impl Palmyrene {
         Palmyrene::LetterAleph
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Palmyrene::LetterAleph => "palmyrene letter aleph",
-            Palmyrene::LetterBeth => "palmyrene letter beth",
-            Palmyrene::LetterGimel => "palmyrene letter gimel",
-            Palmyrene::LetterDaleth => "palmyrene letter daleth",
-            Palmyrene::LetterHe => "palmyrene letter he",
-            Palmyrene::LetterWaw => "palmyrene letter waw",
-            Palmyrene::LetterZayin => "palmyrene letter zayin",
-            Palmyrene::LetterHeth => "palmyrene letter heth",
-            Palmyrene::LetterTeth => "palmyrene letter teth",
-            Palmyrene::LetterYodh => "palmyrene letter yodh",
-            Palmyrene::LetterKaph => "palmyrene letter kaph",
-            Palmyrene::LetterLamedh => "palmyrene letter lamedh",
-            Palmyrene::LetterMem => "palmyrene letter mem",
-            Palmyrene::LetterFinalNun => "palmyrene letter final nun",
-            Palmyrene::LetterNun => "palmyrene letter nun",
-            Palmyrene::LetterSamekh => "palmyrene letter samekh",
-            Palmyrene::LetterAyin => "palmyrene letter ayin",
-            Palmyrene::LetterPe => "palmyrene letter pe",
-            Palmyrene::LetterSadhe => "palmyrene letter sadhe",
-            Palmyrene::LetterQoph => "palmyrene letter qoph",
-            Palmyrene::LetterResh => "palmyrene letter resh",
-            Palmyrene::LetterShin => "palmyrene letter shin",
-            Palmyrene::LetterTaw => "palmyrene letter taw",
-            Palmyrene::LeftDashPointingFleuron => "palmyrene left-pointing fleuron",
-            Palmyrene::RightDashPointingFleuron => "palmyrene right-pointing fleuron",
-            Palmyrene::NumberOne => "palmyrene number one",
-            Palmyrene::NumberTwo => "palmyrene number two",
-            Palmyrene::NumberThree => "palmyrene number three",
-            Palmyrene::NumberFour => "palmyrene number four",
-            Palmyrene::NumberFive => "palmyrene number five",
-            Palmyrene::NumberTen => "palmyrene number ten",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Palmyrene{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

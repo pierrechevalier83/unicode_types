@@ -202,45 +202,9 @@ impl CJKStrokes {
         CJKStrokes::CjkStrokeT
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CJKStrokes::CjkStrokeT => "cjk stroke t",
-            CJKStrokes::CjkStrokeWg => "cjk stroke wg",
-            CJKStrokes::CjkStrokeXg => "cjk stroke xg",
-            CJKStrokes::CjkStrokeBxg => "cjk stroke bxg",
-            CJKStrokes::CjkStrokeSw => "cjk stroke sw",
-            CJKStrokes::CjkStrokeHzz => "cjk stroke hzz",
-            CJKStrokes::CjkStrokeHzg => "cjk stroke hzg",
-            CJKStrokes::CjkStrokeHp => "cjk stroke hp",
-            CJKStrokes::CjkStrokeHzwg => "cjk stroke hzwg",
-            CJKStrokes::CjkStrokeSzwg => "cjk stroke szwg",
-            CJKStrokes::CjkStrokeHzt => "cjk stroke hzt",
-            CJKStrokes::CjkStrokeHzzp => "cjk stroke hzzp",
-            CJKStrokes::CjkStrokeHpwg => "cjk stroke hpwg",
-            CJKStrokes::CjkStrokeHzw => "cjk stroke hzw",
-            CJKStrokes::CjkStrokeHzzz => "cjk stroke hzzz",
-            CJKStrokes::CjkStrokeN => "cjk stroke n",
-            CJKStrokes::CjkStrokeH => "cjk stroke h",
-            CJKStrokes::CjkStrokeS => "cjk stroke s",
-            CJKStrokes::CjkStrokeP => "cjk stroke p",
-            CJKStrokes::CjkStrokeSp => "cjk stroke sp",
-            CJKStrokes::CjkStrokeD => "cjk stroke d",
-            CJKStrokes::CjkStrokeHz => "cjk stroke hz",
-            CJKStrokes::CjkStrokeHg => "cjk stroke hg",
-            CJKStrokes::CjkStrokeSz => "cjk stroke sz",
-            CJKStrokes::CjkStrokeSwz => "cjk stroke swz",
-            CJKStrokes::CjkStrokeSt => "cjk stroke st",
-            CJKStrokes::CjkStrokeSg => "cjk stroke sg",
-            CJKStrokes::CjkStrokePd => "cjk stroke pd",
-            CJKStrokes::CjkStrokePz => "cjk stroke pz",
-            CJKStrokes::CjkStrokeTn => "cjk stroke tn",
-            CJKStrokes::CjkStrokeSzz => "cjk stroke szz",
-            CJKStrokes::CjkStrokeSwg => "cjk stroke swg",
-            CJKStrokes::CjkStrokeHxwg => "cjk stroke hxwg",
-            CJKStrokes::CjkStrokeHzzzg => "cjk stroke hzzzg",
-            CJKStrokes::CjkStrokePg => "cjk stroke pg",
-            CJKStrokes::CjkStrokeQ => "cjk stroke q",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CJKStrokes{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

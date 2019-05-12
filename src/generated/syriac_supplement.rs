@@ -102,20 +102,9 @@ impl SyriacSupplement {
         SyriacSupplement::SyriacLetterMalayalamNga
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            SyriacSupplement::SyriacLetterMalayalamNga => "syriac letter malayalam nga",
-            SyriacSupplement::SyriacLetterMalayalamJa => "syriac letter malayalam ja",
-            SyriacSupplement::SyriacLetterMalayalamNya => "syriac letter malayalam nya",
-            SyriacSupplement::SyriacLetterMalayalamTta => "syriac letter malayalam tta",
-            SyriacSupplement::SyriacLetterMalayalamNna => "syriac letter malayalam nna",
-            SyriacSupplement::SyriacLetterMalayalamNnna => "syriac letter malayalam nnna",
-            SyriacSupplement::SyriacLetterMalayalamBha => "syriac letter malayalam bha",
-            SyriacSupplement::SyriacLetterMalayalamRa => "syriac letter malayalam ra",
-            SyriacSupplement::SyriacLetterMalayalamLla => "syriac letter malayalam lla",
-            SyriacSupplement::SyriacLetterMalayalamLlla => "syriac letter malayalam llla",
-            SyriacSupplement::SyriacLetterMalayalamSsa => "syriac letter malayalam ssa",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("SyriacSupplement{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

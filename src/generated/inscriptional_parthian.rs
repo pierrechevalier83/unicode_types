@@ -174,38 +174,9 @@ impl InscriptionalParthian {
         InscriptionalParthian::LetterAleph
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            InscriptionalParthian::LetterAleph => "inscriptional parthian letter aleph",
-            InscriptionalParthian::LetterBeth => "inscriptional parthian letter beth",
-            InscriptionalParthian::LetterGimel => "inscriptional parthian letter gimel",
-            InscriptionalParthian::LetterDaleth => "inscriptional parthian letter daleth",
-            InscriptionalParthian::LetterHe => "inscriptional parthian letter he",
-            InscriptionalParthian::LetterWaw => "inscriptional parthian letter waw",
-            InscriptionalParthian::LetterZayin => "inscriptional parthian letter zayin",
-            InscriptionalParthian::LetterHeth => "inscriptional parthian letter heth",
-            InscriptionalParthian::LetterTeth => "inscriptional parthian letter teth",
-            InscriptionalParthian::LetterYodh => "inscriptional parthian letter yodh",
-            InscriptionalParthian::LetterKaph => "inscriptional parthian letter kaph",
-            InscriptionalParthian::LetterLamedh => "inscriptional parthian letter lamedh",
-            InscriptionalParthian::LetterMem => "inscriptional parthian letter mem",
-            InscriptionalParthian::LetterNun => "inscriptional parthian letter nun",
-            InscriptionalParthian::LetterSamekh => "inscriptional parthian letter samekh",
-            InscriptionalParthian::LetterAyin => "inscriptional parthian letter ayin",
-            InscriptionalParthian::LetterPe => "inscriptional parthian letter pe",
-            InscriptionalParthian::LetterSadhe => "inscriptional parthian letter sadhe",
-            InscriptionalParthian::LetterQoph => "inscriptional parthian letter qoph",
-            InscriptionalParthian::LetterResh => "inscriptional parthian letter resh",
-            InscriptionalParthian::LetterShin => "inscriptional parthian letter shin",
-            InscriptionalParthian::LetterTaw => "inscriptional parthian letter taw",
-            InscriptionalParthian::NumberOne => "inscriptional parthian number one",
-            InscriptionalParthian::NumberTwo => "inscriptional parthian number two",
-            InscriptionalParthian::NumberThree => "inscriptional parthian number three",
-            InscriptionalParthian::NumberFour => "inscriptional parthian number four",
-            InscriptionalParthian::NumberTen => "inscriptional parthian number ten",
-            InscriptionalParthian::NumberTwenty => "inscriptional parthian number twenty",
-            InscriptionalParthian::NumberOneHundred => "inscriptional parthian number one hundred",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("InscriptionalParthian{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

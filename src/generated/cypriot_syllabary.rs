@@ -274,63 +274,9 @@ impl CypriotSyllabary {
         CypriotSyllabary::CypriotSyllableA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CypriotSyllabary::CypriotSyllableA => "cypriot syllable a",
-            CypriotSyllabary::CypriotSyllableE => "cypriot syllable e",
-            CypriotSyllabary::CypriotSyllableI => "cypriot syllable i",
-            CypriotSyllabary::CypriotSyllableO => "cypriot syllable o",
-            CypriotSyllabary::CypriotSyllableU => "cypriot syllable u",
-            CypriotSyllabary::CypriotSyllableJa => "cypriot syllable ja",
-            CypriotSyllabary::CypriotSyllableJo => "cypriot syllable jo",
-            CypriotSyllabary::CypriotSyllableKa => "cypriot syllable ka",
-            CypriotSyllabary::CypriotSyllableKe => "cypriot syllable ke",
-            CypriotSyllabary::CypriotSyllableKi => "cypriot syllable ki",
-            CypriotSyllabary::CypriotSyllableKo => "cypriot syllable ko",
-            CypriotSyllabary::CypriotSyllableKu => "cypriot syllable ku",
-            CypriotSyllabary::CypriotSyllableLa => "cypriot syllable la",
-            CypriotSyllabary::CypriotSyllableLe => "cypriot syllable le",
-            CypriotSyllabary::CypriotSyllableLi => "cypriot syllable li",
-            CypriotSyllabary::CypriotSyllableLo => "cypriot syllable lo",
-            CypriotSyllabary::CypriotSyllableLu => "cypriot syllable lu",
-            CypriotSyllabary::CypriotSyllableMa => "cypriot syllable ma",
-            CypriotSyllabary::CypriotSyllableMe => "cypriot syllable me",
-            CypriotSyllabary::CypriotSyllableMi => "cypriot syllable mi",
-            CypriotSyllabary::CypriotSyllableMo => "cypriot syllable mo",
-            CypriotSyllabary::CypriotSyllableMu => "cypriot syllable mu",
-            CypriotSyllabary::CypriotSyllableNa => "cypriot syllable na",
-            CypriotSyllabary::CypriotSyllableNe => "cypriot syllable ne",
-            CypriotSyllabary::CypriotSyllableNi => "cypriot syllable ni",
-            CypriotSyllabary::CypriotSyllableNo => "cypriot syllable no",
-            CypriotSyllabary::CypriotSyllableNu => "cypriot syllable nu",
-            CypriotSyllabary::CypriotSyllablePa => "cypriot syllable pa",
-            CypriotSyllabary::CypriotSyllablePe => "cypriot syllable pe",
-            CypriotSyllabary::CypriotSyllablePi => "cypriot syllable pi",
-            CypriotSyllabary::CypriotSyllablePo => "cypriot syllable po",
-            CypriotSyllabary::CypriotSyllablePu => "cypriot syllable pu",
-            CypriotSyllabary::CypriotSyllableRa => "cypriot syllable ra",
-            CypriotSyllabary::CypriotSyllableRe => "cypriot syllable re",
-            CypriotSyllabary::CypriotSyllableRi => "cypriot syllable ri",
-            CypriotSyllabary::CypriotSyllableRo => "cypriot syllable ro",
-            CypriotSyllabary::CypriotSyllableRu => "cypriot syllable ru",
-            CypriotSyllabary::CypriotSyllableSa => "cypriot syllable sa",
-            CypriotSyllabary::CypriotSyllableSe => "cypriot syllable se",
-            CypriotSyllabary::CypriotSyllableSi => "cypriot syllable si",
-            CypriotSyllabary::CypriotSyllableSo => "cypriot syllable so",
-            CypriotSyllabary::CypriotSyllableSu => "cypriot syllable su",
-            CypriotSyllabary::CypriotSyllableTa => "cypriot syllable ta",
-            CypriotSyllabary::CypriotSyllableTe => "cypriot syllable te",
-            CypriotSyllabary::CypriotSyllableTi => "cypriot syllable ti",
-            CypriotSyllabary::CypriotSyllableTo => "cypriot syllable to",
-            CypriotSyllabary::CypriotSyllableTu => "cypriot syllable tu",
-            CypriotSyllabary::CypriotSyllableWa => "cypriot syllable wa",
-            CypriotSyllabary::CypriotSyllableWe => "cypriot syllable we",
-            CypriotSyllabary::CypriotSyllableWi => "cypriot syllable wi",
-            CypriotSyllabary::CypriotSyllableWo => "cypriot syllable wo",
-            CypriotSyllabary::CypriotSyllableXa => "cypriot syllable xa",
-            CypriotSyllabary::CypriotSyllableXe => "cypriot syllable xe",
-            CypriotSyllabary::CypriotSyllableZa => "cypriot syllable za",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CypriotSyllabary{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

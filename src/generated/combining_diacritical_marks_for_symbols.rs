@@ -190,42 +190,9 @@ impl CombiningDiacriticalMarksforSymbols {
         CombiningDiacriticalMarksforSymbols::CombiningLeftHarpoonAbove
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CombiningDiacriticalMarksforSymbols::CombiningLeftHarpoonAbove => "combining left harpoon above",
-            CombiningDiacriticalMarksforSymbols::CombiningRightHarpoonAbove => "combining right harpoon above",
-            CombiningDiacriticalMarksforSymbols::CombiningLongVerticalLineOverlay => "combining long vertical line overlay",
-            CombiningDiacriticalMarksforSymbols::CombiningShortVerticalLineOverlay => "combining short vertical line overlay",
-            CombiningDiacriticalMarksforSymbols::CombiningAnticlockwiseArrowAbove => "combining anticlockwise arrow above",
-            CombiningDiacriticalMarksforSymbols::CombiningClockwiseArrowAbove => "combining clockwise arrow above",
-            CombiningDiacriticalMarksforSymbols::CombiningLeftArrowAbove => "combining left arrow above",
-            CombiningDiacriticalMarksforSymbols::CombiningRightArrowAbove => "combining right arrow above",
-            CombiningDiacriticalMarksforSymbols::CombiningRingOverlay => "combining ring overlay",
-            CombiningDiacriticalMarksforSymbols::CombiningClockwiseRingOverlay => "combining clockwise ring overlay",
-            CombiningDiacriticalMarksforSymbols::CombiningAnticlockwiseRingOverlay => "combining anticlockwise ring overlay",
-            CombiningDiacriticalMarksforSymbols::CombiningThreeDotsAbove => "combining three dots above",
-            CombiningDiacriticalMarksforSymbols::CombiningFourDotsAbove => "combining four dots above",
-            CombiningDiacriticalMarksforSymbols::CombiningEnclosingCircle => "combining enclosing circle",
-            CombiningDiacriticalMarksforSymbols::CombiningEnclosingSquare => "combining enclosing square",
-            CombiningDiacriticalMarksforSymbols::CombiningEnclosingDiamond => "combining enclosing diamond",
-            CombiningDiacriticalMarksforSymbols::CombiningEnclosingCircleBackslash => "combining enclosing circle backslash",
-            CombiningDiacriticalMarksforSymbols::CombiningLeftRightArrowAbove => "combining left right arrow above",
-            CombiningDiacriticalMarksforSymbols::CombiningEnclosingScreen => "combining enclosing screen",
-            CombiningDiacriticalMarksforSymbols::CombiningEnclosingKeycap => "combining enclosing keycap",
-            CombiningDiacriticalMarksforSymbols::CombiningEnclosingUpwardPointingTriangle => "combining enclosing upward pointing triangle",
-            CombiningDiacriticalMarksforSymbols::CombiningReverseSolidusOverlay => "combining reverse solidus overlay",
-            CombiningDiacriticalMarksforSymbols::CombiningDoubleVerticalStrokeOverlay => "combining double vertical stroke overlay",
-            CombiningDiacriticalMarksforSymbols::CombiningAnnuitySymbol => "combining annuity symbol",
-            CombiningDiacriticalMarksforSymbols::CombiningTripleUnderdot => "combining triple underdot",
-            CombiningDiacriticalMarksforSymbols::CombiningWideBridgeAbove => "combining wide bridge above",
-            CombiningDiacriticalMarksforSymbols::CombiningLeftwardsArrowOverlay => "combining leftwards arrow overlay",
-            CombiningDiacriticalMarksforSymbols::CombiningLongDoubleSolidusOverlay => "combining long double solidus overlay",
-            CombiningDiacriticalMarksforSymbols::CombiningRightwardsHarpoonWithBarbDownwards => "combining rightwards harpoon with barb downwards",
-            CombiningDiacriticalMarksforSymbols::CombiningLeftwardsHarpoonWithBarbDownwards => "combining leftwards harpoon with barb downwards",
-            CombiningDiacriticalMarksforSymbols::CombiningLeftArrowBelow => "combining left arrow below",
-            CombiningDiacriticalMarksforSymbols::CombiningRightArrowBelow => "combining right arrow below",
-            CombiningDiacriticalMarksforSymbols::CombiningAsteriskAbove => "combining asterisk above",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CombiningDiacriticalMarksforSymbols{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

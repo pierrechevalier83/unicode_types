@@ -298,69 +298,9 @@ impl Dogra {
         Dogra::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Dogra::LetterA => "dogra letter a",
-            Dogra::LetterAa => "dogra letter aa",
-            Dogra::LetterI => "dogra letter i",
-            Dogra::LetterIi => "dogra letter ii",
-            Dogra::LetterU => "dogra letter u",
-            Dogra::LetterUu => "dogra letter uu",
-            Dogra::LetterE => "dogra letter e",
-            Dogra::LetterAi => "dogra letter ai",
-            Dogra::LetterO => "dogra letter o",
-            Dogra::LetterAu => "dogra letter au",
-            Dogra::LetterKa => "dogra letter ka",
-            Dogra::LetterKha => "dogra letter kha",
-            Dogra::LetterGa => "dogra letter ga",
-            Dogra::LetterGha => "dogra letter gha",
-            Dogra::LetterNga => "dogra letter nga",
-            Dogra::LetterCa => "dogra letter ca",
-            Dogra::LetterCha => "dogra letter cha",
-            Dogra::LetterJa => "dogra letter ja",
-            Dogra::LetterJha => "dogra letter jha",
-            Dogra::LetterNya => "dogra letter nya",
-            Dogra::LetterTta => "dogra letter tta",
-            Dogra::LetterTtha => "dogra letter ttha",
-            Dogra::LetterDda => "dogra letter dda",
-            Dogra::LetterDdha => "dogra letter ddha",
-            Dogra::LetterNna => "dogra letter nna",
-            Dogra::LetterTa => "dogra letter ta",
-            Dogra::LetterTha => "dogra letter tha",
-            Dogra::LetterDa => "dogra letter da",
-            Dogra::LetterDha => "dogra letter dha",
-            Dogra::LetterNa => "dogra letter na",
-            Dogra::LetterPa => "dogra letter pa",
-            Dogra::LetterPha => "dogra letter pha",
-            Dogra::LetterBa => "dogra letter ba",
-            Dogra::LetterBha => "dogra letter bha",
-            Dogra::LetterMa => "dogra letter ma",
-            Dogra::LetterYa => "dogra letter ya",
-            Dogra::LetterRa => "dogra letter ra",
-            Dogra::LetterLa => "dogra letter la",
-            Dogra::LetterVa => "dogra letter va",
-            Dogra::LetterSha => "dogra letter sha",
-            Dogra::LetterSsa => "dogra letter ssa",
-            Dogra::LetterSa => "dogra letter sa",
-            Dogra::LetterHa => "dogra letter ha",
-            Dogra::LetterRra => "dogra letter rra",
-            Dogra::VowelSignAa => "dogra vowel sign aa",
-            Dogra::VowelSignI => "dogra vowel sign i",
-            Dogra::VowelSignIi => "dogra vowel sign ii",
-            Dogra::VowelSignU => "dogra vowel sign u",
-            Dogra::VowelSignUu => "dogra vowel sign uu",
-            Dogra::VowelSignVocalicR => "dogra vowel sign vocalic r",
-            Dogra::VowelSignVocalicRr => "dogra vowel sign vocalic rr",
-            Dogra::VowelSignE => "dogra vowel sign e",
-            Dogra::VowelSignAi => "dogra vowel sign ai",
-            Dogra::VowelSignO => "dogra vowel sign o",
-            Dogra::VowelSignAu => "dogra vowel sign au",
-            Dogra::SignAnusvara => "dogra sign anusvara",
-            Dogra::SignVisarga => "dogra sign visarga",
-            Dogra::SignVirama => "dogra sign virama",
-            Dogra::SignNukta => "dogra sign nukta",
-            Dogra::AbbreviationSign => "dogra abbreviation sign",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Dogra{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

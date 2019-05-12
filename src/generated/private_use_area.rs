@@ -62,10 +62,9 @@ impl PrivateUseArea {
         PrivateUseArea::PrivateUseFirst
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            PrivateUseArea::PrivateUseFirst => "private use first",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("PrivateUseArea{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

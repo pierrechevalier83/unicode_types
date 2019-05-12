@@ -118,24 +118,9 @@ impl CombiningDiacriticalMarksExtended {
         CombiningDiacriticalMarksExtended::CombiningDoubledCircumflexAccent
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CombiningDiacriticalMarksExtended::CombiningDoubledCircumflexAccent => "combining doubled circumflex accent",
-            CombiningDiacriticalMarksExtended::CombiningDiaeresisDashRing => "combining diaeresis-ring",
-            CombiningDiacriticalMarksExtended::CombiningInfinity => "combining infinity",
-            CombiningDiacriticalMarksExtended::CombiningDownwardsArrow => "combining downwards arrow",
-            CombiningDiacriticalMarksExtended::CombiningTripleDot => "combining triple dot",
-            CombiningDiacriticalMarksExtended::CombiningXDashXBelow => "combining x-x below",
-            CombiningDiacriticalMarksExtended::CombiningWigglyLineBelow => "combining wiggly line below",
-            CombiningDiacriticalMarksExtended::CombiningOpenMarkBelow => "combining open mark below",
-            CombiningDiacriticalMarksExtended::CombiningDoubleOpenMarkBelow => "combining double open mark below",
-            CombiningDiacriticalMarksExtended::CombiningLightCentralizationStrokeBelow => "combining light centralization stroke below",
-            CombiningDiacriticalMarksExtended::CombiningStrongCentralizationStrokeBelow => "combining strong centralization stroke below",
-            CombiningDiacriticalMarksExtended::CombiningParenthesesAbove => "combining parentheses above",
-            CombiningDiacriticalMarksExtended::CombiningDoubleParenthesesAbove => "combining double parentheses above",
-            CombiningDiacriticalMarksExtended::CombiningParenthesesBelow => "combining parentheses below",
-            CombiningDiacriticalMarksExtended::CombiningParenthesesOverlay => "combining parentheses overlay",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CombiningDiacriticalMarksExtended{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

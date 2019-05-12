@@ -242,55 +242,9 @@ impl PhaistosDisc {
         PhaistosDisc::SignPedestrian
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            PhaistosDisc::SignPedestrian => "phaistos disc sign pedestrian",
-            PhaistosDisc::SignPlumedHead => "phaistos disc sign plumed head",
-            PhaistosDisc::SignTattooedHead => "phaistos disc sign tattooed head",
-            PhaistosDisc::SignCaptive => "phaistos disc sign captive",
-            PhaistosDisc::SignChild => "phaistos disc sign child",
-            PhaistosDisc::SignWoman => "phaistos disc sign woman",
-            PhaistosDisc::SignHelmet => "phaistos disc sign helmet",
-            PhaistosDisc::SignGauntlet => "phaistos disc sign gauntlet",
-            PhaistosDisc::SignTiara => "phaistos disc sign tiara",
-            PhaistosDisc::SignArrow => "phaistos disc sign arrow",
-            PhaistosDisc::SignBow => "phaistos disc sign bow",
-            PhaistosDisc::SignShield => "phaistos disc sign shield",
-            PhaistosDisc::SignClub => "phaistos disc sign club",
-            PhaistosDisc::SignManacles => "phaistos disc sign manacles",
-            PhaistosDisc::SignMattock => "phaistos disc sign mattock",
-            PhaistosDisc::SignSaw => "phaistos disc sign saw",
-            PhaistosDisc::SignLid => "phaistos disc sign lid",
-            PhaistosDisc::SignBoomerang => "phaistos disc sign boomerang",
-            PhaistosDisc::SignCarpentryPlane => "phaistos disc sign carpentry plane",
-            PhaistosDisc::SignDolium => "phaistos disc sign dolium",
-            PhaistosDisc::SignComb => "phaistos disc sign comb",
-            PhaistosDisc::SignSling => "phaistos disc sign sling",
-            PhaistosDisc::SignColumn => "phaistos disc sign column",
-            PhaistosDisc::SignBeehive => "phaistos disc sign beehive",
-            PhaistosDisc::SignShip => "phaistos disc sign ship",
-            PhaistosDisc::SignHorn => "phaistos disc sign horn",
-            PhaistosDisc::SignHide => "phaistos disc sign hide",
-            PhaistosDisc::SignBullsLeg => "phaistos disc sign bulls leg",
-            PhaistosDisc::SignCat => "phaistos disc sign cat",
-            PhaistosDisc::SignRam => "phaistos disc sign ram",
-            PhaistosDisc::SignEagle => "phaistos disc sign eagle",
-            PhaistosDisc::SignDove => "phaistos disc sign dove",
-            PhaistosDisc::SignTunny => "phaistos disc sign tunny",
-            PhaistosDisc::SignBee => "phaistos disc sign bee",
-            PhaistosDisc::SignPlaneTree => "phaistos disc sign plane tree",
-            PhaistosDisc::SignVine => "phaistos disc sign vine",
-            PhaistosDisc::SignPapyrus => "phaistos disc sign papyrus",
-            PhaistosDisc::SignRosette => "phaistos disc sign rosette",
-            PhaistosDisc::SignLily => "phaistos disc sign lily",
-            PhaistosDisc::SignOxBack => "phaistos disc sign ox back",
-            PhaistosDisc::SignFlute => "phaistos disc sign flute",
-            PhaistosDisc::SignGrater => "phaistos disc sign grater",
-            PhaistosDisc::SignStrainer => "phaistos disc sign strainer",
-            PhaistosDisc::SignSmallAxe => "phaistos disc sign small axe",
-            PhaistosDisc::SignWavyBand => "phaistos disc sign wavy band",
-            PhaistosDisc::SignCombiningObliqueStroke => "phaistos disc sign combining oblique stroke",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("PhaistosDisc{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

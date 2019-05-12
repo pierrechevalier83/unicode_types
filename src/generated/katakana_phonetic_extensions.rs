@@ -118,24 +118,9 @@ impl KatakanaPhoneticExtensions {
         KatakanaPhoneticExtensions::KatakanaLetterSmallKu
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            KatakanaPhoneticExtensions::KatakanaLetterSmallKu => "katakana letter small ku",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallSi => "katakana letter small si",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallSu => "katakana letter small su",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallTo => "katakana letter small to",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallNu => "katakana letter small nu",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallHa => "katakana letter small ha",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallHi => "katakana letter small hi",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallHu => "katakana letter small hu",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallHe => "katakana letter small he",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallHo => "katakana letter small ho",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallMu => "katakana letter small mu",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallRa => "katakana letter small ra",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallRi => "katakana letter small ri",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallRu => "katakana letter small ru",
-            KatakanaPhoneticExtensions::KatakanaLetterSmallRe => "katakana letter small re",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("KatakanaPhoneticExtensions{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -246,56 +246,9 @@ impl CyrillicSupplement {
         CyrillicSupplement::CyrillicCapitalLetterKomiDe
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CyrillicSupplement::CyrillicCapitalLetterKomiDe => "cyrillic capital letter komi de",
-            CyrillicSupplement::CyrillicSmallLetterKomiDe => "cyrillic small letter komi de",
-            CyrillicSupplement::CyrillicCapitalLetterKomiDje => "cyrillic capital letter komi dje",
-            CyrillicSupplement::CyrillicSmallLetterKomiDje => "cyrillic small letter komi dje",
-            CyrillicSupplement::CyrillicCapitalLetterKomiZje => "cyrillic capital letter komi zje",
-            CyrillicSupplement::CyrillicSmallLetterKomiZje => "cyrillic small letter komi zje",
-            CyrillicSupplement::CyrillicCapitalLetterKomiDzje => "cyrillic capital letter komi dzje",
-            CyrillicSupplement::CyrillicSmallLetterKomiDzje => "cyrillic small letter komi dzje",
-            CyrillicSupplement::CyrillicCapitalLetterKomiLje => "cyrillic capital letter komi lje",
-            CyrillicSupplement::CyrillicSmallLetterKomiLje => "cyrillic small letter komi lje",
-            CyrillicSupplement::CyrillicCapitalLetterKomiNje => "cyrillic capital letter komi nje",
-            CyrillicSupplement::CyrillicSmallLetterKomiNje => "cyrillic small letter komi nje",
-            CyrillicSupplement::CyrillicCapitalLetterKomiSje => "cyrillic capital letter komi sje",
-            CyrillicSupplement::CyrillicSmallLetterKomiSje => "cyrillic small letter komi sje",
-            CyrillicSupplement::CyrillicCapitalLetterKomiTje => "cyrillic capital letter komi tje",
-            CyrillicSupplement::CyrillicSmallLetterKomiTje => "cyrillic small letter komi tje",
-            CyrillicSupplement::CyrillicCapitalLetterReversedZe => "cyrillic capital letter reversed ze",
-            CyrillicSupplement::CyrillicSmallLetterReversedZe => "cyrillic small letter reversed ze",
-            CyrillicSupplement::CyrillicCapitalLetterElWithHook => "cyrillic capital letter el with hook",
-            CyrillicSupplement::CyrillicSmallLetterElWithHook => "cyrillic small letter el with hook",
-            CyrillicSupplement::CyrillicCapitalLetterLha => "cyrillic capital letter lha",
-            CyrillicSupplement::CyrillicSmallLetterLha => "cyrillic small letter lha",
-            CyrillicSupplement::CyrillicCapitalLetterRha => "cyrillic capital letter rha",
-            CyrillicSupplement::CyrillicSmallLetterRha => "cyrillic small letter rha",
-            CyrillicSupplement::CyrillicCapitalLetterYae => "cyrillic capital letter yae",
-            CyrillicSupplement::CyrillicSmallLetterYae => "cyrillic small letter yae",
-            CyrillicSupplement::CyrillicCapitalLetterQa => "cyrillic capital letter qa",
-            CyrillicSupplement::CyrillicSmallLetterQa => "cyrillic small letter qa",
-            CyrillicSupplement::CyrillicCapitalLetterWe => "cyrillic capital letter we",
-            CyrillicSupplement::CyrillicSmallLetterWe => "cyrillic small letter we",
-            CyrillicSupplement::CyrillicCapitalLetterAleutKa => "cyrillic capital letter aleut ka",
-            CyrillicSupplement::CyrillicSmallLetterAleutKa => "cyrillic small letter aleut ka",
-            CyrillicSupplement::CyrillicCapitalLetterElWithMiddleHook => "cyrillic capital letter el with middle hook",
-            CyrillicSupplement::CyrillicSmallLetterElWithMiddleHook => "cyrillic small letter el with middle hook",
-            CyrillicSupplement::CyrillicCapitalLetterEnWithMiddleHook => "cyrillic capital letter en with middle hook",
-            CyrillicSupplement::CyrillicSmallLetterEnWithMiddleHook => "cyrillic small letter en with middle hook",
-            CyrillicSupplement::CyrillicCapitalLetterPeWithDescender => "cyrillic capital letter pe with descender",
-            CyrillicSupplement::CyrillicSmallLetterPeWithDescender => "cyrillic small letter pe with descender",
-            CyrillicSupplement::CyrillicCapitalLetterShhaWithDescender => "cyrillic capital letter shha with descender",
-            CyrillicSupplement::CyrillicSmallLetterShhaWithDescender => "cyrillic small letter shha with descender",
-            CyrillicSupplement::CyrillicCapitalLetterEnWithLeftHook => "cyrillic capital letter en with left hook",
-            CyrillicSupplement::CyrillicSmallLetterEnWithLeftHook => "cyrillic small letter en with left hook",
-            CyrillicSupplement::CyrillicCapitalLetterDzzhe => "cyrillic capital letter dzzhe",
-            CyrillicSupplement::CyrillicSmallLetterDzzhe => "cyrillic small letter dzzhe",
-            CyrillicSupplement::CyrillicCapitalLetterDche => "cyrillic capital letter dche",
-            CyrillicSupplement::CyrillicSmallLetterDche => "cyrillic small letter dche",
-            CyrillicSupplement::CyrillicCapitalLetterElWithDescender => "cyrillic capital letter el with descender",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CyrillicSupplement{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -234,53 +234,9 @@ impl MahjongTiles {
         MahjongTiles::MahjongTileEastWind
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            MahjongTiles::MahjongTileEastWind => "mahjong tile east wind",
-            MahjongTiles::MahjongTileSouthWind => "mahjong tile south wind",
-            MahjongTiles::MahjongTileWestWind => "mahjong tile west wind",
-            MahjongTiles::MahjongTileNorthWind => "mahjong tile north wind",
-            MahjongTiles::MahjongTileRedDragon => "mahjong tile red dragon",
-            MahjongTiles::MahjongTileGreenDragon => "mahjong tile green dragon",
-            MahjongTiles::MahjongTileWhiteDragon => "mahjong tile white dragon",
-            MahjongTiles::MahjongTileOneOfCharacters => "mahjong tile one of characters",
-            MahjongTiles::MahjongTileTwoOfCharacters => "mahjong tile two of characters",
-            MahjongTiles::MahjongTileThreeOfCharacters => "mahjong tile three of characters",
-            MahjongTiles::MahjongTileFourOfCharacters => "mahjong tile four of characters",
-            MahjongTiles::MahjongTileFiveOfCharacters => "mahjong tile five of characters",
-            MahjongTiles::MahjongTileSixOfCharacters => "mahjong tile six of characters",
-            MahjongTiles::MahjongTileSevenOfCharacters => "mahjong tile seven of characters",
-            MahjongTiles::MahjongTileEightOfCharacters => "mahjong tile eight of characters",
-            MahjongTiles::MahjongTileNineOfCharacters => "mahjong tile nine of characters",
-            MahjongTiles::MahjongTileOneOfBamboos => "mahjong tile one of bamboos",
-            MahjongTiles::MahjongTileTwoOfBamboos => "mahjong tile two of bamboos",
-            MahjongTiles::MahjongTileThreeOfBamboos => "mahjong tile three of bamboos",
-            MahjongTiles::MahjongTileFourOfBamboos => "mahjong tile four of bamboos",
-            MahjongTiles::MahjongTileFiveOfBamboos => "mahjong tile five of bamboos",
-            MahjongTiles::MahjongTileSixOfBamboos => "mahjong tile six of bamboos",
-            MahjongTiles::MahjongTileSevenOfBamboos => "mahjong tile seven of bamboos",
-            MahjongTiles::MahjongTileEightOfBamboos => "mahjong tile eight of bamboos",
-            MahjongTiles::MahjongTileNineOfBamboos => "mahjong tile nine of bamboos",
-            MahjongTiles::MahjongTileOneOfCircles => "mahjong tile one of circles",
-            MahjongTiles::MahjongTileTwoOfCircles => "mahjong tile two of circles",
-            MahjongTiles::MahjongTileThreeOfCircles => "mahjong tile three of circles",
-            MahjongTiles::MahjongTileFourOfCircles => "mahjong tile four of circles",
-            MahjongTiles::MahjongTileFiveOfCircles => "mahjong tile five of circles",
-            MahjongTiles::MahjongTileSixOfCircles => "mahjong tile six of circles",
-            MahjongTiles::MahjongTileSevenOfCircles => "mahjong tile seven of circles",
-            MahjongTiles::MahjongTileEightOfCircles => "mahjong tile eight of circles",
-            MahjongTiles::MahjongTileNineOfCircles => "mahjong tile nine of circles",
-            MahjongTiles::MahjongTilePlum => "mahjong tile plum",
-            MahjongTiles::MahjongTileOrchid => "mahjong tile orchid",
-            MahjongTiles::MahjongTileBamboo => "mahjong tile bamboo",
-            MahjongTiles::MahjongTileChrysanthemum => "mahjong tile chrysanthemum",
-            MahjongTiles::MahjongTileSpring => "mahjong tile spring",
-            MahjongTiles::MahjongTileSummer => "mahjong tile summer",
-            MahjongTiles::MahjongTileAutumn => "mahjong tile autumn",
-            MahjongTiles::MahjongTileWinter => "mahjong tile winter",
-            MahjongTiles::MahjongTileJoker => "mahjong tile joker",
-            MahjongTiles::MahjongTileBack => "mahjong tile back",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("MahjongTiles{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

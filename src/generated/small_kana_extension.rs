@@ -86,16 +86,9 @@ impl SmallKanaExtension {
         SmallKanaExtension::HiraganaLetterSmallWi
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            SmallKanaExtension::HiraganaLetterSmallWi => "hiragana letter small wi",
-            SmallKanaExtension::HiraganaLetterSmallWe => "hiragana letter small we",
-            SmallKanaExtension::HiraganaLetterSmallWo => "hiragana letter small wo",
-            SmallKanaExtension::KatakanaLetterSmallWi => "katakana letter small wi",
-            SmallKanaExtension::KatakanaLetterSmallWe => "katakana letter small we",
-            SmallKanaExtension::KatakanaLetterSmallWo => "katakana letter small wo",
-            SmallKanaExtension::KatakanaLetterSmallN => "katakana letter small n",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("SmallKanaExtension{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

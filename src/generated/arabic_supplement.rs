@@ -246,56 +246,9 @@ impl ArabicSupplement {
         ArabicSupplement::ArabicLetterBehWithThreeDotsHorizontallyBelow
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            ArabicSupplement::ArabicLetterBehWithThreeDotsHorizontallyBelow => "arabic letter beh with three dots horizontally below",
-            ArabicSupplement::ArabicLetterBehWithDotBelowAndThreeDotsAbove => "arabic letter beh with dot below and three dots above",
-            ArabicSupplement::ArabicLetterBehWithThreeDotsPointingUpwardsBelow => "arabic letter beh with three dots pointing upwards below",
-            ArabicSupplement::ArabicLetterBehWithThreeDotsPointingUpwardsBelowAndTwoDotsAbove => "arabic letter beh with three dots pointing upwards below and two dots above",
-            ArabicSupplement::ArabicLetterBehWithTwoDotsBelowAndDotAbove => "arabic letter beh with two dots below and dot above",
-            ArabicSupplement::ArabicLetterBehWithInvertedSmallVBelow => "arabic letter beh with inverted small v below",
-            ArabicSupplement::ArabicLetterBehWithSmallV => "arabic letter beh with small v",
-            ArabicSupplement::ArabicLetterHahWithTwoDotsAbove => "arabic letter hah with two dots above",
-            ArabicSupplement::ArabicLetterHahWithThreeDotsPointingUpwardsBelow => "arabic letter hah with three dots pointing upwards below",
-            ArabicSupplement::ArabicLetterDalWithTwoDotsVerticallyBelowAndSmallTah => "arabic letter dal with two dots vertically below and small tah",
-            ArabicSupplement::ArabicLetterDalWithInvertedSmallVBelow => "arabic letter dal with inverted small v below",
-            ArabicSupplement::ArabicLetterRehWithStroke => "arabic letter reh with stroke",
-            ArabicSupplement::ArabicLetterSeenWithFourDotsAbove => "arabic letter seen with four dots above",
-            ArabicSupplement::ArabicLetterAinWithTwoDotsAbove => "arabic letter ain with two dots above",
-            ArabicSupplement::ArabicLetterAinWithThreeDotsPointingDownwardsAbove => "arabic letter ain with three dots pointing downwards above",
-            ArabicSupplement::ArabicLetterAinWithTwoDotsVerticallyAbove => "arabic letter ain with two dots vertically above",
-            ArabicSupplement::ArabicLetterFehWithTwoDotsBelow => "arabic letter feh with two dots below",
-            ArabicSupplement::ArabicLetterFehWithThreeDotsPointingUpwardsBelow => "arabic letter feh with three dots pointing upwards below",
-            ArabicSupplement::ArabicLetterKehehWithDotAbove => "arabic letter keheh with dot above",
-            ArabicSupplement::ArabicLetterKehehWithThreeDotsAbove => "arabic letter keheh with three dots above",
-            ArabicSupplement::ArabicLetterKehehWithThreeDotsPointingUpwardsBelow => "arabic letter keheh with three dots pointing upwards below",
-            ArabicSupplement::ArabicLetterMeemWithDotAbove => "arabic letter meem with dot above",
-            ArabicSupplement::ArabicLetterMeemWithDotBelow => "arabic letter meem with dot below",
-            ArabicSupplement::ArabicLetterNoonWithTwoDotsBelow => "arabic letter noon with two dots below",
-            ArabicSupplement::ArabicLetterNoonWithSmallTah => "arabic letter noon with small tah",
-            ArabicSupplement::ArabicLetterNoonWithSmallV => "arabic letter noon with small v",
-            ArabicSupplement::ArabicLetterLamWithBar => "arabic letter lam with bar",
-            ArabicSupplement::ArabicLetterRehWithTwoDotsVerticallyAbove => "arabic letter reh with two dots vertically above",
-            ArabicSupplement::ArabicLetterRehWithHamzaAbove => "arabic letter reh with hamza above",
-            ArabicSupplement::ArabicLetterSeenWithTwoDotsVerticallyAbove => "arabic letter seen with two dots vertically above",
-            ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahBelow => "arabic letter hah with small arabic letter tah below",
-            ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahAndTwoDots => "arabic letter hah with small arabic letter tah and two dots",
-            ArabicSupplement::ArabicLetterSeenWithSmallArabicLetterTahAndTwoDots => "arabic letter seen with small arabic letter tah and two dots",
-            ArabicSupplement::ArabicLetterRehWithSmallArabicLetterTahAndTwoDots => "arabic letter reh with small arabic letter tah and two dots",
-            ArabicSupplement::ArabicLetterHahWithSmallArabicLetterTahAbove => "arabic letter hah with small arabic letter tah above",
-            ArabicSupplement::ArabicLetterAlefWithExtendedArabicDashIndicDigitTwoAbove => "arabic letter alef with extended arabic-indic digit two above",
-            ArabicSupplement::ArabicLetterAlefWithExtendedArabicDashIndicDigitThreeAbove => "arabic letter alef with extended arabic-indic digit three above",
-            ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitTwoAbove => "arabic letter farsi yeh with extended arabic-indic digit two above",
-            ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitThreeAbove => "arabic letter farsi yeh with extended arabic-indic digit three above",
-            ArabicSupplement::ArabicLetterFarsiYehWithExtendedArabicDashIndicDigitFourBelow => "arabic letter farsi yeh with extended arabic-indic digit four below",
-            ArabicSupplement::ArabicLetterWawWithExtendedArabicDashIndicDigitTwoAbove => "arabic letter waw with extended arabic-indic digit two above",
-            ArabicSupplement::ArabicLetterWawWithExtendedArabicDashIndicDigitThreeAbove => "arabic letter waw with extended arabic-indic digit three above",
-            ArabicSupplement::ArabicLetterYehBarreeWithExtendedArabicDashIndicDigitTwoAbove => "arabic letter yeh barree with extended arabic-indic digit two above",
-            ArabicSupplement::ArabicLetterYehBarreeWithExtendedArabicDashIndicDigitThreeAbove => "arabic letter yeh barree with extended arabic-indic digit three above",
-            ArabicSupplement::ArabicLetterHahWithExtendedArabicDashIndicDigitFourBelow => "arabic letter hah with extended arabic-indic digit four below",
-            ArabicSupplement::ArabicLetterSeenWithExtendedArabicDashIndicDigitFourAbove => "arabic letter seen with extended arabic-indic digit four above",
-            ArabicSupplement::ArabicLetterSeenWithInvertedV => "arabic letter seen with inverted v",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("ArabicSupplement{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

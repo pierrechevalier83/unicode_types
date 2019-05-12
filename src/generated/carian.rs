@@ -254,58 +254,9 @@ impl Carian {
         Carian::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Carian::LetterA => "carian letter a",
-            Carian::LetterP2 => "carian letter p2",
-            Carian::LetterD => "carian letter d",
-            Carian::LetterL => "carian letter l",
-            Carian::LetterUuu => "carian letter uuu",
-            Carian::LetterR => "carian letter r",
-            Carian::LetterLd => "carian letter ld",
-            Carian::LetterA2 => "carian letter a2",
-            Carian::LetterQ => "carian letter q",
-            Carian::LetterB => "carian letter b",
-            Carian::LetterM => "carian letter m",
-            Carian::LetterO => "carian letter o",
-            Carian::LetterD2 => "carian letter d2",
-            Carian::LetterT => "carian letter t",
-            Carian::LetterSh => "carian letter sh",
-            Carian::LetterSh2 => "carian letter sh2",
-            Carian::LetterS => "carian letter s",
-            Carian::LetterCDash18 => "carian letter c-18",
-            Carian::LetterU => "carian letter u",
-            Carian::LetterNn => "carian letter nn",
-            Carian::LetterX => "carian letter x",
-            Carian::LetterN => "carian letter n",
-            Carian::LetterTt2 => "carian letter tt2",
-            Carian::LetterP => "carian letter p",
-            Carian::LetterSs => "carian letter ss",
-            Carian::LetterI => "carian letter i",
-            Carian::LetterE => "carian letter e",
-            Carian::LetterUuuu => "carian letter uuuu",
-            Carian::LetterK => "carian letter k",
-            Carian::LetterK2 => "carian letter k2",
-            Carian::LetterNd => "carian letter nd",
-            Carian::LetterUu => "carian letter uu",
-            Carian::LetterG => "carian letter g",
-            Carian::LetterG2 => "carian letter g2",
-            Carian::LetterSt => "carian letter st",
-            Carian::LetterSt2 => "carian letter st2",
-            Carian::LetterNg => "carian letter ng",
-            Carian::LetterIi => "carian letter ii",
-            Carian::LetterCDash39 => "carian letter c-39",
-            Carian::LetterTt => "carian letter tt",
-            Carian::LetterUuu2 => "carian letter uuu2",
-            Carian::LetterRr => "carian letter rr",
-            Carian::LetterMb => "carian letter mb",
-            Carian::LetterMb2 => "carian letter mb2",
-            Carian::LetterMb3 => "carian letter mb3",
-            Carian::LetterMb4 => "carian letter mb4",
-            Carian::LetterLd2 => "carian letter ld2",
-            Carian::LetterE2 => "carian letter e2",
-            Carian::LetterUuu3 => "carian letter uuu3",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Carian{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

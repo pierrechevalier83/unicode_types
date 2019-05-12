@@ -170,37 +170,9 @@ impl CopticEpactNumbers {
         CopticEpactNumbers::CopticEpactThousandsMark
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CopticEpactNumbers::CopticEpactThousandsMark => "coptic epact thousands mark",
-            CopticEpactNumbers::CopticEpactDigitOne => "coptic epact digit one",
-            CopticEpactNumbers::CopticEpactDigitTwo => "coptic epact digit two",
-            CopticEpactNumbers::CopticEpactDigitThree => "coptic epact digit three",
-            CopticEpactNumbers::CopticEpactDigitFour => "coptic epact digit four",
-            CopticEpactNumbers::CopticEpactDigitFive => "coptic epact digit five",
-            CopticEpactNumbers::CopticEpactDigitSix => "coptic epact digit six",
-            CopticEpactNumbers::CopticEpactDigitSeven => "coptic epact digit seven",
-            CopticEpactNumbers::CopticEpactDigitEight => "coptic epact digit eight",
-            CopticEpactNumbers::CopticEpactDigitNine => "coptic epact digit nine",
-            CopticEpactNumbers::CopticEpactNumberTen => "coptic epact number ten",
-            CopticEpactNumbers::CopticEpactNumberTwenty => "coptic epact number twenty",
-            CopticEpactNumbers::CopticEpactNumberThirty => "coptic epact number thirty",
-            CopticEpactNumbers::CopticEpactNumberForty => "coptic epact number forty",
-            CopticEpactNumbers::CopticEpactNumberFifty => "coptic epact number fifty",
-            CopticEpactNumbers::CopticEpactNumberSixty => "coptic epact number sixty",
-            CopticEpactNumbers::CopticEpactNumberSeventy => "coptic epact number seventy",
-            CopticEpactNumbers::CopticEpactNumberEighty => "coptic epact number eighty",
-            CopticEpactNumbers::CopticEpactNumberNinety => "coptic epact number ninety",
-            CopticEpactNumbers::CopticEpactNumberOneHundred => "coptic epact number one hundred",
-            CopticEpactNumbers::CopticEpactNumberTwoHundred => "coptic epact number two hundred",
-            CopticEpactNumbers::CopticEpactNumberThreeHundred => "coptic epact number three hundred",
-            CopticEpactNumbers::CopticEpactNumberFourHundred => "coptic epact number four hundred",
-            CopticEpactNumbers::CopticEpactNumberFiveHundred => "coptic epact number five hundred",
-            CopticEpactNumbers::CopticEpactNumberSixHundred => "coptic epact number six hundred",
-            CopticEpactNumbers::CopticEpactNumberSevenHundred => "coptic epact number seven hundred",
-            CopticEpactNumbers::CopticEpactNumberEightHundred => "coptic epact number eight hundred",
-            CopticEpactNumbers::CopticEpactNumberNineHundred => "coptic epact number nine hundred",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CopticEpactNumbers{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

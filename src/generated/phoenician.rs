@@ -170,37 +170,9 @@ impl Phoenician {
         Phoenician::LetterAlf
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Phoenician::LetterAlf => "phoenician letter alf",
-            Phoenician::LetterBet => "phoenician letter bet",
-            Phoenician::LetterGaml => "phoenician letter gaml",
-            Phoenician::LetterDelt => "phoenician letter delt",
-            Phoenician::LetterHe => "phoenician letter he",
-            Phoenician::LetterWau => "phoenician letter wau",
-            Phoenician::LetterZai => "phoenician letter zai",
-            Phoenician::LetterHet => "phoenician letter het",
-            Phoenician::LetterTet => "phoenician letter tet",
-            Phoenician::LetterYod => "phoenician letter yod",
-            Phoenician::LetterKaf => "phoenician letter kaf",
-            Phoenician::LetterLamd => "phoenician letter lamd",
-            Phoenician::LetterMem => "phoenician letter mem",
-            Phoenician::LetterNun => "phoenician letter nun",
-            Phoenician::LetterSemk => "phoenician letter semk",
-            Phoenician::LetterAin => "phoenician letter ain",
-            Phoenician::LetterPe => "phoenician letter pe",
-            Phoenician::LetterSade => "phoenician letter sade",
-            Phoenician::LetterQof => "phoenician letter qof",
-            Phoenician::LetterRosh => "phoenician letter rosh",
-            Phoenician::LetterShin => "phoenician letter shin",
-            Phoenician::LetterTau => "phoenician letter tau",
-            Phoenician::NumberOne => "phoenician number one",
-            Phoenician::NumberTen => "phoenician number ten",
-            Phoenician::NumberTwenty => "phoenician number twenty",
-            Phoenician::NumberOneHundred => "phoenician number one hundred",
-            Phoenician::NumberTwo => "phoenician number two",
-            Phoenician::NumberThree => "phoenician number three",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Phoenician{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

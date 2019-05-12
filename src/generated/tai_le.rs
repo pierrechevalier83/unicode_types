@@ -198,44 +198,9 @@ impl TaiLe {
         TaiLe::LetterKa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            TaiLe::LetterKa => "tai le letter ka",
-            TaiLe::LetterXa => "tai le letter xa",
-            TaiLe::LetterNga => "tai le letter nga",
-            TaiLe::LetterTsa => "tai le letter tsa",
-            TaiLe::LetterSa => "tai le letter sa",
-            TaiLe::LetterYa => "tai le letter ya",
-            TaiLe::LetterTa => "tai le letter ta",
-            TaiLe::LetterTha => "tai le letter tha",
-            TaiLe::LetterLa => "tai le letter la",
-            TaiLe::LetterPa => "tai le letter pa",
-            TaiLe::LetterPha => "tai le letter pha",
-            TaiLe::LetterMa => "tai le letter ma",
-            TaiLe::LetterFa => "tai le letter fa",
-            TaiLe::LetterVa => "tai le letter va",
-            TaiLe::LetterHa => "tai le letter ha",
-            TaiLe::LetterQa => "tai le letter qa",
-            TaiLe::LetterKha => "tai le letter kha",
-            TaiLe::LetterTsha => "tai le letter tsha",
-            TaiLe::LetterNa => "tai le letter na",
-            TaiLe::LetterA => "tai le letter a",
-            TaiLe::LetterI => "tai le letter i",
-            TaiLe::LetterEe => "tai le letter ee",
-            TaiLe::LetterEh => "tai le letter eh",
-            TaiLe::LetterU => "tai le letter u",
-            TaiLe::LetterOo => "tai le letter oo",
-            TaiLe::LetterO => "tai le letter o",
-            TaiLe::LetterUe => "tai le letter ue",
-            TaiLe::LetterE => "tai le letter e",
-            TaiLe::LetterAue => "tai le letter aue",
-            TaiLe::LetterAi => "tai le letter ai",
-            TaiLe::LetterToneDash2 => "tai le letter tone-2",
-            TaiLe::LetterToneDash3 => "tai le letter tone-3",
-            TaiLe::LetterToneDash4 => "tai le letter tone-4",
-            TaiLe::LetterToneDash5 => "tai le letter tone-5",
-            TaiLe::LetterToneDash6 => "tai le letter tone-6",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("TaiLe{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

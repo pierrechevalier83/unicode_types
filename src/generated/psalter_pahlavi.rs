@@ -170,37 +170,9 @@ impl PsalterPahlavi {
         PsalterPahlavi::LetterAleph
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            PsalterPahlavi::LetterAleph => "psalter pahlavi letter aleph",
-            PsalterPahlavi::LetterBeth => "psalter pahlavi letter beth",
-            PsalterPahlavi::LetterGimel => "psalter pahlavi letter gimel",
-            PsalterPahlavi::LetterDaleth => "psalter pahlavi letter daleth",
-            PsalterPahlavi::LetterHe => "psalter pahlavi letter he",
-            PsalterPahlavi::LetterWawDashAyinDashResh => "psalter pahlavi letter waw-ayin-resh",
-            PsalterPahlavi::LetterZayin => "psalter pahlavi letter zayin",
-            PsalterPahlavi::LetterHeth => "psalter pahlavi letter heth",
-            PsalterPahlavi::LetterYodh => "psalter pahlavi letter yodh",
-            PsalterPahlavi::LetterKaph => "psalter pahlavi letter kaph",
-            PsalterPahlavi::LetterLamedh => "psalter pahlavi letter lamedh",
-            PsalterPahlavi::LetterMemDashQoph => "psalter pahlavi letter mem-qoph",
-            PsalterPahlavi::LetterNun => "psalter pahlavi letter nun",
-            PsalterPahlavi::LetterSamekh => "psalter pahlavi letter samekh",
-            PsalterPahlavi::LetterPe => "psalter pahlavi letter pe",
-            PsalterPahlavi::LetterSadhe => "psalter pahlavi letter sadhe",
-            PsalterPahlavi::LetterShin => "psalter pahlavi letter shin",
-            PsalterPahlavi::LetterTaw => "psalter pahlavi letter taw",
-            PsalterPahlavi::SectionMark => "psalter pahlavi section mark",
-            PsalterPahlavi::TurnedSectionMark => "psalter pahlavi turned section mark",
-            PsalterPahlavi::FourDotsWithCross => "psalter pahlavi four dots with cross",
-            PsalterPahlavi::FourDotsWithDot => "psalter pahlavi four dots with dot",
-            PsalterPahlavi::NumberOne => "psalter pahlavi number one",
-            PsalterPahlavi::NumberTwo => "psalter pahlavi number two",
-            PsalterPahlavi::NumberThree => "psalter pahlavi number three",
-            PsalterPahlavi::NumberFour => "psalter pahlavi number four",
-            PsalterPahlavi::NumberTen => "psalter pahlavi number ten",
-            PsalterPahlavi::NumberTwenty => "psalter pahlavi number twenty",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("PsalterPahlavi{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -138,29 +138,9 @@ impl Tagalog {
         Tagalog::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Tagalog::LetterA => "tagalog letter a",
-            Tagalog::LetterI => "tagalog letter i",
-            Tagalog::LetterU => "tagalog letter u",
-            Tagalog::LetterKa => "tagalog letter ka",
-            Tagalog::LetterGa => "tagalog letter ga",
-            Tagalog::LetterNga => "tagalog letter nga",
-            Tagalog::LetterTa => "tagalog letter ta",
-            Tagalog::LetterDa => "tagalog letter da",
-            Tagalog::LetterNa => "tagalog letter na",
-            Tagalog::LetterPa => "tagalog letter pa",
-            Tagalog::LetterBa => "tagalog letter ba",
-            Tagalog::LetterMa => "tagalog letter ma",
-            Tagalog::LetterYa => "tagalog letter ya",
-            Tagalog::LetterLa => "tagalog letter la",
-            Tagalog::LetterWa => "tagalog letter wa",
-            Tagalog::LetterSa => "tagalog letter sa",
-            Tagalog::LetterHa => "tagalog letter ha",
-            Tagalog::VowelSignI => "tagalog vowel sign i",
-            Tagalog::VowelSignU => "tagalog vowel sign u",
-            Tagalog::SignVirama => "tagalog sign virama",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Tagalog{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

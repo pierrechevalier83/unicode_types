@@ -182,40 +182,9 @@ impl BlockElements {
         BlockElements::UpperHalfBlock
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            BlockElements::UpperHalfBlock => "upper half block",
-            BlockElements::LowerOneEighthBlock => "lower one eighth block",
-            BlockElements::LowerOneQuarterBlock => "lower one quarter block",
-            BlockElements::LowerThreeEighthsBlock => "lower three eighths block",
-            BlockElements::LowerHalfBlock => "lower half block",
-            BlockElements::LowerFiveEighthsBlock => "lower five eighths block",
-            BlockElements::LowerThreeQuartersBlock => "lower three quarters block",
-            BlockElements::LowerSevenEighthsBlock => "lower seven eighths block",
-            BlockElements::FullBlock => "full block",
-            BlockElements::LeftSevenEighthsBlock => "left seven eighths block",
-            BlockElements::LeftThreeQuartersBlock => "left three quarters block",
-            BlockElements::LeftFiveEighthsBlock => "left five eighths block",
-            BlockElements::LeftHalfBlock => "left half block",
-            BlockElements::LeftThreeEighthsBlock => "left three eighths block",
-            BlockElements::LeftOneQuarterBlock => "left one quarter block",
-            BlockElements::LeftOneEighthBlock => "left one eighth block",
-            BlockElements::RightHalfBlock => "right half block",
-            BlockElements::LightShade => "light shade",
-            BlockElements::MediumShade => "medium shade",
-            BlockElements::DarkShade => "dark shade",
-            BlockElements::UpperOneEighthBlock => "upper one eighth block",
-            BlockElements::RightOneEighthBlock => "right one eighth block",
-            BlockElements::QuadrantLowerLeft => "quadrant lower left",
-            BlockElements::QuadrantLowerRight => "quadrant lower right",
-            BlockElements::QuadrantUpperLeft => "quadrant upper left",
-            BlockElements::QuadrantUpperLeftAndLowerLeftAndLowerRight => "quadrant upper left and lower left and lower right",
-            BlockElements::QuadrantUpperLeftAndLowerRight => "quadrant upper left and lower right",
-            BlockElements::QuadrantUpperLeftAndUpperRightAndLowerLeft => "quadrant upper left and upper right and lower left",
-            BlockElements::QuadrantUpperLeftAndUpperRightAndLowerRight => "quadrant upper left and upper right and lower right",
-            BlockElements::QuadrantUpperRight => "quadrant upper right",
-            BlockElements::QuadrantUpperRightAndLowerLeft => "quadrant upper right and lower left",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("BlockElements{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

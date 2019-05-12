@@ -230,52 +230,9 @@ impl OldPermic {
         OldPermic::LetterAn
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            OldPermic::LetterAn => "old permic letter an",
-            OldPermic::LetterBur => "old permic letter bur",
-            OldPermic::LetterGai => "old permic letter gai",
-            OldPermic::LetterDoi => "old permic letter doi",
-            OldPermic::LetterE => "old permic letter e",
-            OldPermic::LetterZhoi => "old permic letter zhoi",
-            OldPermic::LetterDzhoi => "old permic letter dzhoi",
-            OldPermic::LetterZata => "old permic letter zata",
-            OldPermic::LetterDzita => "old permic letter dzita",
-            OldPermic::LetterI => "old permic letter i",
-            OldPermic::LetterKoke => "old permic letter koke",
-            OldPermic::LetterLei => "old permic letter lei",
-            OldPermic::LetterMenoe => "old permic letter menoe",
-            OldPermic::LetterNenoe => "old permic letter nenoe",
-            OldPermic::LetterVooi => "old permic letter vooi",
-            OldPermic::LetterPeei => "old permic letter peei",
-            OldPermic::LetterRei => "old permic letter rei",
-            OldPermic::LetterSii => "old permic letter sii",
-            OldPermic::LetterTai => "old permic letter tai",
-            OldPermic::LetterU => "old permic letter u",
-            OldPermic::LetterChery => "old permic letter chery",
-            OldPermic::LetterShooi => "old permic letter shooi",
-            OldPermic::LetterShchooi => "old permic letter shchooi",
-            OldPermic::LetterYry => "old permic letter yry",
-            OldPermic::LetterYeru => "old permic letter yeru",
-            OldPermic::LetterO => "old permic letter o",
-            OldPermic::LetterOo => "old permic letter oo",
-            OldPermic::LetterEf => "old permic letter ef",
-            OldPermic::LetterHa => "old permic letter ha",
-            OldPermic::LetterTsiu => "old permic letter tsiu",
-            OldPermic::LetterVer => "old permic letter ver",
-            OldPermic::LetterYer => "old permic letter yer",
-            OldPermic::LetterYeri => "old permic letter yeri",
-            OldPermic::LetterYat => "old permic letter yat",
-            OldPermic::LetterIe => "old permic letter ie",
-            OldPermic::LetterYu => "old permic letter yu",
-            OldPermic::LetterYa => "old permic letter ya",
-            OldPermic::LetterIa => "old permic letter ia",
-            OldPermic::CombiningLetterAn => "combining old permic letter an",
-            OldPermic::CombiningLetterDoi => "combining old permic letter doi",
-            OldPermic::CombiningLetterZata => "combining old permic letter zata",
-            OldPermic::CombiningLetterNenoe => "combining old permic letter nenoe",
-            OldPermic::CombiningLetterSii => "combining old permic letter sii",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("OldPermic{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

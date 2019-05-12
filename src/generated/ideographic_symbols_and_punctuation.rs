@@ -74,13 +74,9 @@ impl IdeographicSymbolsandPunctuation {
         IdeographicSymbolsandPunctuation::TangutIterationMark
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            IdeographicSymbolsandPunctuation::TangutIterationMark => "tangut iteration mark",
-            IdeographicSymbolsandPunctuation::NushuIterationMark => "nushu iteration mark",
-            IdeographicSymbolsandPunctuation::OldChineseHookMark => "old chinese hook mark",
-            IdeographicSymbolsandPunctuation::OldChineseIterationMark => "old chinese iteration mark",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("IdeographicSymbolsandPunctuation{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

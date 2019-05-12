@@ -210,47 +210,9 @@ impl OldItalic {
         OldItalic::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            OldItalic::LetterA => "old italic letter a",
-            OldItalic::LetterBe => "old italic letter be",
-            OldItalic::LetterKe => "old italic letter ke",
-            OldItalic::LetterDe => "old italic letter de",
-            OldItalic::LetterE => "old italic letter e",
-            OldItalic::LetterVe => "old italic letter ve",
-            OldItalic::LetterZe => "old italic letter ze",
-            OldItalic::LetterHe => "old italic letter he",
-            OldItalic::LetterThe => "old italic letter the",
-            OldItalic::LetterI => "old italic letter i",
-            OldItalic::LetterKa => "old italic letter ka",
-            OldItalic::LetterEl => "old italic letter el",
-            OldItalic::LetterEm => "old italic letter em",
-            OldItalic::LetterEn => "old italic letter en",
-            OldItalic::LetterEsh => "old italic letter esh",
-            OldItalic::LetterO => "old italic letter o",
-            OldItalic::LetterPe => "old italic letter pe",
-            OldItalic::LetterShe => "old italic letter she",
-            OldItalic::LetterKu => "old italic letter ku",
-            OldItalic::LetterEr => "old italic letter er",
-            OldItalic::LetterEs => "old italic letter es",
-            OldItalic::LetterTe => "old italic letter te",
-            OldItalic::LetterU => "old italic letter u",
-            OldItalic::LetterEks => "old italic letter eks",
-            OldItalic::LetterPhe => "old italic letter phe",
-            OldItalic::LetterKhe => "old italic letter khe",
-            OldItalic::LetterEf => "old italic letter ef",
-            OldItalic::LetterErs => "old italic letter ers",
-            OldItalic::LetterChe => "old italic letter che",
-            OldItalic::LetterIi => "old italic letter ii",
-            OldItalic::LetterUu => "old italic letter uu",
-            OldItalic::LetterEss => "old italic letter ess",
-            OldItalic::NumeralOne => "old italic numeral one",
-            OldItalic::NumeralFive => "old italic numeral five",
-            OldItalic::NumeralTen => "old italic numeral ten",
-            OldItalic::NumeralFifty => "old italic numeral fifty",
-            OldItalic::LetterYe => "old italic letter ye",
-            OldItalic::LetterNorthernTse => "old italic letter northern tse",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("OldItalic{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

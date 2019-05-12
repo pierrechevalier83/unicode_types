@@ -122,25 +122,9 @@ impl SymbolsandPictographsExtendedA {
         SymbolsandPictographsExtendedA::BalletShoes
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            SymbolsandPictographsExtendedA::BalletShoes => "ballet shoes",
-            SymbolsandPictographsExtendedA::OneDashPieceSwimsuit => "one-piece swimsuit",
-            SymbolsandPictographsExtendedA::Briefs => "briefs",
-            SymbolsandPictographsExtendedA::Shorts => "shorts",
-            SymbolsandPictographsExtendedA::DropOfBlood => "drop of blood",
-            SymbolsandPictographsExtendedA::AdhesiveBandage => "adhesive bandage",
-            SymbolsandPictographsExtendedA::Stethoscope => "stethoscope",
-            SymbolsandPictographsExtendedA::YoDashYo => "yo-yo",
-            SymbolsandPictographsExtendedA::Kite => "kite",
-            SymbolsandPictographsExtendedA::Parachute => "parachute",
-            SymbolsandPictographsExtendedA::RingedPlanet => "ringed planet",
-            SymbolsandPictographsExtendedA::Chair => "chair",
-            SymbolsandPictographsExtendedA::Razor => "razor",
-            SymbolsandPictographsExtendedA::Axe => "axe",
-            SymbolsandPictographsExtendedA::DiyaLamp => "diya lamp",
-            SymbolsandPictographsExtendedA::Banjo => "banjo",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("SymbolsandPictographsExtendedA{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -178,39 +178,9 @@ impl Ugaritic {
         Ugaritic::LetterAlpa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Ugaritic::LetterAlpa => "ugaritic letter alpa",
-            Ugaritic::LetterBeta => "ugaritic letter beta",
-            Ugaritic::LetterGamla => "ugaritic letter gamla",
-            Ugaritic::LetterKha => "ugaritic letter kha",
-            Ugaritic::LetterDelta => "ugaritic letter delta",
-            Ugaritic::LetterHo => "ugaritic letter ho",
-            Ugaritic::LetterWo => "ugaritic letter wo",
-            Ugaritic::LetterZeta => "ugaritic letter zeta",
-            Ugaritic::LetterHota => "ugaritic letter hota",
-            Ugaritic::LetterTet => "ugaritic letter tet",
-            Ugaritic::LetterYod => "ugaritic letter yod",
-            Ugaritic::LetterKaf => "ugaritic letter kaf",
-            Ugaritic::LetterShin => "ugaritic letter shin",
-            Ugaritic::LetterLamda => "ugaritic letter lamda",
-            Ugaritic::LetterMem => "ugaritic letter mem",
-            Ugaritic::LetterDhal => "ugaritic letter dhal",
-            Ugaritic::LetterNun => "ugaritic letter nun",
-            Ugaritic::LetterZu => "ugaritic letter zu",
-            Ugaritic::LetterSamka => "ugaritic letter samka",
-            Ugaritic::LetterAin => "ugaritic letter ain",
-            Ugaritic::LetterPu => "ugaritic letter pu",
-            Ugaritic::LetterSade => "ugaritic letter sade",
-            Ugaritic::LetterQopa => "ugaritic letter qopa",
-            Ugaritic::LetterRasha => "ugaritic letter rasha",
-            Ugaritic::LetterThanna => "ugaritic letter thanna",
-            Ugaritic::LetterGhain => "ugaritic letter ghain",
-            Ugaritic::LetterTo => "ugaritic letter to",
-            Ugaritic::LetterI => "ugaritic letter i",
-            Ugaritic::LetterU => "ugaritic letter u",
-            Ugaritic::LetterSsu => "ugaritic letter ssu",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Ugaritic{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -66,11 +66,9 @@ impl HangulSyllables {
         HangulSyllables::HangulSyllableFirst
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            HangulSyllables::HangulSyllableFirst => "hangul syllable first",
-            HangulSyllables::HangulSyllableLast => "hangul syllable last",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("HangulSyllables{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

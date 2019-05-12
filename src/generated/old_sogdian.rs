@@ -218,49 +218,9 @@ impl OldSogdian {
         OldSogdian::LetterAleph
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            OldSogdian::LetterAleph => "old sogdian letter aleph",
-            OldSogdian::LetterFinalAleph => "old sogdian letter final aleph",
-            OldSogdian::LetterBeth => "old sogdian letter beth",
-            OldSogdian::LetterFinalBeth => "old sogdian letter final beth",
-            OldSogdian::LetterGimel => "old sogdian letter gimel",
-            OldSogdian::LetterHe => "old sogdian letter he",
-            OldSogdian::LetterFinalHe => "old sogdian letter final he",
-            OldSogdian::LetterWaw => "old sogdian letter waw",
-            OldSogdian::LetterZayin => "old sogdian letter zayin",
-            OldSogdian::LetterHeth => "old sogdian letter heth",
-            OldSogdian::LetterYodh => "old sogdian letter yodh",
-            OldSogdian::LetterKaph => "old sogdian letter kaph",
-            OldSogdian::LetterLamedh => "old sogdian letter lamedh",
-            OldSogdian::LetterMem => "old sogdian letter mem",
-            OldSogdian::LetterNun => "old sogdian letter nun",
-            OldSogdian::LetterFinalNun => "old sogdian letter final nun",
-            OldSogdian::LetterFinalNunWithVerticalTail => "old sogdian letter final nun with vertical tail",
-            OldSogdian::LetterSamekh => "old sogdian letter samekh",
-            OldSogdian::LetterAyin => "old sogdian letter ayin",
-            OldSogdian::LetterAlternateAyin => "old sogdian letter alternate ayin",
-            OldSogdian::LetterPe => "old sogdian letter pe",
-            OldSogdian::LetterSadhe => "old sogdian letter sadhe",
-            OldSogdian::LetterFinalSadhe => "old sogdian letter final sadhe",
-            OldSogdian::LetterFinalSadheWithVerticalTail => "old sogdian letter final sadhe with vertical tail",
-            OldSogdian::LetterReshDashAyinDashDaleth => "old sogdian letter resh-ayin-daleth",
-            OldSogdian::LetterShin => "old sogdian letter shin",
-            OldSogdian::LetterTaw => "old sogdian letter taw",
-            OldSogdian::LetterFinalTaw => "old sogdian letter final taw",
-            OldSogdian::LetterFinalTawWithVerticalTail => "old sogdian letter final taw with vertical tail",
-            OldSogdian::NumberOne => "old sogdian number one",
-            OldSogdian::NumberTwo => "old sogdian number two",
-            OldSogdian::NumberThree => "old sogdian number three",
-            OldSogdian::NumberFour => "old sogdian number four",
-            OldSogdian::NumberFive => "old sogdian number five",
-            OldSogdian::NumberTen => "old sogdian number ten",
-            OldSogdian::NumberTwenty => "old sogdian number twenty",
-            OldSogdian::NumberThirty => "old sogdian number thirty",
-            OldSogdian::NumberOneHundred => "old sogdian number one hundred",
-            OldSogdian::FractionOneHalf => "old sogdian fraction one half",
-            OldSogdian::LigatureAyinDashDaleth => "old sogdian ligature ayin-daleth",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("OldSogdian{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

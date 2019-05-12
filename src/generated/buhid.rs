@@ -138,29 +138,9 @@ impl Buhid {
         Buhid::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Buhid::LetterA => "buhid letter a",
-            Buhid::LetterI => "buhid letter i",
-            Buhid::LetterU => "buhid letter u",
-            Buhid::LetterKa => "buhid letter ka",
-            Buhid::LetterGa => "buhid letter ga",
-            Buhid::LetterNga => "buhid letter nga",
-            Buhid::LetterTa => "buhid letter ta",
-            Buhid::LetterDa => "buhid letter da",
-            Buhid::LetterNa => "buhid letter na",
-            Buhid::LetterPa => "buhid letter pa",
-            Buhid::LetterBa => "buhid letter ba",
-            Buhid::LetterMa => "buhid letter ma",
-            Buhid::LetterYa => "buhid letter ya",
-            Buhid::LetterRa => "buhid letter ra",
-            Buhid::LetterLa => "buhid letter la",
-            Buhid::LetterWa => "buhid letter wa",
-            Buhid::LetterSa => "buhid letter sa",
-            Buhid::LetterHa => "buhid letter ha",
-            Buhid::VowelSignI => "buhid vowel sign i",
-            Buhid::VowelSignU => "buhid vowel sign u",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Buhid{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

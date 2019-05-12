@@ -106,21 +106,9 @@ impl IdeographicDescriptionCharacters {
         IdeographicDescriptionCharacters::IdeographicDescriptionCharacterLeftToRight
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterLeftToRight => "ideographic description character left to right",
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterAboveToBelow => "ideographic description character above to below",
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterLeftToMiddleAndRight => "ideographic description character left to middle and right",
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterAboveToMiddleAndBelow => "ideographic description character above to middle and below",
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterFullSurround => "ideographic description character full surround",
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromAbove => "ideographic description character surround from above",
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromBelow => "ideographic description character surround from below",
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromLeft => "ideographic description character surround from left",
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromUpperLeft => "ideographic description character surround from upper left",
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromUpperRight => "ideographic description character surround from upper right",
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterSurroundFromLowerLeft => "ideographic description character surround from lower left",
-            IdeographicDescriptionCharacters::IdeographicDescriptionCharacterOverlaid => "ideographic description character overlaid",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("IdeographicDescriptionCharacters{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

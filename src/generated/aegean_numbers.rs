@@ -282,65 +282,9 @@ impl AegeanNumbers {
         AegeanNumbers::AegeanWordSeparatorLine
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            AegeanNumbers::AegeanWordSeparatorLine => "aegean word separator line",
-            AegeanNumbers::AegeanWordSeparatorDot => "aegean word separator dot",
-            AegeanNumbers::AegeanCheckMark => "aegean check mark",
-            AegeanNumbers::AegeanNumberOne => "aegean number one",
-            AegeanNumbers::AegeanNumberTwo => "aegean number two",
-            AegeanNumbers::AegeanNumberThree => "aegean number three",
-            AegeanNumbers::AegeanNumberFour => "aegean number four",
-            AegeanNumbers::AegeanNumberFive => "aegean number five",
-            AegeanNumbers::AegeanNumberSix => "aegean number six",
-            AegeanNumbers::AegeanNumberSeven => "aegean number seven",
-            AegeanNumbers::AegeanNumberEight => "aegean number eight",
-            AegeanNumbers::AegeanNumberNine => "aegean number nine",
-            AegeanNumbers::AegeanNumberTen => "aegean number ten",
-            AegeanNumbers::AegeanNumberTwenty => "aegean number twenty",
-            AegeanNumbers::AegeanNumberThirty => "aegean number thirty",
-            AegeanNumbers::AegeanNumberForty => "aegean number forty",
-            AegeanNumbers::AegeanNumberFifty => "aegean number fifty",
-            AegeanNumbers::AegeanNumberSixty => "aegean number sixty",
-            AegeanNumbers::AegeanNumberSeventy => "aegean number seventy",
-            AegeanNumbers::AegeanNumberEighty => "aegean number eighty",
-            AegeanNumbers::AegeanNumberNinety => "aegean number ninety",
-            AegeanNumbers::AegeanNumberOneHundred => "aegean number one hundred",
-            AegeanNumbers::AegeanNumberTwoHundred => "aegean number two hundred",
-            AegeanNumbers::AegeanNumberThreeHundred => "aegean number three hundred",
-            AegeanNumbers::AegeanNumberFourHundred => "aegean number four hundred",
-            AegeanNumbers::AegeanNumberFiveHundred => "aegean number five hundred",
-            AegeanNumbers::AegeanNumberSixHundred => "aegean number six hundred",
-            AegeanNumbers::AegeanNumberSevenHundred => "aegean number seven hundred",
-            AegeanNumbers::AegeanNumberEightHundred => "aegean number eight hundred",
-            AegeanNumbers::AegeanNumberNineHundred => "aegean number nine hundred",
-            AegeanNumbers::AegeanNumberOneThousand => "aegean number one thousand",
-            AegeanNumbers::AegeanNumberTwoThousand => "aegean number two thousand",
-            AegeanNumbers::AegeanNumberThreeThousand => "aegean number three thousand",
-            AegeanNumbers::AegeanNumberFourThousand => "aegean number four thousand",
-            AegeanNumbers::AegeanNumberFiveThousand => "aegean number five thousand",
-            AegeanNumbers::AegeanNumberSixThousand => "aegean number six thousand",
-            AegeanNumbers::AegeanNumberSevenThousand => "aegean number seven thousand",
-            AegeanNumbers::AegeanNumberEightThousand => "aegean number eight thousand",
-            AegeanNumbers::AegeanNumberNineThousand => "aegean number nine thousand",
-            AegeanNumbers::AegeanNumberTenThousand => "aegean number ten thousand",
-            AegeanNumbers::AegeanNumberTwentyThousand => "aegean number twenty thousand",
-            AegeanNumbers::AegeanNumberThirtyThousand => "aegean number thirty thousand",
-            AegeanNumbers::AegeanNumberFortyThousand => "aegean number forty thousand",
-            AegeanNumbers::AegeanNumberFiftyThousand => "aegean number fifty thousand",
-            AegeanNumbers::AegeanNumberSixtyThousand => "aegean number sixty thousand",
-            AegeanNumbers::AegeanNumberSeventyThousand => "aegean number seventy thousand",
-            AegeanNumbers::AegeanNumberEightyThousand => "aegean number eighty thousand",
-            AegeanNumbers::AegeanNumberNinetyThousand => "aegean number ninety thousand",
-            AegeanNumbers::AegeanWeightBaseUnit => "aegean weight base unit",
-            AegeanNumbers::AegeanWeightFirstSubunit => "aegean weight first subunit",
-            AegeanNumbers::AegeanWeightSecondSubunit => "aegean weight second subunit",
-            AegeanNumbers::AegeanWeightThirdSubunit => "aegean weight third subunit",
-            AegeanNumbers::AegeanWeightFourthSubunit => "aegean weight fourth subunit",
-            AegeanNumbers::AegeanDryMeasureFirstSubunit => "aegean dry measure first subunit",
-            AegeanNumbers::AegeanLiquidMeasureFirstSubunit => "aegean liquid measure first subunit",
-            AegeanNumbers::AegeanMeasureSecondSubunit => "aegean measure second subunit",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("AegeanNumbers{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

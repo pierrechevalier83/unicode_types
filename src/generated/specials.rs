@@ -78,14 +78,9 @@ impl Specials {
         Specials::InterlinearAnnotationAnchor
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Specials::InterlinearAnnotationAnchor => "interlinear annotation anchor",
-            Specials::InterlinearAnnotationSeparator => "interlinear annotation separator",
-            Specials::InterlinearAnnotationTerminator => "interlinear annotation terminator",
-            Specials::ObjectReplacementCharacter => "object replacement character",
-            Specials::ReplacementCharacter => "replacement character",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Specials{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -282,65 +282,9 @@ impl MeeteiMayek {
         MeeteiMayek::LetterKok
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            MeeteiMayek::LetterKok => "meetei mayek letter kok",
-            MeeteiMayek::LetterSam => "meetei mayek letter sam",
-            MeeteiMayek::LetterLai => "meetei mayek letter lai",
-            MeeteiMayek::LetterMit => "meetei mayek letter mit",
-            MeeteiMayek::LetterPa => "meetei mayek letter pa",
-            MeeteiMayek::LetterNa => "meetei mayek letter na",
-            MeeteiMayek::LetterChil => "meetei mayek letter chil",
-            MeeteiMayek::LetterTil => "meetei mayek letter til",
-            MeeteiMayek::LetterKhou => "meetei mayek letter khou",
-            MeeteiMayek::LetterNgou => "meetei mayek letter ngou",
-            MeeteiMayek::LetterThou => "meetei mayek letter thou",
-            MeeteiMayek::LetterWai => "meetei mayek letter wai",
-            MeeteiMayek::LetterYang => "meetei mayek letter yang",
-            MeeteiMayek::LetterHuk => "meetei mayek letter huk",
-            MeeteiMayek::LetterUn => "meetei mayek letter un",
-            MeeteiMayek::LetterI => "meetei mayek letter i",
-            MeeteiMayek::LetterPham => "meetei mayek letter pham",
-            MeeteiMayek::LetterAtiya => "meetei mayek letter atiya",
-            MeeteiMayek::LetterGok => "meetei mayek letter gok",
-            MeeteiMayek::LetterJham => "meetei mayek letter jham",
-            MeeteiMayek::LetterRai => "meetei mayek letter rai",
-            MeeteiMayek::LetterBa => "meetei mayek letter ba",
-            MeeteiMayek::LetterJil => "meetei mayek letter jil",
-            MeeteiMayek::LetterDil => "meetei mayek letter dil",
-            MeeteiMayek::LetterGhou => "meetei mayek letter ghou",
-            MeeteiMayek::LetterDhou => "meetei mayek letter dhou",
-            MeeteiMayek::LetterBham => "meetei mayek letter bham",
-            MeeteiMayek::LetterKokLonsum => "meetei mayek letter kok lonsum",
-            MeeteiMayek::LetterLaiLonsum => "meetei mayek letter lai lonsum",
-            MeeteiMayek::LetterMitLonsum => "meetei mayek letter mit lonsum",
-            MeeteiMayek::LetterPaLonsum => "meetei mayek letter pa lonsum",
-            MeeteiMayek::LetterNaLonsum => "meetei mayek letter na lonsum",
-            MeeteiMayek::LetterTilLonsum => "meetei mayek letter til lonsum",
-            MeeteiMayek::LetterNgouLonsum => "meetei mayek letter ngou lonsum",
-            MeeteiMayek::LetterILonsum => "meetei mayek letter i lonsum",
-            MeeteiMayek::VowelSignOnap => "meetei mayek vowel sign onap",
-            MeeteiMayek::VowelSignInap => "meetei mayek vowel sign inap",
-            MeeteiMayek::VowelSignAnap => "meetei mayek vowel sign anap",
-            MeeteiMayek::VowelSignYenap => "meetei mayek vowel sign yenap",
-            MeeteiMayek::VowelSignSounap => "meetei mayek vowel sign sounap",
-            MeeteiMayek::VowelSignUnap => "meetei mayek vowel sign unap",
-            MeeteiMayek::VowelSignCheinap => "meetei mayek vowel sign cheinap",
-            MeeteiMayek::VowelSignNung => "meetei mayek vowel sign nung",
-            MeeteiMayek::Cheikhei => "meetei mayek cheikhei",
-            MeeteiMayek::LumIyek => "meetei mayek lum iyek",
-            MeeteiMayek::ApunIyek => "meetei mayek apun iyek",
-            MeeteiMayek::DigitZero => "meetei mayek digit zero",
-            MeeteiMayek::DigitOne => "meetei mayek digit one",
-            MeeteiMayek::DigitTwo => "meetei mayek digit two",
-            MeeteiMayek::DigitThree => "meetei mayek digit three",
-            MeeteiMayek::DigitFour => "meetei mayek digit four",
-            MeeteiMayek::DigitFive => "meetei mayek digit five",
-            MeeteiMayek::DigitSix => "meetei mayek digit six",
-            MeeteiMayek::DigitSeven => "meetei mayek digit seven",
-            MeeteiMayek::DigitEight => "meetei mayek digit eight",
-            MeeteiMayek::DigitNine => "meetei mayek digit nine",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("MeeteiMayek{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

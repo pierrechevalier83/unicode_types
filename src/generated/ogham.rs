@@ -174,38 +174,9 @@ impl Ogham {
         Ogham::SpaceMark
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Ogham::SpaceMark => "ogham space mark",
-            Ogham::LetterBeith => "ogham letter beith",
-            Ogham::LetterLuis => "ogham letter luis",
-            Ogham::LetterFearn => "ogham letter fearn",
-            Ogham::LetterSail => "ogham letter sail",
-            Ogham::LetterNion => "ogham letter nion",
-            Ogham::LetterUath => "ogham letter uath",
-            Ogham::LetterDair => "ogham letter dair",
-            Ogham::LetterTinne => "ogham letter tinne",
-            Ogham::LetterColl => "ogham letter coll",
-            Ogham::LetterCeirt => "ogham letter ceirt",
-            Ogham::LetterMuin => "ogham letter muin",
-            Ogham::LetterGort => "ogham letter gort",
-            Ogham::LetterNgeadal => "ogham letter ngeadal",
-            Ogham::LetterStraif => "ogham letter straif",
-            Ogham::LetterRuis => "ogham letter ruis",
-            Ogham::LetterAilm => "ogham letter ailm",
-            Ogham::LetterOnn => "ogham letter onn",
-            Ogham::LetterUr => "ogham letter ur",
-            Ogham::LetterEadhadh => "ogham letter eadhadh",
-            Ogham::LetterIodhadh => "ogham letter iodhadh",
-            Ogham::LetterEabhadh => "ogham letter eabhadh",
-            Ogham::LetterOr => "ogham letter or",
-            Ogham::LetterUilleann => "ogham letter uilleann",
-            Ogham::LetterIfin => "ogham letter ifin",
-            Ogham::LetterEamhancholl => "ogham letter eamhancholl",
-            Ogham::LetterPeith => "ogham letter peith",
-            Ogham::FeatherMark => "ogham feather mark",
-            Ogham::ReversedFeatherMark => "ogham reversed feather mark",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Ogham{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

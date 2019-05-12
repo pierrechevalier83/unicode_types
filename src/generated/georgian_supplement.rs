@@ -218,49 +218,9 @@ impl GeorgianSupplement {
         GeorgianSupplement::GeorgianSmallLetterAn
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            GeorgianSupplement::GeorgianSmallLetterAn => "georgian small letter an",
-            GeorgianSupplement::GeorgianSmallLetterBan => "georgian small letter ban",
-            GeorgianSupplement::GeorgianSmallLetterGan => "georgian small letter gan",
-            GeorgianSupplement::GeorgianSmallLetterDon => "georgian small letter don",
-            GeorgianSupplement::GeorgianSmallLetterEn => "georgian small letter en",
-            GeorgianSupplement::GeorgianSmallLetterVin => "georgian small letter vin",
-            GeorgianSupplement::GeorgianSmallLetterZen => "georgian small letter zen",
-            GeorgianSupplement::GeorgianSmallLetterTan => "georgian small letter tan",
-            GeorgianSupplement::GeorgianSmallLetterIn => "georgian small letter in",
-            GeorgianSupplement::GeorgianSmallLetterKan => "georgian small letter kan",
-            GeorgianSupplement::GeorgianSmallLetterLas => "georgian small letter las",
-            GeorgianSupplement::GeorgianSmallLetterMan => "georgian small letter man",
-            GeorgianSupplement::GeorgianSmallLetterNar => "georgian small letter nar",
-            GeorgianSupplement::GeorgianSmallLetterOn => "georgian small letter on",
-            GeorgianSupplement::GeorgianSmallLetterPar => "georgian small letter par",
-            GeorgianSupplement::GeorgianSmallLetterZhar => "georgian small letter zhar",
-            GeorgianSupplement::GeorgianSmallLetterRae => "georgian small letter rae",
-            GeorgianSupplement::GeorgianSmallLetterSan => "georgian small letter san",
-            GeorgianSupplement::GeorgianSmallLetterTar => "georgian small letter tar",
-            GeorgianSupplement::GeorgianSmallLetterUn => "georgian small letter un",
-            GeorgianSupplement::GeorgianSmallLetterPhar => "georgian small letter phar",
-            GeorgianSupplement::GeorgianSmallLetterKhar => "georgian small letter khar",
-            GeorgianSupplement::GeorgianSmallLetterGhan => "georgian small letter ghan",
-            GeorgianSupplement::GeorgianSmallLetterQar => "georgian small letter qar",
-            GeorgianSupplement::GeorgianSmallLetterShin => "georgian small letter shin",
-            GeorgianSupplement::GeorgianSmallLetterChin => "georgian small letter chin",
-            GeorgianSupplement::GeorgianSmallLetterCan => "georgian small letter can",
-            GeorgianSupplement::GeorgianSmallLetterJil => "georgian small letter jil",
-            GeorgianSupplement::GeorgianSmallLetterCil => "georgian small letter cil",
-            GeorgianSupplement::GeorgianSmallLetterChar => "georgian small letter char",
-            GeorgianSupplement::GeorgianSmallLetterXan => "georgian small letter xan",
-            GeorgianSupplement::GeorgianSmallLetterJhan => "georgian small letter jhan",
-            GeorgianSupplement::GeorgianSmallLetterHae => "georgian small letter hae",
-            GeorgianSupplement::GeorgianSmallLetterHe => "georgian small letter he",
-            GeorgianSupplement::GeorgianSmallLetterHie => "georgian small letter hie",
-            GeorgianSupplement::GeorgianSmallLetterWe => "georgian small letter we",
-            GeorgianSupplement::GeorgianSmallLetterHar => "georgian small letter har",
-            GeorgianSupplement::GeorgianSmallLetterHoe => "georgian small letter hoe",
-            GeorgianSupplement::GeorgianSmallLetterYn => "georgian small letter yn",
-            GeorgianSupplement::GeorgianSmallLetterAen => "georgian small letter aen",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("GeorgianSupplement{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -166,36 +166,9 @@ impl BopomofoExtended {
         BopomofoExtended::BopomofoLetterBu
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            BopomofoExtended::BopomofoLetterBu => "bopomofo letter bu",
-            BopomofoExtended::BopomofoLetterZi => "bopomofo letter zi",
-            BopomofoExtended::BopomofoLetterJi => "bopomofo letter ji",
-            BopomofoExtended::BopomofoLetterGu => "bopomofo letter gu",
-            BopomofoExtended::BopomofoLetterEe => "bopomofo letter ee",
-            BopomofoExtended::BopomofoLetterEnn => "bopomofo letter enn",
-            BopomofoExtended::BopomofoLetterOo => "bopomofo letter oo",
-            BopomofoExtended::BopomofoLetterOnn => "bopomofo letter onn",
-            BopomofoExtended::BopomofoLetterIr => "bopomofo letter ir",
-            BopomofoExtended::BopomofoLetterAnn => "bopomofo letter ann",
-            BopomofoExtended::BopomofoLetterInn => "bopomofo letter inn",
-            BopomofoExtended::BopomofoLetterUnn => "bopomofo letter unn",
-            BopomofoExtended::BopomofoLetterIm => "bopomofo letter im",
-            BopomofoExtended::BopomofoLetterNgg => "bopomofo letter ngg",
-            BopomofoExtended::BopomofoLetterAinn => "bopomofo letter ainn",
-            BopomofoExtended::BopomofoLetterAunn => "bopomofo letter aunn",
-            BopomofoExtended::BopomofoLetterAm => "bopomofo letter am",
-            BopomofoExtended::BopomofoLetterOm => "bopomofo letter om",
-            BopomofoExtended::BopomofoLetterOng => "bopomofo letter ong",
-            BopomofoExtended::BopomofoLetterInnn => "bopomofo letter innn",
-            BopomofoExtended::BopomofoFinalLetterP => "bopomofo final letter p",
-            BopomofoExtended::BopomofoFinalLetterT => "bopomofo final letter t",
-            BopomofoExtended::BopomofoFinalLetterK => "bopomofo final letter k",
-            BopomofoExtended::BopomofoFinalLetterH => "bopomofo final letter h",
-            BopomofoExtended::BopomofoLetterGh => "bopomofo letter gh",
-            BopomofoExtended::BopomofoLetterLh => "bopomofo letter lh",
-            BopomofoExtended::BopomofoLetterZy => "bopomofo letter zy",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("BopomofoExtended{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

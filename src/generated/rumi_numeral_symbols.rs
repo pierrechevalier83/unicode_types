@@ -182,40 +182,9 @@ impl RumiNumeralSymbols {
         RumiNumeralSymbols::RumiDigitOne
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            RumiNumeralSymbols::RumiDigitOne => "rumi digit one",
-            RumiNumeralSymbols::RumiDigitTwo => "rumi digit two",
-            RumiNumeralSymbols::RumiDigitThree => "rumi digit three",
-            RumiNumeralSymbols::RumiDigitFour => "rumi digit four",
-            RumiNumeralSymbols::RumiDigitFive => "rumi digit five",
-            RumiNumeralSymbols::RumiDigitSix => "rumi digit six",
-            RumiNumeralSymbols::RumiDigitSeven => "rumi digit seven",
-            RumiNumeralSymbols::RumiDigitEight => "rumi digit eight",
-            RumiNumeralSymbols::RumiDigitNine => "rumi digit nine",
-            RumiNumeralSymbols::RumiNumberTen => "rumi number ten",
-            RumiNumeralSymbols::RumiNumberTwenty => "rumi number twenty",
-            RumiNumeralSymbols::RumiNumberThirty => "rumi number thirty",
-            RumiNumeralSymbols::RumiNumberForty => "rumi number forty",
-            RumiNumeralSymbols::RumiNumberFifty => "rumi number fifty",
-            RumiNumeralSymbols::RumiNumberSixty => "rumi number sixty",
-            RumiNumeralSymbols::RumiNumberSeventy => "rumi number seventy",
-            RumiNumeralSymbols::RumiNumberEighty => "rumi number eighty",
-            RumiNumeralSymbols::RumiNumberNinety => "rumi number ninety",
-            RumiNumeralSymbols::RumiNumberOneHundred => "rumi number one hundred",
-            RumiNumeralSymbols::RumiNumberTwoHundred => "rumi number two hundred",
-            RumiNumeralSymbols::RumiNumberThreeHundred => "rumi number three hundred",
-            RumiNumeralSymbols::RumiNumberFourHundred => "rumi number four hundred",
-            RumiNumeralSymbols::RumiNumberFiveHundred => "rumi number five hundred",
-            RumiNumeralSymbols::RumiNumberSixHundred => "rumi number six hundred",
-            RumiNumeralSymbols::RumiNumberSevenHundred => "rumi number seven hundred",
-            RumiNumeralSymbols::RumiNumberEightHundred => "rumi number eight hundred",
-            RumiNumeralSymbols::RumiNumberNineHundred => "rumi number nine hundred",
-            RumiNumeralSymbols::RumiFractionOneHalf => "rumi fraction one half",
-            RumiNumeralSymbols::RumiFractionOneQuarter => "rumi fraction one quarter",
-            RumiNumeralSymbols::RumiFractionOneThird => "rumi fraction one third",
-            RumiNumeralSymbols::RumiFractionTwoThirds => "rumi fraction two thirds",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("RumiNumeralSymbols{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -102,20 +102,9 @@ impl OpticalCharacterRecognition {
         OpticalCharacterRecognition::OcrHook
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            OpticalCharacterRecognition::OcrHook => "ocr hook",
-            OpticalCharacterRecognition::OcrChair => "ocr chair",
-            OpticalCharacterRecognition::OcrFork => "ocr fork",
-            OpticalCharacterRecognition::OcrInvertedFork => "ocr inverted fork",
-            OpticalCharacterRecognition::OcrBeltBuckle => "ocr belt buckle",
-            OpticalCharacterRecognition::OcrBowTie => "ocr bow tie",
-            OpticalCharacterRecognition::OcrBranchBankIdentification => "ocr branch bank identification",
-            OpticalCharacterRecognition::OcrAmountOfCheck => "ocr amount of check",
-            OpticalCharacterRecognition::OcrDash => "ocr dash",
-            OpticalCharacterRecognition::OcrCustomerAccountNumber => "ocr customer account number",
-            OpticalCharacterRecognition::OcrDoubleBackslash => "ocr double backslash",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("OpticalCharacterRecognition{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

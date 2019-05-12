@@ -74,13 +74,9 @@ impl ShorthandFormatControls {
         ShorthandFormatControls::ShorthandFormatLetterOverlap
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            ShorthandFormatControls::ShorthandFormatLetterOverlap => "shorthand format letter overlap",
-            ShorthandFormatControls::ShorthandFormatContinuingOverlap => "shorthand format continuing overlap",
-            ShorthandFormatControls::ShorthandFormatDownStep => "shorthand format down step",
-            ShorthandFormatControls::ShorthandFormatUpStep => "shorthand format up step",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("ShorthandFormatControls{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

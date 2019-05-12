@@ -174,38 +174,9 @@ impl Buginese {
         Buginese::LetterKa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Buginese::LetterKa => "buginese letter ka",
-            Buginese::LetterGa => "buginese letter ga",
-            Buginese::LetterNga => "buginese letter nga",
-            Buginese::LetterNgka => "buginese letter ngka",
-            Buginese::LetterPa => "buginese letter pa",
-            Buginese::LetterBa => "buginese letter ba",
-            Buginese::LetterMa => "buginese letter ma",
-            Buginese::LetterMpa => "buginese letter mpa",
-            Buginese::LetterTa => "buginese letter ta",
-            Buginese::LetterDa => "buginese letter da",
-            Buginese::LetterNa => "buginese letter na",
-            Buginese::LetterNra => "buginese letter nra",
-            Buginese::LetterCa => "buginese letter ca",
-            Buginese::LetterJa => "buginese letter ja",
-            Buginese::LetterNya => "buginese letter nya",
-            Buginese::LetterNyca => "buginese letter nyca",
-            Buginese::LetterYa => "buginese letter ya",
-            Buginese::LetterRa => "buginese letter ra",
-            Buginese::LetterLa => "buginese letter la",
-            Buginese::LetterVa => "buginese letter va",
-            Buginese::LetterSa => "buginese letter sa",
-            Buginese::LetterA => "buginese letter a",
-            Buginese::LetterHa => "buginese letter ha",
-            Buginese::VowelSignI => "buginese vowel sign i",
-            Buginese::VowelSignU => "buginese vowel sign u",
-            Buginese::VowelSignE => "buginese vowel sign e",
-            Buginese::VowelSignO => "buginese vowel sign o",
-            Buginese::VowelSignAe => "buginese vowel sign ae",
-            Buginese::Pallawa => "buginese pallawa",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Buginese{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

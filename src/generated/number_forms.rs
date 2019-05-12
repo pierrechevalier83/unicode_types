@@ -298,69 +298,9 @@ impl NumberForms {
         NumberForms::VulgarFractionOneSeventh
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            NumberForms::VulgarFractionOneSeventh => "vulgar fraction one seventh",
-            NumberForms::VulgarFractionOneNinth => "vulgar fraction one ninth",
-            NumberForms::VulgarFractionOneTenth => "vulgar fraction one tenth",
-            NumberForms::VulgarFractionOneThird => "vulgar fraction one third",
-            NumberForms::VulgarFractionTwoThirds => "vulgar fraction two thirds",
-            NumberForms::VulgarFractionOneFifth => "vulgar fraction one fifth",
-            NumberForms::VulgarFractionTwoFifths => "vulgar fraction two fifths",
-            NumberForms::VulgarFractionThreeFifths => "vulgar fraction three fifths",
-            NumberForms::VulgarFractionFourFifths => "vulgar fraction four fifths",
-            NumberForms::VulgarFractionOneSixth => "vulgar fraction one sixth",
-            NumberForms::VulgarFractionFiveSixths => "vulgar fraction five sixths",
-            NumberForms::VulgarFractionOneEighth => "vulgar fraction one eighth",
-            NumberForms::VulgarFractionThreeEighths => "vulgar fraction three eighths",
-            NumberForms::VulgarFractionFiveEighths => "vulgar fraction five eighths",
-            NumberForms::VulgarFractionSevenEighths => "vulgar fraction seven eighths",
-            NumberForms::FractionNumeratorOne => "fraction numerator one",
-            NumberForms::RomanNumeralOne => "roman numeral one",
-            NumberForms::RomanNumeralTwo => "roman numeral two",
-            NumberForms::RomanNumeralThree => "roman numeral three",
-            NumberForms::RomanNumeralFour => "roman numeral four",
-            NumberForms::RomanNumeralFive => "roman numeral five",
-            NumberForms::RomanNumeralSix => "roman numeral six",
-            NumberForms::RomanNumeralSeven => "roman numeral seven",
-            NumberForms::RomanNumeralEight => "roman numeral eight",
-            NumberForms::RomanNumeralNine => "roman numeral nine",
-            NumberForms::RomanNumeralTen => "roman numeral ten",
-            NumberForms::RomanNumeralEleven => "roman numeral eleven",
-            NumberForms::RomanNumeralTwelve => "roman numeral twelve",
-            NumberForms::RomanNumeralFifty => "roman numeral fifty",
-            NumberForms::RomanNumeralOneHundred => "roman numeral one hundred",
-            NumberForms::RomanNumeralFiveHundred => "roman numeral five hundred",
-            NumberForms::RomanNumeralOneThousand => "roman numeral one thousand",
-            NumberForms::SmallRomanNumeralOne => "small roman numeral one",
-            NumberForms::SmallRomanNumeralTwo => "small roman numeral two",
-            NumberForms::SmallRomanNumeralThree => "small roman numeral three",
-            NumberForms::SmallRomanNumeralFour => "small roman numeral four",
-            NumberForms::SmallRomanNumeralFive => "small roman numeral five",
-            NumberForms::SmallRomanNumeralSix => "small roman numeral six",
-            NumberForms::SmallRomanNumeralSeven => "small roman numeral seven",
-            NumberForms::SmallRomanNumeralEight => "small roman numeral eight",
-            NumberForms::SmallRomanNumeralNine => "small roman numeral nine",
-            NumberForms::SmallRomanNumeralTen => "small roman numeral ten",
-            NumberForms::SmallRomanNumeralEleven => "small roman numeral eleven",
-            NumberForms::SmallRomanNumeralTwelve => "small roman numeral twelve",
-            NumberForms::SmallRomanNumeralFifty => "small roman numeral fifty",
-            NumberForms::SmallRomanNumeralOneHundred => "small roman numeral one hundred",
-            NumberForms::SmallRomanNumeralFiveHundred => "small roman numeral five hundred",
-            NumberForms::SmallRomanNumeralOneThousand => "small roman numeral one thousand",
-            NumberForms::RomanNumeralOneThousandCD => "roman numeral one thousand c d",
-            NumberForms::RomanNumeralFiveThousand => "roman numeral five thousand",
-            NumberForms::RomanNumeralTenThousand => "roman numeral ten thousand",
-            NumberForms::RomanNumeralReversedOneHundred => "roman numeral reversed one hundred",
-            NumberForms::LatinSmallLetterReversedC => "latin small letter reversed c",
-            NumberForms::RomanNumeralSixLateForm => "roman numeral six late form",
-            NumberForms::RomanNumeralFiftyEarlyForm => "roman numeral fifty early form",
-            NumberForms::RomanNumeralFiftyThousand => "roman numeral fifty thousand",
-            NumberForms::RomanNumeralOneHundredThousand => "roman numeral one hundred thousand",
-            NumberForms::VulgarFractionZeroThirds => "vulgar fraction zero thirds",
-            NumberForms::TurnedDigitTwo => "turned digit two",
-            NumberForms::TurnedDigitThree => "turned digit three",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("NumberForms{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

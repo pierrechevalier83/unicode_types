@@ -166,36 +166,9 @@ impl Gothic {
         Gothic::LetterAhsa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Gothic::LetterAhsa => "gothic letter ahsa",
-            Gothic::LetterBairkan => "gothic letter bairkan",
-            Gothic::LetterGiba => "gothic letter giba",
-            Gothic::LetterDags => "gothic letter dags",
-            Gothic::LetterAihvus => "gothic letter aihvus",
-            Gothic::LetterQairthra => "gothic letter qairthra",
-            Gothic::LetterIuja => "gothic letter iuja",
-            Gothic::LetterHagl => "gothic letter hagl",
-            Gothic::LetterThiuth => "gothic letter thiuth",
-            Gothic::LetterEis => "gothic letter eis",
-            Gothic::LetterKusma => "gothic letter kusma",
-            Gothic::LetterLagus => "gothic letter lagus",
-            Gothic::LetterManna => "gothic letter manna",
-            Gothic::LetterNauths => "gothic letter nauths",
-            Gothic::LetterJer => "gothic letter jer",
-            Gothic::LetterUrus => "gothic letter urus",
-            Gothic::LetterPairthra => "gothic letter pairthra",
-            Gothic::LetterNinety => "gothic letter ninety",
-            Gothic::LetterRaida => "gothic letter raida",
-            Gothic::LetterSauil => "gothic letter sauil",
-            Gothic::LetterTeiws => "gothic letter teiws",
-            Gothic::LetterWinja => "gothic letter winja",
-            Gothic::LetterFaihu => "gothic letter faihu",
-            Gothic::LetterIggws => "gothic letter iggws",
-            Gothic::LetterHwair => "gothic letter hwair",
-            Gothic::LetterOthal => "gothic letter othal",
-            Gothic::LetterNineHundred => "gothic letter nine hundred",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Gothic{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

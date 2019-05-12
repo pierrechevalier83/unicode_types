@@ -234,53 +234,9 @@ impl SylotiNagri {
         SylotiNagri::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            SylotiNagri::LetterA => "syloti nagri letter a",
-            SylotiNagri::LetterI => "syloti nagri letter i",
-            SylotiNagri::SignDvisvara => "syloti nagri sign dvisvara",
-            SylotiNagri::LetterU => "syloti nagri letter u",
-            SylotiNagri::LetterE => "syloti nagri letter e",
-            SylotiNagri::LetterO => "syloti nagri letter o",
-            SylotiNagri::SignHasanta => "syloti nagri sign hasanta",
-            SylotiNagri::LetterKo => "syloti nagri letter ko",
-            SylotiNagri::LetterKho => "syloti nagri letter kho",
-            SylotiNagri::LetterGo => "syloti nagri letter go",
-            SylotiNagri::LetterGho => "syloti nagri letter gho",
-            SylotiNagri::SignAnusvara => "syloti nagri sign anusvara",
-            SylotiNagri::LetterCo => "syloti nagri letter co",
-            SylotiNagri::LetterCho => "syloti nagri letter cho",
-            SylotiNagri::LetterJo => "syloti nagri letter jo",
-            SylotiNagri::LetterJho => "syloti nagri letter jho",
-            SylotiNagri::LetterTto => "syloti nagri letter tto",
-            SylotiNagri::LetterTtho => "syloti nagri letter ttho",
-            SylotiNagri::LetterDdo => "syloti nagri letter ddo",
-            SylotiNagri::LetterDdho => "syloti nagri letter ddho",
-            SylotiNagri::LetterTo => "syloti nagri letter to",
-            SylotiNagri::LetterTho => "syloti nagri letter tho",
-            SylotiNagri::LetterDo => "syloti nagri letter do",
-            SylotiNagri::LetterDho => "syloti nagri letter dho",
-            SylotiNagri::LetterNo => "syloti nagri letter no",
-            SylotiNagri::LetterPo => "syloti nagri letter po",
-            SylotiNagri::LetterPho => "syloti nagri letter pho",
-            SylotiNagri::LetterBo => "syloti nagri letter bo",
-            SylotiNagri::LetterBho => "syloti nagri letter bho",
-            SylotiNagri::LetterMo => "syloti nagri letter mo",
-            SylotiNagri::LetterRo => "syloti nagri letter ro",
-            SylotiNagri::LetterLo => "syloti nagri letter lo",
-            SylotiNagri::LetterRro => "syloti nagri letter rro",
-            SylotiNagri::LetterSo => "syloti nagri letter so",
-            SylotiNagri::LetterHo => "syloti nagri letter ho",
-            SylotiNagri::VowelSignA => "syloti nagri vowel sign a",
-            SylotiNagri::VowelSignI => "syloti nagri vowel sign i",
-            SylotiNagri::VowelSignU => "syloti nagri vowel sign u",
-            SylotiNagri::VowelSignE => "syloti nagri vowel sign e",
-            SylotiNagri::VowelSignOo => "syloti nagri vowel sign oo",
-            SylotiNagri::PoetryMarkDash1 => "syloti nagri poetry mark-1",
-            SylotiNagri::PoetryMarkDash2 => "syloti nagri poetry mark-2",
-            SylotiNagri::PoetryMarkDash3 => "syloti nagri poetry mark-3",
-            SylotiNagri::PoetryMarkDash4 => "syloti nagri poetry mark-4",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("SylotiNagri{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

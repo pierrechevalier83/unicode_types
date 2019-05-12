@@ -182,40 +182,9 @@ impl LatinExtendedC {
         LatinExtendedC::LatinCapitalLetterLWithDoubleBar
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            LatinExtendedC::LatinCapitalLetterLWithDoubleBar => "latin capital letter l with double bar",
-            LatinExtendedC::LatinSmallLetterLWithDoubleBar => "latin small letter l with double bar",
-            LatinExtendedC::LatinCapitalLetterLWithMiddleTilde => "latin capital letter l with middle tilde",
-            LatinExtendedC::LatinCapitalLetterPWithStroke => "latin capital letter p with stroke",
-            LatinExtendedC::LatinCapitalLetterRWithTail => "latin capital letter r with tail",
-            LatinExtendedC::LatinSmallLetterAWithStroke => "latin small letter a with stroke",
-            LatinExtendedC::LatinSmallLetterTWithDiagonalStroke => "latin small letter t with diagonal stroke",
-            LatinExtendedC::LatinCapitalLetterHWithDescender => "latin capital letter h with descender",
-            LatinExtendedC::LatinSmallLetterHWithDescender => "latin small letter h with descender",
-            LatinExtendedC::LatinCapitalLetterKWithDescender => "latin capital letter k with descender",
-            LatinExtendedC::LatinSmallLetterKWithDescender => "latin small letter k with descender",
-            LatinExtendedC::LatinCapitalLetterZWithDescender => "latin capital letter z with descender",
-            LatinExtendedC::LatinSmallLetterZWithDescender => "latin small letter z with descender",
-            LatinExtendedC::LatinCapitalLetterAlpha => "latin capital letter alpha",
-            LatinExtendedC::LatinCapitalLetterMWithHook => "latin capital letter m with hook",
-            LatinExtendedC::LatinCapitalLetterTurnedA => "latin capital letter turned a",
-            LatinExtendedC::LatinCapitalLetterTurnedAlpha => "latin capital letter turned alpha",
-            LatinExtendedC::LatinSmallLetterVWithRightHook => "latin small letter v with right hook",
-            LatinExtendedC::LatinCapitalLetterWWithHook => "latin capital letter w with hook",
-            LatinExtendedC::LatinSmallLetterWWithHook => "latin small letter w with hook",
-            LatinExtendedC::LatinSmallLetterVWithCurl => "latin small letter v with curl",
-            LatinExtendedC::LatinCapitalLetterHalfH => "latin capital letter half h",
-            LatinExtendedC::LatinSmallLetterHalfH => "latin small letter half h",
-            LatinExtendedC::LatinSmallLetterTaillessPhi => "latin small letter tailless phi",
-            LatinExtendedC::LatinSmallLetterEWithNotch => "latin small letter e with notch",
-            LatinExtendedC::LatinSmallLetterTurnedRWithTail => "latin small letter turned r with tail",
-            LatinExtendedC::LatinSmallLetterOWithLowRingInside => "latin small letter o with low ring inside",
-            LatinExtendedC::LatinLetterSmallCapitalTurnedE => "latin letter small capital turned e",
-            LatinExtendedC::LatinSubscriptSmallLetterJ => "latin subscript small letter j",
-            LatinExtendedC::ModifierLetterCapitalV => "modifier letter capital v",
-            LatinExtendedC::LatinCapitalLetterSWithSwashTail => "latin capital letter s with swash tail",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("LatinExtendedC{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

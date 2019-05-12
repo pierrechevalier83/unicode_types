@@ -94,18 +94,9 @@ impl CyrillicExtendedC {
         CyrillicExtendedC::CyrillicSmallLetterRoundedVe
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CyrillicExtendedC::CyrillicSmallLetterRoundedVe => "cyrillic small letter rounded ve",
-            CyrillicExtendedC::CyrillicSmallLetterLongDashLeggedDe => "cyrillic small letter long-legged de",
-            CyrillicExtendedC::CyrillicSmallLetterNarrowO => "cyrillic small letter narrow o",
-            CyrillicExtendedC::CyrillicSmallLetterWideEs => "cyrillic small letter wide es",
-            CyrillicExtendedC::CyrillicSmallLetterTallTe => "cyrillic small letter tall te",
-            CyrillicExtendedC::CyrillicSmallLetterThreeDashLeggedTe => "cyrillic small letter three-legged te",
-            CyrillicExtendedC::CyrillicSmallLetterTallHardSign => "cyrillic small letter tall hard sign",
-            CyrillicExtendedC::CyrillicSmallLetterTallYat => "cyrillic small letter tall yat",
-            CyrillicExtendedC::CyrillicSmallLetterUnblendedUk => "cyrillic small letter unblended uk",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CyrillicExtendedC{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

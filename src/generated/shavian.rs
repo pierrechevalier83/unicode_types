@@ -246,56 +246,9 @@ impl Shavian {
         Shavian::LetterPeep
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Shavian::LetterPeep => "shavian letter peep",
-            Shavian::LetterTot => "shavian letter tot",
-            Shavian::LetterKick => "shavian letter kick",
-            Shavian::LetterFee => "shavian letter fee",
-            Shavian::LetterThigh => "shavian letter thigh",
-            Shavian::LetterSo => "shavian letter so",
-            Shavian::LetterSure => "shavian letter sure",
-            Shavian::LetterChurch => "shavian letter church",
-            Shavian::LetterYea => "shavian letter yea",
-            Shavian::LetterHung => "shavian letter hung",
-            Shavian::LetterBib => "shavian letter bib",
-            Shavian::LetterDead => "shavian letter dead",
-            Shavian::LetterGag => "shavian letter gag",
-            Shavian::LetterVow => "shavian letter vow",
-            Shavian::LetterThey => "shavian letter they",
-            Shavian::LetterZoo => "shavian letter zoo",
-            Shavian::LetterMeasure => "shavian letter measure",
-            Shavian::LetterJudge => "shavian letter judge",
-            Shavian::LetterWoe => "shavian letter woe",
-            Shavian::LetterHaDashHa => "shavian letter ha-ha",
-            Shavian::LetterLoll => "shavian letter loll",
-            Shavian::LetterMime => "shavian letter mime",
-            Shavian::LetterIf => "shavian letter if",
-            Shavian::LetterEgg => "shavian letter egg",
-            Shavian::LetterAsh => "shavian letter ash",
-            Shavian::LetterAdo => "shavian letter ado",
-            Shavian::LetterOn => "shavian letter on",
-            Shavian::LetterWool => "shavian letter wool",
-            Shavian::LetterOut => "shavian letter out",
-            Shavian::LetterAh => "shavian letter ah",
-            Shavian::LetterRoar => "shavian letter roar",
-            Shavian::LetterNun => "shavian letter nun",
-            Shavian::LetterEat => "shavian letter eat",
-            Shavian::LetterAge => "shavian letter age",
-            Shavian::LetterIce => "shavian letter ice",
-            Shavian::LetterUp => "shavian letter up",
-            Shavian::LetterOak => "shavian letter oak",
-            Shavian::LetterOoze => "shavian letter ooze",
-            Shavian::LetterOil => "shavian letter oil",
-            Shavian::LetterAwe => "shavian letter awe",
-            Shavian::LetterAre => "shavian letter are",
-            Shavian::LetterOr => "shavian letter or",
-            Shavian::LetterAir => "shavian letter air",
-            Shavian::LetterErr => "shavian letter err",
-            Shavian::LetterArray => "shavian letter array",
-            Shavian::LetterEar => "shavian letter ear",
-            Shavian::LetterIan => "shavian letter ian",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Shavian{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

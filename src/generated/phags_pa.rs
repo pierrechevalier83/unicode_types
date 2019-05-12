@@ -282,65 +282,9 @@ impl Phagspa {
         Phagspa::PhagsDashPaLetterKa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Phagspa::PhagsDashPaLetterKa => "phags-pa letter ka",
-            Phagspa::PhagsDashPaLetterKha => "phags-pa letter kha",
-            Phagspa::PhagsDashPaLetterGa => "phags-pa letter ga",
-            Phagspa::PhagsDashPaLetterNga => "phags-pa letter nga",
-            Phagspa::PhagsDashPaLetterCa => "phags-pa letter ca",
-            Phagspa::PhagsDashPaLetterCha => "phags-pa letter cha",
-            Phagspa::PhagsDashPaLetterJa => "phags-pa letter ja",
-            Phagspa::PhagsDashPaLetterNya => "phags-pa letter nya",
-            Phagspa::PhagsDashPaLetterTa => "phags-pa letter ta",
-            Phagspa::PhagsDashPaLetterTha => "phags-pa letter tha",
-            Phagspa::PhagsDashPaLetterDa => "phags-pa letter da",
-            Phagspa::PhagsDashPaLetterNa => "phags-pa letter na",
-            Phagspa::PhagsDashPaLetterPa => "phags-pa letter pa",
-            Phagspa::PhagsDashPaLetterPha => "phags-pa letter pha",
-            Phagspa::PhagsDashPaLetterBa => "phags-pa letter ba",
-            Phagspa::PhagsDashPaLetterMa => "phags-pa letter ma",
-            Phagspa::PhagsDashPaLetterTsa => "phags-pa letter tsa",
-            Phagspa::PhagsDashPaLetterTsha => "phags-pa letter tsha",
-            Phagspa::PhagsDashPaLetterDza => "phags-pa letter dza",
-            Phagspa::PhagsDashPaLetterWa => "phags-pa letter wa",
-            Phagspa::PhagsDashPaLetterZha => "phags-pa letter zha",
-            Phagspa::PhagsDashPaLetterZa => "phags-pa letter za",
-            Phagspa::PhagsDashPaLetterSmallA => "phags-pa letter small a",
-            Phagspa::PhagsDashPaLetterYa => "phags-pa letter ya",
-            Phagspa::PhagsDashPaLetterRa => "phags-pa letter ra",
-            Phagspa::PhagsDashPaLetterLa => "phags-pa letter la",
-            Phagspa::PhagsDashPaLetterSha => "phags-pa letter sha",
-            Phagspa::PhagsDashPaLetterSa => "phags-pa letter sa",
-            Phagspa::PhagsDashPaLetterHa => "phags-pa letter ha",
-            Phagspa::PhagsDashPaLetterA => "phags-pa letter a",
-            Phagspa::PhagsDashPaLetterI => "phags-pa letter i",
-            Phagspa::PhagsDashPaLetterU => "phags-pa letter u",
-            Phagspa::PhagsDashPaLetterE => "phags-pa letter e",
-            Phagspa::PhagsDashPaLetterO => "phags-pa letter o",
-            Phagspa::PhagsDashPaLetterQa => "phags-pa letter qa",
-            Phagspa::PhagsDashPaLetterXa => "phags-pa letter xa",
-            Phagspa::PhagsDashPaLetterFa => "phags-pa letter fa",
-            Phagspa::PhagsDashPaLetterGga => "phags-pa letter gga",
-            Phagspa::PhagsDashPaLetterEe => "phags-pa letter ee",
-            Phagspa::PhagsDashPaSubjoinedLetterWa => "phags-pa subjoined letter wa",
-            Phagspa::PhagsDashPaSubjoinedLetterYa => "phags-pa subjoined letter ya",
-            Phagspa::PhagsDashPaLetterTta => "phags-pa letter tta",
-            Phagspa::PhagsDashPaLetterTtha => "phags-pa letter ttha",
-            Phagspa::PhagsDashPaLetterDda => "phags-pa letter dda",
-            Phagspa::PhagsDashPaLetterNna => "phags-pa letter nna",
-            Phagspa::PhagsDashPaLetterAlternateYa => "phags-pa letter alternate ya",
-            Phagspa::PhagsDashPaLetterVoicelessSha => "phags-pa letter voiceless sha",
-            Phagspa::PhagsDashPaLetterVoicedHa => "phags-pa letter voiced ha",
-            Phagspa::PhagsDashPaLetterAspiratedFa => "phags-pa letter aspirated fa",
-            Phagspa::PhagsDashPaSubjoinedLetterRa => "phags-pa subjoined letter ra",
-            Phagspa::PhagsDashPaSuperfixedLetterRa => "phags-pa superfixed letter ra",
-            Phagspa::PhagsDashPaLetterCandrabindu => "phags-pa letter candrabindu",
-            Phagspa::PhagsDashPaSingleHeadMark => "phags-pa single head mark",
-            Phagspa::PhagsDashPaDoubleHeadMark => "phags-pa double head mark",
-            Phagspa::PhagsDashPaMarkShad => "phags-pa mark shad",
-            Phagspa::PhagsDashPaMarkDoubleShad => "phags-pa mark double shad",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Phagspa{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

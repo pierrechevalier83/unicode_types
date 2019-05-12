@@ -66,11 +66,9 @@ impl CJKUnifiedIdeographsExtensionD {
         CJKUnifiedIdeographsExtensionD::CjkIdeographExtensionDFirst
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CJKUnifiedIdeographsExtensionD::CjkIdeographExtensionDFirst => "cjk ideograph extension d first",
-            CJKUnifiedIdeographsExtensionD::CjkIdeographExtensionDLast => "cjk ideograph extension d last",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CJKUnifiedIdeographsExtensionD{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

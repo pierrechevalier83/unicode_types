@@ -218,49 +218,9 @@ impl Elbasan {
         Elbasan::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Elbasan::LetterA => "elbasan letter a",
-            Elbasan::LetterBe => "elbasan letter be",
-            Elbasan::LetterCe => "elbasan letter ce",
-            Elbasan::LetterChe => "elbasan letter che",
-            Elbasan::LetterDe => "elbasan letter de",
-            Elbasan::LetterNde => "elbasan letter nde",
-            Elbasan::LetterDhe => "elbasan letter dhe",
-            Elbasan::LetterEi => "elbasan letter ei",
-            Elbasan::LetterE => "elbasan letter e",
-            Elbasan::LetterFe => "elbasan letter fe",
-            Elbasan::LetterGe => "elbasan letter ge",
-            Elbasan::LetterGje => "elbasan letter gje",
-            Elbasan::LetterHe => "elbasan letter he",
-            Elbasan::LetterI => "elbasan letter i",
-            Elbasan::LetterJe => "elbasan letter je",
-            Elbasan::LetterKe => "elbasan letter ke",
-            Elbasan::LetterLe => "elbasan letter le",
-            Elbasan::LetterLle => "elbasan letter lle",
-            Elbasan::LetterMe => "elbasan letter me",
-            Elbasan::LetterNe => "elbasan letter ne",
-            Elbasan::LetterNa => "elbasan letter na",
-            Elbasan::LetterNje => "elbasan letter nje",
-            Elbasan::LetterO => "elbasan letter o",
-            Elbasan::LetterPe => "elbasan letter pe",
-            Elbasan::LetterQe => "elbasan letter qe",
-            Elbasan::LetterRe => "elbasan letter re",
-            Elbasan::LetterRre => "elbasan letter rre",
-            Elbasan::LetterSe => "elbasan letter se",
-            Elbasan::LetterShe => "elbasan letter she",
-            Elbasan::LetterTe => "elbasan letter te",
-            Elbasan::LetterThe => "elbasan letter the",
-            Elbasan::LetterU => "elbasan letter u",
-            Elbasan::LetterVe => "elbasan letter ve",
-            Elbasan::LetterXe => "elbasan letter xe",
-            Elbasan::LetterY => "elbasan letter y",
-            Elbasan::LetterZe => "elbasan letter ze",
-            Elbasan::LetterZhe => "elbasan letter zhe",
-            Elbasan::LetterGhe => "elbasan letter ghe",
-            Elbasan::LetterGhamma => "elbasan letter ghamma",
-            Elbasan::LetterKhe => "elbasan letter khe",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Elbasan{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

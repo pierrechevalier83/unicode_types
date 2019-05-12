@@ -182,40 +182,9 @@ impl OldNorthArabian {
         OldNorthArabian::LetterHeh
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            OldNorthArabian::LetterHeh => "old north arabian letter heh",
-            OldNorthArabian::LetterLam => "old north arabian letter lam",
-            OldNorthArabian::LetterHah => "old north arabian letter hah",
-            OldNorthArabian::LetterMeem => "old north arabian letter meem",
-            OldNorthArabian::LetterQaf => "old north arabian letter qaf",
-            OldNorthArabian::LetterWaw => "old north arabian letter waw",
-            OldNorthArabian::LetterEsDash2 => "old north arabian letter es-2",
-            OldNorthArabian::LetterReh => "old north arabian letter reh",
-            OldNorthArabian::LetterBeh => "old north arabian letter beh",
-            OldNorthArabian::LetterTeh => "old north arabian letter teh",
-            OldNorthArabian::LetterEsDash1 => "old north arabian letter es-1",
-            OldNorthArabian::LetterKaf => "old north arabian letter kaf",
-            OldNorthArabian::LetterNoon => "old north arabian letter noon",
-            OldNorthArabian::LetterKhah => "old north arabian letter khah",
-            OldNorthArabian::LetterSad => "old north arabian letter sad",
-            OldNorthArabian::LetterEsDash3 => "old north arabian letter es-3",
-            OldNorthArabian::LetterFeh => "old north arabian letter feh",
-            OldNorthArabian::LetterAlef => "old north arabian letter alef",
-            OldNorthArabian::LetterAin => "old north arabian letter ain",
-            OldNorthArabian::LetterDad => "old north arabian letter dad",
-            OldNorthArabian::LetterGeem => "old north arabian letter geem",
-            OldNorthArabian::LetterDal => "old north arabian letter dal",
-            OldNorthArabian::LetterGhain => "old north arabian letter ghain",
-            OldNorthArabian::LetterTah => "old north arabian letter tah",
-            OldNorthArabian::LetterZain => "old north arabian letter zain",
-            OldNorthArabian::LetterThal => "old north arabian letter thal",
-            OldNorthArabian::LetterYeh => "old north arabian letter yeh",
-            OldNorthArabian::LetterTheh => "old north arabian letter theh",
-            OldNorthArabian::LetterZah => "old north arabian letter zah",
-            OldNorthArabian::NumberOne => "old north arabian number one",
-            OldNorthArabian::NumberTen => "old north arabian number ten",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("OldNorthArabian{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -162,35 +162,9 @@ impl SmallFormVariants {
         SmallFormVariants::SmallComma
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            SmallFormVariants::SmallComma => "small comma",
-            SmallFormVariants::SmallIdeographicComma => "small ideographic comma",
-            SmallFormVariants::SmallFullStop => "small full stop",
-            SmallFormVariants::SmallSemicolon => "small semicolon",
-            SmallFormVariants::SmallColon => "small colon",
-            SmallFormVariants::SmallQuestionMark => "small question mark",
-            SmallFormVariants::SmallExclamationMark => "small exclamation mark",
-            SmallFormVariants::SmallEmDash => "small em dash",
-            SmallFormVariants::SmallLeftParenthesis => "small left parenthesis",
-            SmallFormVariants::SmallRightParenthesis => "small right parenthesis",
-            SmallFormVariants::SmallLeftCurlyBracket => "small left curly bracket",
-            SmallFormVariants::SmallRightCurlyBracket => "small right curly bracket",
-            SmallFormVariants::SmallLeftTortoiseShellBracket => "small left tortoise shell bracket",
-            SmallFormVariants::SmallRightTortoiseShellBracket => "small right tortoise shell bracket",
-            SmallFormVariants::SmallNumberSign => "small number sign",
-            SmallFormVariants::SmallAmpersand => "small ampersand",
-            SmallFormVariants::SmallAsterisk => "small asterisk",
-            SmallFormVariants::SmallPlusSign => "small plus sign",
-            SmallFormVariants::SmallHyphenDashMinus => "small hyphen-minus",
-            SmallFormVariants::SmallLessDashThanSign => "small less-than sign",
-            SmallFormVariants::SmallGreaterDashThanSign => "small greater-than sign",
-            SmallFormVariants::SmallEqualsSign => "small equals sign",
-            SmallFormVariants::SmallReverseSolidus => "small reverse solidus",
-            SmallFormVariants::SmallDollarSign => "small dollar sign",
-            SmallFormVariants::SmallPercentSign => "small percent sign",
-            SmallFormVariants::SmallCommercialAt => "small commercial at",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("SmallFormVariants{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

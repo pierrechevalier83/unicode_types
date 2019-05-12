@@ -10,3 +10,4 @@ keywords = ["unicode", "types", "plain_text", "convenience", "boilerplate"]
 edition = "2018"
 
 [dependencies]
+string_morph = "0.1.0"

@@ -230,52 +230,9 @@ impl VedicExtensions {
         VedicExtensions::VedicToneKarshana
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            VedicExtensions::VedicToneKarshana => "vedic tone karshana",
-            VedicExtensions::VedicToneShara => "vedic tone shara",
-            VedicExtensions::VedicTonePrenkha => "vedic tone prenkha",
-            VedicExtensions::VedicSignNihshvasa => "vedic sign nihshvasa",
-            VedicExtensions::VedicSignYajurvedicMidlineSvarita => "vedic sign yajurvedic midline svarita",
-            VedicExtensions::VedicToneYajurvedicAggravatedIndependentSvarita => "vedic tone yajurvedic aggravated independent svarita",
-            VedicExtensions::VedicToneYajurvedicIndependentSvarita => "vedic tone yajurvedic independent svarita",
-            VedicExtensions::VedicToneYajurvedicKathakaIndependentSvarita => "vedic tone yajurvedic kathaka independent svarita",
-            VedicExtensions::VedicToneCandraBelow => "vedic tone candra below",
-            VedicExtensions::VedicToneYajurvedicKathakaIndependentSvaritaSchroeder => "vedic tone yajurvedic kathaka independent svarita schroeder",
-            VedicExtensions::VedicToneDoubleSvarita => "vedic tone double svarita",
-            VedicExtensions::VedicToneTripleSvarita => "vedic tone triple svarita",
-            VedicExtensions::VedicToneKathakaAnudatta => "vedic tone kathaka anudatta",
-            VedicExtensions::VedicToneDotBelow => "vedic tone dot below",
-            VedicExtensions::VedicToneTwoDotsBelow => "vedic tone two dots below",
-            VedicExtensions::VedicToneThreeDotsBelow => "vedic tone three dots below",
-            VedicExtensions::VedicToneRigvedicKashmiriIndependentSvarita => "vedic tone rigvedic kashmiri independent svarita",
-            VedicExtensions::VedicToneAtharvavedicIndependentSvarita => "vedic tone atharvavedic independent svarita",
-            VedicExtensions::VedicSignVisargaSvarita => "vedic sign visarga svarita",
-            VedicExtensions::VedicSignVisargaUdatta => "vedic sign visarga udatta",
-            VedicExtensions::VedicSignReversedVisargaUdatta => "vedic sign reversed visarga udatta",
-            VedicExtensions::VedicSignVisargaAnudatta => "vedic sign visarga anudatta",
-            VedicExtensions::VedicSignReversedVisargaAnudatta => "vedic sign reversed visarga anudatta",
-            VedicExtensions::VedicSignVisargaUdattaWithTail => "vedic sign visarga udatta with tail",
-            VedicExtensions::VedicSignVisargaAnudattaWithTail => "vedic sign visarga anudatta with tail",
-            VedicExtensions::VedicSignAnusvaraAntargomukha => "vedic sign anusvara antargomukha",
-            VedicExtensions::VedicSignAnusvaraBahirgomukha => "vedic sign anusvara bahirgomukha",
-            VedicExtensions::VedicSignAnusvaraVamagomukha => "vedic sign anusvara vamagomukha",
-            VedicExtensions::VedicSignAnusvaraVamagomukhaWithTail => "vedic sign anusvara vamagomukha with tail",
-            VedicExtensions::VedicSignTiryak => "vedic sign tiryak",
-            VedicExtensions::VedicSignHexiformLongAnusvara => "vedic sign hexiform long anusvara",
-            VedicExtensions::VedicSignLongAnusvara => "vedic sign long anusvara",
-            VedicExtensions::VedicSignRthangLongAnusvara => "vedic sign rthang long anusvara",
-            VedicExtensions::VedicSignAnusvaraUbhayatoMukha => "vedic sign anusvara ubhayato mukha",
-            VedicExtensions::VedicSignArdhavisarga => "vedic sign ardhavisarga",
-            VedicExtensions::VedicSignRotatedArdhavisarga => "vedic sign rotated ardhavisarga",
-            VedicExtensions::VedicToneCandraAbove => "vedic tone candra above",
-            VedicExtensions::VedicSignJihvamuliya => "vedic sign jihvamuliya",
-            VedicExtensions::VedicSignUpadhmaniya => "vedic sign upadhmaniya",
-            VedicExtensions::VedicSignAtikrama => "vedic sign atikrama",
-            VedicExtensions::VedicToneRingAbove => "vedic tone ring above",
-            VedicExtensions::VedicToneDoubleRingAbove => "vedic tone double ring above",
-            VedicExtensions::VedicSignDoubleAnusvaraAntargomukha => "vedic sign double anusvara antargomukha",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("VedicExtensions{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

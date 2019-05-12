@@ -158,34 +158,9 @@ impl Hatran {
         Hatran::LetterAleph
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Hatran::LetterAleph => "hatran letter aleph",
-            Hatran::LetterBeth => "hatran letter beth",
-            Hatran::LetterGimel => "hatran letter gimel",
-            Hatran::LetterDalethDashResh => "hatran letter daleth-resh",
-            Hatran::LetterHe => "hatran letter he",
-            Hatran::LetterWaw => "hatran letter waw",
-            Hatran::LetterZayn => "hatran letter zayn",
-            Hatran::LetterHeth => "hatran letter heth",
-            Hatran::LetterTeth => "hatran letter teth",
-            Hatran::LetterYodh => "hatran letter yodh",
-            Hatran::LetterKaph => "hatran letter kaph",
-            Hatran::LetterLamedh => "hatran letter lamedh",
-            Hatran::LetterMem => "hatran letter mem",
-            Hatran::LetterNun => "hatran letter nun",
-            Hatran::LetterSamekh => "hatran letter samekh",
-            Hatran::LetterAyn => "hatran letter ayn",
-            Hatran::LetterPe => "hatran letter pe",
-            Hatran::LetterSadhe => "hatran letter sadhe",
-            Hatran::LetterQoph => "hatran letter qoph",
-            Hatran::LetterShin => "hatran letter shin",
-            Hatran::LetterTaw => "hatran letter taw",
-            Hatran::NumberOne => "hatran number one",
-            Hatran::NumberFive => "hatran number five",
-            Hatran::NumberTen => "hatran number ten",
-            Hatran::NumberTwenty => "hatran number twenty",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Hatran{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -202,45 +202,9 @@ impl Rejang {
         Rejang::LetterKa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Rejang::LetterKa => "rejang letter ka",
-            Rejang::LetterGa => "rejang letter ga",
-            Rejang::LetterNga => "rejang letter nga",
-            Rejang::LetterTa => "rejang letter ta",
-            Rejang::LetterDa => "rejang letter da",
-            Rejang::LetterNa => "rejang letter na",
-            Rejang::LetterPa => "rejang letter pa",
-            Rejang::LetterBa => "rejang letter ba",
-            Rejang::LetterMa => "rejang letter ma",
-            Rejang::LetterCa => "rejang letter ca",
-            Rejang::LetterJa => "rejang letter ja",
-            Rejang::LetterNya => "rejang letter nya",
-            Rejang::LetterSa => "rejang letter sa",
-            Rejang::LetterRa => "rejang letter ra",
-            Rejang::LetterLa => "rejang letter la",
-            Rejang::LetterYa => "rejang letter ya",
-            Rejang::LetterWa => "rejang letter wa",
-            Rejang::LetterHa => "rejang letter ha",
-            Rejang::LetterMba => "rejang letter mba",
-            Rejang::LetterNgga => "rejang letter ngga",
-            Rejang::LetterNda => "rejang letter nda",
-            Rejang::LetterNyja => "rejang letter nyja",
-            Rejang::LetterA => "rejang letter a",
-            Rejang::VowelSignI => "rejang vowel sign i",
-            Rejang::VowelSignU => "rejang vowel sign u",
-            Rejang::VowelSignE => "rejang vowel sign e",
-            Rejang::VowelSignAi => "rejang vowel sign ai",
-            Rejang::VowelSignO => "rejang vowel sign o",
-            Rejang::VowelSignAu => "rejang vowel sign au",
-            Rejang::VowelSignEu => "rejang vowel sign eu",
-            Rejang::VowelSignEa => "rejang vowel sign ea",
-            Rejang::ConsonantSignNg => "rejang consonant sign ng",
-            Rejang::ConsonantSignN => "rejang consonant sign n",
-            Rejang::ConsonantSignR => "rejang consonant sign r",
-            Rejang::ConsonantSignH => "rejang consonant sign h",
-            Rejang::Virama => "rejang virama",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Rejang{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

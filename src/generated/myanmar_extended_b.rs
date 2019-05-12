@@ -182,40 +182,9 @@ impl MyanmarExtendedB {
         MyanmarExtendedB::MyanmarLetterShanGha
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            MyanmarExtendedB::MyanmarLetterShanGha => "myanmar letter shan gha",
-            MyanmarExtendedB::MyanmarLetterShanCha => "myanmar letter shan cha",
-            MyanmarExtendedB::MyanmarLetterShanJha => "myanmar letter shan jha",
-            MyanmarExtendedB::MyanmarLetterShanNna => "myanmar letter shan nna",
-            MyanmarExtendedB::MyanmarLetterShanBha => "myanmar letter shan bha",
-            MyanmarExtendedB::MyanmarSignShanSaw => "myanmar sign shan saw",
-            MyanmarExtendedB::MyanmarModifierLetterShanReduplication => "myanmar modifier letter shan reduplication",
-            MyanmarExtendedB::MyanmarLetterTaiLaingNya => "myanmar letter tai laing nya",
-            MyanmarExtendedB::MyanmarLetterTaiLaingFa => "myanmar letter tai laing fa",
-            MyanmarExtendedB::MyanmarLetterTaiLaingGa => "myanmar letter tai laing ga",
-            MyanmarExtendedB::MyanmarLetterTaiLaingGha => "myanmar letter tai laing gha",
-            MyanmarExtendedB::MyanmarLetterTaiLaingJa => "myanmar letter tai laing ja",
-            MyanmarExtendedB::MyanmarLetterTaiLaingJha => "myanmar letter tai laing jha",
-            MyanmarExtendedB::MyanmarLetterTaiLaingDda => "myanmar letter tai laing dda",
-            MyanmarExtendedB::MyanmarLetterTaiLaingDdha => "myanmar letter tai laing ddha",
-            MyanmarExtendedB::MyanmarLetterTaiLaingNna => "myanmar letter tai laing nna",
-            MyanmarExtendedB::MyanmarTaiLaingDigitZero => "myanmar tai laing digit zero",
-            MyanmarExtendedB::MyanmarTaiLaingDigitOne => "myanmar tai laing digit one",
-            MyanmarExtendedB::MyanmarTaiLaingDigitTwo => "myanmar tai laing digit two",
-            MyanmarExtendedB::MyanmarTaiLaingDigitThree => "myanmar tai laing digit three",
-            MyanmarExtendedB::MyanmarTaiLaingDigitFour => "myanmar tai laing digit four",
-            MyanmarExtendedB::MyanmarTaiLaingDigitFive => "myanmar tai laing digit five",
-            MyanmarExtendedB::MyanmarTaiLaingDigitSix => "myanmar tai laing digit six",
-            MyanmarExtendedB::MyanmarTaiLaingDigitSeven => "myanmar tai laing digit seven",
-            MyanmarExtendedB::MyanmarTaiLaingDigitEight => "myanmar tai laing digit eight",
-            MyanmarExtendedB::MyanmarTaiLaingDigitNine => "myanmar tai laing digit nine",
-            MyanmarExtendedB::MyanmarLetterTaiLaingLla => "myanmar letter tai laing lla",
-            MyanmarExtendedB::MyanmarLetterTaiLaingDa => "myanmar letter tai laing da",
-            MyanmarExtendedB::MyanmarLetterTaiLaingDha => "myanmar letter tai laing dha",
-            MyanmarExtendedB::MyanmarLetterTaiLaingBa => "myanmar letter tai laing ba",
-            MyanmarExtendedB::MyanmarLetterTaiLaingBha => "myanmar letter tai laing bha",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("MyanmarExtendedB{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

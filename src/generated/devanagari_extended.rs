@@ -182,40 +182,9 @@ impl DevanagariExtended {
         DevanagariExtended::CombiningDevanagariDigitZero
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            DevanagariExtended::CombiningDevanagariDigitZero => "combining devanagari digit zero",
-            DevanagariExtended::CombiningDevanagariDigitOne => "combining devanagari digit one",
-            DevanagariExtended::CombiningDevanagariDigitTwo => "combining devanagari digit two",
-            DevanagariExtended::CombiningDevanagariDigitThree => "combining devanagari digit three",
-            DevanagariExtended::CombiningDevanagariDigitFour => "combining devanagari digit four",
-            DevanagariExtended::CombiningDevanagariDigitFive => "combining devanagari digit five",
-            DevanagariExtended::CombiningDevanagariDigitSix => "combining devanagari digit six",
-            DevanagariExtended::CombiningDevanagariDigitSeven => "combining devanagari digit seven",
-            DevanagariExtended::CombiningDevanagariDigitEight => "combining devanagari digit eight",
-            DevanagariExtended::CombiningDevanagariDigitNine => "combining devanagari digit nine",
-            DevanagariExtended::CombiningDevanagariLetterA => "combining devanagari letter a",
-            DevanagariExtended::CombiningDevanagariLetterU => "combining devanagari letter u",
-            DevanagariExtended::CombiningDevanagariLetterKa => "combining devanagari letter ka",
-            DevanagariExtended::CombiningDevanagariLetterNa => "combining devanagari letter na",
-            DevanagariExtended::CombiningDevanagariLetterPa => "combining devanagari letter pa",
-            DevanagariExtended::CombiningDevanagariLetterRa => "combining devanagari letter ra",
-            DevanagariExtended::CombiningDevanagariLetterVi => "combining devanagari letter vi",
-            DevanagariExtended::CombiningDevanagariSignAvagraha => "combining devanagari sign avagraha",
-            DevanagariExtended::DevanagariSignSpacingCandrabindu => "devanagari sign spacing candrabindu",
-            DevanagariExtended::DevanagariSignCandrabinduVirama => "devanagari sign candrabindu virama",
-            DevanagariExtended::DevanagariSignDoubleCandrabinduVirama => "devanagari sign double candrabindu virama",
-            DevanagariExtended::DevanagariSignCandrabinduTwo => "devanagari sign candrabindu two",
-            DevanagariExtended::DevanagariSignCandrabinduThree => "devanagari sign candrabindu three",
-            DevanagariExtended::DevanagariSignCandrabinduAvagraha => "devanagari sign candrabindu avagraha",
-            DevanagariExtended::DevanagariSignPushpika => "devanagari sign pushpika",
-            DevanagariExtended::DevanagariGapFiller => "devanagari gap filler",
-            DevanagariExtended::DevanagariCaret => "devanagari caret",
-            DevanagariExtended::DevanagariHeadstroke => "devanagari headstroke",
-            DevanagariExtended::DevanagariSignSiddham => "devanagari sign siddham",
-            DevanagariExtended::DevanagariJainOm => "devanagari jain om",
-            DevanagariExtended::DevanagariLetterAy => "devanagari letter ay",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("DevanagariExtended{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

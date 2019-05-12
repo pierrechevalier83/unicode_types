@@ -150,32 +150,9 @@ impl Elymaic {
         Elymaic::LetterAleph
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Elymaic::LetterAleph => "elymaic letter aleph",
-            Elymaic::LetterBeth => "elymaic letter beth",
-            Elymaic::LetterGimel => "elymaic letter gimel",
-            Elymaic::LetterDaleth => "elymaic letter daleth",
-            Elymaic::LetterHe => "elymaic letter he",
-            Elymaic::LetterWaw => "elymaic letter waw",
-            Elymaic::LetterZayin => "elymaic letter zayin",
-            Elymaic::LetterHeth => "elymaic letter heth",
-            Elymaic::LetterTeth => "elymaic letter teth",
-            Elymaic::LetterYodh => "elymaic letter yodh",
-            Elymaic::LetterKaph => "elymaic letter kaph",
-            Elymaic::LetterLamedh => "elymaic letter lamedh",
-            Elymaic::LetterMem => "elymaic letter mem",
-            Elymaic::LetterNun => "elymaic letter nun",
-            Elymaic::LetterSamekh => "elymaic letter samekh",
-            Elymaic::LetterAyin => "elymaic letter ayin",
-            Elymaic::LetterPe => "elymaic letter pe",
-            Elymaic::LetterSadhe => "elymaic letter sadhe",
-            Elymaic::LetterQoph => "elymaic letter qoph",
-            Elymaic::LetterResh => "elymaic letter resh",
-            Elymaic::LetterShin => "elymaic letter shin",
-            Elymaic::LetterTaw => "elymaic letter taw",
-            Elymaic::LigatureZayinDashYodh => "elymaic ligature zayin-yodh",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Elymaic{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

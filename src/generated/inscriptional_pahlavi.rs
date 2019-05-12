@@ -162,35 +162,9 @@ impl InscriptionalPahlavi {
         InscriptionalPahlavi::LetterAleph
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            InscriptionalPahlavi::LetterAleph => "inscriptional pahlavi letter aleph",
-            InscriptionalPahlavi::LetterBeth => "inscriptional pahlavi letter beth",
-            InscriptionalPahlavi::LetterGimel => "inscriptional pahlavi letter gimel",
-            InscriptionalPahlavi::LetterDaleth => "inscriptional pahlavi letter daleth",
-            InscriptionalPahlavi::LetterHe => "inscriptional pahlavi letter he",
-            InscriptionalPahlavi::LetterWawDashAyinDashResh => "inscriptional pahlavi letter waw-ayin-resh",
-            InscriptionalPahlavi::LetterZayin => "inscriptional pahlavi letter zayin",
-            InscriptionalPahlavi::LetterHeth => "inscriptional pahlavi letter heth",
-            InscriptionalPahlavi::LetterTeth => "inscriptional pahlavi letter teth",
-            InscriptionalPahlavi::LetterYodh => "inscriptional pahlavi letter yodh",
-            InscriptionalPahlavi::LetterKaph => "inscriptional pahlavi letter kaph",
-            InscriptionalPahlavi::LetterLamedh => "inscriptional pahlavi letter lamedh",
-            InscriptionalPahlavi::LetterMemDashQoph => "inscriptional pahlavi letter mem-qoph",
-            InscriptionalPahlavi::LetterNun => "inscriptional pahlavi letter nun",
-            InscriptionalPahlavi::LetterSamekh => "inscriptional pahlavi letter samekh",
-            InscriptionalPahlavi::LetterPe => "inscriptional pahlavi letter pe",
-            InscriptionalPahlavi::LetterSadhe => "inscriptional pahlavi letter sadhe",
-            InscriptionalPahlavi::LetterShin => "inscriptional pahlavi letter shin",
-            InscriptionalPahlavi::LetterTaw => "inscriptional pahlavi letter taw",
-            InscriptionalPahlavi::NumberOne => "inscriptional pahlavi number one",
-            InscriptionalPahlavi::NumberTwo => "inscriptional pahlavi number two",
-            InscriptionalPahlavi::NumberThree => "inscriptional pahlavi number three",
-            InscriptionalPahlavi::NumberFour => "inscriptional pahlavi number four",
-            InscriptionalPahlavi::NumberTen => "inscriptional pahlavi number ten",
-            InscriptionalPahlavi::NumberTwenty => "inscriptional pahlavi number twenty",
-            InscriptionalPahlavi::NumberOneHundred => "inscriptional pahlavi number one hundred",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("InscriptionalPahlavi{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

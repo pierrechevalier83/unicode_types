@@ -150,32 +150,9 @@ impl MeeteiMayekExtensions {
         MeeteiMayekExtensions::MeeteiMayekLetterE
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            MeeteiMayekExtensions::MeeteiMayekLetterE => "meetei mayek letter e",
-            MeeteiMayekExtensions::MeeteiMayekLetterO => "meetei mayek letter o",
-            MeeteiMayekExtensions::MeeteiMayekLetterCha => "meetei mayek letter cha",
-            MeeteiMayekExtensions::MeeteiMayekLetterNya => "meetei mayek letter nya",
-            MeeteiMayekExtensions::MeeteiMayekLetterTta => "meetei mayek letter tta",
-            MeeteiMayekExtensions::MeeteiMayekLetterTtha => "meetei mayek letter ttha",
-            MeeteiMayekExtensions::MeeteiMayekLetterDda => "meetei mayek letter dda",
-            MeeteiMayekExtensions::MeeteiMayekLetterDdha => "meetei mayek letter ddha",
-            MeeteiMayekExtensions::MeeteiMayekLetterNna => "meetei mayek letter nna",
-            MeeteiMayekExtensions::MeeteiMayekLetterSha => "meetei mayek letter sha",
-            MeeteiMayekExtensions::MeeteiMayekLetterSsa => "meetei mayek letter ssa",
-            MeeteiMayekExtensions::MeeteiMayekVowelSignIi => "meetei mayek vowel sign ii",
-            MeeteiMayekExtensions::MeeteiMayekVowelSignUu => "meetei mayek vowel sign uu",
-            MeeteiMayekExtensions::MeeteiMayekVowelSignAai => "meetei mayek vowel sign aai",
-            MeeteiMayekExtensions::MeeteiMayekVowelSignAu => "meetei mayek vowel sign au",
-            MeeteiMayekExtensions::MeeteiMayekVowelSignAau => "meetei mayek vowel sign aau",
-            MeeteiMayekExtensions::MeeteiMayekCheikhan => "meetei mayek cheikhan",
-            MeeteiMayekExtensions::MeeteiMayekAhangKhudam => "meetei mayek ahang khudam",
-            MeeteiMayekExtensions::MeeteiMayekAnji => "meetei mayek anji",
-            MeeteiMayekExtensions::MeeteiMayekSyllableRepetitionMark => "meetei mayek syllable repetition mark",
-            MeeteiMayekExtensions::MeeteiMayekWordRepetitionMark => "meetei mayek word repetition mark",
-            MeeteiMayekExtensions::MeeteiMayekVowelSignVisarga => "meetei mayek vowel sign visarga",
-            MeeteiMayekExtensions::MeeteiMayekVirama => "meetei mayek virama",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("MeeteiMayekExtensions{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

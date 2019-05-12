@@ -258,59 +258,9 @@ impl TamilSupplement {
         TamilSupplement::TamilFractionOneThreeDashHundredDashAndDashTwentieth
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            TamilSupplement::TamilFractionOneThreeDashHundredDashAndDashTwentieth => "tamil fraction one three-hundred-and-twentieth",
-            TamilSupplement::TamilFractionOneOneDashHundredDashAndDashSixtieth => "tamil fraction one one-hundred-and-sixtieth",
-            TamilSupplement::TamilFractionOneEightieth => "tamil fraction one eightieth",
-            TamilSupplement::TamilFractionOneSixtyDashFourth => "tamil fraction one sixty-fourth",
-            TamilSupplement::TamilFractionOneFortieth => "tamil fraction one fortieth",
-            TamilSupplement::TamilFractionOneThirtyDashSecond => "tamil fraction one thirty-second",
-            TamilSupplement::TamilFractionThreeEightieths => "tamil fraction three eightieths",
-            TamilSupplement::TamilFractionThreeSixtyDashFourths => "tamil fraction three sixty-fourths",
-            TamilSupplement::TamilFractionOneTwentieth => "tamil fraction one twentieth",
-            TamilSupplement::TamilFractionOneSixteenthDash1 => "tamil fraction one sixteenth-1",
-            TamilSupplement::TamilFractionOneSixteenthDash2 => "tamil fraction one sixteenth-2",
-            TamilSupplement::TamilFractionOneTenth => "tamil fraction one tenth",
-            TamilSupplement::TamilFractionOneEighth => "tamil fraction one eighth",
-            TamilSupplement::TamilFractionThreeTwentieths => "tamil fraction three twentieths",
-            TamilSupplement::TamilFractionThreeSixteenths => "tamil fraction three sixteenths",
-            TamilSupplement::TamilFractionOneFifth => "tamil fraction one fifth",
-            TamilSupplement::TamilFractionOneQuarter => "tamil fraction one quarter",
-            TamilSupplement::TamilFractionOneHalfDash1 => "tamil fraction one half-1",
-            TamilSupplement::TamilFractionOneHalfDash2 => "tamil fraction one half-2",
-            TamilSupplement::TamilFractionThreeQuarters => "tamil fraction three quarters",
-            TamilSupplement::TamilFractionDownscalingFactorKiizh => "tamil fraction downscaling factor kiizh",
-            TamilSupplement::TamilSignNel => "tamil sign nel",
-            TamilSupplement::TamilSignCevitu => "tamil sign cevitu",
-            TamilSupplement::TamilSignAazhaakku => "tamil sign aazhaakku",
-            TamilSupplement::TamilSignUzhakku => "tamil sign uzhakku",
-            TamilSupplement::TamilSignMuuvuzhakku => "tamil sign muuvuzhakku",
-            TamilSupplement::TamilSignKuruni => "tamil sign kuruni",
-            TamilSupplement::TamilSignPathakku => "tamil sign pathakku",
-            TamilSupplement::TamilSignMukkuruni => "tamil sign mukkuruni",
-            TamilSupplement::TamilSignKaacu => "tamil sign kaacu",
-            TamilSupplement::TamilSignPanam => "tamil sign panam",
-            TamilSupplement::TamilSignPon => "tamil sign pon",
-            TamilSupplement::TamilSignVaraakan => "tamil sign varaakan",
-            TamilSupplement::TamilSignPaaram => "tamil sign paaram",
-            TamilSupplement::TamilSignKuzhi => "tamil sign kuzhi",
-            TamilSupplement::TamilSignVeli => "tamil sign veli",
-            TamilSupplement::TamilWetCultivationSign => "tamil wet cultivation sign",
-            TamilSupplement::TamilDryCultivationSign => "tamil dry cultivation sign",
-            TamilSupplement::TamilLandSign => "tamil land sign",
-            TamilSupplement::TamilSaltPanSign => "tamil salt pan sign",
-            TamilSupplement::TamilTraditionalCreditSign => "tamil traditional credit sign",
-            TamilSupplement::TamilTraditionalNumberSign => "tamil traditional number sign",
-            TamilSupplement::TamilCurrentSign => "tamil current sign",
-            TamilSupplement::TamilAndOddSign => "tamil and odd sign",
-            TamilSupplement::TamilSpentSign => "tamil spent sign",
-            TamilSupplement::TamilTotalSign => "tamil total sign",
-            TamilSupplement::TamilInPossessionSign => "tamil in possession sign",
-            TamilSupplement::TamilStartingFromSign => "tamil starting from sign",
-            TamilSupplement::TamilSignMuthaliya => "tamil sign muthaliya",
-            TamilSupplement::TamilSignVakaiyaraa => "tamil sign vakaiyaraa",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("TamilSupplement{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

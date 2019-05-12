@@ -266,61 +266,9 @@ impl CaucasianAlbanian {
         CaucasianAlbanian::LetterAlt
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CaucasianAlbanian::LetterAlt => "caucasian albanian letter alt",
-            CaucasianAlbanian::LetterBet => "caucasian albanian letter bet",
-            CaucasianAlbanian::LetterGim => "caucasian albanian letter gim",
-            CaucasianAlbanian::LetterDat => "caucasian albanian letter dat",
-            CaucasianAlbanian::LetterEb => "caucasian albanian letter eb",
-            CaucasianAlbanian::LetterZarl => "caucasian albanian letter zarl",
-            CaucasianAlbanian::LetterEyn => "caucasian albanian letter eyn",
-            CaucasianAlbanian::LetterZhil => "caucasian albanian letter zhil",
-            CaucasianAlbanian::LetterTas => "caucasian albanian letter tas",
-            CaucasianAlbanian::LetterCha => "caucasian albanian letter cha",
-            CaucasianAlbanian::LetterYowd => "caucasian albanian letter yowd",
-            CaucasianAlbanian::LetterZha => "caucasian albanian letter zha",
-            CaucasianAlbanian::LetterIrb => "caucasian albanian letter irb",
-            CaucasianAlbanian::LetterSha => "caucasian albanian letter sha",
-            CaucasianAlbanian::LetterLan => "caucasian albanian letter lan",
-            CaucasianAlbanian::LetterInya => "caucasian albanian letter inya",
-            CaucasianAlbanian::LetterXeyn => "caucasian albanian letter xeyn",
-            CaucasianAlbanian::LetterDyan => "caucasian albanian letter dyan",
-            CaucasianAlbanian::LetterCar => "caucasian albanian letter car",
-            CaucasianAlbanian::LetterJhox => "caucasian albanian letter jhox",
-            CaucasianAlbanian::LetterKar => "caucasian albanian letter kar",
-            CaucasianAlbanian::LetterLyit => "caucasian albanian letter lyit",
-            CaucasianAlbanian::LetterHeyt => "caucasian albanian letter heyt",
-            CaucasianAlbanian::LetterQay => "caucasian albanian letter qay",
-            CaucasianAlbanian::LetterAor => "caucasian albanian letter aor",
-            CaucasianAlbanian::LetterChoy => "caucasian albanian letter choy",
-            CaucasianAlbanian::LetterChi => "caucasian albanian letter chi",
-            CaucasianAlbanian::LetterCyay => "caucasian albanian letter cyay",
-            CaucasianAlbanian::LetterMaq => "caucasian albanian letter maq",
-            CaucasianAlbanian::LetterQar => "caucasian albanian letter qar",
-            CaucasianAlbanian::LetterNowc => "caucasian albanian letter nowc",
-            CaucasianAlbanian::LetterDzyay => "caucasian albanian letter dzyay",
-            CaucasianAlbanian::LetterShak => "caucasian albanian letter shak",
-            CaucasianAlbanian::LetterJayn => "caucasian albanian letter jayn",
-            CaucasianAlbanian::LetterOn => "caucasian albanian letter on",
-            CaucasianAlbanian::LetterTyay => "caucasian albanian letter tyay",
-            CaucasianAlbanian::LetterFam => "caucasian albanian letter fam",
-            CaucasianAlbanian::LetterDzay => "caucasian albanian letter dzay",
-            CaucasianAlbanian::LetterChat => "caucasian albanian letter chat",
-            CaucasianAlbanian::LetterPen => "caucasian albanian letter pen",
-            CaucasianAlbanian::LetterGheys => "caucasian albanian letter gheys",
-            CaucasianAlbanian::LetterRat => "caucasian albanian letter rat",
-            CaucasianAlbanian::LetterSeyk => "caucasian albanian letter seyk",
-            CaucasianAlbanian::LetterVeyz => "caucasian albanian letter veyz",
-            CaucasianAlbanian::LetterTiwr => "caucasian albanian letter tiwr",
-            CaucasianAlbanian::LetterShoy => "caucasian albanian letter shoy",
-            CaucasianAlbanian::LetterIwn => "caucasian albanian letter iwn",
-            CaucasianAlbanian::LetterCyaw => "caucasian albanian letter cyaw",
-            CaucasianAlbanian::LetterCayn => "caucasian albanian letter cayn",
-            CaucasianAlbanian::LetterYayd => "caucasian albanian letter yayd",
-            CaucasianAlbanian::LetterPiwr => "caucasian albanian letter piwr",
-            CaucasianAlbanian::LetterKiw => "caucasian albanian letter kiw",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CaucasianAlbanian{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

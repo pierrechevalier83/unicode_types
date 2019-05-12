@@ -162,35 +162,9 @@ impl EthiopicSupplement {
         EthiopicSupplement::EthiopicSyllableSebatbeitMwa
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            EthiopicSupplement::EthiopicSyllableSebatbeitMwa => "ethiopic syllable sebatbeit mwa",
-            EthiopicSupplement::EthiopicSyllableMwi => "ethiopic syllable mwi",
-            EthiopicSupplement::EthiopicSyllableMwee => "ethiopic syllable mwee",
-            EthiopicSupplement::EthiopicSyllableMwe => "ethiopic syllable mwe",
-            EthiopicSupplement::EthiopicSyllableSebatbeitBwa => "ethiopic syllable sebatbeit bwa",
-            EthiopicSupplement::EthiopicSyllableBwi => "ethiopic syllable bwi",
-            EthiopicSupplement::EthiopicSyllableBwee => "ethiopic syllable bwee",
-            EthiopicSupplement::EthiopicSyllableBwe => "ethiopic syllable bwe",
-            EthiopicSupplement::EthiopicSyllableSebatbeitFwa => "ethiopic syllable sebatbeit fwa",
-            EthiopicSupplement::EthiopicSyllableFwi => "ethiopic syllable fwi",
-            EthiopicSupplement::EthiopicSyllableFwee => "ethiopic syllable fwee",
-            EthiopicSupplement::EthiopicSyllableFwe => "ethiopic syllable fwe",
-            EthiopicSupplement::EthiopicSyllableSebatbeitPwa => "ethiopic syllable sebatbeit pwa",
-            EthiopicSupplement::EthiopicSyllablePwi => "ethiopic syllable pwi",
-            EthiopicSupplement::EthiopicSyllablePwee => "ethiopic syllable pwee",
-            EthiopicSupplement::EthiopicSyllablePwe => "ethiopic syllable pwe",
-            EthiopicSupplement::EthiopicTonalMarkYizet => "ethiopic tonal mark yizet",
-            EthiopicSupplement::EthiopicTonalMarkDeret => "ethiopic tonal mark deret",
-            EthiopicSupplement::EthiopicTonalMarkRikrik => "ethiopic tonal mark rikrik",
-            EthiopicSupplement::EthiopicTonalMarkShortRikrik => "ethiopic tonal mark short rikrik",
-            EthiopicSupplement::EthiopicTonalMarkDifat => "ethiopic tonal mark difat",
-            EthiopicSupplement::EthiopicTonalMarkKenat => "ethiopic tonal mark kenat",
-            EthiopicSupplement::EthiopicTonalMarkChiret => "ethiopic tonal mark chiret",
-            EthiopicSupplement::EthiopicTonalMarkHidet => "ethiopic tonal mark hidet",
-            EthiopicSupplement::EthiopicTonalMarkDeretDashHidet => "ethiopic tonal mark deret-hidet",
-            EthiopicSupplement::EthiopicTonalMarkKurt => "ethiopic tonal mark kurt",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("EthiopicSupplement{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

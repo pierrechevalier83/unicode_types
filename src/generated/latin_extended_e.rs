@@ -282,65 +282,9 @@ impl LatinExtendedE {
         LatinExtendedE::LatinSmallLetterBarredAlpha
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            LatinExtendedE::LatinSmallLetterBarredAlpha => "latin small letter barred alpha",
-            LatinExtendedE::LatinSmallLetterAReversedDashSchwa => "latin small letter a reversed-schwa",
-            LatinExtendedE::LatinSmallLetterBlackletterE => "latin small letter blackletter e",
-            LatinExtendedE::LatinSmallLetterBarredE => "latin small letter barred e",
-            LatinExtendedE::LatinSmallLetterEWithFlourish => "latin small letter e with flourish",
-            LatinExtendedE::LatinSmallLetterLenisF => "latin small letter lenis f",
-            LatinExtendedE::LatinSmallLetterScriptGWithCrossedDashTail => "latin small letter script g with crossed-tail",
-            LatinExtendedE::LatinSmallLetterLWithInvertedLazyS => "latin small letter l with inverted lazy s",
-            LatinExtendedE::LatinSmallLetterLWithDoubleMiddleTilde => "latin small letter l with double middle tilde",
-            LatinExtendedE::LatinSmallLetterLWithMiddleRing => "latin small letter l with middle ring",
-            LatinExtendedE::LatinSmallLetterMWithCrossedDashTail => "latin small letter m with crossed-tail",
-            LatinExtendedE::LatinSmallLetterNWithCrossedDashTail => "latin small letter n with crossed-tail",
-            LatinExtendedE::LatinSmallLetterEngWithCrossedDashTail => "latin small letter eng with crossed-tail",
-            LatinExtendedE::LatinSmallLetterBlackletterO => "latin small letter blackletter o",
-            LatinExtendedE::LatinSmallLetterBlackletterOWithStroke => "latin small letter blackletter o with stroke",
-            LatinExtendedE::LatinSmallLetterOpenOWithStroke => "latin small letter open o with stroke",
-            LatinExtendedE::LatinSmallLetterInvertedOe => "latin small letter inverted oe",
-            LatinExtendedE::LatinSmallLetterTurnedOeWithStroke => "latin small letter turned oe with stroke",
-            LatinExtendedE::LatinSmallLetterTurnedOeWithHorizontalStroke => "latin small letter turned oe with horizontal stroke",
-            LatinExtendedE::LatinSmallLetterTurnedOOpenDashO => "latin small letter turned o open-o",
-            LatinExtendedE::LatinSmallLetterTurnedOOpenDashOWithStroke => "latin small letter turned o open-o with stroke",
-            LatinExtendedE::LatinSmallLetterStirrupR => "latin small letter stirrup r",
-            LatinExtendedE::LatinLetterSmallCapitalRWithRightLeg => "latin letter small capital r with right leg",
-            LatinExtendedE::LatinSmallLetterRWithoutHandle => "latin small letter r without handle",
-            LatinExtendedE::LatinSmallLetterDoubleR => "latin small letter double r",
-            LatinExtendedE::LatinSmallLetterRWithCrossedDashTail => "latin small letter r with crossed-tail",
-            LatinExtendedE::LatinSmallLetterDoubleRWithCrossedDashTail => "latin small letter double r with crossed-tail",
-            LatinExtendedE::LatinSmallLetterScriptR => "latin small letter script r",
-            LatinExtendedE::LatinSmallLetterScriptRWithRing => "latin small letter script r with ring",
-            LatinExtendedE::LatinSmallLetterBaselineEsh => "latin small letter baseline esh",
-            LatinExtendedE::LatinSmallLetterUWithShortRightLeg => "latin small letter u with short right leg",
-            LatinExtendedE::LatinSmallLetterUBarWithShortRightLeg => "latin small letter u bar with short right leg",
-            LatinExtendedE::LatinSmallLetterUi => "latin small letter ui",
-            LatinExtendedE::LatinSmallLetterTurnedUi => "latin small letter turned ui",
-            LatinExtendedE::LatinSmallLetterUWithLeftHook => "latin small letter u with left hook",
-            LatinExtendedE::LatinSmallLetterChi => "latin small letter chi",
-            LatinExtendedE::LatinSmallLetterChiWithLowRightRing => "latin small letter chi with low right ring",
-            LatinExtendedE::LatinSmallLetterChiWithLowLeftSerif => "latin small letter chi with low left serif",
-            LatinExtendedE::LatinSmallLetterXWithLowRightRing => "latin small letter x with low right ring",
-            LatinExtendedE::LatinSmallLetterXWithLongLeftLeg => "latin small letter x with long left leg",
-            LatinExtendedE::LatinSmallLetterXWithLongLeftLegAndLowRightRing => "latin small letter x with long left leg and low right ring",
-            LatinExtendedE::LatinSmallLetterXWithLongLeftLegWithSerif => "latin small letter x with long left leg with serif",
-            LatinExtendedE::LatinSmallLetterYWithShortRightLeg => "latin small letter y with short right leg",
-            LatinExtendedE::ModifierBreveWithInvertedBreve => "modifier breve with inverted breve",
-            LatinExtendedE::ModifierLetterSmallHeng => "modifier letter small heng",
-            LatinExtendedE::ModifierLetterSmallLWithInvertedLazyS => "modifier letter small l with inverted lazy s",
-            LatinExtendedE::ModifierLetterSmallLWithMiddleTilde => "modifier letter small l with middle tilde",
-            LatinExtendedE::ModifierLetterSmallUWithLeftHook => "modifier letter small u with left hook",
-            LatinExtendedE::LatinSmallLetterSakhaYat => "latin small letter sakha yat",
-            LatinExtendedE::LatinSmallLetterIotifiedE => "latin small letter iotified e",
-            LatinExtendedE::LatinSmallLetterOpenOe => "latin small letter open oe",
-            LatinExtendedE::LatinSmallLetterUo => "latin small letter uo",
-            LatinExtendedE::LatinSmallLetterInvertedAlpha => "latin small letter inverted alpha",
-            LatinExtendedE::GreekLetterSmallCapitalOmega => "greek letter small capital omega",
-            LatinExtendedE::LatinSmallLetterDzDigraphWithRetroflexHook => "latin small letter dz digraph with retroflex hook",
-            LatinExtendedE::LatinSmallLetterTsDigraphWithRetroflexHook => "latin small letter ts digraph with retroflex hook",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("LatinExtendedE{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

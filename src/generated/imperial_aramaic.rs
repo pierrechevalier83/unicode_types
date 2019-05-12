@@ -178,39 +178,9 @@ impl ImperialAramaic {
         ImperialAramaic::LetterAleph
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            ImperialAramaic::LetterAleph => "imperial aramaic letter aleph",
-            ImperialAramaic::LetterBeth => "imperial aramaic letter beth",
-            ImperialAramaic::LetterGimel => "imperial aramaic letter gimel",
-            ImperialAramaic::LetterDaleth => "imperial aramaic letter daleth",
-            ImperialAramaic::LetterHe => "imperial aramaic letter he",
-            ImperialAramaic::LetterWaw => "imperial aramaic letter waw",
-            ImperialAramaic::LetterZayin => "imperial aramaic letter zayin",
-            ImperialAramaic::LetterHeth => "imperial aramaic letter heth",
-            ImperialAramaic::LetterTeth => "imperial aramaic letter teth",
-            ImperialAramaic::LetterYodh => "imperial aramaic letter yodh",
-            ImperialAramaic::LetterKaph => "imperial aramaic letter kaph",
-            ImperialAramaic::LetterLamedh => "imperial aramaic letter lamedh",
-            ImperialAramaic::LetterMem => "imperial aramaic letter mem",
-            ImperialAramaic::LetterNun => "imperial aramaic letter nun",
-            ImperialAramaic::LetterSamekh => "imperial aramaic letter samekh",
-            ImperialAramaic::LetterAyin => "imperial aramaic letter ayin",
-            ImperialAramaic::LetterPe => "imperial aramaic letter pe",
-            ImperialAramaic::LetterSadhe => "imperial aramaic letter sadhe",
-            ImperialAramaic::LetterQoph => "imperial aramaic letter qoph",
-            ImperialAramaic::LetterResh => "imperial aramaic letter resh",
-            ImperialAramaic::LetterShin => "imperial aramaic letter shin",
-            ImperialAramaic::LetterTaw => "imperial aramaic letter taw",
-            ImperialAramaic::SectionSign => "imperial aramaic section sign",
-            ImperialAramaic::NumberOne => "imperial aramaic number one",
-            ImperialAramaic::NumberTwo => "imperial aramaic number two",
-            ImperialAramaic::NumberThree => "imperial aramaic number three",
-            ImperialAramaic::NumberTen => "imperial aramaic number ten",
-            ImperialAramaic::NumberTwenty => "imperial aramaic number twenty",
-            ImperialAramaic::NumberOneHundred => "imperial aramaic number one hundred",
-            ImperialAramaic::NumberOneThousand => "imperial aramaic number one thousand",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("ImperialAramaic{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

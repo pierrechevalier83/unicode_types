@@ -198,44 +198,9 @@ impl SoraSompeng {
         SoraSompeng::LetterSah
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            SoraSompeng::LetterSah => "sora sompeng letter sah",
-            SoraSompeng::LetterTah => "sora sompeng letter tah",
-            SoraSompeng::LetterBah => "sora sompeng letter bah",
-            SoraSompeng::LetterCah => "sora sompeng letter cah",
-            SoraSompeng::LetterDah => "sora sompeng letter dah",
-            SoraSompeng::LetterGah => "sora sompeng letter gah",
-            SoraSompeng::LetterMah => "sora sompeng letter mah",
-            SoraSompeng::LetterNgah => "sora sompeng letter ngah",
-            SoraSompeng::LetterLah => "sora sompeng letter lah",
-            SoraSompeng::LetterNah => "sora sompeng letter nah",
-            SoraSompeng::LetterVah => "sora sompeng letter vah",
-            SoraSompeng::LetterPah => "sora sompeng letter pah",
-            SoraSompeng::LetterYah => "sora sompeng letter yah",
-            SoraSompeng::LetterRah => "sora sompeng letter rah",
-            SoraSompeng::LetterHah => "sora sompeng letter hah",
-            SoraSompeng::LetterKah => "sora sompeng letter kah",
-            SoraSompeng::LetterJah => "sora sompeng letter jah",
-            SoraSompeng::LetterNyah => "sora sompeng letter nyah",
-            SoraSompeng::LetterAh => "sora sompeng letter ah",
-            SoraSompeng::LetterEeh => "sora sompeng letter eeh",
-            SoraSompeng::LetterIh => "sora sompeng letter ih",
-            SoraSompeng::LetterUh => "sora sompeng letter uh",
-            SoraSompeng::LetterOh => "sora sompeng letter oh",
-            SoraSompeng::LetterEh => "sora sompeng letter eh",
-            SoraSompeng::LetterMae => "sora sompeng letter mae",
-            SoraSompeng::DigitZero => "sora sompeng digit zero",
-            SoraSompeng::DigitOne => "sora sompeng digit one",
-            SoraSompeng::DigitTwo => "sora sompeng digit two",
-            SoraSompeng::DigitThree => "sora sompeng digit three",
-            SoraSompeng::DigitFour => "sora sompeng digit four",
-            SoraSompeng::DigitFive => "sora sompeng digit five",
-            SoraSompeng::DigitSix => "sora sompeng digit six",
-            SoraSompeng::DigitSeven => "sora sompeng digit seven",
-            SoraSompeng::DigitEight => "sora sompeng digit eight",
-            SoraSompeng::DigitNine => "sora sompeng digit nine",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("SoraSompeng{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

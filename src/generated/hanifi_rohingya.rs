@@ -258,59 +258,9 @@ impl HanifiRohingya {
         HanifiRohingya::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            HanifiRohingya::LetterA => "hanifi rohingya letter a",
-            HanifiRohingya::LetterBa => "hanifi rohingya letter ba",
-            HanifiRohingya::LetterPa => "hanifi rohingya letter pa",
-            HanifiRohingya::LetterTa => "hanifi rohingya letter ta",
-            HanifiRohingya::LetterTta => "hanifi rohingya letter tta",
-            HanifiRohingya::LetterJa => "hanifi rohingya letter ja",
-            HanifiRohingya::LetterCa => "hanifi rohingya letter ca",
-            HanifiRohingya::LetterHa => "hanifi rohingya letter ha",
-            HanifiRohingya::LetterKha => "hanifi rohingya letter kha",
-            HanifiRohingya::LetterFa => "hanifi rohingya letter fa",
-            HanifiRohingya::LetterDa => "hanifi rohingya letter da",
-            HanifiRohingya::LetterDda => "hanifi rohingya letter dda",
-            HanifiRohingya::LetterRa => "hanifi rohingya letter ra",
-            HanifiRohingya::LetterRra => "hanifi rohingya letter rra",
-            HanifiRohingya::LetterZa => "hanifi rohingya letter za",
-            HanifiRohingya::LetterSa => "hanifi rohingya letter sa",
-            HanifiRohingya::LetterSha => "hanifi rohingya letter sha",
-            HanifiRohingya::LetterKa => "hanifi rohingya letter ka",
-            HanifiRohingya::LetterGa => "hanifi rohingya letter ga",
-            HanifiRohingya::LetterLa => "hanifi rohingya letter la",
-            HanifiRohingya::LetterMa => "hanifi rohingya letter ma",
-            HanifiRohingya::LetterNa => "hanifi rohingya letter na",
-            HanifiRohingya::LetterWa => "hanifi rohingya letter wa",
-            HanifiRohingya::LetterKinnaWa => "hanifi rohingya letter kinna wa",
-            HanifiRohingya::LetterYa => "hanifi rohingya letter ya",
-            HanifiRohingya::LetterKinnaYa => "hanifi rohingya letter kinna ya",
-            HanifiRohingya::LetterNga => "hanifi rohingya letter nga",
-            HanifiRohingya::LetterNya => "hanifi rohingya letter nya",
-            HanifiRohingya::LetterVa => "hanifi rohingya letter va",
-            HanifiRohingya::VowelA => "hanifi rohingya vowel a",
-            HanifiRohingya::VowelI => "hanifi rohingya vowel i",
-            HanifiRohingya::VowelU => "hanifi rohingya vowel u",
-            HanifiRohingya::VowelE => "hanifi rohingya vowel e",
-            HanifiRohingya::VowelO => "hanifi rohingya vowel o",
-            HanifiRohingya::MarkSakin => "hanifi rohingya mark sakin",
-            HanifiRohingya::MarkNaKhonna => "hanifi rohingya mark na khonna",
-            HanifiRohingya::SignHarbahay => "hanifi rohingya sign harbahay",
-            HanifiRohingya::SignTahala => "hanifi rohingya sign tahala",
-            HanifiRohingya::SignTana => "hanifi rohingya sign tana",
-            HanifiRohingya::SignTassi => "hanifi rohingya sign tassi",
-            HanifiRohingya::DigitZero => "hanifi rohingya digit zero",
-            HanifiRohingya::DigitOne => "hanifi rohingya digit one",
-            HanifiRohingya::DigitTwo => "hanifi rohingya digit two",
-            HanifiRohingya::DigitThree => "hanifi rohingya digit three",
-            HanifiRohingya::DigitFour => "hanifi rohingya digit four",
-            HanifiRohingya::DigitFive => "hanifi rohingya digit five",
-            HanifiRohingya::DigitSix => "hanifi rohingya digit six",
-            HanifiRohingya::DigitSeven => "hanifi rohingya digit seven",
-            HanifiRohingya::DigitEight => "hanifi rohingya digit eight",
-            HanifiRohingya::DigitNine => "hanifi rohingya digit nine",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("HanifiRohingya{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

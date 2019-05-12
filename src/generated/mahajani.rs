@@ -214,48 +214,9 @@ impl Mahajani {
         Mahajani::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Mahajani::LetterA => "mahajani letter a",
-            Mahajani::LetterI => "mahajani letter i",
-            Mahajani::LetterU => "mahajani letter u",
-            Mahajani::LetterE => "mahajani letter e",
-            Mahajani::LetterO => "mahajani letter o",
-            Mahajani::LetterKa => "mahajani letter ka",
-            Mahajani::LetterKha => "mahajani letter kha",
-            Mahajani::LetterGa => "mahajani letter ga",
-            Mahajani::LetterGha => "mahajani letter gha",
-            Mahajani::LetterCa => "mahajani letter ca",
-            Mahajani::LetterCha => "mahajani letter cha",
-            Mahajani::LetterJa => "mahajani letter ja",
-            Mahajani::LetterJha => "mahajani letter jha",
-            Mahajani::LetterNya => "mahajani letter nya",
-            Mahajani::LetterTta => "mahajani letter tta",
-            Mahajani::LetterTtha => "mahajani letter ttha",
-            Mahajani::LetterDda => "mahajani letter dda",
-            Mahajani::LetterDdha => "mahajani letter ddha",
-            Mahajani::LetterNna => "mahajani letter nna",
-            Mahajani::LetterTa => "mahajani letter ta",
-            Mahajani::LetterTha => "mahajani letter tha",
-            Mahajani::LetterDa => "mahajani letter da",
-            Mahajani::LetterDha => "mahajani letter dha",
-            Mahajani::LetterNa => "mahajani letter na",
-            Mahajani::LetterPa => "mahajani letter pa",
-            Mahajani::LetterPha => "mahajani letter pha",
-            Mahajani::LetterBa => "mahajani letter ba",
-            Mahajani::LetterBha => "mahajani letter bha",
-            Mahajani::LetterMa => "mahajani letter ma",
-            Mahajani::LetterRa => "mahajani letter ra",
-            Mahajani::LetterLa => "mahajani letter la",
-            Mahajani::LetterVa => "mahajani letter va",
-            Mahajani::LetterSa => "mahajani letter sa",
-            Mahajani::LetterHa => "mahajani letter ha",
-            Mahajani::LetterRra => "mahajani letter rra",
-            Mahajani::SignNukta => "mahajani sign nukta",
-            Mahajani::AbbreviationSign => "mahajani abbreviation sign",
-            Mahajani::SectionMark => "mahajani section mark",
-            Mahajani::LigatureShri => "mahajani ligature shri",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Mahajani{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

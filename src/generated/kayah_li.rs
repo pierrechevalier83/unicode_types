@@ -246,56 +246,9 @@ impl KayahLi {
         KayahLi::DigitZero
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            KayahLi::DigitZero => "kayah li digit zero",
-            KayahLi::DigitOne => "kayah li digit one",
-            KayahLi::DigitTwo => "kayah li digit two",
-            KayahLi::DigitThree => "kayah li digit three",
-            KayahLi::DigitFour => "kayah li digit four",
-            KayahLi::DigitFive => "kayah li digit five",
-            KayahLi::DigitSix => "kayah li digit six",
-            KayahLi::DigitSeven => "kayah li digit seven",
-            KayahLi::DigitEight => "kayah li digit eight",
-            KayahLi::DigitNine => "kayah li digit nine",
-            KayahLi::LetterKa => "kayah li letter ka",
-            KayahLi::LetterKha => "kayah li letter kha",
-            KayahLi::LetterGa => "kayah li letter ga",
-            KayahLi::LetterNga => "kayah li letter nga",
-            KayahLi::LetterSa => "kayah li letter sa",
-            KayahLi::LetterSha => "kayah li letter sha",
-            KayahLi::LetterZa => "kayah li letter za",
-            KayahLi::LetterNya => "kayah li letter nya",
-            KayahLi::LetterTa => "kayah li letter ta",
-            KayahLi::LetterHta => "kayah li letter hta",
-            KayahLi::LetterNa => "kayah li letter na",
-            KayahLi::LetterPa => "kayah li letter pa",
-            KayahLi::LetterPha => "kayah li letter pha",
-            KayahLi::LetterMa => "kayah li letter ma",
-            KayahLi::LetterDa => "kayah li letter da",
-            KayahLi::LetterBa => "kayah li letter ba",
-            KayahLi::LetterRa => "kayah li letter ra",
-            KayahLi::LetterYa => "kayah li letter ya",
-            KayahLi::LetterLa => "kayah li letter la",
-            KayahLi::LetterWa => "kayah li letter wa",
-            KayahLi::LetterTha => "kayah li letter tha",
-            KayahLi::LetterHa => "kayah li letter ha",
-            KayahLi::LetterVa => "kayah li letter va",
-            KayahLi::LetterCa => "kayah li letter ca",
-            KayahLi::LetterA => "kayah li letter a",
-            KayahLi::LetterOe => "kayah li letter oe",
-            KayahLi::LetterI => "kayah li letter i",
-            KayahLi::LetterOo => "kayah li letter oo",
-            KayahLi::VowelUe => "kayah li vowel ue",
-            KayahLi::VowelE => "kayah li vowel e",
-            KayahLi::VowelU => "kayah li vowel u",
-            KayahLi::VowelEe => "kayah li vowel ee",
-            KayahLi::VowelO => "kayah li vowel o",
-            KayahLi::TonePlophu => "kayah li tone plophu",
-            KayahLi::ToneCalya => "kayah li tone calya",
-            KayahLi::ToneCalyaPlophu => "kayah li tone calya plophu",
-            KayahLi::SignCwi => "kayah li sign cwi",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("KayahLi{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

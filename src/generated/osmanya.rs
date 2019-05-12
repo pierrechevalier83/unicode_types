@@ -218,49 +218,9 @@ impl Osmanya {
         Osmanya::LetterAlef
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Osmanya::LetterAlef => "osmanya letter alef",
-            Osmanya::LetterBa => "osmanya letter ba",
-            Osmanya::LetterTa => "osmanya letter ta",
-            Osmanya::LetterJa => "osmanya letter ja",
-            Osmanya::LetterXa => "osmanya letter xa",
-            Osmanya::LetterKha => "osmanya letter kha",
-            Osmanya::LetterDeel => "osmanya letter deel",
-            Osmanya::LetterRa => "osmanya letter ra",
-            Osmanya::LetterSa => "osmanya letter sa",
-            Osmanya::LetterShiin => "osmanya letter shiin",
-            Osmanya::LetterDha => "osmanya letter dha",
-            Osmanya::LetterCayn => "osmanya letter cayn",
-            Osmanya::LetterGa => "osmanya letter ga",
-            Osmanya::LetterFa => "osmanya letter fa",
-            Osmanya::LetterQaaf => "osmanya letter qaaf",
-            Osmanya::LetterKaaf => "osmanya letter kaaf",
-            Osmanya::LetterLaan => "osmanya letter laan",
-            Osmanya::LetterMiin => "osmanya letter miin",
-            Osmanya::LetterNuun => "osmanya letter nuun",
-            Osmanya::LetterWaw => "osmanya letter waw",
-            Osmanya::LetterHa => "osmanya letter ha",
-            Osmanya::LetterYa => "osmanya letter ya",
-            Osmanya::LetterA => "osmanya letter a",
-            Osmanya::LetterE => "osmanya letter e",
-            Osmanya::LetterI => "osmanya letter i",
-            Osmanya::LetterO => "osmanya letter o",
-            Osmanya::LetterU => "osmanya letter u",
-            Osmanya::LetterAa => "osmanya letter aa",
-            Osmanya::LetterEe => "osmanya letter ee",
-            Osmanya::LetterOo => "osmanya letter oo",
-            Osmanya::DigitZero => "osmanya digit zero",
-            Osmanya::DigitOne => "osmanya digit one",
-            Osmanya::DigitTwo => "osmanya digit two",
-            Osmanya::DigitThree => "osmanya digit three",
-            Osmanya::DigitFour => "osmanya digit four",
-            Osmanya::DigitFive => "osmanya digit five",
-            Osmanya::DigitSix => "osmanya digit six",
-            Osmanya::DigitSeven => "osmanya digit seven",
-            Osmanya::DigitEight => "osmanya digit eight",
-            Osmanya::DigitNine => "osmanya digit nine",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Osmanya{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

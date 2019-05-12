@@ -98,19 +98,9 @@ impl CommonIndicNumberForms {
         CommonIndicNumberForms::NorthIndicFractionOneQuarter
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            CommonIndicNumberForms::NorthIndicFractionOneQuarter => "north indic fraction one quarter",
-            CommonIndicNumberForms::NorthIndicFractionOneHalf => "north indic fraction one half",
-            CommonIndicNumberForms::NorthIndicFractionThreeQuarters => "north indic fraction three quarters",
-            CommonIndicNumberForms::NorthIndicFractionOneSixteenth => "north indic fraction one sixteenth",
-            CommonIndicNumberForms::NorthIndicFractionOneEighth => "north indic fraction one eighth",
-            CommonIndicNumberForms::NorthIndicFractionThreeSixteenths => "north indic fraction three sixteenths",
-            CommonIndicNumberForms::NorthIndicQuarterMark => "north indic quarter mark",
-            CommonIndicNumberForms::NorthIndicPlaceholderMark => "north indic placeholder mark",
-            CommonIndicNumberForms::NorthIndicRupeeMark => "north indic rupee mark",
-            CommonIndicNumberForms::NorthIndicQuantityMark => "north indic quantity mark",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("CommonIndicNumberForms{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

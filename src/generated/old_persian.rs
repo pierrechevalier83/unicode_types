@@ -258,59 +258,9 @@ impl OldPersian {
         OldPersian::SignA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            OldPersian::SignA => "old persian sign a",
-            OldPersian::SignI => "old persian sign i",
-            OldPersian::SignU => "old persian sign u",
-            OldPersian::SignKa => "old persian sign ka",
-            OldPersian::SignKu => "old persian sign ku",
-            OldPersian::SignGa => "old persian sign ga",
-            OldPersian::SignGu => "old persian sign gu",
-            OldPersian::SignXa => "old persian sign xa",
-            OldPersian::SignCa => "old persian sign ca",
-            OldPersian::SignJa => "old persian sign ja",
-            OldPersian::SignJi => "old persian sign ji",
-            OldPersian::SignTa => "old persian sign ta",
-            OldPersian::SignTu => "old persian sign tu",
-            OldPersian::SignDa => "old persian sign da",
-            OldPersian::SignDi => "old persian sign di",
-            OldPersian::SignDu => "old persian sign du",
-            OldPersian::SignTha => "old persian sign tha",
-            OldPersian::SignPa => "old persian sign pa",
-            OldPersian::SignBa => "old persian sign ba",
-            OldPersian::SignFa => "old persian sign fa",
-            OldPersian::SignNa => "old persian sign na",
-            OldPersian::SignNu => "old persian sign nu",
-            OldPersian::SignMa => "old persian sign ma",
-            OldPersian::SignMi => "old persian sign mi",
-            OldPersian::SignMu => "old persian sign mu",
-            OldPersian::SignYa => "old persian sign ya",
-            OldPersian::SignVa => "old persian sign va",
-            OldPersian::SignVi => "old persian sign vi",
-            OldPersian::SignRa => "old persian sign ra",
-            OldPersian::SignRu => "old persian sign ru",
-            OldPersian::SignLa => "old persian sign la",
-            OldPersian::SignSa => "old persian sign sa",
-            OldPersian::SignZa => "old persian sign za",
-            OldPersian::SignSha => "old persian sign sha",
-            OldPersian::SignSsa => "old persian sign ssa",
-            OldPersian::SignHa => "old persian sign ha",
-            OldPersian::SignAuramazdaa => "old persian sign auramazdaa",
-            OldPersian::SignAuramazdaaDash2 => "old persian sign auramazdaa-2",
-            OldPersian::SignAuramazdaaha => "old persian sign auramazdaaha",
-            OldPersian::SignXshaayathiya => "old persian sign xshaayathiya",
-            OldPersian::SignDahyaaush => "old persian sign dahyaaush",
-            OldPersian::SignDahyaaushDash2 => "old persian sign dahyaaush-2",
-            OldPersian::SignBaga => "old persian sign baga",
-            OldPersian::SignBuumish => "old persian sign buumish",
-            OldPersian::WordDivider => "old persian word divider",
-            OldPersian::NumberOne => "old persian number one",
-            OldPersian::NumberTwo => "old persian number two",
-            OldPersian::NumberTen => "old persian number ten",
-            OldPersian::NumberTwenty => "old persian number twenty",
-            OldPersian::NumberHundred => "old persian number hundred",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("OldPersian{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

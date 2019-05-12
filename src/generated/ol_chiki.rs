@@ -246,56 +246,9 @@ impl OlChiki {
         OlChiki::DigitZero
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            OlChiki::DigitZero => "ol chiki digit zero",
-            OlChiki::DigitOne => "ol chiki digit one",
-            OlChiki::DigitTwo => "ol chiki digit two",
-            OlChiki::DigitThree => "ol chiki digit three",
-            OlChiki::DigitFour => "ol chiki digit four",
-            OlChiki::DigitFive => "ol chiki digit five",
-            OlChiki::DigitSix => "ol chiki digit six",
-            OlChiki::DigitSeven => "ol chiki digit seven",
-            OlChiki::DigitEight => "ol chiki digit eight",
-            OlChiki::DigitNine => "ol chiki digit nine",
-            OlChiki::LetterLa => "ol chiki letter la",
-            OlChiki::LetterAt => "ol chiki letter at",
-            OlChiki::LetterAg => "ol chiki letter ag",
-            OlChiki::LetterAng => "ol chiki letter ang",
-            OlChiki::LetterAl => "ol chiki letter al",
-            OlChiki::LetterLaa => "ol chiki letter laa",
-            OlChiki::LetterAak => "ol chiki letter aak",
-            OlChiki::LetterAaj => "ol chiki letter aaj",
-            OlChiki::LetterAam => "ol chiki letter aam",
-            OlChiki::LetterAaw => "ol chiki letter aaw",
-            OlChiki::LetterLi => "ol chiki letter li",
-            OlChiki::LetterIs => "ol chiki letter is",
-            OlChiki::LetterIh => "ol chiki letter ih",
-            OlChiki::LetterIny => "ol chiki letter iny",
-            OlChiki::LetterIr => "ol chiki letter ir",
-            OlChiki::LetterLu => "ol chiki letter lu",
-            OlChiki::LetterUc => "ol chiki letter uc",
-            OlChiki::LetterUd => "ol chiki letter ud",
-            OlChiki::LetterUnn => "ol chiki letter unn",
-            OlChiki::LetterUy => "ol chiki letter uy",
-            OlChiki::LetterLe => "ol chiki letter le",
-            OlChiki::LetterEp => "ol chiki letter ep",
-            OlChiki::LetterEdd => "ol chiki letter edd",
-            OlChiki::LetterEn => "ol chiki letter en",
-            OlChiki::LetterErr => "ol chiki letter err",
-            OlChiki::LetterLo => "ol chiki letter lo",
-            OlChiki::LetterOtt => "ol chiki letter ott",
-            OlChiki::LetterOb => "ol chiki letter ob",
-            OlChiki::LetterOv => "ol chiki letter ov",
-            OlChiki::LetterOh => "ol chiki letter oh",
-            OlChiki::MuTtuddag => "ol chiki mu ttuddag",
-            OlChiki::GaahlaaTtuddaag => "ol chiki gaahlaa ttuddaag",
-            OlChiki::MuDashGaahlaaTtuddaag => "ol chiki mu-gaahlaa ttuddaag",
-            OlChiki::Relaa => "ol chiki relaa",
-            OlChiki::Phaarkaa => "ol chiki phaarkaa",
-            OlChiki::Ahad => "ol chiki ahad",
-            OlChiki::PunctuationMucaad => "ol chiki punctuation mucaad",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("OlChiki{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

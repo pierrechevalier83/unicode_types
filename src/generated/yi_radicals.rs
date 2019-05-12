@@ -278,64 +278,9 @@ impl YiRadicals {
         YiRadicals::YiRadicalQot
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            YiRadicals::YiRadicalQot => "yi radical qot",
-            YiRadicals::YiRadicalLi => "yi radical li",
-            YiRadicals::YiRadicalKit => "yi radical kit",
-            YiRadicals::YiRadicalNyip => "yi radical nyip",
-            YiRadicals::YiRadicalCyp => "yi radical cyp",
-            YiRadicals::YiRadicalSsi => "yi radical ssi",
-            YiRadicals::YiRadicalGgop => "yi radical ggop",
-            YiRadicals::YiRadicalGep => "yi radical gep",
-            YiRadicals::YiRadicalMi => "yi radical mi",
-            YiRadicals::YiRadicalHxit => "yi radical hxit",
-            YiRadicals::YiRadicalLyr => "yi radical lyr",
-            YiRadicals::YiRadicalBbut => "yi radical bbut",
-            YiRadicals::YiRadicalMop => "yi radical mop",
-            YiRadicals::YiRadicalYo => "yi radical yo",
-            YiRadicals::YiRadicalPut => "yi radical put",
-            YiRadicals::YiRadicalHxuo => "yi radical hxuo",
-            YiRadicals::YiRadicalTat => "yi radical tat",
-            YiRadicals::YiRadicalGa => "yi radical ga",
-            YiRadicals::YiRadicalZup => "yi radical zup",
-            YiRadicals::YiRadicalCyt => "yi radical cyt",
-            YiRadicals::YiRadicalDdur => "yi radical ddur",
-            YiRadicals::YiRadicalBur => "yi radical bur",
-            YiRadicals::YiRadicalGguo => "yi radical gguo",
-            YiRadicals::YiRadicalNyop => "yi radical nyop",
-            YiRadicals::YiRadicalTu => "yi radical tu",
-            YiRadicals::YiRadicalOp => "yi radical op",
-            YiRadicals::YiRadicalJjut => "yi radical jjut",
-            YiRadicals::YiRadicalZot => "yi radical zot",
-            YiRadicals::YiRadicalPyt => "yi radical pyt",
-            YiRadicals::YiRadicalHmo => "yi radical hmo",
-            YiRadicals::YiRadicalYit => "yi radical yit",
-            YiRadicals::YiRadicalVur => "yi radical vur",
-            YiRadicals::YiRadicalShy => "yi radical shy",
-            YiRadicals::YiRadicalVep => "yi radical vep",
-            YiRadicals::YiRadicalZa => "yi radical za",
-            YiRadicals::YiRadicalJo => "yi radical jo",
-            YiRadicals::YiRadicalNzup => "yi radical nzup",
-            YiRadicals::YiRadicalJjy => "yi radical jjy",
-            YiRadicals::YiRadicalGot => "yi radical got",
-            YiRadicals::YiRadicalJjie => "yi radical jjie",
-            YiRadicals::YiRadicalWo => "yi radical wo",
-            YiRadicals::YiRadicalDu => "yi radical du",
-            YiRadicals::YiRadicalShur => "yi radical shur",
-            YiRadicals::YiRadicalLie => "yi radical lie",
-            YiRadicals::YiRadicalCy => "yi radical cy",
-            YiRadicals::YiRadicalCuop => "yi radical cuop",
-            YiRadicals::YiRadicalCip => "yi radical cip",
-            YiRadicals::YiRadicalHxop => "yi radical hxop",
-            YiRadicals::YiRadicalShat => "yi radical shat",
-            YiRadicals::YiRadicalZur => "yi radical zur",
-            YiRadicals::YiRadicalShop => "yi radical shop",
-            YiRadicals::YiRadicalChe => "yi radical che",
-            YiRadicals::YiRadicalZziet => "yi radical zziet",
-            YiRadicals::YiRadicalNbie => "yi radical nbie",
-            YiRadicals::YiRadicalKe => "yi radical ke",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("YiRadicals{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

@@ -246,56 +246,9 @@ impl OrnamentalDingbats {
         OrnamentalDingbats::NorthWestPointingLeaf
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            OrnamentalDingbats::NorthWestPointingLeaf => "north west pointing leaf",
-            OrnamentalDingbats::SouthWestPointingLeaf => "south west pointing leaf",
-            OrnamentalDingbats::NorthEastPointingLeaf => "north east pointing leaf",
-            OrnamentalDingbats::SouthEastPointingLeaf => "south east pointing leaf",
-            OrnamentalDingbats::TurnedNorthWestPointingLeaf => "turned north west pointing leaf",
-            OrnamentalDingbats::TurnedSouthWestPointingLeaf => "turned south west pointing leaf",
-            OrnamentalDingbats::TurnedNorthEastPointingLeaf => "turned north east pointing leaf",
-            OrnamentalDingbats::TurnedSouthEastPointingLeaf => "turned south east pointing leaf",
-            OrnamentalDingbats::NorthWestPointingVineLeaf => "north west pointing vine leaf",
-            OrnamentalDingbats::SouthWestPointingVineLeaf => "south west pointing vine leaf",
-            OrnamentalDingbats::NorthEastPointingVineLeaf => "north east pointing vine leaf",
-            OrnamentalDingbats::SouthEastPointingVineLeaf => "south east pointing vine leaf",
-            OrnamentalDingbats::HeavyNorthWestPointingVineLeaf => "heavy north west pointing vine leaf",
-            OrnamentalDingbats::HeavySouthWestPointingVineLeaf => "heavy south west pointing vine leaf",
-            OrnamentalDingbats::HeavyNorthEastPointingVineLeaf => "heavy north east pointing vine leaf",
-            OrnamentalDingbats::HeavySouthEastPointingVineLeaf => "heavy south east pointing vine leaf",
-            OrnamentalDingbats::NorthWestPointingBud => "north west pointing bud",
-            OrnamentalDingbats::SouthWestPointingBud => "south west pointing bud",
-            OrnamentalDingbats::NorthEastPointingBud => "north east pointing bud",
-            OrnamentalDingbats::SouthEastPointingBud => "south east pointing bud",
-            OrnamentalDingbats::HeavyNorthWestPointingBud => "heavy north west pointing bud",
-            OrnamentalDingbats::HeavySouthWestPointingBud => "heavy south west pointing bud",
-            OrnamentalDingbats::HeavyNorthEastPointingBud => "heavy north east pointing bud",
-            OrnamentalDingbats::HeavySouthEastPointingBud => "heavy south east pointing bud",
-            OrnamentalDingbats::HollowQuiltSquareOrnament => "hollow quilt square ornament",
-            OrnamentalDingbats::HollowQuiltSquareOrnamentInBlackSquare => "hollow quilt square ornament in black square",
-            OrnamentalDingbats::SolidQuiltSquareOrnament => "solid quilt square ornament",
-            OrnamentalDingbats::SolidQuiltSquareOrnamentInBlackSquare => "solid quilt square ornament in black square",
-            OrnamentalDingbats::LeftwardsRocket => "leftwards rocket",
-            OrnamentalDingbats::UpwardsRocket => "upwards rocket",
-            OrnamentalDingbats::RightwardsRocket => "rightwards rocket",
-            OrnamentalDingbats::DownwardsRocket => "downwards rocket",
-            OrnamentalDingbats::ScriptLigatureEtOrnament => "script ligature et ornament",
-            OrnamentalDingbats::HeavyScriptLigatureEtOrnament => "heavy script ligature et ornament",
-            OrnamentalDingbats::LigatureOpenEtOrnament => "ligature open et ornament",
-            OrnamentalDingbats::HeavyLigatureOpenEtOrnament => "heavy ligature open et ornament",
-            OrnamentalDingbats::HeavyAmpersandOrnament => "heavy ampersand ornament",
-            OrnamentalDingbats::SwashAmpersandOrnament => "swash ampersand ornament",
-            OrnamentalDingbats::SansDashSerifHeavyDoubleTurnedCommaQuotationMarkOrnament => "sans-serif heavy double turned comma quotation mark ornament",
-            OrnamentalDingbats::SansDashSerifHeavyDoubleCommaQuotationMarkOrnament => "sans-serif heavy double comma quotation mark ornament",
-            OrnamentalDingbats::SansDashSerifHeavyLowDoubleCommaQuotationMarkOrnament => "sans-serif heavy low double comma quotation mark ornament",
-            OrnamentalDingbats::HeavyInterrobangOrnament => "heavy interrobang ornament",
-            OrnamentalDingbats::SansDashSerifInterrobangOrnament => "sans-serif interrobang ornament",
-            OrnamentalDingbats::HeavySansDashSerifInterrobangOrnament => "heavy sans-serif interrobang ornament",
-            OrnamentalDingbats::VeryHeavySolidus => "very heavy solidus",
-            OrnamentalDingbats::VeryHeavyReverseSolidus => "very heavy reverse solidus",
-            OrnamentalDingbats::CheckerBoard => "checker board",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("OrnamentalDingbats{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

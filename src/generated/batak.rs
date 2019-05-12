@@ -278,64 +278,9 @@ impl Batak {
         Batak::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Batak::LetterA => "batak letter a",
-            Batak::LetterSimalungunA => "batak letter simalungun a",
-            Batak::LetterHa => "batak letter ha",
-            Batak::LetterSimalungunHa => "batak letter simalungun ha",
-            Batak::LetterMandailingHa => "batak letter mandailing ha",
-            Batak::LetterBa => "batak letter ba",
-            Batak::LetterKaroBa => "batak letter karo ba",
-            Batak::LetterPa => "batak letter pa",
-            Batak::LetterSimalungunPa => "batak letter simalungun pa",
-            Batak::LetterNa => "batak letter na",
-            Batak::LetterMandailingNa => "batak letter mandailing na",
-            Batak::LetterWa => "batak letter wa",
-            Batak::LetterSimalungunWa => "batak letter simalungun wa",
-            Batak::LetterPakpakWa => "batak letter pakpak wa",
-            Batak::LetterGa => "batak letter ga",
-            Batak::LetterSimalungunGa => "batak letter simalungun ga",
-            Batak::LetterJa => "batak letter ja",
-            Batak::LetterDa => "batak letter da",
-            Batak::LetterRa => "batak letter ra",
-            Batak::LetterSimalungunRa => "batak letter simalungun ra",
-            Batak::LetterMa => "batak letter ma",
-            Batak::LetterSimalungunMa => "batak letter simalungun ma",
-            Batak::LetterSouthernTa => "batak letter southern ta",
-            Batak::LetterNorthernTa => "batak letter northern ta",
-            Batak::LetterSa => "batak letter sa",
-            Batak::LetterSimalungunSa => "batak letter simalungun sa",
-            Batak::LetterMandailingSa => "batak letter mandailing sa",
-            Batak::LetterYa => "batak letter ya",
-            Batak::LetterSimalungunYa => "batak letter simalungun ya",
-            Batak::LetterNga => "batak letter nga",
-            Batak::LetterLa => "batak letter la",
-            Batak::LetterSimalungunLa => "batak letter simalungun la",
-            Batak::LetterNya => "batak letter nya",
-            Batak::LetterCa => "batak letter ca",
-            Batak::LetterNda => "batak letter nda",
-            Batak::LetterMba => "batak letter mba",
-            Batak::LetterI => "batak letter i",
-            Batak::LetterU => "batak letter u",
-            Batak::SignTompi => "batak sign tompi",
-            Batak::VowelSignE => "batak vowel sign e",
-            Batak::VowelSignPakpakE => "batak vowel sign pakpak e",
-            Batak::VowelSignEe => "batak vowel sign ee",
-            Batak::VowelSignI => "batak vowel sign i",
-            Batak::VowelSignKaroI => "batak vowel sign karo i",
-            Batak::VowelSignO => "batak vowel sign o",
-            Batak::VowelSignKaroO => "batak vowel sign karo o",
-            Batak::VowelSignU => "batak vowel sign u",
-            Batak::VowelSignUForSimalungunSa => "batak vowel sign u for simalungun sa",
-            Batak::ConsonantSignNg => "batak consonant sign ng",
-            Batak::ConsonantSignH => "batak consonant sign h",
-            Batak::Pangolat => "batak pangolat",
-            Batak::Panongonan => "batak panongonan",
-            Batak::SymbolBinduNaMetek => "batak symbol bindu na metek",
-            Batak::SymbolBinduPinarboras => "batak symbol bindu pinarboras",
-            Batak::SymbolBinduJudul => "batak symbol bindu judul",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Batak{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

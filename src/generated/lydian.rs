@@ -162,35 +162,9 @@ impl Lydian {
         Lydian::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Lydian::LetterA => "lydian letter a",
-            Lydian::LetterB => "lydian letter b",
-            Lydian::LetterG => "lydian letter g",
-            Lydian::LetterD => "lydian letter d",
-            Lydian::LetterE => "lydian letter e",
-            Lydian::LetterV => "lydian letter v",
-            Lydian::LetterI => "lydian letter i",
-            Lydian::LetterY => "lydian letter y",
-            Lydian::LetterK => "lydian letter k",
-            Lydian::LetterL => "lydian letter l",
-            Lydian::LetterM => "lydian letter m",
-            Lydian::LetterN => "lydian letter n",
-            Lydian::LetterO => "lydian letter o",
-            Lydian::LetterR => "lydian letter r",
-            Lydian::LetterSs => "lydian letter ss",
-            Lydian::LetterT => "lydian letter t",
-            Lydian::LetterU => "lydian letter u",
-            Lydian::LetterF => "lydian letter f",
-            Lydian::LetterQ => "lydian letter q",
-            Lydian::LetterS => "lydian letter s",
-            Lydian::LetterTt => "lydian letter tt",
-            Lydian::LetterAn => "lydian letter an",
-            Lydian::LetterEn => "lydian letter en",
-            Lydian::LetterLy => "lydian letter ly",
-            Lydian::LetterNn => "lydian letter nn",
-            Lydian::LetterC => "lydian letter c",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Lydian{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

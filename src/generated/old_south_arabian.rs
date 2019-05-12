@@ -182,40 +182,9 @@ impl OldSouthArabian {
         OldSouthArabian::LetterHe
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            OldSouthArabian::LetterHe => "old south arabian letter he",
-            OldSouthArabian::LetterLamedh => "old south arabian letter lamedh",
-            OldSouthArabian::LetterHeth => "old south arabian letter heth",
-            OldSouthArabian::LetterMem => "old south arabian letter mem",
-            OldSouthArabian::LetterQoph => "old south arabian letter qoph",
-            OldSouthArabian::LetterWaw => "old south arabian letter waw",
-            OldSouthArabian::LetterShin => "old south arabian letter shin",
-            OldSouthArabian::LetterResh => "old south arabian letter resh",
-            OldSouthArabian::LetterBeth => "old south arabian letter beth",
-            OldSouthArabian::LetterTaw => "old south arabian letter taw",
-            OldSouthArabian::LetterSat => "old south arabian letter sat",
-            OldSouthArabian::LetterKaph => "old south arabian letter kaph",
-            OldSouthArabian::LetterNun => "old south arabian letter nun",
-            OldSouthArabian::LetterKheth => "old south arabian letter kheth",
-            OldSouthArabian::LetterSadhe => "old south arabian letter sadhe",
-            OldSouthArabian::LetterSamekh => "old south arabian letter samekh",
-            OldSouthArabian::LetterFe => "old south arabian letter fe",
-            OldSouthArabian::LetterAlef => "old south arabian letter alef",
-            OldSouthArabian::LetterAyn => "old south arabian letter ayn",
-            OldSouthArabian::LetterDhadhe => "old south arabian letter dhadhe",
-            OldSouthArabian::LetterGimel => "old south arabian letter gimel",
-            OldSouthArabian::LetterDaleth => "old south arabian letter daleth",
-            OldSouthArabian::LetterGhayn => "old south arabian letter ghayn",
-            OldSouthArabian::LetterTeth => "old south arabian letter teth",
-            OldSouthArabian::LetterZayn => "old south arabian letter zayn",
-            OldSouthArabian::LetterDhaleth => "old south arabian letter dhaleth",
-            OldSouthArabian::LetterYodh => "old south arabian letter yodh",
-            OldSouthArabian::LetterThaw => "old south arabian letter thaw",
-            OldSouthArabian::LetterTheth => "old south arabian letter theth",
-            OldSouthArabian::NumberOne => "old south arabian number one",
-            OldSouthArabian::NumberFifty => "old south arabian number fifty",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("OldSouthArabian{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

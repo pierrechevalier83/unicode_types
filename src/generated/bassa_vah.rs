@@ -202,45 +202,9 @@ impl BassaVah {
         BassaVah::LetterEnni
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            BassaVah::LetterEnni => "bassa vah letter enni",
-            BassaVah::LetterKa => "bassa vah letter ka",
-            BassaVah::LetterSe => "bassa vah letter se",
-            BassaVah::LetterFa => "bassa vah letter fa",
-            BassaVah::LetterMbe => "bassa vah letter mbe",
-            BassaVah::LetterYie => "bassa vah letter yie",
-            BassaVah::LetterGah => "bassa vah letter gah",
-            BassaVah::LetterDhii => "bassa vah letter dhii",
-            BassaVah::LetterKpah => "bassa vah letter kpah",
-            BassaVah::LetterJo => "bassa vah letter jo",
-            BassaVah::LetterHwah => "bassa vah letter hwah",
-            BassaVah::LetterWa => "bassa vah letter wa",
-            BassaVah::LetterZo => "bassa vah letter zo",
-            BassaVah::LetterGbu => "bassa vah letter gbu",
-            BassaVah::LetterDo => "bassa vah letter do",
-            BassaVah::LetterCe => "bassa vah letter ce",
-            BassaVah::LetterUwu => "bassa vah letter uwu",
-            BassaVah::LetterTo => "bassa vah letter to",
-            BassaVah::LetterBa => "bassa vah letter ba",
-            BassaVah::LetterVu => "bassa vah letter vu",
-            BassaVah::LetterYein => "bassa vah letter yein",
-            BassaVah::LetterPa => "bassa vah letter pa",
-            BassaVah::LetterWadda => "bassa vah letter wadda",
-            BassaVah::LetterA => "bassa vah letter a",
-            BassaVah::LetterO => "bassa vah letter o",
-            BassaVah::LetterOo => "bassa vah letter oo",
-            BassaVah::LetterU => "bassa vah letter u",
-            BassaVah::LetterEe => "bassa vah letter ee",
-            BassaVah::LetterE => "bassa vah letter e",
-            BassaVah::LetterI => "bassa vah letter i",
-            BassaVah::CombiningHighTone => "bassa vah combining high tone",
-            BassaVah::CombiningLowTone => "bassa vah combining low tone",
-            BassaVah::CombiningMidTone => "bassa vah combining mid tone",
-            BassaVah::CombiningLowDashMidTone => "bassa vah combining low-mid tone",
-            BassaVah::CombiningHighDashLowTone => "bassa vah combining high-low tone",
-            BassaVah::FullStop => "bassa vah full stop",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("BassaVah{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }

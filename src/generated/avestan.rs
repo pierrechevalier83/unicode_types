@@ -298,69 +298,9 @@ impl Avestan {
         Avestan::LetterA
     }
 
-    /// The character's name, all lowercase and space-separated
-    pub fn name(&self) -> &str {
-        match self {
-            Avestan::LetterA => "avestan letter a",
-            Avestan::LetterAa => "avestan letter aa",
-            Avestan::LetterAo => "avestan letter ao",
-            Avestan::LetterAao => "avestan letter aao",
-            Avestan::LetterAn => "avestan letter an",
-            Avestan::LetterAan => "avestan letter aan",
-            Avestan::LetterAe => "avestan letter ae",
-            Avestan::LetterAee => "avestan letter aee",
-            Avestan::LetterE => "avestan letter e",
-            Avestan::LetterEe => "avestan letter ee",
-            Avestan::LetterO => "avestan letter o",
-            Avestan::LetterOo => "avestan letter oo",
-            Avestan::LetterI => "avestan letter i",
-            Avestan::LetterIi => "avestan letter ii",
-            Avestan::LetterU => "avestan letter u",
-            Avestan::LetterUu => "avestan letter uu",
-            Avestan::LetterKe => "avestan letter ke",
-            Avestan::LetterXe => "avestan letter xe",
-            Avestan::LetterXye => "avestan letter xye",
-            Avestan::LetterXve => "avestan letter xve",
-            Avestan::LetterGe => "avestan letter ge",
-            Avestan::LetterGge => "avestan letter gge",
-            Avestan::LetterGhe => "avestan letter ghe",
-            Avestan::LetterCe => "avestan letter ce",
-            Avestan::LetterJe => "avestan letter je",
-            Avestan::LetterTe => "avestan letter te",
-            Avestan::LetterThe => "avestan letter the",
-            Avestan::LetterDe => "avestan letter de",
-            Avestan::LetterDhe => "avestan letter dhe",
-            Avestan::LetterTte => "avestan letter tte",
-            Avestan::LetterPe => "avestan letter pe",
-            Avestan::LetterFe => "avestan letter fe",
-            Avestan::LetterBe => "avestan letter be",
-            Avestan::LetterBhe => "avestan letter bhe",
-            Avestan::LetterNge => "avestan letter nge",
-            Avestan::LetterNgye => "avestan letter ngye",
-            Avestan::LetterNgve => "avestan letter ngve",
-            Avestan::LetterNe => "avestan letter ne",
-            Avestan::LetterNye => "avestan letter nye",
-            Avestan::LetterNne => "avestan letter nne",
-            Avestan::LetterMe => "avestan letter me",
-            Avestan::LetterHme => "avestan letter hme",
-            Avestan::LetterYye => "avestan letter yye",
-            Avestan::LetterYe => "avestan letter ye",
-            Avestan::LetterVe => "avestan letter ve",
-            Avestan::LetterRe => "avestan letter re",
-            Avestan::LetterLe => "avestan letter le",
-            Avestan::LetterSe => "avestan letter se",
-            Avestan::LetterZe => "avestan letter ze",
-            Avestan::LetterShe => "avestan letter she",
-            Avestan::LetterZhe => "avestan letter zhe",
-            Avestan::LetterShye => "avestan letter shye",
-            Avestan::LetterSshe => "avestan letter sshe",
-            Avestan::LetterHe => "avestan letter he",
-            Avestan::AbbreviationMark => "avestan abbreviation mark",
-            Avestan::TinyTwoDotsOverOneDotPunctuation => "tiny two dots over one dot punctuation",
-            Avestan::SmallTwoDotsOverOneDotPunctuation => "small two dots over one dot punctuation",
-            Avestan::LargeTwoDotsOverOneDotPunctuation => "large two dots over one dot punctuation",
-            Avestan::LargeOneDotOverTwoDotsPunctuation => "large one dot over two dots punctuation",
-            Avestan::LargeTwoRingsOverOneRingPunctuation => "large two rings over one ring punctuation",
-        }
+    /// The character's name, in sentence case
+    pub fn name(&self) -> String {
+        let s = std::format!("Avestan{:#?}", self);
+        string_morph::to_sentence_case(&s)
     }
 }
