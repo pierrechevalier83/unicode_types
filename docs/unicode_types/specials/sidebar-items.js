@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["Specials","\\u{fff0} → \\u{ffff}\\ \\  ￹ ￺ ￻ ￼ �"]],"mod":[["constants","\\u{fff0} → \\u{ffff}\\ \\  ￹ ￺ ￻ ￼ �"]]});

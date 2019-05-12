@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["CommonIndicNumberForms","\\u{a830} → \\u{a83f}\\ \\  ꠰ ꠱ ꠲ ꠳ ꠴ ꠵ ꠶ ꠷ ꠸ ꠹"]],"mod":[["constants","\\u{a830} → \\u{a83f}\\ \\  ꠰ ꠱ ꠲ ꠳ ꠴ ꠵ ꠶ ꠷ ꠸ ꠹"]]});

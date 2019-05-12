@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["SupplementaryPrivateUseAreaB","\\u{100000} → \\u{10ffff}\\ \\  􀀀 􏿽"]],"mod":[["constants","\\u{100000} → \\u{10ffff}\\ \\  􀀀 􏿽"]]});

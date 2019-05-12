@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["INTERLINEAR_ANNOTATION_ANCHOR","\\u{fff9}: '￹'"],["INTERLINEAR_ANNOTATION_SEPARATOR","\\u{fffa}: '￺'"],["INTERLINEAR_ANNOTATION_TERMINATOR","\\u{fffb}: '￻'"],["OBJECT_REPLACEMENT_CHARACTER","\\u{fffc}: '￼'"],["REPLACEMENT_CHARACTER","\\u{fffd}: '�'"]]});

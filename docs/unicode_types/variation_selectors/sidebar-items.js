@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["VariationSelectors","\\u{fe00} → \\u{fe0f}\\ \\  ︀ ︁ ︂ ︃ ︄ ︅ ︆ ︇ ︈ ︉ ︊ ︋ ︌ ︍ ︎"]],"mod":[["constants","\\u{fe00} → \\u{fe0f}\\ \\  ︀ ︁ ︂ ︃ ︄ ︅ ︆ ︇ ︈ ︉ ︊ ︋ ︌ ︍ ︎"]]});

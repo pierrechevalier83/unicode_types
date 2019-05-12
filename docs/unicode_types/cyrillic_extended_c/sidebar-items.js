@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["CyrillicExtendedC","\\u{1c80} → \\u{1c8f}\\ \\  ᲀ ᲁ ᲂ ᲃ ᲄ ᲅ ᲆ ᲇ ᲈ"]],"mod":[["constants","\\u{1c80} → \\u{1c8f}\\ \\  ᲀ ᲁ ᲂ ᲃ ᲄ ᲅ ᲆ ᲇ ᲈ"]]});

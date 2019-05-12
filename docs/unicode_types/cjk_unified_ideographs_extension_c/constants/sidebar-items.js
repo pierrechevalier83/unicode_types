@@ -1,0 +1,1 @@
+initSidebarItems({"constant":[["CJK_IDEOGRAPH_EXTENSION_C_FIRST","\\u{2a700}: '𪜀'"],["CJK_IDEOGRAPH_EXTENSION_C_LAST","\\u{2b734}: '𫜴'"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["CombiningHalfMarks","\\u{fe20} → \\u{fe2f}\\ \\  ︠ ︡ ︢ ︣ ︤ ︥ ︦ ︧ ︨ ︩ ︪ ︫ ︬ ︭ ︮"]],"mod":[["constants","\\u{fe20} → \\u{fe2f}\\ \\  ︠ ︡ ︢ ︣ ︤ ︥ ︦ ︧ ︨ ︩ ︪ ︫ ︬ ︭ ︮"]]});

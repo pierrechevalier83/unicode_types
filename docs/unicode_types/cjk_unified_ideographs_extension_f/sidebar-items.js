@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["CJKUnifiedIdeographsExtensionF","\\u{2ceb0} → \\u{2ebef}\\ \\  𬺰 𮯠"]],"mod":[["constants","\\u{2ceb0} → \\u{2ebef}\\ \\  𬺰 𮯠"]]});

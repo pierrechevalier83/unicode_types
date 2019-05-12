@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["DevanagariExtended","\\u{a8e0} → \\u{a8ff}\\ \\  ꣠ ꣡ ꣢ ꣣ ꣤ ꣥ ꣦ ꣧ ꣨ ꣩ ꣪ ꣫ ꣬ ꣭ ꣮ ꣯  ꣰ ꣱ ꣲ ꣳ ꣴ ꣵ ꣶ ꣷ ꣸ ꣹ ꣺ ꣻ ꣼ ꣽ ꣾ"]],"mod":[["constants","\\u{a8e0} → \\u{a8ff}\\ \\  ꣠ ꣡ ꣢ ꣣ ꣤ ꣥ ꣦ ꣧ ꣨ ꣩ ꣪ ꣫ ꣬ ꣭ ꣮ ꣯  ꣰ ꣱ ꣲ ꣳ ꣴ ꣵ ꣶ ꣷ ꣸ ꣹ ꣺ ꣻ ꣼ ꣽ ꣾ"]]});

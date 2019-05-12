@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["HangulJamoExtendedA","\\u{a960} → \\u{a97f}\\ \\  ꥠ ꥡ ꥢ ꥣ ꥤ ꥥ ꥦ ꥧ ꥨ ꥩ ꥪ ꥫ ꥬ ꥭ ꥮ ꥯ  ꥰ ꥱ ꥲ ꥳ ꥴ ꥵ ꥶ ꥷ ꥸ ꥹ ꥺ ꥻ ꥼ"]],"mod":[["constants","\\u{a960} → \\u{a97f}\\ \\  ꥠ ꥡ ꥢ ꥣ ꥤ ꥥ ꥦ ꥧ ꥨ ꥩ ꥪ ꥫ ꥬ ꥭ ꥮ ꥯ  ꥰ ꥱ ꥲ ꥳ ꥴ ꥵ ꥶ ꥷ ꥸ ꥹ ꥺ ꥻ ꥼ"]]});

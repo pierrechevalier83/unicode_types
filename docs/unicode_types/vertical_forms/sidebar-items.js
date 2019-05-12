@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["VerticalForms","\\u{fe10} → \\u{fe1f}\\ \\  ︐ ︑ ︒ ︓ ︔ ︕ ︖ ︗ ︘ ︙"]],"mod":[["constants","\\u{fe10} → \\u{fe1f}\\ \\  ︐ ︑ ︒ ︓ ︔ ︕ ︖ ︗ ︘ ︙"]]});

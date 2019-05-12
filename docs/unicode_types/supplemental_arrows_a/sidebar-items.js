@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["SupplementalArrowsA","\\u{27f0} → \\u{27ff}\\ \\  ⟰ ⟱ ⟲ ⟳ ⟴ ⟵ ⟶ ⟷ ⟸ ⟹ ⟺ ⟻ ⟼ ⟽ ⟾"]],"mod":[["constants","\\u{27f0} → \\u{27ff}\\ \\  ⟰ ⟱ ⟲ ⟳ ⟴ ⟵ ⟶ ⟷ ⟸ ⟹ ⟺ ⟻ ⟼ ⟽ ⟾"]]});

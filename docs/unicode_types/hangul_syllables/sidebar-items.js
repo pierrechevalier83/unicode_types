@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["HangulSyllables","\\u{ac00} → \\u{d7af}\\ \\  가 힣"]],"mod":[["constants","\\u{ac00} → \\u{d7af}\\ \\  가 힣"]]});

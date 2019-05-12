@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["IdeographicSymbolsandPunctuation","\\u{16fe0} → \\u{16fff}\\ \\  𖿠 𖿡 𖿢 𖿣"]],"mod":[["constants","\\u{16fe0} → \\u{16fff}\\ \\  𖿠 𖿡 𖿢 𖿣"]]});

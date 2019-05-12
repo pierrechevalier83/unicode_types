@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["ShorthandFormatControls","\\u{1bca0} → \\u{1bcaf}\\ \\  𛲠 𛲡 𛲢 𛲣"]],"mod":[["constants","\\u{1bca0} → \\u{1bcaf}\\ \\  𛲠 𛲡 𛲢 𛲣"]]});

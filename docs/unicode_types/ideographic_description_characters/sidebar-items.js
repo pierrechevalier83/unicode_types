@@ -1,0 +1,1 @@
+initSidebarItems({"enum":[["IdeographicDescriptionCharacters","\\u{2ff0} → \\u{2fff}\\ \\  ⿰ ⿱ ⿲ ⿳ ⿴ ⿵ ⿶ ⿷ ⿸ ⿹ ⿺ ⿻"]],"mod":[["constants","\\u{2ff0} → \\u{2fff}\\ \\  ⿰ ⿱ ⿲ ⿳ ⿴ ⿵ ⿶ ⿷ ⿸ ⿹ ⿺ ⿻"]]});
