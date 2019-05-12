@@ -1,7 +1,9 @@
 /// \u{10e60} → \u{10e7f}\
 ///\
-/// 𐹠 𐹡 𐹢 𐹣 𐹤 𐹥 𐹦 𐹧 𐹨 𐹩 𐹪 𐹫 𐹬 𐹭 𐹮 𐹯
-/// 𐹰 𐹱 𐹲 𐹳 𐹴 𐹵 𐹶 𐹷 𐹸 𐹹 𐹺 𐹻 𐹼 𐹽 𐹾
+/// 𐹠 𐹡 𐹢 𐹣 𐹤 𐹥 𐹦 𐹧 𐹨 𐹩 𐹪 𐹫 𐹬 𐹭 𐹮 𐹯\
+/// 𐹰 𐹱 𐹲 𐹳 𐹴 𐹵 𐹶 𐹷 𐹸 𐹹 𐹺 𐹻 𐹼 𐹽 𐹾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10e60}: '𐹠'
     pub const RUMI_DIGIT_ONE: char = '𐹠';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const RUMI_FRACTION_TWO_THIRDS: char = '𐹾';
 }
 
-/// \u{10e60} → \u{10e7f}\
-///\
-/// 𐹠 𐹡 𐹢 𐹣 𐹤 𐹥 𐹦 𐹧 𐹨 𐹩 𐹪 𐹫 𐹬 𐹭 𐹮 𐹯
-/// 𐹰 𐹱 𐹲 𐹳 𐹴 𐹵 𐹶 𐹷 𐹸 𐹹 𐹺 𐹻 𐹼 𐹽 𐹾
+/// An enum to represent all characters in the RumiNumeralSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum RumiNumeralSymbols {
     /// \u{10e60}: '𐹠'

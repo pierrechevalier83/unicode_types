@@ -1,6 +1,8 @@
 /// \u{2ff0} → \u{2fff}\
 ///\
-/// ⿰ ⿱ ⿲ ⿳ ⿴ ⿵ ⿶ ⿷ ⿸ ⿹ ⿺ ⿻
+/// ⿰ ⿱ ⿲ ⿳ ⿴ ⿵ ⿶ ⿷ ⿸ ⿹ ⿺ ⿻\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2ff0}: '⿰'
     pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_LEFT_TO_RIGHT: char = '⿰';
@@ -28,9 +30,7 @@ pub mod constants {
     pub const IDEOGRAPHIC_DESCRIPTION_CHARACTER_OVERLAID: char = '⿻';
 }
 
-/// \u{2ff0} → \u{2fff}\
-///\
-/// ⿰ ⿱ ⿲ ⿳ ⿴ ⿵ ⿶ ⿷ ⿸ ⿹ ⿺ ⿻
+/// An enum to represent all characters in the IdeographicDescriptionCharacters block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum IdeographicDescriptionCharacters {
     /// \u{2ff0}: '⿰'

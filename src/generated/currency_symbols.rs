@@ -1,7 +1,9 @@
 /// \u{20a0} → \u{20cf}\
 ///\
-/// ₠ ₡ ₢ ₣ ₤ ₥ ₦ ₧ ₨ ₩ ₪ ₫ € ₭ ₮ ₯
-/// ₰ ₱ ₲ ₳ ₴ ₵ ₶ ₷ ₸ ₹ ₺ ₻ ₼ ₽ ₾ ₿
+/// ₠ ₡ ₢ ₣ ₤ ₥ ₦ ₧ ₨ ₩ ₪ ₫ € ₭ ₮ ₯\
+/// ₰ ₱ ₲ ₳ ₴ ₵ ₶ ₷ ₸ ₹ ₺ ₻ ₼ ₽ ₾ ₿\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{20a0}: '₠'
     pub const EURO_DASH_CURRENCY_SIGN: char = '₠';
@@ -69,10 +71,7 @@ pub mod constants {
     pub const BITCOIN_SIGN: char = '₿';
 }
 
-/// \u{20a0} → \u{20cf}\
-///\
-/// ₠ ₡ ₢ ₣ ₤ ₥ ₦ ₧ ₨ ₩ ₪ ₫ € ₭ ₮ ₯
-/// ₰ ₱ ₲ ₳ ₴ ₵ ₶ ₷ ₸ ₹ ₺ ₻ ₼ ₽ ₾ ₿
+/// An enum to represent all characters in the CurrencySymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CurrencySymbols {
     /// \u{20a0}: '₠'

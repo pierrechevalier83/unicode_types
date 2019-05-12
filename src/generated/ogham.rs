@@ -1,7 +1,9 @@
 /// \u{1680} → \u{169f}\
 ///\
-///   ᚁ ᚂ ᚃ ᚄ ᚅ ᚆ ᚇ ᚈ ᚉ ᚊ ᚋ ᚌ ᚍ ᚎ ᚏ
-/// ᚐ ᚑ ᚒ ᚓ ᚔ ᚕ ᚖ ᚗ ᚘ ᚙ ᚚ ᚛ ᚜
+///   ᚁ ᚂ ᚃ ᚄ ᚅ ᚆ ᚇ ᚈ ᚉ ᚊ ᚋ ᚌ ᚍ ᚎ ᚏ\
+/// ᚐ ᚑ ᚒ ᚓ ᚔ ᚕ ᚖ ᚗ ᚘ ᚙ ᚚ ᚛ ᚜\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1680}: ' '
     pub const SPACE_MARK: char = ' ';
@@ -63,10 +65,7 @@ pub mod constants {
     pub const REVERSED_FEATHER_MARK: char = '᚜';
 }
 
-/// \u{1680} → \u{169f}\
-///\
-///   ᚁ ᚂ ᚃ ᚄ ᚅ ᚆ ᚇ ᚈ ᚉ ᚊ ᚋ ᚌ ᚍ ᚎ ᚏ
-/// ᚐ ᚑ ᚒ ᚓ ᚔ ᚕ ᚖ ᚗ ᚘ ᚙ ᚚ ᚛ ᚜
+/// An enum to represent all characters in the Ogham block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Ogham {
     /// \u{1680}: ' '

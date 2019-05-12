@@ -1,6 +1,8 @@
 /// \u{860} → \u{86f}\
 ///\
-/// ࡠ ࡡ ࡢ ࡣ ࡤ ࡥ ࡦ ࡧ ࡨ ࡩ ࡪ
+/// ࡠ ࡡ ࡢ ࡣ ࡤ ࡥ ࡦ ࡧ ࡨ ࡩ ࡪ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{860}: 'ࡠ'
     pub const SYRIAC_LETTER_MALAYALAM_NGA: char = 'ࡠ';
@@ -26,9 +28,7 @@ pub mod constants {
     pub const SYRIAC_LETTER_MALAYALAM_SSA: char = 'ࡪ';
 }
 
-/// \u{860} → \u{86f}\
-///\
-/// ࡠ ࡡ ࡢ ࡣ ࡤ ࡥ ࡦ ࡧ ࡨ ࡩ ࡪ
+/// An enum to represent all characters in the SyriacSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SyriacSupplement {
     /// \u{860}: 'ࡠ'

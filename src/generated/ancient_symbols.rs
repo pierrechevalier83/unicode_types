@@ -1,6 +1,8 @@
 /// \u{10190} → \u{101cf}\
 ///\
-/// 𐆐 𐆑 𐆒 𐆓 𐆔 𐆕 𐆖 𐆗 𐆘 𐆙 𐆚 𐆛 𐆠
+/// 𐆐 𐆑 𐆒 𐆓 𐆔 𐆕 𐆖 𐆗 𐆘 𐆙 𐆚 𐆛 𐆠\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10190}: '𐆐'
     pub const ROMAN_SEXTANS_SIGN: char = '𐆐';
@@ -30,9 +32,7 @@ pub mod constants {
     pub const GREEK_SYMBOL_TAU_RHO: char = '𐆠';
 }
 
-/// \u{10190} → \u{101cf}\
-///\
-/// 𐆐 𐆑 𐆒 𐆓 𐆔 𐆕 𐆖 𐆗 𐆘 𐆙 𐆚 𐆛 𐆠
+/// An enum to represent all characters in the AncientSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum AncientSymbols {
     /// \u{10190}: '𐆐'

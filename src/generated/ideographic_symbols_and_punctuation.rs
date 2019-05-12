@@ -1,6 +1,8 @@
 /// \u{16fe0} → \u{16fff}\
 ///\
-/// 𖿠 𖿡 𖿢 𖿣
+/// 𖿠 𖿡 𖿢 𖿣\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{16fe0}: '𖿠'
     pub const TANGUT_ITERATION_MARK: char = '𖿠';
@@ -12,9 +14,7 @@ pub mod constants {
     pub const OLD_CHINESE_ITERATION_MARK: char = '𖿣';
 }
 
-/// \u{16fe0} → \u{16fff}\
-///\
-/// 𖿠 𖿡 𖿢 𖿣
+/// An enum to represent all characters in the IdeographicSymbolsandPunctuation block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum IdeographicSymbolsandPunctuation {
     /// \u{16fe0}: '𖿠'

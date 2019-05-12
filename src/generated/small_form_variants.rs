@@ -1,7 +1,9 @@
 /// \u{fe50} → \u{fe6f}\
 ///\
-/// ﹐ ﹑ ﹒ ﹔ ﹕ ﹖ ﹗ ﹘ ﹙ ﹚ ﹛ ﹜ ﹝ ﹞ ﹟ ﹠
-/// ﹡ ﹢ ﹣ ﹤ ﹥ ﹦ ﹨ ﹩ ﹪ ﹫
+/// ﹐ ﹑ ﹒ ﹔ ﹕ ﹖ ﹗ ﹘ ﹙ ﹚ ﹛ ﹜ ﹝ ﹞ ﹟ ﹠\
+/// ﹡ ﹢ ﹣ ﹤ ﹥ ﹦ ﹨ ﹩ ﹪ ﹫\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{fe50}: '﹐'
     pub const SMALL_COMMA: char = '﹐';
@@ -57,10 +59,7 @@ pub mod constants {
     pub const SMALL_COMMERCIAL_AT: char = '﹫';
 }
 
-/// \u{fe50} → \u{fe6f}\
-///\
-/// ﹐ ﹑ ﹒ ﹔ ﹕ ﹖ ﹗ ﹘ ﹙ ﹚ ﹛ ﹜ ﹝ ﹞ ﹟ ﹠
-/// ﹡ ﹢ ﹣ ﹤ ﹥ ﹦ ﹨ ﹩ ﹪ ﹫
+/// An enum to represent all characters in the SmallFormVariants block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SmallFormVariants {
     /// \u{fe50}: '﹐'

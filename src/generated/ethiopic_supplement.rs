@@ -1,7 +1,9 @@
 /// \u{1380} → \u{139f}\
 ///\
-/// ᎀ ᎁ ᎂ ᎃ ᎄ ᎅ ᎆ ᎇ ᎈ ᎉ ᎊ ᎋ ᎌ ᎍ ᎎ ᎏ
-/// ᎐ ᎑ ᎒ ᎓ ᎔ ᎕ ᎖ ᎗ ᎘ ᎙
+/// ᎀ ᎁ ᎂ ᎃ ᎄ ᎅ ᎆ ᎇ ᎈ ᎉ ᎊ ᎋ ᎌ ᎍ ᎎ ᎏ\
+/// ᎐ ᎑ ᎒ ᎓ ᎔ ᎕ ᎖ ᎗ ᎘ ᎙\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1380}: 'ᎀ'
     pub const ETHIOPIC_SYLLABLE_SEBATBEIT_MWA: char = 'ᎀ';
@@ -57,10 +59,7 @@ pub mod constants {
     pub const ETHIOPIC_TONAL_MARK_KURT: char = '᎙';
 }
 
-/// \u{1380} → \u{139f}\
-///\
-/// ᎀ ᎁ ᎂ ᎃ ᎄ ᎅ ᎆ ᎇ ᎈ ᎉ ᎊ ᎋ ᎌ ᎍ ᎎ ᎏ
-/// ᎐ ᎑ ᎒ ᎓ ᎔ ᎕ ᎖ ᎗ ᎘ ᎙
+/// An enum to represent all characters in the EthiopicSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum EthiopicSupplement {
     /// \u{1380}: 'ᎀ'

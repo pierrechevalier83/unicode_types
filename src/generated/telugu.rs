@@ -1,12 +1,14 @@
 /// \u{c00} → \u{c7f}\
 ///\
-/// ఀ ఁ ం ః ఄ అ ఆ ఇ ఈ ఉ ఊ ఋ ఌ ఎ ఏ ఐ
-/// ఒ ఓ ఔ క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ
-/// ఢ ణ త థ ద ధ న ప ఫ బ భ మ య ర ఱ ల
-/// ళ ఴ వ శ ష స హ ఽ ా ి ీ ు ూ ృ ౄ ె
-/// ే ై ొ ో ౌ ్ ౕ ౖ ౘ ౙ ౚ ౠ ౡ ౢ ౣ ౦
-/// ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯ ౷ ౸ ౹ ౺ ౻ ౼ ౽
-/// ౾
+/// ఀ ఁ ం ః ఄ అ ఆ ఇ ఈ ఉ ఊ ఋ ఌ ఎ ఏ ఐ\
+/// ఒ ఓ ఔ క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ\
+/// ఢ ణ త థ ద ధ న ప ఫ బ భ మ య ర ఱ ల\
+/// ళ ఴ వ శ ష స హ ఽ ా ి ీ ు ూ ృ ౄ ె\
+/// ే ై ొ ో ౌ ్ ౕ ౖ ౘ ౙ ౚ ౠ ౡ ౢ ౣ ౦\
+/// ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯ ౷ ౸ ౹ ౺ ౻ ౼ ౽\
+/// ౾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{c00}: 'ఀ'
     pub const SIGN_COMBINING_CANDRABINDU_ABOVE: char = 'ఀ';
@@ -204,15 +206,7 @@ pub mod constants {
     pub const FRACTION_DIGIT_THREE_FOR_EVEN_POWERS_OF_FOUR: char = '౾';
 }
 
-/// \u{c00} → \u{c7f}\
-///\
-/// ఀ ఁ ం ః ఄ అ ఆ ఇ ఈ ఉ ఊ ఋ ఌ ఎ ఏ ఐ
-/// ఒ ఓ ఔ క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ
-/// ఢ ణ త థ ద ధ న ప ఫ బ భ మ య ర ఱ ల
-/// ళ ఴ వ శ ష స హ ఽ ా ి ీ ు ూ ృ ౄ ె
-/// ే ై ొ ో ౌ ్ ౕ ౖ ౘ ౙ ౚ ౠ ౡ ౢ ౣ ౦
-/// ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯ ౷ ౸ ౹ ౺ ౻ ౼ ౽
-/// ౾
+/// An enum to represent all characters in the Telugu block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Telugu {
     /// \u{c00}: 'ఀ'

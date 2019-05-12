@@ -1,7 +1,9 @@
 /// \u{10840} → \u{1085f}\
 ///\
-/// 𐡀 𐡁 𐡂 𐡃 𐡄 𐡅 𐡆 𐡇 𐡈 𐡉 𐡊 𐡋 𐡌 𐡍 𐡎 𐡏
-/// 𐡐 𐡑 𐡒 𐡓 𐡔 𐡕 𐡗 𐡘 𐡙 𐡚 𐡛 𐡜 𐡝 𐡞
+/// 𐡀 𐡁 𐡂 𐡃 𐡄 𐡅 𐡆 𐡇 𐡈 𐡉 𐡊 𐡋 𐡌 𐡍 𐡎 𐡏\
+/// 𐡐 𐡑 𐡒 𐡓 𐡔 𐡕 𐡗 𐡘 𐡙 𐡚 𐡛 𐡜 𐡝 𐡞\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10840}: '𐡀'
     pub const LETTER_ALEPH: char = '𐡀';
@@ -65,10 +67,7 @@ pub mod constants {
     pub const NUMBER_ONE_THOUSAND: char = '𐡞';
 }
 
-/// \u{10840} → \u{1085f}\
-///\
-/// 𐡀 𐡁 𐡂 𐡃 𐡄 𐡅 𐡆 𐡇 𐡈 𐡉 𐡊 𐡋 𐡌 𐡍 𐡎 𐡏
-/// 𐡐 𐡑 𐡒 𐡓 𐡔 𐡕 𐡗 𐡘 𐡙 𐡚 𐡛 𐡜 𐡝 𐡞
+/// An enum to represent all characters in the ImperialAramaic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum ImperialAramaic {
     /// \u{10840}: '𐡀'

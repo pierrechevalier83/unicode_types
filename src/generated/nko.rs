@@ -1,9 +1,11 @@
 /// \u{7c0} → \u{7ff}\
 ///\
-/// ߀ ߁ ߂ ߃ ߄ ߅ ߆ ߇ ߈ ߉ ߊ ߋ ߌ ߍ ߎ ߏ
-/// ߐ ߑ ߒ ߓ ߔ ߕ ߖ ߗ ߘ ߙ ߚ ߛ ߜ ߝ ߞ ߟ
-/// ߠ ߡ ߢ ߣ ߤ ߥ ߦ ߧ ߨ ߩ ߪ ߫ ߬ ߭ ߮ ߯
-/// ߰ ߱ ߲ ߳ ߴ ߵ ߶ ߷ ߸ ߹ ߺ ߽ ߾
+/// ߀ ߁ ߂ ߃ ߄ ߅ ߆ ߇ ߈ ߉ ߊ ߋ ߌ ߍ ߎ ߏ\
+/// ߐ ߑ ߒ ߓ ߔ ߕ ߖ ߗ ߘ ߙ ߚ ߛ ߜ ߝ ߞ ߟ\
+/// ߠ ߡ ߢ ߣ ߤ ߥ ߦ ߧ ߨ ߩ ߪ ߫ ߬ ߭ ߮ ߯\
+/// ߰ ߱ ߲ ߳ ߴ ߵ ߶ ߷ ߸ ߹ ߺ ߽ ߾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{7c0}: '߀'
     pub const DIGIT_ZERO: char = '߀';
@@ -129,12 +131,7 @@ pub mod constants {
     pub const DOROME_SIGN: char = '߾';
 }
 
-/// \u{7c0} → \u{7ff}\
-///\
-/// ߀ ߁ ߂ ߃ ߄ ߅ ߆ ߇ ߈ ߉ ߊ ߋ ߌ ߍ ߎ ߏ
-/// ߐ ߑ ߒ ߓ ߔ ߕ ߖ ߗ ߘ ߙ ߚ ߛ ߜ ߝ ߞ ߟ
-/// ߠ ߡ ߢ ߣ ߤ ߥ ߦ ߧ ߨ ߩ ߪ ߫ ߬ ߭ ߮ ߯
-/// ߰ ߱ ߲ ߳ ߴ ߵ ߶ ߷ ߸ ߹ ߺ ߽ ߾
+/// An enum to represent all characters in the NKo block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum NKo {
     /// \u{7c0}: '߀'

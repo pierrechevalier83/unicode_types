@@ -1,13 +1,15 @@
 /// \u{1b00} → \u{1b7f}\
 ///\
-/// ᬀ ᬁ ᬂ ᬃ ᬄ ᬅ ᬆ ᬇ ᬈ ᬉ ᬊ ᬋ ᬌ ᬍ ᬎ ᬏ
-/// ᬐ ᬑ ᬒ ᬓ ᬔ ᬕ ᬖ ᬗ ᬘ ᬙ ᬚ ᬛ ᬜ ᬝ ᬞ ᬟ
-/// ᬠ ᬡ ᬢ ᬣ ᬤ ᬥ ᬦ ᬧ ᬨ ᬩ ᬪ ᬫ ᬬ ᬭ ᬮ ᬯ
-/// ᬰ ᬱ ᬲ ᬳ ᬴ ᬵ ᬶ ᬷ ᬸ ᬹ ᬺ ᬻ ᬼ ᬽ ᬾ ᬿ
-/// ᭀ ᭁ ᭂ ᭃ ᭄ ᭅ ᭆ ᭇ ᭈ ᭉ ᭊ ᭋ ᭐ ᭑ ᭒ ᭓
-/// ᭔ ᭕ ᭖ ᭗ ᭘ ᭙ ᭚ ᭛ ᭜ ᭝ ᭞ ᭟ ᭠ ᭡ ᭢ ᭣
-/// ᭤ ᭥ ᭦ ᭧ ᭨ ᭩ ᭪ ᭫ ᭬ ᭭ ᭮ ᭯ ᭰ ᭱ ᭲ ᭳
-/// ᭴ ᭵ ᭶ ᭷ ᭸ ᭹ ᭺ ᭻ ᭼
+/// ᬀ ᬁ ᬂ ᬃ ᬄ ᬅ ᬆ ᬇ ᬈ ᬉ ᬊ ᬋ ᬌ ᬍ ᬎ ᬏ\
+/// ᬐ ᬑ ᬒ ᬓ ᬔ ᬕ ᬖ ᬗ ᬘ ᬙ ᬚ ᬛ ᬜ ᬝ ᬞ ᬟ\
+/// ᬠ ᬡ ᬢ ᬣ ᬤ ᬥ ᬦ ᬧ ᬨ ᬩ ᬪ ᬫ ᬬ ᬭ ᬮ ᬯ\
+/// ᬰ ᬱ ᬲ ᬳ ᬴ ᬵ ᬶ ᬷ ᬸ ᬹ ᬺ ᬻ ᬼ ᬽ ᬾ ᬿ\
+/// ᭀ ᭁ ᭂ ᭃ ᭄ ᭅ ᭆ ᭇ ᭈ ᭉ ᭊ ᭋ ᭐ ᭑ ᭒ ᭓\
+/// ᭔ ᭕ ᭖ ᭗ ᭘ ᭙ ᭚ ᭛ ᭜ ᭝ ᭞ ᭟ ᭠ ᭡ ᭢ ᭣\
+/// ᭤ ᭥ ᭦ ᭧ ᭨ ᭩ ᭪ ᭫ ᭬ ᭭ ᭮ ᭯ ᭰ ᭱ ᭲ ᭳\
+/// ᭴ ᭵ ᭶ ᭷ ᭸ ᭹ ᭺ ᭻ ᭼\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1b00}: 'ᬀ'
     pub const SIGN_ULU_RICEM: char = 'ᬀ';
@@ -253,16 +255,7 @@ pub mod constants {
     pub const MUSICAL_SYMBOL_LEFT_DASH_HAND_OPEN_PING: char = '᭼';
 }
 
-/// \u{1b00} → \u{1b7f}\
-///\
-/// ᬀ ᬁ ᬂ ᬃ ᬄ ᬅ ᬆ ᬇ ᬈ ᬉ ᬊ ᬋ ᬌ ᬍ ᬎ ᬏ
-/// ᬐ ᬑ ᬒ ᬓ ᬔ ᬕ ᬖ ᬗ ᬘ ᬙ ᬚ ᬛ ᬜ ᬝ ᬞ ᬟ
-/// ᬠ ᬡ ᬢ ᬣ ᬤ ᬥ ᬦ ᬧ ᬨ ᬩ ᬪ ᬫ ᬬ ᬭ ᬮ ᬯ
-/// ᬰ ᬱ ᬲ ᬳ ᬴ ᬵ ᬶ ᬷ ᬸ ᬹ ᬺ ᬻ ᬼ ᬽ ᬾ ᬿ
-/// ᭀ ᭁ ᭂ ᭃ ᭄ ᭅ ᭆ ᭇ ᭈ ᭉ ᭊ ᭋ ᭐ ᭑ ᭒ ᭓
-/// ᭔ ᭕ ᭖ ᭗ ᭘ ᭙ ᭚ ᭛ ᭜ ᭝ ᭞ ᭟ ᭠ ᭡ ᭢ ᭣
-/// ᭤ ᭥ ᭦ ᭧ ᭨ ᭩ ᭪ ᭫ ᭬ ᭭ ᭮ ᭯ ᭰ ᭱ ᭲ ᭳
-/// ᭴ ᭵ ᭶ ᭷ ᭸ ᭹ ᭺ ᭻ ᭼
+/// An enum to represent all characters in the Balinese block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Balinese {
     /// \u{1b00}: 'ᬀ'

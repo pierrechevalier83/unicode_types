@@ -1,9 +1,11 @@
 /// \u{ab30} → \u{ab6f}\
 ///\
-/// ꬰ ꬱ ꬲ ꬳ ꬴ ꬵ ꬶ ꬷ ꬸ ꬹ ꬺ ꬻ ꬼ ꬽ ꬾ ꬿ
-/// ꭀ ꭁ ꭂ ꭃ ꭄ ꭅ ꭆ ꭇ ꭈ ꭉ ꭊ ꭋ ꭌ ꭍ ꭎ ꭏ
-/// ꭐ ꭑ ꭒ ꭓ ꭔ ꭕ ꭖ ꭗ ꭘ ꭙ ꭚ ꭛ ꭜ ꭝ ꭞ ꭟ
-/// ꭠ ꭡ ꭢ ꭣ ꭤ ꭥ ꭦ ꭧ
+/// ꬰ ꬱ ꬲ ꬳ ꬴ ꬵ ꬶ ꬷ ꬸ ꬹ ꬺ ꬻ ꬼ ꬽ ꬾ ꬿ\
+/// ꭀ ꭁ ꭂ ꭃ ꭄ ꭅ ꭆ ꭇ ꭈ ꭉ ꭊ ꭋ ꭌ ꭍ ꭎ ꭏ\
+/// ꭐ ꭑ ꭒ ꭓ ꭔ ꭕ ꭖ ꭗ ꭘ ꭙ ꭚ ꭛ ꭜ ꭝ ꭞ ꭟ\
+/// ꭠ ꭡ ꭢ ꭣ ꭤ ꭥ ꭦ ꭧ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{ab30}: 'ꬰ'
     pub const LATIN_SMALL_LETTER_BARRED_ALPHA: char = 'ꬰ';
@@ -119,12 +121,7 @@ pub mod constants {
     pub const LATIN_SMALL_LETTER_TS_DIGRAPH_WITH_RETROFLEX_HOOK: char = 'ꭧ';
 }
 
-/// \u{ab30} → \u{ab6f}\
-///\
-/// ꬰ ꬱ ꬲ ꬳ ꬴ ꬵ ꬶ ꬷ ꬸ ꬹ ꬺ ꬻ ꬼ ꬽ ꬾ ꬿ
-/// ꭀ ꭁ ꭂ ꭃ ꭄ ꭅ ꭆ ꭇ ꭈ ꭉ ꭊ ꭋ ꭌ ꭍ ꭎ ꭏ
-/// ꭐ ꭑ ꭒ ꭓ ꭔ ꭕ ꭖ ꭗ ꭘ ꭙ ꭚ ꭛ ꭜ ꭝ ꭞ ꭟ
-/// ꭠ ꭡ ꭢ ꭣ ꭤ ꭥ ꭦ ꭧ
+/// An enum to represent all characters in the LatinExtendedE block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum LatinExtendedE {
     /// \u{ab30}: 'ꬰ'

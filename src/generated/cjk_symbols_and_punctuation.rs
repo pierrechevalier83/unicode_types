@@ -1,9 +1,11 @@
 /// \u{3000} → \u{303f}\
 ///\
-/// 　 、 。 〃 〄 々 〆 〇 〈 〉 《 》 「 」 『 』
-/// 【 】 〒 〓 〔 〕 〖 〗 〘 〙 〚 〛 〜 〝 〞 〟
-/// 〠 〡 〢 〣 〤 〥 〦 〧 〨 〩 〪 〫 〬 〭 〮 〯
-/// 〰 〱 〲 〳 〴 〵 〶 〷 〸 〹 〺 〻 〼 〽 〾
+/// 　 、 。 〃 〄 々 〆 〇 〈 〉 《 》 「 」 『 』\
+/// 【 】 〒 〓 〔 〕 〖 〗 〘 〙 〚 〛 〜 〝 〞 〟\
+/// 〠 〡 〢 〣 〤 〥 〦 〧 〨 〩 〪 〫 〬 〭 〮 〯\
+/// 〰 〱 〲 〳 〴 〵 〶 〷 〸 〹 〺 〻 〼 〽 〾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{3000}: '　'
     pub const IDEOGRAPHIC_SPACE: char = '　';
@@ -133,12 +135,7 @@ pub mod constants {
     pub const IDEOGRAPHIC_VARIATION_INDICATOR: char = '〾';
 }
 
-/// \u{3000} → \u{303f}\
-///\
-/// 　 、 。 〃 〄 々 〆 〇 〈 〉 《 》 「 」 『 』
-/// 【 】 〒 〓 〔 〕 〖 〗 〘 〙 〚 〛 〜 〝 〞 〟
-/// 〠 〡 〢 〣 〤 〥 〦 〧 〨 〩 〪 〫 〬 〭 〮 〯
-/// 〰 〱 〲 〳 〴 〵 〶 〷 〸 〹 〺 〻 〼 〽 〾
+/// An enum to represent all characters in the CJKSymbolsandPunctuation block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CJKSymbolsandPunctuation {
     /// \u{3000}: '　'

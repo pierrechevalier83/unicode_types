@@ -1,10 +1,12 @@
 /// \u{a00} → \u{a7f}\
 ///\
-/// ਁ ਂ ਃ ਅ ਆ ਇ ਈ ਉ ਊ ਏ ਐ ਓ ਔ ਕ ਖ ਗ
-/// ਘ ਙ ਚ ਛ ਜ ਝ ਞ ਟ ਠ ਡ ਢ ਣ ਤ ਥ ਦ ਧ
-/// ਨ ਪ ਫ ਬ ਭ ਮ ਯ ਰ ਲ ਲ਼ ਵ ਸ਼ ਸ ਹ ਼ ਾ
-/// ਿ ੀ ੁ ੂ ੇ ੈ ੋ ੌ ੍ ੑ ਖ਼ ਗ਼ ਜ਼ ੜ ਫ਼ ੦
-/// ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯ ੰ ੱ ੲ ੳ ੴ ੵ ੶
+/// ਁ ਂ ਃ ਅ ਆ ਇ ਈ ਉ ਊ ਏ ਐ ਓ ਔ ਕ ਖ ਗ\
+/// ਘ ਙ ਚ ਛ ਜ ਝ ਞ ਟ ਠ ਡ ਢ ਣ ਤ ਥ ਦ ਧ\
+/// ਨ ਪ ਫ ਬ ਭ ਮ ਯ ਰ ਲ ਲ਼ ਵ ਸ਼ ਸ ਹ ਼ ਾ\
+/// ਿ ੀ ੁ ੂ ੇ ੈ ੋ ੌ ੍ ੑ ਖ਼ ਗ਼ ਜ਼ ੜ ਫ਼ ੦\
+/// ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯ ੰ ੱ ੲ ੳ ੴ ੵ ੶\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a01}: 'ਁ'
     pub const SIGN_ADAK_BINDI: char = 'ਁ';
@@ -168,13 +170,7 @@ pub mod constants {
     pub const ABBREVIATION_SIGN: char = '੶';
 }
 
-/// \u{a00} → \u{a7f}\
-///\
-/// ਁ ਂ ਃ ਅ ਆ ਇ ਈ ਉ ਊ ਏ ਐ ਓ ਔ ਕ ਖ ਗ
-/// ਘ ਙ ਚ ਛ ਜ ਝ ਞ ਟ ਠ ਡ ਢ ਣ ਤ ਥ ਦ ਧ
-/// ਨ ਪ ਫ ਬ ਭ ਮ ਯ ਰ ਲ ਲ਼ ਵ ਸ਼ ਸ ਹ ਼ ਾ
-/// ਿ ੀ ੁ ੂ ੇ ੈ ੋ ੌ ੍ ੑ ਖ਼ ਗ਼ ਜ਼ ੜ ਫ਼ ੦
-/// ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯ ੰ ੱ ੲ ੳ ੴ ੵ ੶
+/// An enum to represent all characters in the Gurmukhi block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Gurmukhi {
     /// \u{a01}: 'ਁ'

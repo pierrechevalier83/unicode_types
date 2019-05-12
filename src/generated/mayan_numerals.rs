@@ -1,7 +1,9 @@
 /// \u{1d2e0} → \u{1d2ff}\
 ///\
-/// 𝋠 𝋡 𝋢 𝋣 𝋤 𝋥 𝋦 𝋧 𝋨 𝋩 𝋪 𝋫 𝋬 𝋭 𝋮 𝋯
-/// 𝋰 𝋱 𝋲 𝋳
+/// 𝋠 𝋡 𝋢 𝋣 𝋤 𝋥 𝋦 𝋧 𝋨 𝋩 𝋪 𝋫 𝋬 𝋭 𝋮 𝋯\
+/// 𝋰 𝋱 𝋲 𝋳\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1d2e0}: '𝋠'
     pub const MAYAN_NUMERAL_ZERO: char = '𝋠';
@@ -45,10 +47,7 @@ pub mod constants {
     pub const MAYAN_NUMERAL_NINETEEN: char = '𝋳';
 }
 
-/// \u{1d2e0} → \u{1d2ff}\
-///\
-/// 𝋠 𝋡 𝋢 𝋣 𝋤 𝋥 𝋦 𝋧 𝋨 𝋩 𝋪 𝋫 𝋬 𝋭 𝋮 𝋯
-/// 𝋰 𝋱 𝋲 𝋳
+/// An enum to represent all characters in the MayanNumerals block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum MayanNumerals {
     /// \u{1d2e0}: '𝋠'

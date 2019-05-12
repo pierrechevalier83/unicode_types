@@ -1,11 +1,13 @@
 /// \u{1980} → \u{19df}\
 ///\
-/// ᦀ ᦁ ᦂ ᦃ ᦄ ᦅ ᦆ ᦇ ᦈ ᦉ ᦊ ᦋ ᦌ ᦍ ᦎ ᦏ
-/// ᦐ ᦑ ᦒ ᦓ ᦔ ᦕ ᦖ ᦗ ᦘ ᦙ ᦚ ᦛ ᦜ ᦝ ᦞ ᦟ
-/// ᦠ ᦡ ᦢ ᦣ ᦤ ᦥ ᦦ ᦧ ᦨ ᦩ ᦪ ᦫ ᦰ ᦱ ᦲ ᦳ
-/// ᦴ ᦵ ᦶ ᦷ ᦸ ᦹ ᦺ ᦻ ᦼ ᦽ ᦾ ᦿ ᧀ ᧁ ᧂ ᧃ
-/// ᧄ ᧅ ᧆ ᧇ ᧈ ᧉ ᧐ ᧑ ᧒ ᧓ ᧔ ᧕ ᧖ ᧗ ᧘ ᧙
-/// ᧚ ᧞
+/// ᦀ ᦁ ᦂ ᦃ ᦄ ᦅ ᦆ ᦇ ᦈ ᦉ ᦊ ᦋ ᦌ ᦍ ᦎ ᦏ\
+/// ᦐ ᦑ ᦒ ᦓ ᦔ ᦕ ᦖ ᦗ ᦘ ᦙ ᦚ ᦛ ᦜ ᦝ ᦞ ᦟ\
+/// ᦠ ᦡ ᦢ ᦣ ᦤ ᦥ ᦦ ᦧ ᦨ ᦩ ᦪ ᦫ ᦰ ᦱ ᦲ ᦳ\
+/// ᦴ ᦵ ᦶ ᦷ ᦸ ᦹ ᦺ ᦻ ᦼ ᦽ ᦾ ᦿ ᧀ ᧁ ᧂ ᧃ\
+/// ᧄ ᧅ ᧆ ᧇ ᧈ ᧉ ᧐ ᧑ ᧒ ᧓ ᧔ ᧕ ᧖ ᧗ ᧘ ᧙\
+/// ᧚ ᧞\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1980}: 'ᦀ'
     pub const LETTER_HIGH_QA: char = 'ᦀ';
@@ -173,14 +175,7 @@ pub mod constants {
     pub const SIGN_LAE: char = '᧞';
 }
 
-/// \u{1980} → \u{19df}\
-///\
-/// ᦀ ᦁ ᦂ ᦃ ᦄ ᦅ ᦆ ᦇ ᦈ ᦉ ᦊ ᦋ ᦌ ᦍ ᦎ ᦏ
-/// ᦐ ᦑ ᦒ ᦓ ᦔ ᦕ ᦖ ᦗ ᦘ ᦙ ᦚ ᦛ ᦜ ᦝ ᦞ ᦟ
-/// ᦠ ᦡ ᦢ ᦣ ᦤ ᦥ ᦦ ᦧ ᦨ ᦩ ᦪ ᦫ ᦰ ᦱ ᦲ ᦳ
-/// ᦴ ᦵ ᦶ ᦷ ᦸ ᦹ ᦺ ᦻ ᦼ ᦽ ᦾ ᦿ ᧀ ᧁ ᧂ ᧃ
-/// ᧄ ᧅ ᧆ ᧇ ᧈ ᧉ ᧐ ᧑ ᧒ ᧓ ᧔ ᧕ ᧖ ᧗ ᧘ ᧙
-/// ᧚ ᧞
+/// An enum to represent all characters in the NewTaiLue block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum NewTaiLue {
     /// \u{1980}: 'ᦀ'

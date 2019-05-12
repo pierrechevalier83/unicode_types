@@ -1,14 +1,14 @@
 /// \u{e000} → \u{f8ff}\
 ///\
-/// 
+/// \
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{e000}: ''
     pub const PRIVATE_USE_FIRST: char = '';
 }
 
-/// \u{e000} → \u{f8ff}\
-///\
-/// 
+/// An enum to represent all characters in the PrivateUseArea block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum PrivateUseArea {
     /// \u{e000}: ''

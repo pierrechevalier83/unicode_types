@@ -1,8 +1,10 @@
 /// \u{101d0} → \u{101ff}\
 ///\
-/// 𐇐 𐇑 𐇒 𐇓 𐇔 𐇕 𐇖 𐇗 𐇘 𐇙 𐇚 𐇛 𐇜 𐇝 𐇞 𐇟
-/// 𐇠 𐇡 𐇢 𐇣 𐇤 𐇥 𐇦 𐇧 𐇨 𐇩 𐇪 𐇫 𐇬 𐇭 𐇮 𐇯
-/// 𐇰 𐇱 𐇲 𐇳 𐇴 𐇵 𐇶 𐇷 𐇸 𐇹 𐇺 𐇻 𐇼 𐇽
+/// 𐇐 𐇑 𐇒 𐇓 𐇔 𐇕 𐇖 𐇗 𐇘 𐇙 𐇚 𐇛 𐇜 𐇝 𐇞 𐇟\
+/// 𐇠 𐇡 𐇢 𐇣 𐇤 𐇥 𐇦 𐇧 𐇨 𐇩 𐇪 𐇫 𐇬 𐇭 𐇮 𐇯\
+/// 𐇰 𐇱 𐇲 𐇳 𐇴 𐇵 𐇶 𐇷 𐇸 𐇹 𐇺 𐇻 𐇼 𐇽\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{101d0}: '𐇐'
     pub const SIGN_PEDESTRIAN: char = '𐇐';
@@ -98,11 +100,7 @@ pub mod constants {
     pub const SIGN_COMBINING_OBLIQUE_STROKE: char = '𐇽';
 }
 
-/// \u{101d0} → \u{101ff}\
-///\
-/// 𐇐 𐇑 𐇒 𐇓 𐇔 𐇕 𐇖 𐇗 𐇘 𐇙 𐇚 𐇛 𐇜 𐇝 𐇞 𐇟
-/// 𐇠 𐇡 𐇢 𐇣 𐇤 𐇥 𐇦 𐇧 𐇨 𐇩 𐇪 𐇫 𐇬 𐇭 𐇮 𐇯
-/// 𐇰 𐇱 𐇲 𐇳 𐇴 𐇵 𐇶 𐇷 𐇸 𐇹 𐇺 𐇻 𐇼 𐇽
+/// An enum to represent all characters in the PhaistosDisc block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum PhaistosDisc {
     /// \u{101d0}: '𐇐'

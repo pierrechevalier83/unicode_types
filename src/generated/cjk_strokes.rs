@@ -1,8 +1,10 @@
 /// \u{31c0} → \u{31ef}\
 ///\
-/// ㇀ ㇁ ㇂ ㇃ ㇄ ㇅ ㇆ ㇇ ㇈ ㇉ ㇊ ㇋ ㇌ ㇍ ㇎ ㇏
-/// ㇐ ㇑ ㇒ ㇓ ㇔ ㇕ ㇖ ㇗ ㇘ ㇙ ㇚ ㇛ ㇜ ㇝ ㇞ ㇟
-/// ㇠ ㇡ ㇢ ㇣
+/// ㇀ ㇁ ㇂ ㇃ ㇄ ㇅ ㇆ ㇇ ㇈ ㇉ ㇊ ㇋ ㇌ ㇍ ㇎ ㇏\
+/// ㇐ ㇑ ㇒ ㇓ ㇔ ㇕ ㇖ ㇗ ㇘ ㇙ ㇚ ㇛ ㇜ ㇝ ㇞ ㇟\
+/// ㇠ ㇡ ㇢ ㇣\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{31c0}: '㇀'
     pub const CJK_STROKE_T: char = '㇀';
@@ -78,11 +80,7 @@ pub mod constants {
     pub const CJK_STROKE_Q: char = '㇣';
 }
 
-/// \u{31c0} → \u{31ef}\
-///\
-/// ㇀ ㇁ ㇂ ㇃ ㇄ ㇅ ㇆ ㇇ ㇈ ㇉ ㇊ ㇋ ㇌ ㇍ ㇎ ㇏
-/// ㇐ ㇑ ㇒ ㇓ ㇔ ㇕ ㇖ ㇗ ㇘ ㇙ ㇚ ㇛ ㇜ ㇝ ㇞ ㇟
-/// ㇠ ㇡ ㇢ ㇣
+/// An enum to represent all characters in the CJKStrokes block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CJKStrokes {
     /// \u{31c0}: '㇀'

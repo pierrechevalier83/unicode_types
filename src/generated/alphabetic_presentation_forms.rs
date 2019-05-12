@@ -1,9 +1,11 @@
 /// \u{fb00} → \u{fb4f}\
 ///\
-/// ﬀ ﬁ ﬂ ﬃ ﬄ ﬅ ﬆ ﬓ ﬔ ﬕ ﬖ ﬗ יִ ﬞ ײַ ﬠ
-/// ﬡ ﬢ ﬣ ﬤ ﬥ ﬦ ﬧ ﬨ ﬩ שׁ שׂ שּׁ שּׂ אַ אָ אּ
-/// בּ גּ דּ הּ וּ זּ טּ יּ ךּ כּ לּ מּ נּ סּ ףּ פּ
-/// צּ קּ רּ שּ תּ וֹ בֿ כֿ פֿ
+/// ﬀ ﬁ ﬂ ﬃ ﬄ ﬅ ﬆ ﬓ ﬔ ﬕ ﬖ ﬗ יִ ﬞ ײַ ﬠ\
+/// ﬡ ﬢ ﬣ ﬤ ﬥ ﬦ ﬧ ﬨ ﬩ שׁ שׂ שּׁ שּׂ אַ אָ אּ\
+/// בּ גּ דּ הּ וּ זּ טּ יּ ךּ כּ לּ מּ נּ סּ ףּ פּ\
+/// צּ קּ רּ שּ תּ וֹ בֿ כֿ פֿ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{fb00}: 'ﬀ'
     pub const LATIN_SMALL_LIGATURE_FF: char = 'ﬀ';
@@ -121,12 +123,7 @@ pub mod constants {
     pub const HEBREW_LETTER_PE_WITH_RAFE: char = 'פֿ';
 }
 
-/// \u{fb00} → \u{fb4f}\
-///\
-/// ﬀ ﬁ ﬂ ﬃ ﬄ ﬅ ﬆ ﬓ ﬔ ﬕ ﬖ ﬗ יִ ﬞ ײַ ﬠ
-/// ﬡ ﬢ ﬣ ﬤ ﬥ ﬦ ﬧ ﬨ ﬩ שׁ שׂ שּׁ שּׂ אַ אָ אּ
-/// בּ גּ דּ הּ וּ זּ טּ יּ ךּ כּ לּ מּ נּ סּ ףּ פּ
-/// צּ קּ רּ שּ תּ וֹ בֿ כֿ פֿ
+/// An enum to represent all characters in the AlphabeticPresentationForms block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum AlphabeticPresentationForms {
     /// \u{fb00}: 'ﬀ'

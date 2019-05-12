@@ -1,8 +1,10 @@
 /// \u{27c0} → \u{27ef}\
 ///\
-/// ⟀ ⟁ ⟂ ⟃ ⟄ ⟅ ⟆ ⟇ ⟈ ⟉ ⟊ ⟋ ⟌ ⟍ ⟎ ⟏
-/// ⟐ ⟑ ⟒ ⟓ ⟔ ⟕ ⟖ ⟗ ⟘ ⟙ ⟚ ⟛ ⟜ ⟝ ⟞ ⟟
-/// ⟠ ⟡ ⟢ ⟣ ⟤ ⟥ ⟦ ⟧ ⟨ ⟩ ⟪ ⟫ ⟬ ⟭ ⟮
+/// ⟀ ⟁ ⟂ ⟃ ⟄ ⟅ ⟆ ⟇ ⟈ ⟉ ⟊ ⟋ ⟌ ⟍ ⟎ ⟏\
+/// ⟐ ⟑ ⟒ ⟓ ⟔ ⟕ ⟖ ⟗ ⟘ ⟙ ⟚ ⟛ ⟜ ⟝ ⟞ ⟟\
+/// ⟠ ⟡ ⟢ ⟣ ⟤ ⟥ ⟦ ⟧ ⟨ ⟩ ⟪ ⟫ ⟬ ⟭ ⟮\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{27c0}: '⟀'
     pub const THREE_DIMENSIONAL_ANGLE: char = '⟀';
@@ -100,11 +102,7 @@ pub mod constants {
     pub const MATHEMATICAL_LEFT_FLATTENED_PARENTHESIS: char = '⟮';
 }
 
-/// \u{27c0} → \u{27ef}\
-///\
-/// ⟀ ⟁ ⟂ ⟃ ⟄ ⟅ ⟆ ⟇ ⟈ ⟉ ⟊ ⟋ ⟌ ⟍ ⟎ ⟏
-/// ⟐ ⟑ ⟒ ⟓ ⟔ ⟕ ⟖ ⟗ ⟘ ⟙ ⟚ ⟛ ⟜ ⟝ ⟞ ⟟
-/// ⟠ ⟡ ⟢ ⟣ ⟤ ⟥ ⟦ ⟧ ⟨ ⟩ ⟪ ⟫ ⟬ ⟭ ⟮
+/// An enum to represent all characters in the MiscellaneousMathematicalSymbolsA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum MiscellaneousMathematicalSymbolsA {
     /// \u{27c0}: '⟀'

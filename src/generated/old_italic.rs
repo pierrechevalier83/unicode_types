@@ -1,8 +1,10 @@
 /// \u{10300} → \u{1032f}\
 ///\
-/// 𐌀 𐌁 𐌂 𐌃 𐌄 𐌅 𐌆 𐌇 𐌈 𐌉 𐌊 𐌋 𐌌 𐌍 𐌎 𐌏
-/// 𐌐 𐌑 𐌒 𐌓 𐌔 𐌕 𐌖 𐌗 𐌘 𐌙 𐌚 𐌛 𐌜 𐌝 𐌞 𐌟
-/// 𐌠 𐌡 𐌢 𐌣 𐌭 𐌮
+/// 𐌀 𐌁 𐌂 𐌃 𐌄 𐌅 𐌆 𐌇 𐌈 𐌉 𐌊 𐌋 𐌌 𐌍 𐌎 𐌏\
+/// 𐌐 𐌑 𐌒 𐌓 𐌔 𐌕 𐌖 𐌗 𐌘 𐌙 𐌚 𐌛 𐌜 𐌝 𐌞 𐌟\
+/// 𐌠 𐌡 𐌢 𐌣 𐌭 𐌮\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10300}: '𐌀'
     pub const LETTER_A: char = '𐌀';
@@ -82,11 +84,7 @@ pub mod constants {
     pub const LETTER_NORTHERN_TSE: char = '𐌮';
 }
 
-/// \u{10300} → \u{1032f}\
-///\
-/// 𐌀 𐌁 𐌂 𐌃 𐌄 𐌅 𐌆 𐌇 𐌈 𐌉 𐌊 𐌋 𐌌 𐌍 𐌎 𐌏
-/// 𐌐 𐌑 𐌒 𐌓 𐌔 𐌕 𐌖 𐌗 𐌘 𐌙 𐌚 𐌛 𐌜 𐌝 𐌞 𐌟
-/// 𐌠 𐌡 𐌢 𐌣 𐌭 𐌮
+/// An enum to represent all characters in the OldItalic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum OldItalic {
     /// \u{10300}: '𐌀'

@@ -1,8 +1,10 @@
 /// \u{a930} → \u{a95f}\
 ///\
-/// ꤰ ꤱ ꤲ ꤳ ꤴ ꤵ ꤶ ꤷ ꤸ ꤹ ꤺ ꤻ ꤼ ꤽ ꤾ ꤿ
-/// ꥀ ꥁ ꥂ ꥃ ꥄ ꥅ ꥆ ꥇ ꥈ ꥉ ꥊ ꥋ ꥌ ꥍ ꥎ ꥏ
-/// ꥐ ꥑ ꥒ ꥓
+/// ꤰ ꤱ ꤲ ꤳ ꤴ ꤵ ꤶ ꤷ ꤸ ꤹ ꤺ ꤻ ꤼ ꤽ ꤾ ꤿ\
+/// ꥀ ꥁ ꥂ ꥃ ꥄ ꥅ ꥆ ꥇ ꥈ ꥉ ꥊ ꥋ ꥌ ꥍ ꥎ ꥏ\
+/// ꥐ ꥑ ꥒ ꥓\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a930}: 'ꤰ'
     pub const LETTER_KA: char = 'ꤰ';
@@ -78,11 +80,7 @@ pub mod constants {
     pub const VIRAMA: char = '꥓';
 }
 
-/// \u{a930} → \u{a95f}\
-///\
-/// ꤰ ꤱ ꤲ ꤳ ꤴ ꤵ ꤶ ꤷ ꤸ ꤹ ꤺ ꤻ ꤼ ꤽ ꤾ ꤿ
-/// ꥀ ꥁ ꥂ ꥃ ꥄ ꥅ ꥆ ꥇ ꥈ ꥉ ꥊ ꥋ ꥌ ꥍ ꥎ ꥏ
-/// ꥐ ꥑ ꥒ ꥓
+/// An enum to represent all characters in the Rejang block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Rejang {
     /// \u{a930}: 'ꤰ'

@@ -1,7 +1,9 @@
 /// \u{19e0} → \u{19ff}\
 ///\
-/// ᧠ ᧡ ᧢ ᧣ ᧤ ᧥ ᧦ ᧧ ᧨ ᧩ ᧪ ᧫ ᧬ ᧭ ᧮ ᧯
-/// ᧰ ᧱ ᧲ ᧳ ᧴ ᧵ ᧶ ᧷ ᧸ ᧹ ᧺ ᧻ ᧼ ᧽ ᧾
+/// ᧠ ᧡ ᧢ ᧣ ᧤ ᧥ ᧦ ᧧ ᧨ ᧩ ᧪ ᧫ ᧬ ᧭ ᧮ ᧯\
+/// ᧰ ᧱ ᧲ ᧳ ᧴ ᧵ ᧶ ᧷ ᧸ ᧹ ᧺ ᧻ ᧼ ᧽ ᧾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{19e0}: '᧠'
     pub const KHMER_SYMBOL_PATHAMASAT: char = '᧠';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const KHMER_SYMBOL_DAP_DASH_BUON_ROC: char = '᧾';
 }
 
-/// \u{19e0} → \u{19ff}\
-///\
-/// ᧠ ᧡ ᧢ ᧣ ᧤ ᧥ ᧦ ᧧ ᧨ ᧩ ᧪ ᧫ ᧬ ᧭ ᧮ ᧯
-/// ᧰ ᧱ ᧲ ᧳ ᧴ ᧵ ᧶ ᧷ ᧸ ᧹ ᧺ ᧻ ᧼ ᧽ ᧾
+/// An enum to represent all characters in the KhmerSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum KhmerSymbols {
     /// \u{19e0}: '᧠'

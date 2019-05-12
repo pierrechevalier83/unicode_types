@@ -1,12 +1,14 @@
 /// \u{2000} → \u{206f}\
 ///\
-///                       ​ ‌ ‍ ‎ ‏
-/// ‐ ‑ ‒ – — ― ‖ ‗ ‘ ’ ‚ ‛ “ ” „ ‟
-/// † ‡ • ‣ ․ ‥ … ‧     ‪ ‫ ‬ ‭ ‮  
-/// ‰ ‱ ′ ″ ‴ ‵ ‶ ‷ ‸ ‹ › ※ ‼ ‽ ‾ ‿
-/// ⁀ ⁁ ⁂ ⁃ ⁄ ⁅ ⁆ ⁇ ⁈ ⁉ ⁊ ⁋ ⁌ ⁍ ⁎ ⁏
-/// ⁐ ⁑ ⁒ ⁓ ⁔ ⁕ ⁖ ⁗ ⁘ ⁙ ⁚ ⁛ ⁜ ⁝ ⁞  
-/// ⁠ ⁡ ⁢ ⁣ ⁤ ⁦ ⁧ ⁨ ⁩ ⁪ ⁫ ⁬ ⁭ ⁮
+///                       ​ ‌ ‍ ‎ ‏\
+/// ‐ ‑ ‒ – — ― ‖ ‗ ‘ ’ ‚ ‛ “ ” „ ‟\
+/// † ‡ • ‣ ․ ‥ … ‧     ‪ ‫ ‬ ‭ ‮  \
+/// ‰ ‱ ′ ″ ‴ ‵ ‶ ‷ ‸ ‹ › ※ ‼ ‽ ‾ ‿\
+/// ⁀ ⁁ ⁂ ⁃ ⁄ ⁅ ⁆ ⁇ ⁈ ⁉ ⁊ ⁋ ⁌ ⁍ ⁎ ⁏\
+/// ⁐ ⁑ ⁒ ⁓ ⁔ ⁕ ⁖ ⁗ ⁘ ⁙ ⁚ ⁛ ⁜ ⁝ ⁞  \
+/// ⁠ ⁡ ⁢ ⁣ ⁤ ⁦ ⁧ ⁨ ⁩ ⁪ ⁫ ⁬ ⁭ ⁮\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2000}: ' '
     pub const EN_QUAD: char = ' ';
@@ -230,15 +232,7 @@ pub mod constants {
     pub const NATIONAL_DIGIT_SHAPES: char = '⁮';
 }
 
-/// \u{2000} → \u{206f}\
-///\
-///                       ​ ‌ ‍ ‎ ‏
-/// ‐ ‑ ‒ – — ― ‖ ‗ ‘ ’ ‚ ‛ “ ” „ ‟
-/// † ‡ • ‣ ․ ‥ … ‧     ‪ ‫ ‬ ‭ ‮  
-/// ‰ ‱ ′ ″ ‴ ‵ ‶ ‷ ‸ ‹ › ※ ‼ ‽ ‾ ‿
-/// ⁀ ⁁ ⁂ ⁃ ⁄ ⁅ ⁆ ⁇ ⁈ ⁉ ⁊ ⁋ ⁌ ⁍ ⁎ ⁏
-/// ⁐ ⁑ ⁒ ⁓ ⁔ ⁕ ⁖ ⁗ ⁘ ⁙ ⁚ ⁛ ⁜ ⁝ ⁞  
-/// ⁠ ⁡ ⁢ ⁣ ⁤ ⁦ ⁧ ⁨ ⁩ ⁪ ⁫ ⁬ ⁭ ⁮
+/// An enum to represent all characters in the GeneralPunctuation block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum GeneralPunctuation {
     /// \u{2000}: ' '

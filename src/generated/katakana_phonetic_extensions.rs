@@ -1,6 +1,8 @@
 /// \u{31f0} → \u{31ff}\
 ///\
-/// ㇰ ㇱ ㇲ ㇳ ㇴ ㇵ ㇶ ㇷ ㇸ ㇹ ㇺ ㇻ ㇼ ㇽ ㇾ
+/// ㇰ ㇱ ㇲ ㇳ ㇴ ㇵ ㇶ ㇷ ㇸ ㇹ ㇺ ㇻ ㇼ ㇽ ㇾ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{31f0}: 'ㇰ'
     pub const KATAKANA_LETTER_SMALL_KU: char = 'ㇰ';
@@ -34,9 +36,7 @@ pub mod constants {
     pub const KATAKANA_LETTER_SMALL_RE: char = 'ㇾ';
 }
 
-/// \u{31f0} → \u{31ff}\
-///\
-/// ㇰ ㇱ ㇲ ㇳ ㇴ ㇵ ㇶ ㇷ ㇸ ㇹ ㇺ ㇻ ㇼ ㇽ ㇾ
+/// An enum to represent all characters in the KatakanaPhoneticExtensions block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum KatakanaPhoneticExtensions {
     /// \u{31f0}: 'ㇰ'

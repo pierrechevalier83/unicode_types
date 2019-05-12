@@ -1,8 +1,10 @@
 /// \u{a900} → \u{a92f}\
 ///\
-/// ꤀ ꤁ ꤂ ꤃ ꤄ ꤅ ꤆ ꤇ ꤈ ꤉ ꤊ ꤋ ꤌ ꤍ ꤎ ꤏ
-/// ꤐ ꤑ ꤒ ꤓ ꤔ ꤕ ꤖ ꤗ ꤘ ꤙ ꤚ ꤛ ꤜ ꤝ ꤞ ꤟ
-/// ꤠ ꤡ ꤢ ꤣ ꤤ ꤥ ꤦ ꤧ ꤨ ꤩ ꤪ ꤫ ꤬ ꤭ ꤮
+/// ꤀ ꤁ ꤂ ꤃ ꤄ ꤅ ꤆ ꤇ ꤈ ꤉ ꤊ ꤋ ꤌ ꤍ ꤎ ꤏ\
+/// ꤐ ꤑ ꤒ ꤓ ꤔ ꤕ ꤖ ꤗ ꤘ ꤙ ꤚ ꤛ ꤜ ꤝ ꤞ ꤟ\
+/// ꤠ ꤡ ꤢ ꤣ ꤤ ꤥ ꤦ ꤧ ꤨ ꤩ ꤪ ꤫ ꤬ ꤭ ꤮\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a900}: '꤀'
     pub const DIGIT_ZERO: char = '꤀';
@@ -100,11 +102,7 @@ pub mod constants {
     pub const SIGN_CWI: char = '꤮';
 }
 
-/// \u{a900} → \u{a92f}\
-///\
-/// ꤀ ꤁ ꤂ ꤃ ꤄ ꤅ ꤆ ꤇ ꤈ ꤉ ꤊ ꤋ ꤌ ꤍ ꤎ ꤏ
-/// ꤐ ꤑ ꤒ ꤓ ꤔ ꤕ ꤖ ꤗ ꤘ ꤙ ꤚ ꤛ ꤜ ꤝ ꤞ ꤟ
-/// ꤠ ꤡ ꤢ ꤣ ꤤ ꤥ ꤦ ꤧ ꤨ ꤩ ꤪ ꤫ ꤬ ꤭ ꤮
+/// An enum to represent all characters in the KayahLi block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum KayahLi {
     /// \u{a900}: '꤀'

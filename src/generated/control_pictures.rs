@@ -1,8 +1,10 @@
 /// \u{2400} → \u{243f}\
 ///\
-/// ␀ ␁ ␂ ␃ ␄ ␅ ␆ ␇ ␈ ␉ ␊ ␋ ␌ ␍ ␎ ␏
-/// ␐ ␑ ␒ ␓ ␔ ␕ ␖ ␗ ␘ ␙ ␚ ␛ ␜ ␝ ␞ ␟
-/// ␠ ␡ ␢ ␣ ␤ ␥ ␦
+/// ␀ ␁ ␂ ␃ ␄ ␅ ␆ ␇ ␈ ␉ ␊ ␋ ␌ ␍ ␎ ␏\
+/// ␐ ␑ ␒ ␓ ␔ ␕ ␖ ␗ ␘ ␙ ␚ ␛ ␜ ␝ ␞ ␟\
+/// ␠ ␡ ␢ ␣ ␤ ␥ ␦\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2400}: '␀'
     pub const SYMBOL_FOR_NULL: char = '␀';
@@ -84,11 +86,7 @@ pub mod constants {
     pub const SYMBOL_FOR_SUBSTITUTE_FORM_TWO: char = '␦';
 }
 
-/// \u{2400} → \u{243f}\
-///\
-/// ␀ ␁ ␂ ␃ ␄ ␅ ␆ ␇ ␈ ␉ ␊ ␋ ␌ ␍ ␎ ␏
-/// ␐ ␑ ␒ ␓ ␔ ␕ ␖ ␗ ␘ ␙ ␚ ␛ ␜ ␝ ␞ ␟
-/// ␠ ␡ ␢ ␣ ␤ ␥ ␦
+/// An enum to represent all characters in the ControlPictures block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum ControlPictures {
     /// \u{2400}: '␀'

@@ -1,9 +1,11 @@
 /// \u{1dc0} → \u{1dff}\
 ///\
-/// ᷀ ᷁ ᷂ ᷃ ᷄ ᷅ ᷆ ᷇ ᷈ ᷉ ᷊ ᷋ ᷌ ᷍ ᷎ ᷏
-/// ᷐ ᷑ ᷒ ᷓ ᷔ ᷕ ᷖ ᷗ ᷘ ᷙ ᷚ ᷛ ᷜ ᷝ ᷞ ᷟ
-/// ᷠ ᷡ ᷢ ᷣ ᷤ ᷥ ᷦ ᷧ ᷨ ᷩ ᷪ ᷫ ᷬ ᷭ ᷮ ᷯ
-/// ᷰ ᷱ ᷲ ᷳ ᷴ ᷵ ᷶ ᷷ ᷸ ᷹ ᷻ ᷼ ᷽ ᷾
+/// ᷀ ᷁ ᷂ ᷃ ᷄ ᷅ ᷆ ᷇ ᷈ ᷉ ᷊ ᷋ ᷌ ᷍ ᷎ ᷏\
+/// ᷐ ᷑ ᷒ ᷓ ᷔ ᷕ ᷖ ᷗ ᷘ ᷙ ᷚ ᷛ ᷜ ᷝ ᷞ ᷟ\
+/// ᷠ ᷡ ᷢ ᷣ ᷤ ᷥ ᷦ ᷧ ᷨ ᷩ ᷪ ᷫ ᷬ ᷭ ᷮ ᷯ\
+/// ᷰ ᷱ ᷲ ᷳ ᷴ ᷵ ᷶ ᷷ ᷸ ᷹ ᷻ ᷼ ᷽ ᷾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1dc0}: '᷀'
     pub const COMBINING_DOTTED_GRAVE_ACCENT: char = '᷀';
@@ -131,12 +133,7 @@ pub mod constants {
     pub const COMBINING_LEFT_ARROWHEAD_ABOVE: char = '᷾';
 }
 
-/// \u{1dc0} → \u{1dff}\
-///\
-/// ᷀ ᷁ ᷂ ᷃ ᷄ ᷅ ᷆ ᷇ ᷈ ᷉ ᷊ ᷋ ᷌ ᷍ ᷎ ᷏
-/// ᷐ ᷑ ᷒ ᷓ ᷔ ᷕ ᷖ ᷗ ᷘ ᷙ ᷚ ᷛ ᷜ ᷝ ᷞ ᷟ
-/// ᷠ ᷡ ᷢ ᷣ ᷤ ᷥ ᷦ ᷧ ᷨ ᷩ ᷪ ᷫ ᷬ ᷭ ᷮ ᷯ
-/// ᷰ ᷱ ᷲ ᷳ ᷴ ᷵ ᷶ ᷷ ᷸ ᷹ ᷻ ᷼ ᷽ ᷾
+/// An enum to represent all characters in the CombiningDiacriticalMarksSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CombiningDiacriticalMarksSupplement {
     /// \u{1dc0}: '᷀'

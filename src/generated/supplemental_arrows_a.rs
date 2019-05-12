@@ -1,6 +1,8 @@
 /// \u{27f0} → \u{27ff}\
 ///\
-/// ⟰ ⟱ ⟲ ⟳ ⟴ ⟵ ⟶ ⟷ ⟸ ⟹ ⟺ ⟻ ⟼ ⟽ ⟾
+/// ⟰ ⟱ ⟲ ⟳ ⟴ ⟵ ⟶ ⟷ ⟸ ⟹ ⟺ ⟻ ⟼ ⟽ ⟾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{27f0}: '⟰'
     pub const UPWARDS_QUADRUPLE_ARROW: char = '⟰';
@@ -34,9 +36,7 @@ pub mod constants {
     pub const LONG_RIGHTWARDS_DOUBLE_ARROW_FROM_BAR: char = '⟾';
 }
 
-/// \u{27f0} → \u{27ff}\
-///\
-/// ⟰ ⟱ ⟲ ⟳ ⟴ ⟵ ⟶ ⟷ ⟸ ⟹ ⟺ ⟻ ⟼ ⟽ ⟾
+/// An enum to represent all characters in the SupplementalArrowsA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SupplementalArrowsA {
     /// \u{27f0}: '⟰'

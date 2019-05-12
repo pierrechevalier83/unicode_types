@@ -1,9 +1,11 @@
 /// \u{103a0} → \u{103df}\
 ///\
-/// 𐎠 𐎡 𐎢 𐎣 𐎤 𐎥 𐎦 𐎧 𐎨 𐎩 𐎪 𐎫 𐎬 𐎭 𐎮 𐎯
-/// 𐎰 𐎱 𐎲 𐎳 𐎴 𐎵 𐎶 𐎷 𐎸 𐎹 𐎺 𐎻 𐎼 𐎽 𐎾 𐎿
-/// 𐏀 𐏁 𐏂 𐏃 𐏈 𐏉 𐏊 𐏋 𐏌 𐏍 𐏎 𐏏 𐏐 𐏑 𐏒 𐏓
-/// 𐏔 𐏕
+/// 𐎠 𐎡 𐎢 𐎣 𐎤 𐎥 𐎦 𐎧 𐎨 𐎩 𐎪 𐎫 𐎬 𐎭 𐎮 𐎯\
+/// 𐎰 𐎱 𐎲 𐎳 𐎴 𐎵 𐎶 𐎷 𐎸 𐎹 𐎺 𐎻 𐎼 𐎽 𐎾 𐎿\
+/// 𐏀 𐏁 𐏂 𐏃 𐏈 𐏉 𐏊 𐏋 𐏌 𐏍 𐏎 𐏏 𐏐 𐏑 𐏒 𐏓\
+/// 𐏔 𐏕\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{103a0}: '𐎠'
     pub const SIGN_A: char = '𐎠';
@@ -107,12 +109,7 @@ pub mod constants {
     pub const NUMBER_HUNDRED: char = '𐏕';
 }
 
-/// \u{103a0} → \u{103df}\
-///\
-/// 𐎠 𐎡 𐎢 𐎣 𐎤 𐎥 𐎦 𐎧 𐎨 𐎩 𐎪 𐎫 𐎬 𐎭 𐎮 𐎯
-/// 𐎰 𐎱 𐎲 𐎳 𐎴 𐎵 𐎶 𐎷 𐎸 𐎹 𐎺 𐎻 𐎼 𐎽 𐎾 𐎿
-/// 𐏀 𐏁 𐏂 𐏃 𐏈 𐏉 𐏊 𐏋 𐏌 𐏍 𐏎 𐏏 𐏐 𐏑 𐏒 𐏓
-/// 𐏔 𐏕
+/// An enum to represent all characters in the OldPersian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum OldPersian {
     /// \u{103a0}: '𐎠'

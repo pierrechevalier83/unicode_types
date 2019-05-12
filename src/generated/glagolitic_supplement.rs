@@ -1,8 +1,10 @@
 /// \u{1e000} → \u{1e02f}\
 ///\
-/// 𞀀 𞀁 𞀂 𞀃 𞀄 𞀅 𞀆 𞀈 𞀉 𞀊 𞀋 𞀌 𞀍 𞀎 𞀏 𞀐
-/// 𞀑 𞀒 𞀓 𞀔 𞀕 𞀖 𞀗 𞀘 𞀛 𞀜 𞀝 𞀞 𞀟 𞀠 𞀡 𞀣
-/// 𞀤 𞀦 𞀧 𞀨 𞀩 𞀪
+/// 𞀀 𞀁 𞀂 𞀃 𞀄 𞀅 𞀆 𞀈 𞀉 𞀊 𞀋 𞀌 𞀍 𞀎 𞀏 𞀐\
+/// 𞀑 𞀒 𞀓 𞀔 𞀕 𞀖 𞀗 𞀘 𞀛 𞀜 𞀝 𞀞 𞀟 𞀠 𞀡 𞀣\
+/// 𞀤 𞀦 𞀧 𞀨 𞀩 𞀪\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1e000}: '𞀀'
     pub const COMBINING_GLAGOLITIC_LETTER_AZU: char = '𞀀';
@@ -82,11 +84,7 @@ pub mod constants {
     pub const COMBINING_GLAGOLITIC_LETTER_FITA: char = '𞀪';
 }
 
-/// \u{1e000} → \u{1e02f}\
-///\
-/// 𞀀 𞀁 𞀂 𞀃 𞀄 𞀅 𞀆 𞀈 𞀉 𞀊 𞀋 𞀌 𞀍 𞀎 𞀏 𞀐
-/// 𞀑 𞀒 𞀓 𞀔 𞀕 𞀖 𞀗 𞀘 𞀛 𞀜 𞀝 𞀞 𞀟 𞀠 𞀡 𞀣
-/// 𞀤 𞀦 𞀧 𞀨 𞀩 𞀪
+/// An enum to represent all characters in the GlagoliticSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum GlagoliticSupplement {
     /// \u{1e000}: '𞀀'

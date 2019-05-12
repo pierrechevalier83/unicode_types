@@ -1,11 +1,13 @@
 /// \u{e0000} → \u{e007f}\
 ///\
-/// 󠀁 󠀠 󠀡 󠀢 󠀣 󠀤 󠀥 󠀦 󠀧 󠀨 󠀩 󠀪 󠀫 󠀬 󠀭 󠀮
-/// 󠀯 󠀰 󠀱 󠀲 󠀳 󠀴 󠀵 󠀶 󠀷 󠀸 󠀹 󠀺 󠀻 󠀼 󠀽 󠀾
-/// 󠀿 󠁀 󠁁 󠁂 󠁃 󠁄 󠁅 󠁆 󠁇 󠁈 󠁉 󠁊 󠁋 󠁌 󠁍 󠁎
-/// 󠁏 󠁐 󠁑 󠁒 󠁓 󠁔 󠁕 󠁖 󠁗 󠁘 󠁙 󠁚 󠁛 󠁜 󠁝 󠁞
-/// 󠁟 󠁠 󠁡 󠁢 󠁣 󠁤 󠁥 󠁦 󠁧 󠁨 󠁩 󠁪 󠁫 󠁬 󠁭 󠁮
-/// 󠁯 󠁰 󠁱 󠁲 󠁳 󠁴 󠁵 󠁶 󠁷 󠁸 󠁹 󠁺 󠁻 󠁼 󠁽 󠁾
+/// 󠀁 󠀠 󠀡 󠀢 󠀣 󠀤 󠀥 󠀦 󠀧 󠀨 󠀩 󠀪 󠀫 󠀬 󠀭 󠀮\
+/// 󠀯 󠀰 󠀱 󠀲 󠀳 󠀴 󠀵 󠀶 󠀷 󠀸 󠀹 󠀺 󠀻 󠀼 󠀽 󠀾\
+/// 󠀿 󠁀 󠁁 󠁂 󠁃 󠁄 󠁅 󠁆 󠁇 󠁈 󠁉 󠁊 󠁋 󠁌 󠁍 󠁎\
+/// 󠁏 󠁐 󠁑 󠁒 󠁓 󠁔 󠁕 󠁖 󠁗 󠁘 󠁙 󠁚 󠁛 󠁜 󠁝 󠁞\
+/// 󠁟 󠁠 󠁡 󠁢 󠁣 󠁤 󠁥 󠁦 󠁧 󠁨 󠁩 󠁪 󠁫 󠁬 󠁭 󠁮\
+/// 󠁯 󠁰 󠁱 󠁲 󠁳 󠁴 󠁵 󠁶 󠁷 󠁸 󠁹 󠁺 󠁻 󠁼 󠁽 󠁾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{e0001}: '󠀁'
     pub const LANGUAGE_TAG: char = '󠀁';
@@ -201,14 +203,7 @@ pub mod constants {
     pub const TAG_TILDE: char = '󠁾';
 }
 
-/// \u{e0000} → \u{e007f}\
-///\
-/// 󠀁 󠀠 󠀡 󠀢 󠀣 󠀤 󠀥 󠀦 󠀧 󠀨 󠀩 󠀪 󠀫 󠀬 󠀭 󠀮
-/// 󠀯 󠀰 󠀱 󠀲 󠀳 󠀴 󠀵 󠀶 󠀷 󠀸 󠀹 󠀺 󠀻 󠀼 󠀽 󠀾
-/// 󠀿 󠁀 󠁁 󠁂 󠁃 󠁄 󠁅 󠁆 󠁇 󠁈 󠁉 󠁊 󠁋 󠁌 󠁍 󠁎
-/// 󠁏 󠁐 󠁑 󠁒 󠁓 󠁔 󠁕 󠁖 󠁗 󠁘 󠁙 󠁚 󠁛 󠁜 󠁝 󠁞
-/// 󠁟 󠁠 󠁡 󠁢 󠁣 󠁤 󠁥 󠁦 󠁧 󠁨 󠁩 󠁪 󠁫 󠁬 󠁭 󠁮
-/// 󠁯 󠁰 󠁱 󠁲 󠁳 󠁴 󠁵 󠁶 󠁷 󠁸 󠁹 󠁺 󠁻 󠁼 󠁽 󠁾
+/// An enum to represent all characters in the Tags block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Tags {
     /// \u{e0001}: '󠀁'

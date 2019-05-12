@@ -1,7 +1,9 @@
 /// \u{31a0} → \u{31bf}\
 ///\
-/// ㆠ ㆡ ㆢ ㆣ ㆤ ㆥ ㆦ ㆧ ㆨ ㆩ ㆪ ㆫ ㆬ ㆭ ㆮ ㆯ
-/// ㆰ ㆱ ㆲ ㆳ ㆴ ㆵ ㆶ ㆷ ㆸ ㆹ ㆺ
+/// ㆠ ㆡ ㆢ ㆣ ㆤ ㆥ ㆦ ㆧ ㆨ ㆩ ㆪ ㆫ ㆬ ㆭ ㆮ ㆯ\
+/// ㆰ ㆱ ㆲ ㆳ ㆴ ㆵ ㆶ ㆷ ㆸ ㆹ ㆺ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{31a0}: 'ㆠ'
     pub const BOPOMOFO_LETTER_BU: char = 'ㆠ';
@@ -59,10 +61,7 @@ pub mod constants {
     pub const BOPOMOFO_LETTER_ZY: char = 'ㆺ';
 }
 
-/// \u{31a0} → \u{31bf}\
-///\
-/// ㆠ ㆡ ㆢ ㆣ ㆤ ㆥ ㆦ ㆧ ㆨ ㆩ ㆪ ㆫ ㆬ ㆭ ㆮ ㆯ
-/// ㆰ ㆱ ㆲ ㆳ ㆴ ㆵ ㆶ ㆷ ㆸ ㆹ ㆺ
+/// An enum to represent all characters in the BopomofoExtended block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum BopomofoExtended {
     /// \u{31a0}: 'ㆠ'

@@ -1,6 +1,8 @@
 /// \u{4e00} → \u{9fff}\
 ///\
-/// 一 鿯
+/// 一 鿯\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{4e00}: '一'
     pub const CJK_IDEOGRAPH_FIRST: char = '一';
@@ -8,9 +10,7 @@ pub mod constants {
     pub const CJK_IDEOGRAPH_LAST: char = '鿯';
 }
 
-/// \u{4e00} → \u{9fff}\
-///\
-/// 一 鿯
+/// An enum to represent all characters in the CJKUnifiedIdeographs block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CJKUnifiedIdeographs {
     /// \u{4e00}: '一'

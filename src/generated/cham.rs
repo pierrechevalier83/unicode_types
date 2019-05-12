@@ -1,11 +1,13 @@
 /// \u{aa00} → \u{aa5f}\
 ///\
-/// ꨀ ꨁ ꨂ ꨃ ꨄ ꨅ ꨆ ꨇ ꨈ ꨉ ꨊ ꨋ ꨌ ꨍ ꨎ ꨏ
-/// ꨐ ꨑ ꨒ ꨓ ꨔ ꨕ ꨖ ꨗ ꨘ ꨙ ꨚ ꨛ ꨜ ꨝ ꨞ ꨟ
-/// ꨠ ꨡ ꨢ ꨣ ꨤ ꨥ ꨦ ꨧ ꨨ ꨩ ꨪ ꨫ ꨬ ꨭ ꨮ ꨯ
-/// ꨰ ꨱ ꨲ ꨳ ꨴ ꨵ ꨶ ꩀ ꩁ ꩂ ꩃ ꩄ ꩅ ꩆ ꩇ ꩈ
-/// ꩉ ꩊ ꩋ ꩌ ꩍ ꩐ ꩑ ꩒ ꩓ ꩔ ꩕ ꩖ ꩗ ꩘ ꩙ ꩜
-/// ꩝ ꩞
+/// ꨀ ꨁ ꨂ ꨃ ꨄ ꨅ ꨆ ꨇ ꨈ ꨉ ꨊ ꨋ ꨌ ꨍ ꨎ ꨏ\
+/// ꨐ ꨑ ꨒ ꨓ ꨔ ꨕ ꨖ ꨗ ꨘ ꨙ ꨚ ꨛ ꨜ ꨝ ꨞ ꨟ\
+/// ꨠ ꨡ ꨢ ꨣ ꨤ ꨥ ꨦ ꨧ ꨨ ꨩ ꨪ ꨫ ꨬ ꨭ ꨮ ꨯ\
+/// ꨰ ꨱ ꨲ ꨳ ꨴ ꨵ ꨶ ꩀ ꩁ ꩂ ꩃ ꩄ ꩅ ꩆ ꩇ ꩈ\
+/// ꩉ ꩊ ꩋ ꩌ ꩍ ꩐ ꩑ ꩒ ꩓ ꩔ ꩕ ꩖ ꩗ ꩘ ꩙ ꩜\
+/// ꩝ ꩞\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{aa00}: 'ꨀ'
     pub const LETTER_A: char = 'ꨀ';
@@ -173,14 +175,7 @@ pub mod constants {
     pub const PUNCTUATION_DOUBLE_DANDA: char = '꩞';
 }
 
-/// \u{aa00} → \u{aa5f}\
-///\
-/// ꨀ ꨁ ꨂ ꨃ ꨄ ꨅ ꨆ ꨇ ꨈ ꨉ ꨊ ꨋ ꨌ ꨍ ꨎ ꨏ
-/// ꨐ ꨑ ꨒ ꨓ ꨔ ꨕ ꨖ ꨗ ꨘ ꨙ ꨚ ꨛ ꨜ ꨝ ꨞ ꨟ
-/// ꨠ ꨡ ꨢ ꨣ ꨤ ꨥ ꨦ ꨧ ꨨ ꨩ ꨪ ꨫ ꨬ ꨭ ꨮ ꨯ
-/// ꨰ ꨱ ꨲ ꨳ ꨴ ꨵ ꨶ ꩀ ꩁ ꩂ ꩃ ꩄ ꩅ ꩆ ꩇ ꩈ
-/// ꩉ ꩊ ꩋ ꩌ ꩍ ꩐ ꩑ ꩒ ꩓ ꩔ ꩕ ꩖ ꩗ ꩘ ꩙ ꩜
-/// ꩝ ꩞
+/// An enum to represent all characters in the Cham block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Cham {
     /// \u{aa00}: 'ꨀ'

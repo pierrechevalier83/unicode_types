@@ -1,6 +1,8 @@
 /// \u{11660} → \u{1167f}\
 ///\
-/// 𑙠 𑙡 𑙢 𑙣 𑙤 𑙥 𑙦 𑙧 𑙨 𑙩 𑙪 𑙫 𑙬
+/// 𑙠 𑙡 𑙢 𑙣 𑙤 𑙥 𑙦 𑙧 𑙨 𑙩 𑙪 𑙫 𑙬\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{11660}: '𑙠'
     pub const MONGOLIAN_BIRGA_WITH_ORNAMENT: char = '𑙠';
@@ -30,9 +32,7 @@ pub mod constants {
     pub const MONGOLIAN_TURNED_SWIRL_BIRGA_WITH_DOUBLE_ORNAMENT: char = '𑙬';
 }
 
-/// \u{11660} → \u{1167f}\
-///\
-/// 𑙠 𑙡 𑙢 𑙣 𑙤 𑙥 𑙦 𑙧 𑙨 𑙩 𑙪 𑙫 𑙬
+/// An enum to represent all characters in the MongolianSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum MongolianSupplement {
     /// \u{11660}: '𑙠'

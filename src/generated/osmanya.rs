@@ -1,8 +1,10 @@
 /// \u{10480} → \u{104af}\
 ///\
-/// 𐒀 𐒁 𐒂 𐒃 𐒄 𐒅 𐒆 𐒇 𐒈 𐒉 𐒊 𐒋 𐒌 𐒍 𐒎 𐒏
-/// 𐒐 𐒑 𐒒 𐒓 𐒔 𐒕 𐒖 𐒗 𐒘 𐒙 𐒚 𐒛 𐒜 𐒝 𐒠 𐒡
-/// 𐒢 𐒣 𐒤 𐒥 𐒦 𐒧 𐒨 𐒩
+/// 𐒀 𐒁 𐒂 𐒃 𐒄 𐒅 𐒆 𐒇 𐒈 𐒉 𐒊 𐒋 𐒌 𐒍 𐒎 𐒏\
+/// 𐒐 𐒑 𐒒 𐒓 𐒔 𐒕 𐒖 𐒗 𐒘 𐒙 𐒚 𐒛 𐒜 𐒝 𐒠 𐒡\
+/// 𐒢 𐒣 𐒤 𐒥 𐒦 𐒧 𐒨 𐒩\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10480}: '𐒀'
     pub const LETTER_ALEF: char = '𐒀';
@@ -86,11 +88,7 @@ pub mod constants {
     pub const DIGIT_NINE: char = '𐒩';
 }
 
-/// \u{10480} → \u{104af}\
-///\
-/// 𐒀 𐒁 𐒂 𐒃 𐒄 𐒅 𐒆 𐒇 𐒈 𐒉 𐒊 𐒋 𐒌 𐒍 𐒎 𐒏
-/// 𐒐 𐒑 𐒒 𐒓 𐒔 𐒕 𐒖 𐒗 𐒘 𐒙 𐒚 𐒛 𐒜 𐒝 𐒠 𐒡
-/// 𐒢 𐒣 𐒤 𐒥 𐒦 𐒧 𐒨 𐒩
+/// An enum to represent all characters in the Osmanya block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Osmanya {
     /// \u{10480}: '𐒀'

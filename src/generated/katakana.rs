@@ -1,11 +1,13 @@
 /// \u{30a0} → \u{30ff}\
 ///\
-/// ゠ ァ ア ィ イ ゥ ウ ェ エ ォ オ カ ガ キ ギ ク
-/// グ ケ ゲ コ ゴ サ ザ シ ジ ス ズ セ ゼ ソ ゾ タ
-/// ダ チ ヂ ッ ツ ヅ テ デ ト ド ナ ニ ヌ ネ ノ ハ
-/// バ パ ヒ ビ ピ フ ブ プ ヘ ベ ペ ホ ボ ポ マ ミ
-/// ム メ モ ャ ヤ ュ ユ ョ ヨ ラ リ ル レ ロ ヮ ワ
-/// ヰ ヱ ヲ ン ヴ ヵ ヶ ヷ ヸ ヹ ヺ ・ ー ヽ ヾ
+/// ゠ ァ ア ィ イ ゥ ウ ェ エ ォ オ カ ガ キ ギ ク\
+/// グ ケ ゲ コ ゴ サ ザ シ ジ ス ズ セ ゼ ソ ゾ タ\
+/// ダ チ ヂ ッ ツ ヅ テ デ ト ド ナ ニ ヌ ネ ノ ハ\
+/// バ パ ヒ ビ ピ フ ブ プ ヘ ベ ペ ホ ボ ポ マ ミ\
+/// ム メ モ ャ ヤ ュ ユ ョ ヨ ラ リ ル レ ロ ヮ ワ\
+/// ヰ ヱ ヲ ン ヴ ヵ ヶ ヷ ヸ ヹ ヺ ・ ー ヽ ヾ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{30a0}: '゠'
     pub const DASH_HIRAGANA_DOUBLE_HYPHEN: char = '゠';
@@ -199,14 +201,7 @@ pub mod constants {
     pub const VOICED_ITERATION_MARK: char = 'ヾ';
 }
 
-/// \u{30a0} → \u{30ff}\
-///\
-/// ゠ ァ ア ィ イ ゥ ウ ェ エ ォ オ カ ガ キ ギ ク
-/// グ ケ ゲ コ ゴ サ ザ シ ジ ス ズ セ ゼ ソ ゾ タ
-/// ダ チ ヂ ッ ツ ヅ テ デ ト ド ナ ニ ヌ ネ ノ ハ
-/// バ パ ヒ ビ ピ フ ブ プ ヘ ベ ペ ホ ボ ポ マ ミ
-/// ム メ モ ャ ヤ ュ ユ ョ ヨ ラ リ ル レ ロ ヮ ワ
-/// ヰ ヱ ヲ ン ヴ ヵ ヶ ヷ ヸ ヹ ヺ ・ ー ヽ ヾ
+/// An enum to represent all characters in the Katakana block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Katakana {
     /// \u{30a0}: '゠'

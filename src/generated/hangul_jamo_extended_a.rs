@@ -1,7 +1,9 @@
 /// \u{a960} → \u{a97f}\
 ///\
-/// ꥠ ꥡ ꥢ ꥣ ꥤ ꥥ ꥦ ꥧ ꥨ ꥩ ꥪ ꥫ ꥬ ꥭ ꥮ ꥯ
-/// ꥰ ꥱ ꥲ ꥳ ꥴ ꥵ ꥶ ꥷ ꥸ ꥹ ꥺ ꥻ ꥼ
+/// ꥠ ꥡ ꥢ ꥣ ꥤ ꥥ ꥦ ꥧ ꥨ ꥩ ꥪ ꥫ ꥬ ꥭ ꥮ ꥯ\
+/// ꥰ ꥱ ꥲ ꥳ ꥴ ꥵ ꥶ ꥷ ꥸ ꥹ ꥺ ꥻ ꥼ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a960}: 'ꥠ'
     pub const HANGUL_CHOSEONG_TIKEUT_DASH_MIEUM: char = 'ꥠ';
@@ -63,10 +65,7 @@ pub mod constants {
     pub const HANGUL_CHOSEONG_SSANGYEORINHIEUH: char = 'ꥼ';
 }
 
-/// \u{a960} → \u{a97f}\
-///\
-/// ꥠ ꥡ ꥢ ꥣ ꥤ ꥥ ꥦ ꥧ ꥨ ꥩ ꥪ ꥫ ꥬ ꥭ ꥮ ꥯ
-/// ꥰ ꥱ ꥲ ꥳ ꥴ ꥵ ꥶ ꥷ ꥸ ꥹ ꥺ ꥻ ꥼ
+/// An enum to represent all characters in the HangulJamoExtendedA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum HangulJamoExtendedA {
     /// \u{a960}: 'ꥠ'

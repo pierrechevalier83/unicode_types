@@ -1,7 +1,9 @@
 /// \u{aae0} → \u{aaff}\
 ///\
-/// ꫠ ꫡ ꫢ ꫣ ꫤ ꫥ ꫦ ꫧ ꫨ ꫩ ꫪ ꫫ ꫬ ꫭ ꫮ ꫯ
-/// ꫰ ꫱ ꫲ ꫳ ꫴ ꫵ ꫶
+/// ꫠ ꫡ ꫢ ꫣ ꫤ ꫥ ꫦ ꫧ ꫨ ꫩ ꫪ ꫫ ꫬ ꫭ ꫮ ꫯ\
+/// ꫰ ꫱ ꫲ ꫳ ꫴ ꫵ ꫶\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{aae0}: 'ꫠ'
     pub const MEETEI_MAYEK_LETTER_E: char = 'ꫠ';
@@ -51,10 +53,7 @@ pub mod constants {
     pub const MEETEI_MAYEK_VIRAMA: char = '꫶';
 }
 
-/// \u{aae0} → \u{aaff}\
-///\
-/// ꫠ ꫡ ꫢ ꫣ ꫤ ꫥ ꫦ ꫧ ꫨ ꫩ ꫪ ꫫ ꫬ ꫭ ꫮ ꫯ
-/// ꫰ ꫱ ꫲ ꫳ ꫴ ꫵ ꫶
+/// An enum to represent all characters in the MeeteiMayekExtensions block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum MeeteiMayekExtensions {
     /// \u{aae0}: 'ꫠ'

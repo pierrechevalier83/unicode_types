@@ -1,6 +1,8 @@
 /// \u{2ceb0} → \u{2ebef}\
 ///\
-/// 𬺰 𮯠
+/// 𬺰 𮯠\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2ceb0}: '𬺰'
     pub const CJK_IDEOGRAPH_EXTENSION_F_FIRST: char = '𬺰';
@@ -8,9 +10,7 @@ pub mod constants {
     pub const CJK_IDEOGRAPH_EXTENSION_F_LAST: char = '𮯠';
 }
 
-/// \u{2ceb0} → \u{2ebef}\
-///\
-/// 𬺰 𮯠
+/// An enum to represent all characters in the CJKUnifiedIdeographsExtensionF block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CJKUnifiedIdeographsExtensionF {
     /// \u{2ceb0}: '𬺰'

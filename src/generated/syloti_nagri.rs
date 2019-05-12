@@ -1,8 +1,10 @@
 /// \u{a800} → \u{a82f}\
 ///\
-/// ꠀ ꠁ ꠂ ꠃ ꠄ ꠅ ꠆ ꠇ ꠈ ꠉ ꠊ ꠋ ꠌ ꠍ ꠎ ꠏ
-/// ꠐ ꠑ ꠒ ꠓ ꠔ ꠕ ꠖ ꠗ ꠘ ꠙ ꠚ ꠛ ꠜ ꠝ ꠞ ꠟ
-/// ꠠ ꠡ ꠢ ꠣ ꠤ ꠥ ꠦ ꠧ ꠨ ꠩ ꠪ ꠫
+/// ꠀ ꠁ ꠂ ꠃ ꠄ ꠅ ꠆ ꠇ ꠈ ꠉ ꠊ ꠋ ꠌ ꠍ ꠎ ꠏ\
+/// ꠐ ꠑ ꠒ ꠓ ꠔ ꠕ ꠖ ꠗ ꠘ ꠙ ꠚ ꠛ ꠜ ꠝ ꠞ ꠟ\
+/// ꠠ ꠡ ꠢ ꠣ ꠤ ꠥ ꠦ ꠧ ꠨ ꠩ ꠪ ꠫\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a800}: 'ꠀ'
     pub const LETTER_A: char = 'ꠀ';
@@ -94,11 +96,7 @@ pub mod constants {
     pub const POETRY_MARK_DASH_4: char = '꠫';
 }
 
-/// \u{a800} → \u{a82f}\
-///\
-/// ꠀ ꠁ ꠂ ꠃ ꠄ ꠅ ꠆ ꠇ ꠈ ꠉ ꠊ ꠋ ꠌ ꠍ ꠎ ꠏ
-/// ꠐ ꠑ ꠒ ꠓ ꠔ ꠕ ꠖ ꠗ ꠘ ꠙ ꠚ ꠛ ꠜ ꠝ ꠞ ꠟ
-/// ꠠ ꠡ ꠢ ꠣ ꠤ ꠥ ꠦ ꠧ ꠨ ꠩ ꠪ ꠫
+/// An enum to represent all characters in the SylotiNagri block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SylotiNagri {
     /// \u{a800}: 'ꠀ'

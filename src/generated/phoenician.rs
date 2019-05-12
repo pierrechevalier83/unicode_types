@@ -1,7 +1,9 @@
 /// \u{10900} → \u{1091f}\
 ///\
-/// 𐤀 𐤁 𐤂 𐤃 𐤄 𐤅 𐤆 𐤇 𐤈 𐤉 𐤊 𐤋 𐤌 𐤍 𐤎 𐤏
-/// 𐤐 𐤑 𐤒 𐤓 𐤔 𐤕 𐤖 𐤗 𐤘 𐤙 𐤚 𐤛
+/// 𐤀 𐤁 𐤂 𐤃 𐤄 𐤅 𐤆 𐤇 𐤈 𐤉 𐤊 𐤋 𐤌 𐤍 𐤎 𐤏\
+/// 𐤐 𐤑 𐤒 𐤓 𐤔 𐤕 𐤖 𐤗 𐤘 𐤙 𐤚 𐤛\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10900}: '𐤀'
     pub const LETTER_ALF: char = '𐤀';
@@ -61,10 +63,7 @@ pub mod constants {
     pub const NUMBER_THREE: char = '𐤛';
 }
 
-/// \u{10900} → \u{1091f}\
-///\
-/// 𐤀 𐤁 𐤂 𐤃 𐤄 𐤅 𐤆 𐤇 𐤈 𐤉 𐤊 𐤋 𐤌 𐤍 𐤎 𐤏
-/// 𐤐 𐤑 𐤒 𐤓 𐤔 𐤕 𐤖 𐤗 𐤘 𐤙 𐤚 𐤛
+/// An enum to represent all characters in the Phoenician block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Phoenician {
     /// \u{10900}: '𐤀'

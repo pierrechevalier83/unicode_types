@@ -1,7 +1,9 @@
 /// \u{1700} → \u{171f}\
 ///\
-/// ᜀ ᜁ ᜂ ᜃ ᜄ ᜅ ᜆ ᜇ ᜈ ᜉ ᜊ ᜋ ᜌ ᜎ ᜏ ᜐ
-/// ᜑ ᜒ ᜓ ᜔
+/// ᜀ ᜁ ᜂ ᜃ ᜄ ᜅ ᜆ ᜇ ᜈ ᜉ ᜊ ᜋ ᜌ ᜎ ᜏ ᜐ\
+/// ᜑ ᜒ ᜓ ᜔\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1700}: 'ᜀ'
     pub const LETTER_A: char = 'ᜀ';
@@ -45,10 +47,7 @@ pub mod constants {
     pub const SIGN_VIRAMA: char = '᜔';
 }
 
-/// \u{1700} → \u{171f}\
-///\
-/// ᜀ ᜁ ᜂ ᜃ ᜄ ᜅ ᜆ ᜇ ᜈ ᜉ ᜊ ᜋ ᜌ ᜎ ᜏ ᜐ
-/// ᜑ ᜒ ᜓ ᜔
+/// An enum to represent all characters in the Tagalog block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Tagalog {
     /// \u{1700}: 'ᜀ'

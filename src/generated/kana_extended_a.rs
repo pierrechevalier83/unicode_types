@@ -1,7 +1,9 @@
 /// \u{1b100} → \u{1b12f}\
 ///\
-/// 𛄀 𛄁 𛄂 𛄃 𛄄 𛄅 𛄆 𛄇 𛄈 𛄉 𛄊 𛄋 𛄌 𛄍 𛄎 𛄏
-/// 𛄐 𛄑 𛄒 𛄓 𛄔 𛄕 𛄖 𛄗 𛄘 𛄙 𛄚 𛄛 𛄜 𛄝 𛄞
+/// 𛄀 𛄁 𛄂 𛄃 𛄄 𛄅 𛄆 𛄇 𛄈 𛄉 𛄊 𛄋 𛄌 𛄍 𛄎 𛄏\
+/// 𛄐 𛄑 𛄒 𛄓 𛄔 𛄕 𛄖 𛄗 𛄘 𛄙 𛄚 𛄛 𛄜 𛄝 𛄞\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1b100}: '𛄀'
     pub const HENTAIGANA_LETTER_RE_DASH_3: char = '𛄀';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const HENTAIGANA_LETTER_N_DASH_MU_DASH_MO_DASH_2: char = '𛄞';
 }
 
-/// \u{1b100} → \u{1b12f}\
-///\
-/// 𛄀 𛄁 𛄂 𛄃 𛄄 𛄅 𛄆 𛄇 𛄈 𛄉 𛄊 𛄋 𛄌 𛄍 𛄎 𛄏
-/// 𛄐 𛄑 𛄒 𛄓 𛄔 𛄕 𛄖 𛄗 𛄘 𛄙 𛄚 𛄛 𛄜 𛄝 𛄞
+/// An enum to represent all characters in the KanaExtendedA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum KanaExtendedA {
     /// \u{1b100}: '𛄀'

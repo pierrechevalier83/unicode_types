@@ -1,15 +1,17 @@
 /// \u{1f800} → \u{1f8ff}\
 ///\
-/// 🠀 🠁 🠂 🠃 🠄 🠅 🠆 🠇 🠈 🠉 🠊 🠋 🠐 🠑 🠒 🠓
-/// 🠔 🠕 🠖 🠗 🠘 🠙 🠚 🠛 🠜 🠝 🠞 🠟 🠠 🠡 🠢 🠣
-/// 🠤 🠥 🠦 🠧 🠨 🠩 🠪 🠫 🠬 🠭 🠮 🠯 🠰 🠱 🠲 🠳
-/// 🠴 🠵 🠶 🠷 🠸 🠹 🠺 🠻 🠼 🠽 🠾 🠿 🡀 🡁 🡂 🡃
-/// 🡄 🡅 🡆 🡇 🡐 🡑 🡒 🡓 🡔 🡕 🡖 🡗 🡘 🡙 🡠 🡡
-/// 🡢 🡣 🡤 🡥 🡦 🡧 🡨 🡩 🡪 🡫 🡬 🡭 🡮 🡯 🡰 🡱
-/// 🡲 🡳 🡴 🡵 🡶 🡷 🡸 🡹 🡺 🡻 🡼 🡽 🡾 🡿 🢀 🢁
-/// 🢂 🢃 🢄 🢅 🢆 🢇 🢐 🢑 🢒 🢓 🢔 🢕 🢖 🢗 🢘 🢙
-/// 🢚 🢛 🢜 🢝 🢞 🢟 🢠 🢡 🢢 🢣 🢤 🢥 🢦 🢧 🢨 🢩
-/// 🢪 🢫 🢬 🢭
+/// 🠀 🠁 🠂 🠃 🠄 🠅 🠆 🠇 🠈 🠉 🠊 🠋 🠐 🠑 🠒 🠓\
+/// 🠔 🠕 🠖 🠗 🠘 🠙 🠚 🠛 🠜 🠝 🠞 🠟 🠠 🠡 🠢 🠣\
+/// 🠤 🠥 🠦 🠧 🠨 🠩 🠪 🠫 🠬 🠭 🠮 🠯 🠰 🠱 🠲 🠳\
+/// 🠴 🠵 🠶 🠷 🠸 🠹 🠺 🠻 🠼 🠽 🠾 🠿 🡀 🡁 🡂 🡃\
+/// 🡄 🡅 🡆 🡇 🡐 🡑 🡒 🡓 🡔 🡕 🡖 🡗 🡘 🡙 🡠 🡡\
+/// 🡢 🡣 🡤 🡥 🡦 🡧 🡨 🡩 🡪 🡫 🡬 🡭 🡮 🡯 🡰 🡱\
+/// 🡲 🡳 🡴 🡵 🡶 🡷 🡸 🡹 🡺 🡻 🡼 🡽 🡾 🡿 🢀 🢁\
+/// 🢂 🢃 🢄 🢅 🢆 🢇 🢐 🢑 🢒 🢓 🢔 🢕 🢖 🢗 🢘 🢙\
+/// 🢚 🢛 🢜 🢝 🢞 🢟 🢠 🢡 🢢 🢣 🢤 🢥 🢦 🢧 🢨 🢩\
+/// 🢪 🢫 🢬 🢭\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1f800}: '🠀'
     pub const LEFTWARDS_ARROW_WITH_SMALL_TRIANGLE_ARROWHEAD: char = '🠀';
@@ -309,18 +311,7 @@ pub mod constants {
     pub const WHITE_ARROW_SHAFT_WIDTH_TWO_THIRDS: char = '🢭';
 }
 
-/// \u{1f800} → \u{1f8ff}\
-///\
-/// 🠀 🠁 🠂 🠃 🠄 🠅 🠆 🠇 🠈 🠉 🠊 🠋 🠐 🠑 🠒 🠓
-/// 🠔 🠕 🠖 🠗 🠘 🠙 🠚 🠛 🠜 🠝 🠞 🠟 🠠 🠡 🠢 🠣
-/// 🠤 🠥 🠦 🠧 🠨 🠩 🠪 🠫 🠬 🠭 🠮 🠯 🠰 🠱 🠲 🠳
-/// 🠴 🠵 🠶 🠷 🠸 🠹 🠺 🠻 🠼 🠽 🠾 🠿 🡀 🡁 🡂 🡃
-/// 🡄 🡅 🡆 🡇 🡐 🡑 🡒 🡓 🡔 🡕 🡖 🡗 🡘 🡙 🡠 🡡
-/// 🡢 🡣 🡤 🡥 🡦 🡧 🡨 🡩 🡪 🡫 🡬 🡭 🡮 🡯 🡰 🡱
-/// 🡲 🡳 🡴 🡵 🡶 🡷 🡸 🡹 🡺 🡻 🡼 🡽 🡾 🡿 🢀 🢁
-/// 🢂 🢃 🢄 🢅 🢆 🢇 🢐 🢑 🢒 🢓 🢔 🢕 🢖 🢗 🢘 🢙
-/// 🢚 🢛 🢜 🢝 🢞 🢟 🢠 🢡 🢢 🢣 🢤 🢥 🢦 🢧 🢨 🢩
-/// 🢪 🢫 🢬 🢭
+/// An enum to represent all characters in the SupplementalArrowsC block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SupplementalArrowsC {
     /// \u{1f800}: '🠀'

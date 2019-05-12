@@ -1,7 +1,9 @@
 /// \u{1d360} → \u{1d37f}\
 ///\
-/// 𝍠 𝍡 𝍢 𝍣 𝍤 𝍥 𝍦 𝍧 𝍨 𝍩 𝍪 𝍫 𝍬 𝍭 𝍮 𝍯
-/// 𝍰 𝍱 𝍲 𝍳 𝍴 𝍵 𝍶 𝍷 𝍸
+/// 𝍠 𝍡 𝍢 𝍣 𝍤 𝍥 𝍦 𝍧 𝍨 𝍩 𝍪 𝍫 𝍬 𝍭 𝍮 𝍯\
+/// 𝍰 𝍱 𝍲 𝍳 𝍴 𝍵 𝍶 𝍷 𝍸\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1d360}: '𝍠'
     pub const COUNTING_ROD_UNIT_DIGIT_ONE: char = '𝍠';
@@ -55,10 +57,7 @@ pub mod constants {
     pub const TALLY_MARK_FIVE: char = '𝍸';
 }
 
-/// \u{1d360} → \u{1d37f}\
-///\
-/// 𝍠 𝍡 𝍢 𝍣 𝍤 𝍥 𝍦 𝍧 𝍨 𝍩 𝍪 𝍫 𝍬 𝍭 𝍮 𝍯
-/// 𝍰 𝍱 𝍲 𝍳 𝍴 𝍵 𝍶 𝍷 𝍸
+/// An enum to represent all characters in the CountingRodNumerals block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CountingRodNumerals {
     /// \u{1d360}: '𝍠'

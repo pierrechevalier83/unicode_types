@@ -1,11 +1,13 @@
 /// \u{c80} → \u{cff}\
 ///\
-/// ಀ ಁ ಂ ಃ ಄ ಅ ಆ ಇ ಈ ಉ ಊ ಋ ಌ ಎ ಏ ಐ
-/// ಒ ಓ ಔ ಕ ಖ ಗ ಘ ಙ ಚ ಛ ಜ ಝ ಞ ಟ ಠ ಡ
-/// ಢ ಣ ತ ಥ ದ ಧ ನ ಪ ಫ ಬ ಭ ಮ ಯ ರ ಱ ಲ
-/// ಳ ವ ಶ ಷ ಸ ಹ ಼ ಽ ಾ ಿ ೀ ು ೂ ೃ ೄ ೆ
-/// ೇ ೈ ೊ ೋ ೌ ್ ೕ ೖ ೞ ೠ ೡ ೢ ೣ ೦ ೧ ೨
-/// ೩ ೪ ೫ ೬ ೭ ೮ ೯ ೱ ೲ
+/// ಀ ಁ ಂ ಃ ಄ ಅ ಆ ಇ ಈ ಉ ಊ ಋ ಌ ಎ ಏ ಐ\
+/// ಒ ಓ ಔ ಕ ಖ ಗ ಘ ಙ ಚ ಛ ಜ ಝ ಞ ಟ ಠ ಡ\
+/// ಢ ಣ ತ ಥ ದ ಧ ನ ಪ ಫ ಬ ಭ ಮ ಯ ರ ಱ ಲ\
+/// ಳ ವ ಶ ಷ ಸ ಹ ಼ ಽ ಾ ಿ ೀ ು ೂ ೃ ೄ ೆ\
+/// ೇ ೈ ೊ ೋ ೌ ್ ೕ ೖ ೞ ೠ ೡ ೢ ೣ ೦ ೧ ೨\
+/// ೩ ೪ ೫ ೬ ೭ ೮ ೯ ೱ ೲ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{c80}: 'ಀ'
     pub const SIGN_SPACING_CANDRABINDU: char = 'ಀ';
@@ -187,14 +189,7 @@ pub mod constants {
     pub const SIGN_UPADHMANIYA: char = 'ೲ';
 }
 
-/// \u{c80} → \u{cff}\
-///\
-/// ಀ ಁ ಂ ಃ ಄ ಅ ಆ ಇ ಈ ಉ ಊ ಋ ಌ ಎ ಏ ಐ
-/// ಒ ಓ ಔ ಕ ಖ ಗ ಘ ಙ ಚ ಛ ಜ ಝ ಞ ಟ ಠ ಡ
-/// ಢ ಣ ತ ಥ ದ ಧ ನ ಪ ಫ ಬ ಭ ಮ ಯ ರ ಱ ಲ
-/// ಳ ವ ಶ ಷ ಸ ಹ ಼ ಽ ಾ ಿ ೀ ು ೂ ೃ ೄ ೆ
-/// ೇ ೈ ೊ ೋ ೌ ್ ೕ ೖ ೞ ೠ ೡ ೢ ೣ ೦ ೧ ೨
-/// ೩ ೪ ೫ ೬ ೭ ೮ ೯ ೱ ೲ
+/// An enum to represent all characters in the Kannada block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Kannada {
     /// \u{c80}: 'ಀ'

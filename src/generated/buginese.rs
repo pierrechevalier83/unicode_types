@@ -1,7 +1,9 @@
 /// \u{1a00} → \u{1a1f}\
 ///\
-/// ᨀ ᨁ ᨂ ᨃ ᨄ ᨅ ᨆ ᨇ ᨈ ᨉ ᨊ ᨋ ᨌ ᨍ ᨎ ᨏ
-/// ᨐ ᨑ ᨒ ᨓ ᨔ ᨕ ᨖ ᨗ ᨘ ᨙ ᨚ ᨛ ᨞
+/// ᨀ ᨁ ᨂ ᨃ ᨄ ᨅ ᨆ ᨇ ᨈ ᨉ ᨊ ᨋ ᨌ ᨍ ᨎ ᨏ\
+/// ᨐ ᨑ ᨒ ᨓ ᨔ ᨕ ᨖ ᨗ ᨘ ᨙ ᨚ ᨛ ᨞\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1a00}: 'ᨀ'
     pub const LETTER_KA: char = 'ᨀ';
@@ -63,10 +65,7 @@ pub mod constants {
     pub const PALLAWA: char = '᨞';
 }
 
-/// \u{1a00} → \u{1a1f}\
-///\
-/// ᨀ ᨁ ᨂ ᨃ ᨄ ᨅ ᨆ ᨇ ᨈ ᨉ ᨊ ᨋ ᨌ ᨍ ᨎ ᨏ
-/// ᨐ ᨑ ᨒ ᨓ ᨔ ᨕ ᨖ ᨗ ᨘ ᨙ ᨚ ᨛ ᨞
+/// An enum to represent all characters in the Buginese block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Buginese {
     /// \u{1a00}: 'ᨀ'

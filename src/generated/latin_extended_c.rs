@@ -1,7 +1,9 @@
 /// \u{2c60} → \u{2c7f}\
 ///\
-/// Ⱡ ⱡ Ɫ Ᵽ Ɽ ⱥ ⱦ Ⱨ ⱨ Ⱪ ⱪ Ⱬ ⱬ Ɑ Ɱ Ɐ
-/// Ɒ ⱱ Ⱳ ⱳ ⱴ Ⱶ ⱶ ⱷ ⱸ ⱹ ⱺ ⱻ ⱼ ⱽ Ȿ
+/// Ⱡ ⱡ Ɫ Ᵽ Ɽ ⱥ ⱦ Ⱨ ⱨ Ⱪ ⱪ Ⱬ ⱬ Ɑ Ɱ Ɐ\
+/// Ɒ ⱱ Ⱳ ⱳ ⱴ Ⱶ ⱶ ⱷ ⱸ ⱹ ⱺ ⱻ ⱼ ⱽ Ȿ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2c60}: 'Ⱡ'
     pub const LATIN_CAPITAL_LETTER_L_WITH_DOUBLE_BAR: char = 'Ⱡ';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const LATIN_CAPITAL_LETTER_S_WITH_SWASH_TAIL: char = 'Ȿ';
 }
 
-/// \u{2c60} → \u{2c7f}\
-///\
-/// Ⱡ ⱡ Ɫ Ᵽ Ɽ ⱥ ⱦ Ⱨ ⱨ Ⱪ ⱪ Ⱬ ⱬ Ɑ Ɱ Ɐ
-/// Ɒ ⱱ Ⱳ ⱳ ⱴ Ⱶ ⱶ ⱷ ⱸ ⱹ ⱺ ⱻ ⱼ ⱽ Ȿ
+/// An enum to represent all characters in the LatinExtendedC block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum LatinExtendedC {
     /// \u{2c60}: 'Ⱡ'

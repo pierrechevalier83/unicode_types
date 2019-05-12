@@ -1,6 +1,8 @@
 /// \u{100000} → \u{10ffff}\
 ///\
-/// 􀀀 􏿽
+/// 􀀀 􏿽\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{100000}: '􀀀'
     pub const PLANE_16_PRIVATE_USE_FIRST: char = '􀀀';
@@ -8,9 +10,7 @@ pub mod constants {
     pub const PLANE_16_PRIVATE_USE_LAST: char = '􏿽';
 }
 
-/// \u{100000} → \u{10ffff}\
-///\
-/// 􀀀 􏿽
+/// An enum to represent all characters in the SupplementaryPrivateUseAreaB block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SupplementaryPrivateUseAreaB {
     /// \u{100000}: '􀀀'

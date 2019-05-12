@@ -1,6 +1,8 @@
 /// \u{fe00} → \u{fe0f}\
 ///\
-/// ︀ ︁ ︂ ︃ ︄ ︅ ︆ ︇ ︈ ︉ ︊ ︋ ︌ ︍ ︎
+/// ︀ ︁ ︂ ︃ ︄ ︅ ︆ ︇ ︈ ︉ ︊ ︋ ︌ ︍ ︎\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{fe00}: '︀'
     pub const VARIATION_SELECTOR_DASH_1: char = '︀';
@@ -34,9 +36,7 @@ pub mod constants {
     pub const VARIATION_SELECTOR_DASH_15: char = '︎';
 }
 
-/// \u{fe00} → \u{fe0f}\
-///\
-/// ︀ ︁ ︂ ︃ ︄ ︅ ︆ ︇ ︈ ︉ ︊ ︋ ︌ ︍ ︎
+/// An enum to represent all characters in the VariationSelectors block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum VariationSelectors {
     /// \u{fe00}: '︀'

@@ -1,8 +1,10 @@
 /// \u{10f30} → \u{10f6f}\
 ///\
-/// 𐼰 𐼱 𐼲 𐼳 𐼴 𐼵 𐼶 𐼷 𐼸 𐼹 𐼺 𐼻 𐼼 𐼽 𐼾 𐼿
-/// 𐽀 𐽁 𐽂 𐽃 𐽄 𐽅 𐽆 𐽇 𐽈 𐽉 𐽊 𐽋 𐽌 𐽍 𐽎 𐽏
-/// 𐽐 𐽑 𐽒 𐽓 𐽔 𐽕 𐽖 𐽗 𐽘 𐽙
+/// 𐼰 𐼱 𐼲 𐼳 𐼴 𐼵 𐼶 𐼷 𐼸 𐼹 𐼺 𐼻 𐼼 𐼽 𐼾 𐼿\
+/// 𐽀 𐽁 𐽂 𐽃 𐽄 𐽅 𐽆 𐽇 𐽈 𐽉 𐽊 𐽋 𐽌 𐽍 𐽎 𐽏\
+/// 𐽐 𐽑 𐽒 𐽓 𐽔 𐽕 𐽖 𐽗 𐽘 𐽙\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10f30}: '𐼰'
     pub const LETTER_ALEPH: char = '𐼰';
@@ -90,11 +92,7 @@ pub mod constants {
     pub const PUNCTUATION_HALF_CIRCLE_WITH_DOT: char = '𐽙';
 }
 
-/// \u{10f30} → \u{10f6f}\
-///\
-/// 𐼰 𐼱 𐼲 𐼳 𐼴 𐼵 𐼶 𐼷 𐼸 𐼹 𐼺 𐼻 𐼼 𐼽 𐼾 𐼿
-/// 𐽀 𐽁 𐽂 𐽃 𐽄 𐽅 𐽆 𐽇 𐽈 𐽉 𐽊 𐽋 𐽌 𐽍 𐽎 𐽏
-/// 𐽐 𐽑 𐽒 𐽓 𐽔 𐽕 𐽖 𐽗 𐽘 𐽙
+/// An enum to represent all characters in the Sogdian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Sogdian {
     /// \u{10f30}: '𐼰'

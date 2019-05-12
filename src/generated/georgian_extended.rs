@@ -1,8 +1,10 @@
 /// \u{1c90} → \u{1cbf}\
 ///\
-/// Ა Ბ Გ Დ Ე Ვ Ზ Თ Ი Კ Ლ Მ Ნ Ო Პ Ჟ
-/// Რ Ს Ტ Უ Ფ Ქ Ღ Ყ Შ Ჩ Ც Ძ Წ Ჭ Ხ Ჯ
-/// Ჰ Ჱ Ჲ Ჳ Ჴ Ჵ Ჶ Ჷ Ჸ Ჹ Ჺ Ჽ Ჾ
+/// Ა Ბ Გ Დ Ე Ვ Ზ Თ Ი Კ Ლ Მ Ნ Ო Პ Ჟ\
+/// Რ Ს Ტ Უ Ფ Ქ Ღ Ყ Შ Ჩ Ც Ძ Წ Ჭ Ხ Ჯ\
+/// Ჰ Ჱ Ჲ Ჳ Ჴ Ჵ Ჶ Ჷ Ჸ Ჹ Ჺ Ჽ Ჾ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1c90}: 'Ა'
     pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_AN: char = 'Ა';
@@ -96,11 +98,7 @@ pub mod constants {
     pub const GEORGIAN_MTAVRULI_CAPITAL_LETTER_HARD_SIGN: char = 'Ჾ';
 }
 
-/// \u{1c90} → \u{1cbf}\
-///\
-/// Ა Ბ Გ Დ Ე Ვ Ზ Თ Ი Კ Ლ Მ Ნ Ო Პ Ჟ
-/// Რ Ს Ტ Უ Ფ Ქ Ღ Ყ Შ Ჩ Ც Ძ Წ Ჭ Ხ Ჯ
-/// Ჰ Ჱ Ჲ Ჳ Ჴ Ჵ Ჶ Ჷ Ჸ Ჹ Ჺ Ჽ Ჾ
+/// An enum to represent all characters in the GeorgianExtended block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum GeorgianExtended {
     /// \u{1c90}: 'Ა'

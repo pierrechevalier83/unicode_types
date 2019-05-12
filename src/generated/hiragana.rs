@@ -1,11 +1,13 @@
 /// \u{3040} → \u{309f}\
 ///\
-/// ぁ あ ぃ い ぅ う ぇ え ぉ お か が き ぎ く ぐ
-/// け げ こ ご さ ざ し じ す ず せ ぜ そ ぞ た だ
-/// ち ぢ っ つ づ て で と ど な に ぬ ね の は ば
-/// ぱ ひ び ぴ ふ ぶ ぷ へ べ ぺ ほ ぼ ぽ ま み む
-/// め も ゃ や ゅ ゆ ょ よ ら り る れ ろ ゎ わ ゐ
-/// ゑ を ん ゔ ゕ ゖ ゙ ゚ ゛ ゜ ゝ ゞ
+/// ぁ あ ぃ い ぅ う ぇ え ぉ お か が き ぎ く ぐ\
+/// け げ こ ご さ ざ し じ す ず せ ぜ そ ぞ た だ\
+/// ち ぢ っ つ づ て で と ど な に ぬ ね の は ば\
+/// ぱ ひ び ぴ ふ ぶ ぷ へ べ ぺ ほ ぼ ぽ ま み む\
+/// め も ゃ や ゅ ゆ ょ よ ら り る れ ろ ゎ わ ゐ\
+/// ゑ を ん ゔ ゕ ゖ ゙ ゚ ゛ ゜ ゝ ゞ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{3041}: 'ぁ'
     pub const LETTER_SMALL_A: char = 'ぁ';
@@ -193,14 +195,7 @@ pub mod constants {
     pub const VOICED_ITERATION_MARK: char = 'ゞ';
 }
 
-/// \u{3040} → \u{309f}\
-///\
-/// ぁ あ ぃ い ぅ う ぇ え ぉ お か が き ぎ く ぐ
-/// け げ こ ご さ ざ し じ す ず せ ぜ そ ぞ た だ
-/// ち ぢ っ つ づ て で と ど な に ぬ ね の は ば
-/// ぱ ひ び ぴ ふ ぶ ぷ へ べ ぺ ほ ぼ ぽ ま み む
-/// め も ゃ や ゅ ゆ ょ よ ら り る れ ろ ゎ わ ゐ
-/// ゑ を ん ゔ ゕ ゖ ゙ ゚ ゛ ゜ ゝ ゞ
+/// An enum to represent all characters in the Hiragana block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Hiragana {
     /// \u{3041}: 'ぁ'

@@ -1,8 +1,10 @@
 /// \u{1cd0} → \u{1cff}\
 ///\
-/// ᳐ ᳑ ᳒ ᳓ ᳔ ᳕ ᳖ ᳗ ᳘ ᳙ ᳚ ᳛ ᳜ ᳝ ᳞ ᳟
-/// ᳠ ᳡ ᳢ ᳣ ᳤ ᳥ ᳦ ᳧ ᳨ ᳩ ᳪ ᳫ ᳬ ᳭ ᳮ ᳯ
-/// ᳰ ᳱ ᳲ ᳳ ᳴ ᳵ ᳶ ᳷ ᳸ ᳹ ᳺ
+/// ᳐ ᳑ ᳒ ᳓ ᳔ ᳕ ᳖ ᳗ ᳘ ᳙ ᳚ ᳛ ᳜ ᳝ ᳞ ᳟\
+/// ᳠ ᳡ ᳢ ᳣ ᳤ ᳥ ᳦ ᳧ ᳨ ᳩ ᳪ ᳫ ᳬ ᳭ ᳮ ᳯ\
+/// ᳰ ᳱ ᳲ ᳳ ᳴ ᳵ ᳶ ᳷ ᳸ ᳹ ᳺ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1cd0}: '᳐'
     pub const VEDIC_TONE_KARSHANA: char = '᳐';
@@ -92,11 +94,7 @@ pub mod constants {
     pub const VEDIC_SIGN_DOUBLE_ANUSVARA_ANTARGOMUKHA: char = 'ᳺ';
 }
 
-/// \u{1cd0} → \u{1cff}\
-///\
-/// ᳐ ᳑ ᳒ ᳓ ᳔ ᳕ ᳖ ᳗ ᳘ ᳙ ᳚ ᳛ ᳜ ᳝ ᳞ ᳟
-/// ᳠ ᳡ ᳢ ᳣ ᳤ ᳥ ᳦ ᳧ ᳨ ᳩ ᳪ ᳫ ᳬ ᳭ ᳮ ᳯ
-/// ᳰ ᳱ ᳲ ᳳ ᳴ ᳵ ᳶ ᳷ ᳸ ᳹ ᳺ
+/// An enum to represent all characters in the VedicExtensions block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum VedicExtensions {
     /// \u{1cd0}: '᳐'

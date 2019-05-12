@@ -1,7 +1,9 @@
 /// \u{a700} → \u{a71f}\
 ///\
-/// ꜀ ꜁ ꜂ ꜃ ꜄ ꜅ ꜆ ꜇ ꜈ ꜉ ꜊ ꜋ ꜌ ꜍ ꜎ ꜏
-/// ꜐ ꜑ ꜒ ꜓ ꜔ ꜕ ꜖ ꜗ ꜘ ꜙ ꜚ ꜛ ꜜ ꜝ ꜞ
+/// ꜀ ꜁ ꜂ ꜃ ꜄ ꜅ ꜆ ꜇ ꜈ ꜉ ꜊ ꜋ ꜌ ꜍ ꜎ ꜏\
+/// ꜐ ꜑ ꜒ ꜓ ꜔ ꜕ ꜖ ꜗ ꜘ ꜙ ꜚ ꜛ ꜜ ꜝ ꜞ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a700}: '꜀'
     pub const MODIFIER_LETTER_CHINESE_TONE_YIN_PING: char = '꜀';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const MODIFIER_LETTER_RAISED_INVERTED_EXCLAMATION_MARK: char = 'ꜞ';
 }
 
-/// \u{a700} → \u{a71f}\
-///\
-/// ꜀ ꜁ ꜂ ꜃ ꜄ ꜅ ꜆ ꜇ ꜈ ꜉ ꜊ ꜋ ꜌ ꜍ ꜎ ꜏
-/// ꜐ ꜑ ꜒ ꜓ ꜔ ꜕ ꜖ ꜗ ꜘ ꜙ ꜚ ꜛ ꜜ ꜝ ꜞ
+/// An enum to represent all characters in the ModifierToneLetters block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum ModifierToneLetters {
     /// \u{a700}: '꜀'

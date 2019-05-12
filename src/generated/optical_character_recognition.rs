@@ -1,6 +1,8 @@
 /// \u{2440} → \u{245f}\
 ///\
-/// ⑀ ⑁ ⑂ ⑃ ⑄ ⑅ ⑆ ⑇ ⑈ ⑉ ⑊
+/// ⑀ ⑁ ⑂ ⑃ ⑄ ⑅ ⑆ ⑇ ⑈ ⑉ ⑊\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2440}: '⑀'
     pub const OCR_HOOK: char = '⑀';
@@ -26,9 +28,7 @@ pub mod constants {
     pub const OCR_DOUBLE_BACKSLASH: char = '⑊';
 }
 
-/// \u{2440} → \u{245f}\
-///\
-/// ⑀ ⑁ ⑂ ⑃ ⑄ ⑅ ⑆ ⑇ ⑈ ⑉ ⑊
+/// An enum to represent all characters in the OpticalCharacterRecognition block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum OpticalCharacterRecognition {
     /// \u{2440}: '⑀'

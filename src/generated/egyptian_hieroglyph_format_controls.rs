@@ -1,6 +1,8 @@
 /// \u{13430} → \u{1343f}\
 ///\
-/// 𓐰 𓐱 𓐲 𓐳 𓐴 𓐵 𓐶 𓐷 𓐸
+/// 𓐰 𓐱 𓐲 𓐳 𓐴 𓐵 𓐶 𓐷 𓐸\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{13430}: '𓐰'
     pub const EGYPTIAN_HIEROGLYPH_VERTICAL_JOINER: char = '𓐰';
@@ -22,9 +24,7 @@ pub mod constants {
     pub const EGYPTIAN_HIEROGLYPH_END_SEGMENT: char = '𓐸';
 }
 
-/// \u{13430} → \u{1343f}\
-///\
-/// 𓐰 𓐱 𓐲 𓐳 𓐴 𓐵 𓐶 𓐷 𓐸
+/// An enum to represent all characters in the EgyptianHieroglyphFormatControls block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum EgyptianHieroglyphFormatControls {
     /// \u{13430}: '𓐰'

@@ -1,11 +1,13 @@
 /// \u{a80} → \u{aff}\
 ///\
-/// ઁ ં ઃ અ આ ઇ ઈ ઉ ઊ ઋ ઌ ઍ એ ઐ ઑ ઓ
-/// ઔ ક ખ ગ ઘ ઙ ચ છ જ ઝ ઞ ટ ઠ ડ ઢ ણ
-/// ત થ દ ધ ન પ ફ બ ભ મ ય ર લ ળ વ શ
-/// ષ સ હ ઼ ઽ ા િ ી ુ ૂ ૃ ૄ ૅ ે ૈ ૉ
-/// ો ૌ ્ ૐ ૠ ૡ ૢ ૣ ૦ ૧ ૨ ૩ ૪ ૫ ૬ ૭
-/// ૮ ૯ ૰ ૱ ૹ ૺ ૻ ૼ ૽ ૾
+/// ઁ ં ઃ અ આ ઇ ઈ ઉ ઊ ઋ ઌ ઍ એ ઐ ઑ ઓ\
+/// ઔ ક ખ ગ ઘ ઙ ચ છ જ ઝ ઞ ટ ઠ ડ ઢ ણ\
+/// ત થ દ ધ ન પ ફ બ ભ મ ય ર લ ળ વ શ\
+/// ષ સ હ ઼ ઽ ા િ ી ુ ૂ ૃ ૄ ૅ ે ૈ ૉ\
+/// ો ૌ ્ ૐ ૠ ૡ ૢ ૣ ૦ ૧ ૨ ૩ ૪ ૫ ૬ ૭\
+/// ૮ ૯ ૰ ૱ ૹ ૺ ૻ ૼ ૽ ૾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a81}: 'ઁ'
     pub const SIGN_CANDRABINDU: char = 'ઁ';
@@ -189,14 +191,7 @@ pub mod constants {
     pub const SIGN_CIRCLE_NUKTA_ABOVE: char = '૾';
 }
 
-/// \u{a80} → \u{aff}\
-///\
-/// ઁ ં ઃ અ આ ઇ ઈ ઉ ઊ ઋ ઌ ઍ એ ઐ ઑ ઓ
-/// ઔ ક ખ ગ ઘ ઙ ચ છ જ ઝ ઞ ટ ઠ ડ ઢ ણ
-/// ત થ દ ધ ન પ ફ બ ભ મ ય ર લ ળ વ શ
-/// ષ સ હ ઼ ઽ ા િ ી ુ ૂ ૃ ૄ ૅ ે ૈ ૉ
-/// ો ૌ ્ ૐ ૠ ૡ ૢ ૣ ૦ ૧ ૨ ૩ ૪ ૫ ૬ ૭
-/// ૮ ૯ ૰ ૱ ૹ ૺ ૻ ૼ ૽ ૾
+/// An enum to represent all characters in the Gujarati block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Gujarati {
     /// \u{a81}: 'ઁ'

@@ -1,7 +1,9 @@
 /// \u{10fe0} → \u{10fff}\
 ///\
-/// 𐿠 𐿡 𐿢 𐿣 𐿤 𐿥 𐿦 𐿧 𐿨 𐿩 𐿪 𐿫 𐿬 𐿭 𐿮 𐿯
-/// 𐿰 𐿱 𐿲 𐿳 𐿴 𐿵 𐿶
+/// 𐿠 𐿡 𐿢 𐿣 𐿤 𐿥 𐿦 𐿧 𐿨 𐿩 𐿪 𐿫 𐿬 𐿭 𐿮 𐿯\
+/// 𐿰 𐿱 𐿲 𐿳 𐿴 𐿵 𐿶\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10fe0}: '𐿠'
     pub const LETTER_ALEPH: char = '𐿠';
@@ -51,10 +53,7 @@ pub mod constants {
     pub const LIGATURE_ZAYIN_DASH_YODH: char = '𐿶';
 }
 
-/// \u{10fe0} → \u{10fff}\
-///\
-/// 𐿠 𐿡 𐿢 𐿣 𐿤 𐿥 𐿦 𐿧 𐿨 𐿩 𐿪 𐿫 𐿬 𐿭 𐿮 𐿯
-/// 𐿰 𐿱 𐿲 𐿳 𐿴 𐿵 𐿶
+/// An enum to represent all characters in the Elymaic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Elymaic {
     /// \u{10fe0}: '𐿠'

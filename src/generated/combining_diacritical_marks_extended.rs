@@ -1,6 +1,8 @@
 /// \u{1ab0} → \u{1aff}\
 ///\
-/// ᪰ ᪱ ᪲ ᪳ ᪴ ᪵ ᪶ ᪷ ᪸ ᪹ ᪺ ᪻ ᪼ ᪽ ᪾
+/// ᪰ ᪱ ᪲ ᪳ ᪴ ᪵ ᪶ ᪷ ᪸ ᪹ ᪺ ᪻ ᪼ ᪽ ᪾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1ab0}: '᪰'
     pub const COMBINING_DOUBLED_CIRCUMFLEX_ACCENT: char = '᪰';
@@ -34,9 +36,7 @@ pub mod constants {
     pub const COMBINING_PARENTHESES_OVERLAY: char = '᪾';
 }
 
-/// \u{1ab0} → \u{1aff}\
-///\
-/// ᪰ ᪱ ᪲ ᪳ ᪴ ᪵ ᪶ ᪷ ᪸ ᪹ ᪺ ᪻ ᪼ ᪽ ᪾
+/// An enum to represent all characters in the CombiningDiacriticalMarksExtended block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CombiningDiacriticalMarksExtended {
     /// \u{1ab0}: '᪰'

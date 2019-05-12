@@ -1,11 +1,13 @@
 /// \u{e80} → \u{eff}\
 ///\
-/// ກ ຂ ຄ ຆ ງ ຈ ຉ ຊ ຌ ຍ ຎ ຏ ຐ ຑ ຒ ຓ
-/// ດ ຕ ຖ ທ ຘ ນ ບ ປ ຜ ຝ ພ ຟ ຠ ມ ຢ ຣ
-/// ລ ວ ຨ ຩ ສ ຫ ຬ ອ ຮ ຯ ະ ັ າ ຳ ິ ີ
-/// ຶ ື ຸ ູ ຺ ົ ຼ ຽ ເ ແ ໂ ໃ ໄ ໆ ່ ້
-/// ໊ ໋ ໌ ໍ ໐ ໑ ໒ ໓ ໔ ໕ ໖ ໗ ໘ ໙ ໜ ໝ
-/// ໞ ໟ
+/// ກ ຂ ຄ ຆ ງ ຈ ຉ ຊ ຌ ຍ ຎ ຏ ຐ ຑ ຒ ຓ\
+/// ດ ຕ ຖ ທ ຘ ນ ບ ປ ຜ ຝ ພ ຟ ຠ ມ ຢ ຣ\
+/// ລ ວ ຨ ຩ ສ ຫ ຬ ອ ຮ ຯ ະ ັ າ ຳ ິ ີ\
+/// ຶ ື ຸ ູ ຺ ົ ຼ ຽ ເ ແ ໂ ໃ ໄ ໆ ່ ້\
+/// ໊ ໋ ໌ ໍ ໐ ໑ ໒ ໓ ໔ ໕ ໖ ໗ ໘ ໙ ໜ ໝ\
+/// ໞ ໟ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{e81}: 'ກ'
     pub const LETTER_KO: char = 'ກ';
@@ -173,14 +175,7 @@ pub mod constants {
     pub const LETTER_KHMU_NYO: char = 'ໟ';
 }
 
-/// \u{e80} → \u{eff}\
-///\
-/// ກ ຂ ຄ ຆ ງ ຈ ຉ ຊ ຌ ຍ ຎ ຏ ຐ ຑ ຒ ຓ
-/// ດ ຕ ຖ ທ ຘ ນ ບ ປ ຜ ຝ ພ ຟ ຠ ມ ຢ ຣ
-/// ລ ວ ຨ ຩ ສ ຫ ຬ ອ ຮ ຯ ະ ັ າ ຳ ິ ີ
-/// ຶ ື ຸ ູ ຺ ົ ຼ ຽ ເ ແ ໂ ໃ ໄ ໆ ່ ້
-/// ໊ ໋ ໌ ໍ ໐ ໑ ໒ ໓ ໔ ໕ ໖ ໗ ໘ ໙ ໜ ໝ
-/// ໞ ໟ
+/// An enum to represent all characters in the Lao block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Lao {
     /// \u{e81}: 'ກ'

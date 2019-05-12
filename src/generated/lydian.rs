@@ -1,7 +1,9 @@
 /// \u{10920} → \u{1093f}\
 ///\
-/// 𐤠 𐤡 𐤢 𐤣 𐤤 𐤥 𐤦 𐤧 𐤨 𐤩 𐤪 𐤫 𐤬 𐤭 𐤮 𐤯
-/// 𐤰 𐤱 𐤲 𐤳 𐤴 𐤵 𐤶 𐤷 𐤸 𐤹
+/// 𐤠 𐤡 𐤢 𐤣 𐤤 𐤥 𐤦 𐤧 𐤨 𐤩 𐤪 𐤫 𐤬 𐤭 𐤮 𐤯\
+/// 𐤰 𐤱 𐤲 𐤳 𐤴 𐤵 𐤶 𐤷 𐤸 𐤹\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10920}: '𐤠'
     pub const LETTER_A: char = '𐤠';
@@ -57,10 +59,7 @@ pub mod constants {
     pub const LETTER_C: char = '𐤹';
 }
 
-/// \u{10920} → \u{1093f}\
-///\
-/// 𐤠 𐤡 𐤢 𐤣 𐤤 𐤥 𐤦 𐤧 𐤨 𐤩 𐤪 𐤫 𐤬 𐤭 𐤮 𐤯
-/// 𐤰 𐤱 𐤲 𐤳 𐤴 𐤵 𐤶 𐤷 𐤸 𐤹
+/// An enum to represent all characters in the Lydian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Lydian {
     /// \u{10920}: '𐤠'

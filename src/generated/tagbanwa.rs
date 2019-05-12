@@ -1,7 +1,9 @@
 /// \u{1760} → \u{177f}\
 ///\
-/// ᝠ ᝡ ᝢ ᝣ ᝤ ᝥ ᝦ ᝧ ᝨ ᝩ ᝪ ᝫ ᝬ ᝮ ᝯ ᝰ
-/// ᝲ ᝳ
+/// ᝠ ᝡ ᝢ ᝣ ᝤ ᝥ ᝦ ᝧ ᝨ ᝩ ᝪ ᝫ ᝬ ᝮ ᝯ ᝰ\
+/// ᝲ ᝳ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1760}: 'ᝠ'
     pub const LETTER_A: char = 'ᝠ';
@@ -41,10 +43,7 @@ pub mod constants {
     pub const VOWEL_SIGN_U: char = 'ᝳ';
 }
 
-/// \u{1760} → \u{177f}\
-///\
-/// ᝠ ᝡ ᝢ ᝣ ᝤ ᝥ ᝦ ᝧ ᝨ ᝩ ᝪ ᝫ ᝬ ᝮ ᝯ ᝰ
-/// ᝲ ᝳ
+/// An enum to represent all characters in the Tagbanwa block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Tagbanwa {
     /// \u{1760}: 'ᝠ'

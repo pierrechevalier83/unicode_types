@@ -1,9 +1,11 @@
 /// \u{abc0} → \u{abff}\
 ///\
-/// ꯀ ꯁ ꯂ ꯃ ꯄ ꯅ ꯆ ꯇ ꯈ ꯉ ꯊ ꯋ ꯌ ꯍ ꯎ ꯏ
-/// ꯐ ꯑ ꯒ ꯓ ꯔ ꯕ ꯖ ꯗ ꯘ ꯙ ꯚ ꯛ ꯜ ꯝ ꯞ ꯟ
-/// ꯠ ꯡ ꯢ ꯣ ꯤ ꯥ ꯦ ꯧ ꯨ ꯩ ꯪ ꯫ ꯬ ꯭ ꯰ ꯱
-/// ꯲ ꯳ ꯴ ꯵ ꯶ ꯷ ꯸ ꯹
+/// ꯀ ꯁ ꯂ ꯃ ꯄ ꯅ ꯆ ꯇ ꯈ ꯉ ꯊ ꯋ ꯌ ꯍ ꯎ ꯏ\
+/// ꯐ ꯑ ꯒ ꯓ ꯔ ꯕ ꯖ ꯗ ꯘ ꯙ ꯚ ꯛ ꯜ ꯝ ꯞ ꯟ\
+/// ꯠ ꯡ ꯢ ꯣ ꯤ ꯥ ꯦ ꯧ ꯨ ꯩ ꯪ ꯫ ꯬ ꯭ ꯰ ꯱\
+/// ꯲ ꯳ ꯴ ꯵ ꯶ ꯷ ꯸ ꯹\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{abc0}: 'ꯀ'
     pub const LETTER_KOK: char = 'ꯀ';
@@ -119,12 +121,7 @@ pub mod constants {
     pub const DIGIT_NINE: char = '꯹';
 }
 
-/// \u{abc0} → \u{abff}\
-///\
-/// ꯀ ꯁ ꯂ ꯃ ꯄ ꯅ ꯆ ꯇ ꯈ ꯉ ꯊ ꯋ ꯌ ꯍ ꯎ ꯏ
-/// ꯐ ꯑ ꯒ ꯓ ꯔ ꯕ ꯖ ꯗ ꯘ ꯙ ꯚ ꯛ ꯜ ꯝ ꯞ ꯟ
-/// ꯠ ꯡ ꯢ ꯣ ꯤ ꯥ ꯦ ꯧ ꯨ ꯩ ꯪ ꯫ ꯬ ꯭ ꯰ ꯱
-/// ꯲ ꯳ ꯴ ꯵ ꯶ ꯷ ꯸ ꯹
+/// An enum to represent all characters in the MeeteiMayek block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum MeeteiMayek {
     /// \u{abc0}: 'ꯀ'

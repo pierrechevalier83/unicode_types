@@ -1,7 +1,9 @@
 /// \u{10b60} → \u{10b7f}\
 ///\
-/// 𐭠 𐭡 𐭢 𐭣 𐭤 𐭥 𐭦 𐭧 𐭨 𐭩 𐭪 𐭫 𐭬 𐭭 𐭮 𐭯
-/// 𐭰 𐭱 𐭲 𐭸 𐭹 𐭺 𐭻 𐭼 𐭽 𐭾
+/// 𐭠 𐭡 𐭢 𐭣 𐭤 𐭥 𐭦 𐭧 𐭨 𐭩 𐭪 𐭫 𐭬 𐭭 𐭮 𐭯\
+/// 𐭰 𐭱 𐭲 𐭸 𐭹 𐭺 𐭻 𐭼 𐭽 𐭾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10b60}: '𐭠'
     pub const LETTER_ALEPH: char = '𐭠';
@@ -57,10 +59,7 @@ pub mod constants {
     pub const NUMBER_ONE_HUNDRED: char = '𐭾';
 }
 
-/// \u{10b60} → \u{10b7f}\
-///\
-/// 𐭠 𐭡 𐭢 𐭣 𐭤 𐭥 𐭦 𐭧 𐭨 𐭩 𐭪 𐭫 𐭬 𐭭 𐭮 𐭯
-/// 𐭰 𐭱 𐭲 𐭸 𐭹 𐭺 𐭻 𐭼 𐭽 𐭾
+/// An enum to represent all characters in the InscriptionalPahlavi block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum InscriptionalPahlavi {
     /// \u{10b60}: '𐭠'

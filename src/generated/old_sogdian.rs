@@ -1,8 +1,10 @@
 /// \u{10f00} → \u{10f2f}\
 ///\
-/// 𐼀 𐼁 𐼂 𐼃 𐼄 𐼅 𐼆 𐼇 𐼈 𐼉 𐼊 𐼋 𐼌 𐼍 𐼎 𐼏
-/// 𐼐 𐼑 𐼒 𐼓 𐼔 𐼕 𐼖 𐼗 𐼘 𐼙 𐼚 𐼛 𐼜 𐼝 𐼞 𐼟
-/// 𐼠 𐼡 𐼢 𐼣 𐼤 𐼥 𐼦 𐼧
+/// 𐼀 𐼁 𐼂 𐼃 𐼄 𐼅 𐼆 𐼇 𐼈 𐼉 𐼊 𐼋 𐼌 𐼍 𐼎 𐼏\
+/// 𐼐 𐼑 𐼒 𐼓 𐼔 𐼕 𐼖 𐼗 𐼘 𐼙 𐼚 𐼛 𐼜 𐼝 𐼞 𐼟\
+/// 𐼠 𐼡 𐼢 𐼣 𐼤 𐼥 𐼦 𐼧\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10f00}: '𐼀'
     pub const LETTER_ALEPH: char = '𐼀';
@@ -86,11 +88,7 @@ pub mod constants {
     pub const LIGATURE_AYIN_DASH_DALETH: char = '𐼧';
 }
 
-/// \u{10f00} → \u{10f2f}\
-///\
-/// 𐼀 𐼁 𐼂 𐼃 𐼄 𐼅 𐼆 𐼇 𐼈 𐼉 𐼊 𐼋 𐼌 𐼍 𐼎 𐼏
-/// 𐼐 𐼑 𐼒 𐼓 𐼔 𐼕 𐼖 𐼗 𐼘 𐼙 𐼚 𐼛 𐼜 𐼝 𐼞 𐼟
-/// 𐼠 𐼡 𐼢 𐼣 𐼤 𐼥 𐼦 𐼧
+/// An enum to represent all characters in the OldSogdian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum OldSogdian {
     /// \u{10f00}: '𐼀'

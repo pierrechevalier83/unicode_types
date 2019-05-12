@@ -1,7 +1,9 @@
 /// \u{10b80} → \u{10baf}\
 ///\
-/// 𐮀 𐮁 𐮂 𐮃 𐮄 𐮅 𐮆 𐮇 𐮈 𐮉 𐮊 𐮋 𐮌 𐮍 𐮎 𐮏
-/// 𐮐 𐮑 𐮙 𐮚 𐮛 𐮜 𐮩 𐮪 𐮫 𐮬 𐮭 𐮮
+/// 𐮀 𐮁 𐮂 𐮃 𐮄 𐮅 𐮆 𐮇 𐮈 𐮉 𐮊 𐮋 𐮌 𐮍 𐮎 𐮏\
+/// 𐮐 𐮑 𐮙 𐮚 𐮛 𐮜 𐮩 𐮪 𐮫 𐮬 𐮭 𐮮\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10b80}: '𐮀'
     pub const LETTER_ALEPH: char = '𐮀';
@@ -61,10 +63,7 @@ pub mod constants {
     pub const NUMBER_TWENTY: char = '𐮮';
 }
 
-/// \u{10b80} → \u{10baf}\
-///\
-/// 𐮀 𐮁 𐮂 𐮃 𐮄 𐮅 𐮆 𐮇 𐮈 𐮉 𐮊 𐮋 𐮌 𐮍 𐮎 𐮏
-/// 𐮐 𐮑 𐮙 𐮚 𐮛 𐮜 𐮩 𐮪 𐮫 𐮬 𐮭 𐮮
+/// An enum to represent all characters in the PsalterPahlavi block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum PsalterPahlavi {
     /// \u{10b80}: '𐮀'

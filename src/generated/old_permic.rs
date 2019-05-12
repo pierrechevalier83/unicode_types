@@ -1,8 +1,10 @@
 /// \u{10350} → \u{1037f}\
 ///\
-/// 𐍐 𐍑 𐍒 𐍓 𐍔 𐍕 𐍖 𐍗 𐍘 𐍙 𐍚 𐍛 𐍜 𐍝 𐍞 𐍟
-/// 𐍠 𐍡 𐍢 𐍣 𐍤 𐍥 𐍦 𐍧 𐍨 𐍩 𐍪 𐍫 𐍬 𐍭 𐍮 𐍯
-/// 𐍰 𐍱 𐍲 𐍳 𐍴 𐍵 𐍶 𐍷 𐍸 𐍹 𐍺
+/// 𐍐 𐍑 𐍒 𐍓 𐍔 𐍕 𐍖 𐍗 𐍘 𐍙 𐍚 𐍛 𐍜 𐍝 𐍞 𐍟\
+/// 𐍠 𐍡 𐍢 𐍣 𐍤 𐍥 𐍦 𐍧 𐍨 𐍩 𐍪 𐍫 𐍬 𐍭 𐍮 𐍯\
+/// 𐍰 𐍱 𐍲 𐍳 𐍴 𐍵 𐍶 𐍷 𐍸 𐍹 𐍺\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10350}: '𐍐'
     pub const LETTER_AN: char = '𐍐';
@@ -92,11 +94,7 @@ pub mod constants {
     pub const COMBINING_LETTER_SII: char = '𐍺';
 }
 
-/// \u{10350} → \u{1037f}\
-///\
-/// 𐍐 𐍑 𐍒 𐍓 𐍔 𐍕 𐍖 𐍗 𐍘 𐍙 𐍚 𐍛 𐍜 𐍝 𐍞 𐍟
-/// 𐍠 𐍡 𐍢 𐍣 𐍤 𐍥 𐍦 𐍧 𐍨 𐍩 𐍪 𐍫 𐍬 𐍭 𐍮 𐍯
-/// 𐍰 𐍱 𐍲 𐍳 𐍴 𐍵 𐍶 𐍷 𐍸 𐍹 𐍺
+/// An enum to represent all characters in the OldPermic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum OldPermic {
     /// \u{10350}: '𐍐'

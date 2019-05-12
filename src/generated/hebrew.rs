@@ -1,11 +1,13 @@
 /// \u{590} → \u{5ff}\
 ///\
-/// ֑ ֒ ֓ ֔ ֕ ֖ ֗ ֘ ֙ ֚ ֛ ֜ ֝ ֞ ֟ ֠
-/// ֡ ֢ ֣ ֤ ֥ ֦ ֧ ֨ ֩ ֪ ֫ ֬ ֭ ֮ ֯ ְ
-/// ֱ ֲ ֳ ִ ֵ ֶ ַ ָ ֹ ֺ ֻ ּ ֽ ־ ֿ ׀
-/// ׁ ׂ ׃ ׄ ׅ ׆ ׇ א ב ג ד ה ו ז ח ט
-/// י ך כ ל ם מ ן נ ס ע ף פ ץ צ ק ר
-/// ש ת ׯ װ ױ ײ ׳ ״
+/// ֑ ֒ ֓ ֔ ֕ ֖ ֗ ֘ ֙ ֚ ֛ ֜ ֝ ֞ ֟ ֠\
+/// ֡ ֢ ֣ ֤ ֥ ֦ ֧ ֨ ֩ ֪ ֫ ֬ ֭ ֮ ֯ ְ\
+/// ֱ ֲ ֳ ִ ֵ ֶ ַ ָ ֹ ֺ ֻ ּ ֽ ־ ֿ ׀\
+/// ׁ ׂ ׃ ׄ ׅ ׆ ׇ א ב ג ד ה ו ז ח ט\
+/// י ך כ ל ם מ ן נ ס ע ף פ ץ צ ק ר\
+/// ש ת ׯ װ ױ ײ ׳ ״\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{591}: '֑'
     pub const ACCENT_ETNAHTA: char = '֑';
@@ -185,14 +187,7 @@ pub mod constants {
     pub const PUNCTUATION_GERSHAYIM: char = '״';
 }
 
-/// \u{590} → \u{5ff}\
-///\
-/// ֑ ֒ ֓ ֔ ֕ ֖ ֗ ֘ ֙ ֚ ֛ ֜ ֝ ֞ ֟ ֠
-/// ֡ ֢ ֣ ֤ ֥ ֦ ֧ ֨ ֩ ֪ ֫ ֬ ֭ ֮ ֯ ְ
-/// ֱ ֲ ֳ ִ ֵ ֶ ַ ָ ֹ ֺ ֻ ּ ֽ ־ ֿ ׀
-/// ׁ ׂ ׃ ׄ ׅ ׆ ׇ א ב ג ד ה ו ז ח ט
-/// י ך כ ל ם מ ן נ ס ע ף פ ץ צ ק ר
-/// ש ת ׯ װ ױ ײ ׳ ״
+/// An enum to represent all characters in the Hebrew block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Hebrew {
     /// \u{591}: '֑'

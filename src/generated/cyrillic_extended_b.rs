@@ -1,11 +1,13 @@
 /// \u{a640} → \u{a69f}\
 ///\
-/// Ꙁ ꙁ Ꙃ ꙃ Ꙅ ꙅ Ꙇ ꙇ Ꙉ ꙉ Ꙋ ꙋ Ꙍ ꙍ Ꙏ ꙏ
-/// Ꙑ ꙑ Ꙓ ꙓ Ꙕ ꙕ Ꙗ ꙗ Ꙙ ꙙ Ꙛ ꙛ Ꙝ ꙝ Ꙟ ꙟ
-/// Ꙡ ꙡ Ꙣ ꙣ Ꙥ ꙥ Ꙧ ꙧ Ꙩ ꙩ Ꙫ ꙫ Ꙭ ꙭ ꙮ ꙯
-/// ꙰ ꙱ ꙲ ꙳ ꙴ ꙵ ꙶ ꙷ ꙸ ꙹ ꙺ ꙻ ꙼ ꙽ ꙾ ꙿ
-/// Ꚁ ꚁ Ꚃ ꚃ Ꚅ ꚅ Ꚇ ꚇ Ꚉ ꚉ Ꚋ ꚋ Ꚍ ꚍ Ꚏ ꚏ
-/// Ꚑ ꚑ Ꚓ ꚓ Ꚕ ꚕ Ꚗ ꚗ Ꚙ ꚙ Ꚛ ꚛ ꚜ ꚝ ꚞ
+/// Ꙁ ꙁ Ꙃ ꙃ Ꙅ ꙅ Ꙇ ꙇ Ꙉ ꙉ Ꙋ ꙋ Ꙍ ꙍ Ꙏ ꙏ\
+/// Ꙑ ꙑ Ꙓ ꙓ Ꙕ ꙕ Ꙗ ꙗ Ꙙ ꙙ Ꙛ ꙛ Ꙝ ꙝ Ꙟ ꙟ\
+/// Ꙡ ꙡ Ꙣ ꙣ Ꙥ ꙥ Ꙧ ꙧ Ꙩ ꙩ Ꙫ ꙫ Ꙭ ꙭ ꙮ ꙯\
+/// ꙰ ꙱ ꙲ ꙳ ꙴ ꙵ ꙶ ꙷ ꙸ ꙹ ꙺ ꙻ ꙼ ꙽ ꙾ ꙿ\
+/// Ꚁ ꚁ Ꚃ ꚃ Ꚅ ꚅ Ꚇ ꚇ Ꚉ ꚉ Ꚋ ꚋ Ꚍ ꚍ Ꚏ ꚏ\
+/// Ꚑ ꚑ Ꚓ ꚓ Ꚕ ꚕ Ꚗ ꚗ Ꚙ ꚙ Ꚛ ꚛ ꚜ ꚝ ꚞ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a640}: 'Ꙁ'
     pub const CYRILLIC_CAPITAL_LETTER_ZEMLYA: char = 'Ꙁ';
@@ -199,14 +201,7 @@ pub mod constants {
     pub const COMBINING_CYRILLIC_LETTER_EF: char = 'ꚞ';
 }
 
-/// \u{a640} → \u{a69f}\
-///\
-/// Ꙁ ꙁ Ꙃ ꙃ Ꙅ ꙅ Ꙇ ꙇ Ꙉ ꙉ Ꙋ ꙋ Ꙍ ꙍ Ꙏ ꙏ
-/// Ꙑ ꙑ Ꙓ ꙓ Ꙕ ꙕ Ꙗ ꙗ Ꙙ ꙙ Ꙛ ꙛ Ꙝ ꙝ Ꙟ ꙟ
-/// Ꙡ ꙡ Ꙣ ꙣ Ꙥ ꙥ Ꙧ ꙧ Ꙩ ꙩ Ꙫ ꙫ Ꙭ ꙭ ꙮ ꙯
-/// ꙰ ꙱ ꙲ ꙳ ꙴ ꙵ ꙶ ꙷ ꙸ ꙹ ꙺ ꙻ ꙼ ꙽ ꙾ ꙿ
-/// Ꚁ ꚁ Ꚃ ꚃ Ꚅ ꚅ Ꚇ ꚇ Ꚉ ꚉ Ꚋ ꚋ Ꚍ ꚍ Ꚏ ꚏ
-/// Ꚑ ꚑ Ꚓ ꚓ Ꚕ ꚕ Ꚗ ꚗ Ꚙ ꚙ Ꚛ ꚛ ꚜ ꚝ ꚞ
+/// An enum to represent all characters in the CyrillicExtendedB block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CyrillicExtendedB {
     /// \u{a640}: 'Ꙁ'

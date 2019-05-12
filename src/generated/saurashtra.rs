@@ -1,11 +1,13 @@
 /// \u{a880} → \u{a8df}\
 ///\
-/// ꢀ ꢁ ꢂ ꢃ ꢄ ꢅ ꢆ ꢇ ꢈ ꢉ ꢊ ꢋ ꢌ ꢍ ꢎ ꢏ
-/// ꢐ ꢑ ꢒ ꢓ ꢔ ꢕ ꢖ ꢗ ꢘ ꢙ ꢚ ꢛ ꢜ ꢝ ꢞ ꢟ
-/// ꢠ ꢡ ꢢ ꢣ ꢤ ꢥ ꢦ ꢧ ꢨ ꢩ ꢪ ꢫ ꢬ ꢭ ꢮ ꢯ
-/// ꢰ ꢱ ꢲ ꢳ ꢴ ꢵ ꢶ ꢷ ꢸ ꢹ ꢺ ꢻ ꢼ ꢽ ꢾ ꢿ
-/// ꣀ ꣁ ꣂ ꣃ ꣄ ꣅ ꣎ ꣏ ꣐ ꣑ ꣒ ꣓ ꣔ ꣕ ꣖ ꣗
-/// ꣘ ꣙
+/// ꢀ ꢁ ꢂ ꢃ ꢄ ꢅ ꢆ ꢇ ꢈ ꢉ ꢊ ꢋ ꢌ ꢍ ꢎ ꢏ\
+/// ꢐ ꢑ ꢒ ꢓ ꢔ ꢕ ꢖ ꢗ ꢘ ꢙ ꢚ ꢛ ꢜ ꢝ ꢞ ꢟ\
+/// ꢠ ꢡ ꢢ ꢣ ꢤ ꢥ ꢦ ꢧ ꢨ ꢩ ꢪ ꢫ ꢬ ꢭ ꢮ ꢯ\
+/// ꢰ ꢱ ꢲ ꢳ ꢴ ꢵ ꢶ ꢷ ꢸ ꢹ ꢺ ꢻ ꢼ ꢽ ꢾ ꢿ\
+/// ꣀ ꣁ ꣂ ꣃ ꣄ ꣅ ꣎ ꣏ ꣐ ꣑ ꣒ ꣓ ꣔ ꣕ ꣖ ꣗\
+/// ꣘ ꣙\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a880}: 'ꢀ'
     pub const SIGN_ANUSVARA: char = 'ꢀ';
@@ -173,14 +175,7 @@ pub mod constants {
     pub const DIGIT_NINE: char = '꣙';
 }
 
-/// \u{a880} → \u{a8df}\
-///\
-/// ꢀ ꢁ ꢂ ꢃ ꢄ ꢅ ꢆ ꢇ ꢈ ꢉ ꢊ ꢋ ꢌ ꢍ ꢎ ꢏ
-/// ꢐ ꢑ ꢒ ꢓ ꢔ ꢕ ꢖ ꢗ ꢘ ꢙ ꢚ ꢛ ꢜ ꢝ ꢞ ꢟ
-/// ꢠ ꢡ ꢢ ꢣ ꢤ ꢥ ꢦ ꢧ ꢨ ꢩ ꢪ ꢫ ꢬ ꢭ ꢮ ꢯ
-/// ꢰ ꢱ ꢲ ꢳ ꢴ ꢵ ꢶ ꢷ ꢸ ꢹ ꢺ ꢻ ꢼ ꢽ ꢾ ꢿ
-/// ꣀ ꣁ ꣂ ꣃ ꣄ ꣅ ꣎ ꣏ ꣐ ꣑ ꣒ ꣓ ꣔ ꣕ ꣖ ꣗
-/// ꣘ ꣙
+/// An enum to represent all characters in the Saurashtra block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Saurashtra {
     /// \u{a880}: 'ꢀ'

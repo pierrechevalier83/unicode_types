@@ -1,6 +1,8 @@
 /// \u{ac00} → \u{d7af}\
 ///\
-/// 가 힣
+/// 가 힣\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{ac00}: '가'
     pub const HANGUL_SYLLABLE_FIRST: char = '가';
@@ -8,9 +10,7 @@ pub mod constants {
     pub const HANGUL_SYLLABLE_LAST: char = '힣';
 }
 
-/// \u{ac00} → \u{d7af}\
-///\
-/// 가 힣
+/// An enum to represent all characters in the HangulSyllables block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum HangulSyllables {
     /// \u{ac00}: '가'

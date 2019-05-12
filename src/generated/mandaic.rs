@@ -1,7 +1,9 @@
 /// \u{840} → \u{85f}\
 ///\
-/// ࡀ ࡁ ࡂ ࡃ ࡄ ࡅ ࡆ ࡇ ࡈ ࡉ ࡊ ࡋ ࡌ ࡍ ࡎ ࡏ
-/// ࡐ ࡑ ࡒ ࡓ ࡔ ࡕ ࡖ ࡗ ࡘ ࡙ ࡚ ࡛ ࡞
+/// ࡀ ࡁ ࡂ ࡃ ࡄ ࡅ ࡆ ࡇ ࡈ ࡉ ࡊ ࡋ ࡌ ࡍ ࡎ ࡏ\
+/// ࡐ ࡑ ࡒ ࡓ ࡔ ࡕ ࡖ ࡗ ࡘ ࡙ ࡚ ࡛ ࡞\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{840}: 'ࡀ'
     pub const LETTER_HALQA: char = 'ࡀ';
@@ -63,10 +65,7 @@ pub mod constants {
     pub const PUNCTUATION: char = '࡞';
 }
 
-/// \u{840} → \u{85f}\
-///\
-/// ࡀ ࡁ ࡂ ࡃ ࡄ ࡅ ࡆ ࡇ ࡈ ࡉ ࡊ ࡋ ࡌ ࡍ ࡎ ࡏ
-/// ࡐ ࡑ ࡒ ࡓ ࡔ ࡕ ࡖ ࡗ ࡘ ࡙ ࡚ ࡛ ࡞
+/// An enum to represent all characters in the Mandaic block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Mandaic {
     /// \u{840}: 'ࡀ'

@@ -1,7 +1,9 @@
 /// \u{1740} → \u{175f}\
 ///\
-/// ᝀ ᝁ ᝂ ᝃ ᝄ ᝅ ᝆ ᝇ ᝈ ᝉ ᝊ ᝋ ᝌ ᝍ ᝎ ᝏ
-/// ᝐ ᝑ ᝒ ᝓ
+/// ᝀ ᝁ ᝂ ᝃ ᝄ ᝅ ᝆ ᝇ ᝈ ᝉ ᝊ ᝋ ᝌ ᝍ ᝎ ᝏ\
+/// ᝐ ᝑ ᝒ ᝓ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1740}: 'ᝀ'
     pub const LETTER_A: char = 'ᝀ';
@@ -45,10 +47,7 @@ pub mod constants {
     pub const VOWEL_SIGN_U: char = 'ᝓ';
 }
 
-/// \u{1740} → \u{175f}\
-///\
-/// ᝀ ᝁ ᝂ ᝃ ᝄ ᝅ ᝆ ᝇ ᝈ ᝉ ᝊ ᝋ ᝌ ᝍ ᝎ ᝏ
-/// ᝐ ᝑ ᝒ ᝓ
+/// An enum to represent all characters in the Buhid block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Buhid {
     /// \u{1740}: 'ᝀ'

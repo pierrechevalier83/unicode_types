@@ -1,13 +1,15 @@
 /// \u{d00} → \u{d7f}\
 ///\
-/// ഀ ഁ ം ഃ അ ആ ഇ ഈ ഉ ഊ ഋ ഌ എ ഏ ഐ ഒ
-/// ഓ ഔ ക ഖ ഗ ഘ ങ ച ഛ ജ ഝ ഞ ട ഠ ഡ ഢ
-/// ണ ത ഥ ദ ധ ന ഩ പ ഫ ബ ഭ മ യ ര റ ല
-/// ള ഴ വ ശ ഷ സ ഹ ഺ ഻ ഼ ഽ ാ ി ീ ു ൂ
-/// ൃ ൄ െ േ ൈ ൊ ോ ൌ ് ൎ ൏ ൔ ൕ ൖ ൗ ൘
-/// ൙ ൚ ൛ ൜ ൝ ൞ ൟ ൠ ൡ ൢ ൣ ൦ ൧ ൨ ൩ ൪
-/// ൫ ൬ ൭ ൮ ൯ ൰ ൱ ൲ ൳ ൴ ൵ ൶ ൷ ൸ ൹ ൺ
-/// ൻ ർ ൽ ൾ
+/// ഀ ഁ ം ഃ അ ആ ഇ ഈ ഉ ഊ ഋ ഌ എ ഏ ഐ ഒ\
+/// ഓ ഔ ക ഖ ഗ ഘ ങ ച ഛ ജ ഝ ഞ ട ഠ ഡ ഢ\
+/// ണ ത ഥ ദ ധ ന ഩ പ ഫ ബ ഭ മ യ ര റ ല\
+/// ള ഴ വ ശ ഷ സ ഹ ഺ ഻ ഼ ഽ ാ ി ീ ു ൂ\
+/// ൃ ൄ െ േ ൈ ൊ ോ ൌ ് ൎ ൏ ൔ ൕ ൖ ൗ ൘\
+/// ൙ ൚ ൛ ൜ ൝ ൞ ൟ ൠ ൡ ൢ ൣ ൦ ൧ ൨ ൩ ൪\
+/// ൫ ൬ ൭ ൮ ൯ ൰ ൱ ൲ ൳ ൴ ൵ ൶ ൷ ൸ ൹ ൺ\
+/// ൻ ർ ൽ ൾ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{d00}: 'ഀ'
     pub const SIGN_COMBINING_ANUSVARA_ABOVE: char = 'ഀ';
@@ -243,16 +245,7 @@ pub mod constants {
     pub const LETTER_CHILLU_LL: char = 'ൾ';
 }
 
-/// \u{d00} → \u{d7f}\
-///\
-/// ഀ ഁ ം ഃ അ ആ ഇ ഈ ഉ ഊ ഋ ഌ എ ഏ ഐ ഒ
-/// ഓ ഔ ക ഖ ഗ ഘ ങ ച ഛ ജ ഝ ഞ ട ഠ ഡ ഢ
-/// ണ ത ഥ ദ ധ ന ഩ പ ഫ ബ ഭ മ യ ര റ ല
-/// ള ഴ വ ശ ഷ സ ഹ ഺ ഻ ഼ ഽ ാ ി ീ ു ൂ
-/// ൃ ൄ െ േ ൈ ൊ ോ ൌ ് ൎ ൏ ൔ ൕ ൖ ൗ ൘
-/// ൙ ൚ ൛ ൜ ൝ ൞ ൟ ൠ ൡ ൢ ൣ ൦ ൧ ൨ ൩ ൪
-/// ൫ ൬ ൭ ൮ ൯ ൰ ൱ ൲ ൳ ൴ ൵ ൶ ൷ ൸ ൹ ൺ
-/// ൻ ർ ൽ ൾ
+/// An enum to represent all characters in the Malayalam block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Malayalam {
     /// \u{d00}: 'ഀ'

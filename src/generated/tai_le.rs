@@ -1,8 +1,10 @@
 /// \u{1950} → \u{197f}\
 ///\
-/// ᥐ ᥑ ᥒ ᥓ ᥔ ᥕ ᥖ ᥗ ᥘ ᥙ ᥚ ᥛ ᥜ ᥝ ᥞ ᥟ
-/// ᥠ ᥡ ᥢ ᥣ ᥤ ᥥ ᥦ ᥧ ᥨ ᥩ ᥪ ᥫ ᥬ ᥭ ᥰ ᥱ
-/// ᥲ ᥳ ᥴ
+/// ᥐ ᥑ ᥒ ᥓ ᥔ ᥕ ᥖ ᥗ ᥘ ᥙ ᥚ ᥛ ᥜ ᥝ ᥞ ᥟ\
+/// ᥠ ᥡ ᥢ ᥣ ᥤ ᥥ ᥦ ᥧ ᥨ ᥩ ᥪ ᥫ ᥬ ᥭ ᥰ ᥱ\
+/// ᥲ ᥳ ᥴ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1950}: 'ᥐ'
     pub const LETTER_KA: char = 'ᥐ';
@@ -76,11 +78,7 @@ pub mod constants {
     pub const LETTER_TONE_DASH_6: char = 'ᥴ';
 }
 
-/// \u{1950} → \u{197f}\
-///\
-/// ᥐ ᥑ ᥒ ᥓ ᥔ ᥕ ᥖ ᥗ ᥘ ᥙ ᥚ ᥛ ᥜ ᥝ ᥞ ᥟ
-/// ᥠ ᥡ ᥢ ᥣ ᥤ ᥥ ᥦ ᥧ ᥨ ᥩ ᥪ ᥫ ᥬ ᥭ ᥰ ᥱ
-/// ᥲ ᥳ ᥴ
+/// An enum to represent all characters in the TaiLe block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum TaiLe {
     /// \u{1950}: 'ᥐ'

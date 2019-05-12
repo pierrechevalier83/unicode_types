@@ -1,10 +1,12 @@
 /// \u{1900} → \u{194f}\
 ///\
-/// ᤀ ᤁ ᤂ ᤃ ᤄ ᤅ ᤆ ᤇ ᤈ ᤉ ᤊ ᤋ ᤌ ᤍ ᤎ ᤏ
-/// ᤐ ᤑ ᤒ ᤓ ᤔ ᤕ ᤖ ᤗ ᤘ ᤙ ᤚ ᤛ ᤜ ᤝ ᤞ ᤠ
-/// ᤡ ᤢ ᤣ ᤤ ᤥ ᤦ ᤧ ᤨ ᤩ ᤪ ᤫ ᤰ ᤱ ᤲ ᤳ ᤴ
-/// ᤵ ᤶ ᤷ ᤸ ᤹ ᤺ ᤻ ᥀ ᥄ ᥅ ᥆ ᥇ ᥈ ᥉ ᥊ ᥋
-/// ᥌ ᥍ ᥎
+/// ᤀ ᤁ ᤂ ᤃ ᤄ ᤅ ᤆ ᤇ ᤈ ᤉ ᤊ ᤋ ᤌ ᤍ ᤎ ᤏ\
+/// ᤐ ᤑ ᤒ ᤓ ᤔ ᤕ ᤖ ᤗ ᤘ ᤙ ᤚ ᤛ ᤜ ᤝ ᤞ ᤠ\
+/// ᤡ ᤢ ᤣ ᤤ ᤥ ᤦ ᤧ ᤨ ᤩ ᤪ ᤫ ᤰ ᤱ ᤲ ᤳ ᤴ\
+/// ᤵ ᤶ ᤷ ᤸ ᤹ ᤺ ᤻ ᥀ ᥄ ᥅ ᥆ ᥇ ᥈ ᥉ ᥊ ᥋\
+/// ᥌ ᥍ ᥎\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1900}: 'ᤀ'
     pub const VOWEL_DASH_CARRIER_LETTER: char = 'ᤀ';
@@ -142,13 +144,7 @@ pub mod constants {
     pub const DIGIT_EIGHT: char = '᥎';
 }
 
-/// \u{1900} → \u{194f}\
-///\
-/// ᤀ ᤁ ᤂ ᤃ ᤄ ᤅ ᤆ ᤇ ᤈ ᤉ ᤊ ᤋ ᤌ ᤍ ᤎ ᤏ
-/// ᤐ ᤑ ᤒ ᤓ ᤔ ᤕ ᤖ ᤗ ᤘ ᤙ ᤚ ᤛ ᤜ ᤝ ᤞ ᤠ
-/// ᤡ ᤢ ᤣ ᤤ ᤥ ᤦ ᤧ ᤨ ᤩ ᤪ ᤫ ᤰ ᤱ ᤲ ᤳ ᤴ
-/// ᤵ ᤶ ᤷ ᤸ ᤹ ᤺ ᤻ ᥀ ᥄ ᥅ ᥆ ᥇ ᥈ ᥉ ᥊ ᥋
-/// ᥌ ᥍ ᥎
+/// An enum to represent all characters in the Limbu block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Limbu {
     /// \u{1900}: 'ᤀ'

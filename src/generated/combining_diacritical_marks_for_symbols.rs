@@ -1,8 +1,10 @@
 /// \u{20d0} → \u{20ff}\
 ///\
-/// ⃐ ⃑ ⃒ ⃓ ⃔ ⃕ ⃖ ⃗ ⃘ ⃙ ⃚ ⃛ ⃜ ⃝ ⃞ ⃟
-/// ⃠ ⃡ ⃢ ⃣ ⃤ ⃥ ⃦ ⃧ ⃨ ⃩ ⃪ ⃫ ⃬ ⃭ ⃮ ⃯
-/// ⃰
+/// ⃐ ⃑ ⃒ ⃓ ⃔ ⃕ ⃖ ⃗ ⃘ ⃙ ⃚ ⃛ ⃜ ⃝ ⃞ ⃟\
+/// ⃠ ⃡ ⃢ ⃣ ⃤ ⃥ ⃦ ⃧ ⃨ ⃩ ⃪ ⃫ ⃬ ⃭ ⃮ ⃯\
+/// ⃰\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{20d0}: '⃐'
     pub const COMBINING_LEFT_HARPOON_ABOVE: char = '⃐';
@@ -72,11 +74,7 @@ pub mod constants {
     pub const COMBINING_ASTERISK_ABOVE: char = '⃰';
 }
 
-/// \u{20d0} → \u{20ff}\
-///\
-/// ⃐ ⃑ ⃒ ⃓ ⃔ ⃕ ⃖ ⃗ ⃘ ⃙ ⃚ ⃛ ⃜ ⃝ ⃞ ⃟
-/// ⃠ ⃡ ⃢ ⃣ ⃤ ⃥ ⃦ ⃧ ⃨ ⃩ ⃪ ⃫ ⃬ ⃭ ⃮ ⃯
-/// ⃰
+/// An enum to represent all characters in the CombiningDiacriticalMarksforSymbols block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CombiningDiacriticalMarksforSymbols {
     /// \u{20d0}: '⃐'

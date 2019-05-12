@@ -1,7 +1,9 @@
 /// \u{a8e0} → \u{a8ff}\
 ///\
-/// ꣠ ꣡ ꣢ ꣣ ꣤ ꣥ ꣦ ꣧ ꣨ ꣩ ꣪ ꣫ ꣬ ꣭ ꣮ ꣯
-/// ꣰ ꣱ ꣲ ꣳ ꣴ ꣵ ꣶ ꣷ ꣸ ꣹ ꣺ ꣻ ꣼ ꣽ ꣾ
+/// ꣠ ꣡ ꣢ ꣣ ꣤ ꣥ ꣦ ꣧ ꣨ ꣩ ꣪ ꣫ ꣬ ꣭ ꣮ ꣯\
+/// ꣰ ꣱ ꣲ ꣳ ꣴ ꣵ ꣶ ꣷ ꣸ ꣹ ꣺ ꣻ ꣼ ꣽ ꣾ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a8e0}: '꣠'
     pub const COMBINING_DEVANAGARI_DIGIT_ZERO: char = '꣠';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const DEVANAGARI_LETTER_AY: char = 'ꣾ';
 }
 
-/// \u{a8e0} → \u{a8ff}\
-///\
-/// ꣠ ꣡ ꣢ ꣣ ꣤ ꣥ ꣦ ꣧ ꣨ ꣩ ꣪ ꣫ ꣬ ꣭ ꣮ ꣯
-/// ꣰ ꣱ ꣲ ꣳ ꣴ ꣵ ꣶ ꣷ ꣸ ꣹ ꣺ ꣻ ꣼ ꣽ ꣾ
+/// An enum to represent all characters in the DevanagariExtended block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum DevanagariExtended {
     /// \u{a8e0}: '꣠'

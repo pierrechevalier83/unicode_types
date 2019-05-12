@@ -1,11 +1,13 @@
 /// \u{e00} → \u{e7f}\
 ///\
-/// ก ข ฃ ค ฅ ฆ ง จ ฉ ช ซ ฌ ญ ฎ ฏ ฐ
-/// ฑ ฒ ณ ด ต ถ ท ธ น บ ป ผ ฝ พ ฟ ภ
-/// ม ย ร ฤ ล ฦ ว ศ ษ ส ห ฬ อ ฮ ฯ ะ
-/// ั า ำ ิ ี ึ ื ุ ู ฺ ฿ เ แ โ ใ ไ
-/// ๅ ๆ ็ ่ ้ ๊ ๋ ์ ํ ๎ ๏ ๐ ๑ ๒ ๓ ๔
-/// ๕ ๖ ๗ ๘ ๙ ๚ ๛
+/// ก ข ฃ ค ฅ ฆ ง จ ฉ ช ซ ฌ ญ ฎ ฏ ฐ\
+/// ฑ ฒ ณ ด ต ถ ท ธ น บ ป ผ ฝ พ ฟ ภ\
+/// ม ย ร ฤ ล ฦ ว ศ ษ ส ห ฬ อ ฮ ฯ ะ\
+/// ั า ำ ิ ี ึ ื ุ ู ฺ ฿ เ แ โ ใ ไ\
+/// ๅ ๆ ็ ่ ้ ๊ ๋ ์ ํ ๎ ๏ ๐ ๑ ๒ ๓ ๔\
+/// ๕ ๖ ๗ ๘ ๙ ๚ ๛\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{e01}: 'ก'
     pub const CHARACTER_KO_KAI: char = 'ก';
@@ -183,14 +185,7 @@ pub mod constants {
     pub const CHARACTER_KHOMUT: char = '๛';
 }
 
-/// \u{e00} → \u{e7f}\
-///\
-/// ก ข ฃ ค ฅ ฆ ง จ ฉ ช ซ ฌ ญ ฎ ฏ ฐ
-/// ฑ ฒ ณ ด ต ถ ท ธ น บ ป ผ ฝ พ ฟ ภ
-/// ม ย ร ฤ ล ฦ ว ศ ษ ส ห ฬ อ ฮ ฯ ะ
-/// ั า ำ ิ ี ึ ื ุ ู ฺ ฿ เ แ โ ใ ไ
-/// ๅ ๆ ็ ่ ้ ๊ ๋ ์ ํ ๎ ๏ ๐ ๑ ๒ ๓ ๔
-/// ๕ ๖ ๗ ๘ ๙ ๚ ๛
+/// An enum to represent all characters in the Thai block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Thai {
     /// \u{e01}: 'ก'

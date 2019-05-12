@@ -1,10 +1,12 @@
 /// \u{18b0} → \u{18ff}\
 ///\
-/// ᢰ ᢱ ᢲ ᢳ ᢴ ᢵ ᢶ ᢷ ᢸ ᢹ ᢺ ᢻ ᢼ ᢽ ᢾ ᢿ
-/// ᣀ ᣁ ᣂ ᣃ ᣄ ᣅ ᣆ ᣇ ᣈ ᣉ ᣊ ᣋ ᣌ ᣍ ᣎ ᣏ
-/// ᣐ ᣑ ᣒ ᣓ ᣔ ᣕ ᣖ ᣗ ᣘ ᣙ ᣚ ᣛ ᣜ ᣝ ᣞ ᣟ
-/// ᣠ ᣡ ᣢ ᣣ ᣤ ᣥ ᣦ ᣧ ᣨ ᣩ ᣪ ᣫ ᣬ ᣭ ᣮ ᣯ
-/// ᣰ ᣱ ᣲ ᣳ ᣴ ᣵ
+/// ᢰ ᢱ ᢲ ᢳ ᢴ ᢵ ᢶ ᢷ ᢸ ᢹ ᢺ ᢻ ᢼ ᢽ ᢾ ᢿ\
+/// ᣀ ᣁ ᣂ ᣃ ᣄ ᣅ ᣆ ᣇ ᣈ ᣉ ᣊ ᣋ ᣌ ᣍ ᣎ ᣏ\
+/// ᣐ ᣑ ᣒ ᣓ ᣔ ᣕ ᣖ ᣗ ᣘ ᣙ ᣚ ᣛ ᣜ ᣝ ᣞ ᣟ\
+/// ᣠ ᣡ ᣢ ᣣ ᣤ ᣥ ᣦ ᣧ ᣨ ᣩ ᣪ ᣫ ᣬ ᣭ ᣮ ᣯ\
+/// ᣰ ᣱ ᣲ ᣳ ᣴ ᣵ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{18b0}: 'ᢰ'
     pub const CANADIAN_SYLLABICS_OY: char = 'ᢰ';
@@ -148,13 +150,7 @@ pub mod constants {
     pub const CANADIAN_SYLLABICS_CARRIER_DENTAL_S: char = 'ᣵ';
 }
 
-/// \u{18b0} → \u{18ff}\
-///\
-/// ᢰ ᢱ ᢲ ᢳ ᢴ ᢵ ᢶ ᢷ ᢸ ᢹ ᢺ ᢻ ᢼ ᢽ ᢾ ᢿ
-/// ᣀ ᣁ ᣂ ᣃ ᣄ ᣅ ᣆ ᣇ ᣈ ᣉ ᣊ ᣋ ᣌ ᣍ ᣎ ᣏ
-/// ᣐ ᣑ ᣒ ᣓ ᣔ ᣕ ᣖ ᣗ ᣘ ᣙ ᣚ ᣛ ᣜ ᣝ ᣞ ᣟ
-/// ᣠ ᣡ ᣢ ᣣ ᣤ ᣥ ᣦ ᣧ ᣨ ᣩ ᣪ ᣫ ᣬ ᣭ ᣮ ᣯ
-/// ᣰ ᣱ ᣲ ᣳ ᣴ ᣵ
+/// An enum to represent all characters in the UnifiedCanadianAboriginalSyllabicsExtended block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum UnifiedCanadianAboriginalSyllabicsExtended {
     /// \u{18b0}: 'ᢰ'

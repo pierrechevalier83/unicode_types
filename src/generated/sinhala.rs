@@ -1,11 +1,13 @@
 /// \u{d80} → \u{dff}\
 ///\
-/// ං ඃ අ ආ ඇ ඈ ඉ ඊ උ ඌ ඍ ඎ ඏ ඐ එ ඒ
-/// ඓ ඔ ඕ ඖ ක ඛ ග ඝ ඞ ඟ ච ඡ ජ ඣ ඤ ඥ
-/// ඦ ට ඨ ඩ ඪ ණ ඬ ත ථ ද ධ න ඳ ප ඵ බ
-/// භ ම ඹ ය ර ල ව ශ ෂ ස හ ළ ෆ ් ා ැ
-/// ෑ ි ී ු ූ ෘ ෙ ේ ෛ ො ෝ ෞ ෟ ෦ ෧ ෨
-/// ෩ ෪ ෫ ෬ ෭ ෮ ෯ ෲ ෳ ෴
+/// ං ඃ අ ආ ඇ ඈ ඉ ඊ උ ඌ ඍ ඎ ඏ ඐ එ ඒ\
+/// ඓ ඔ ඕ ඖ ක ඛ ග ඝ ඞ ඟ ච ඡ ජ ඣ ඤ ඥ\
+/// ඦ ට ඨ ඩ ඪ ණ ඬ ත ථ ද ධ න ඳ ප ඵ බ\
+/// භ ම ඹ ය ර ල ව ශ ෂ ස හ ළ ෆ ් ා ැ\
+/// ෑ ි ී ු ූ ෘ ෙ ේ ෛ ො ෝ ෞ ෟ ෦ ෧ ෨\
+/// ෩ ෪ ෫ ෬ ෭ ෮ ෯ ෲ ෳ ෴\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{d82}: 'ං'
     pub const SIGN_ANUSVARAYA: char = 'ං';
@@ -189,14 +191,7 @@ pub mod constants {
     pub const PUNCTUATION_KUNDDALIYA: char = '෴';
 }
 
-/// \u{d80} → \u{dff}\
-///\
-/// ං ඃ අ ආ ඇ ඈ ඉ ඊ උ ඌ ඍ ඎ ඏ ඐ එ ඒ
-/// ඓ ඔ ඕ ඖ ක ඛ ග ඝ ඞ ඟ ච ඡ ජ ඣ ඤ ඥ
-/// ඦ ට ඨ ඩ ඪ ණ ඬ ත ථ ද ධ න ඳ ප ඵ බ
-/// භ ම ඹ ය ර ල ව ශ ෂ ස හ ළ ෆ ් ා ැ
-/// ෑ ි ී ු ූ ෘ ෙ ේ ෛ ො ෝ ෞ ෟ ෦ ෧ ෨
-/// ෩ ෪ ෫ ෬ ෭ ෮ ෯ ෲ ෳ ෴
+/// An enum to represent all characters in the Sinhala block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Sinhala {
     /// \u{d82}: 'ං'

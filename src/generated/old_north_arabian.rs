@@ -1,7 +1,9 @@
 /// \u{10a80} → \u{10a9f}\
 ///\
-/// 𐪀 𐪁 𐪂 𐪃 𐪄 𐪅 𐪆 𐪇 𐪈 𐪉 𐪊 𐪋 𐪌 𐪍 𐪎 𐪏
-/// 𐪐 𐪑 𐪒 𐪓 𐪔 𐪕 𐪖 𐪗 𐪘 𐪙 𐪚 𐪛 𐪜 𐪝 𐪞
+/// 𐪀 𐪁 𐪂 𐪃 𐪄 𐪅 𐪆 𐪇 𐪈 𐪉 𐪊 𐪋 𐪌 𐪍 𐪎 𐪏\
+/// 𐪐 𐪑 𐪒 𐪓 𐪔 𐪕 𐪖 𐪗 𐪘 𐪙 𐪚 𐪛 𐪜 𐪝 𐪞\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10a80}: '𐪀'
     pub const LETTER_HEH: char = '𐪀';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const NUMBER_TEN: char = '𐪞';
 }
 
-/// \u{10a80} → \u{10a9f}\
-///\
-/// 𐪀 𐪁 𐪂 𐪃 𐪄 𐪅 𐪆 𐪇 𐪈 𐪉 𐪊 𐪋 𐪌 𐪍 𐪎 𐪏
-/// 𐪐 𐪑 𐪒 𐪓 𐪔 𐪕 𐪖 𐪗 𐪘 𐪙 𐪚 𐪛 𐪜 𐪝 𐪞
+/// An enum to represent all characters in the OldNorthArabian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum OldNorthArabian {
     /// \u{10a80}: '𐪀'

@@ -1,7 +1,9 @@
 /// \u{108e0} → \u{108ff}\
 ///\
-/// 𐣠 𐣡 𐣢 𐣣 𐣤 𐣥 𐣦 𐣧 𐣨 𐣩 𐣪 𐣫 𐣬 𐣭 𐣮 𐣯
-/// 𐣰 𐣱 𐣲 𐣴 𐣵 𐣻 𐣼 𐣽 𐣾
+/// 𐣠 𐣡 𐣢 𐣣 𐣤 𐣥 𐣦 𐣧 𐣨 𐣩 𐣪 𐣫 𐣬 𐣭 𐣮 𐣯\
+/// 𐣰 𐣱 𐣲 𐣴 𐣵 𐣻 𐣼 𐣽 𐣾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{108e0}: '𐣠'
     pub const LETTER_ALEPH: char = '𐣠';
@@ -55,10 +57,7 @@ pub mod constants {
     pub const NUMBER_TWENTY: char = '𐣾';
 }
 
-/// \u{108e0} → \u{108ff}\
-///\
-/// 𐣠 𐣡 𐣢 𐣣 𐣤 𐣥 𐣦 𐣧 𐣨 𐣩 𐣪 𐣫 𐣬 𐣭 𐣮 𐣯
-/// 𐣰 𐣱 𐣲 𐣴 𐣵 𐣻 𐣼 𐣽 𐣾
+/// An enum to represent all characters in the Hatran block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Hatran {
     /// \u{108e0}: '𐣠'

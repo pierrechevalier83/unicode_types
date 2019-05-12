@@ -1,8 +1,10 @@
 /// \u{10880} → \u{108af}\
 ///\
-/// 𐢀 𐢁 𐢂 𐢃 𐢄 𐢅 𐢆 𐢇 𐢈 𐢉 𐢊 𐢋 𐢌 𐢍 𐢎 𐢏
-/// 𐢐 𐢑 𐢒 𐢓 𐢔 𐢕 𐢖 𐢗 𐢘 𐢙 𐢚 𐢛 𐢜 𐢝 𐢞 𐢧
-/// 𐢨 𐢩 𐢪 𐢫 𐢬 𐢭 𐢮
+/// 𐢀 𐢁 𐢂 𐢃 𐢄 𐢅 𐢆 𐢇 𐢈 𐢉 𐢊 𐢋 𐢌 𐢍 𐢎 𐢏\
+/// 𐢐 𐢑 𐢒 𐢓 𐢔 𐢕 𐢖 𐢗 𐢘 𐢙 𐢚 𐢛 𐢜 𐢝 𐢞 𐢧\
+/// 𐢨 𐢩 𐢪 𐢫 𐢬 𐢭 𐢮\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10880}: '𐢀'
     pub const LETTER_FINAL_ALEPH: char = '𐢀';
@@ -84,11 +86,7 @@ pub mod constants {
     pub const NUMBER_TWENTY: char = '𐢮';
 }
 
-/// \u{10880} → \u{108af}\
-///\
-/// 𐢀 𐢁 𐢂 𐢃 𐢄 𐢅 𐢆 𐢇 𐢈 𐢉 𐢊 𐢋 𐢌 𐢍 𐢎 𐢏
-/// 𐢐 𐢑 𐢒 𐢓 𐢔 𐢕 𐢖 𐢗 𐢘 𐢙 𐢚 𐢛 𐢜 𐢝 𐢞 𐢧
-/// 𐢨 𐢩 𐢪 𐢫 𐢬 𐢭 𐢮
+/// An enum to represent all characters in the Nabataean block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Nabataean {
     /// \u{10880}: '𐢀'

@@ -1,10 +1,12 @@
 /// \u{d7b0} → \u{d7ff}\
 ///\
-/// ힰ ힱ ힲ ힳ ힴ ힵ ힶ ힷ ힸ ힹ ힺ ힻ ힼ ힽ ힾ ힿ
-/// ퟀ ퟁ ퟂ ퟃ ퟄ ퟅ ퟆ ퟋ ퟌ ퟍ ퟎ ퟏ ퟐ ퟑ ퟒ ퟓ
-/// ퟔ ퟕ ퟖ ퟗ ퟘ ퟙ ퟚ ퟛ ퟜ ퟝ ퟞ ퟟ ퟠ ퟡ ퟢ ퟣ
-/// ퟤ ퟥ ퟦ ퟧ ퟨ ퟩ ퟪ ퟫ ퟬ ퟭ ퟮ ퟯ ퟰ ퟱ ퟲ ퟳ
-/// ퟴ ퟵ ퟶ ퟷ ퟸ ퟹ ퟺ ퟻ
+/// ힰ ힱ ힲ ힳ ힴ ힵ ힶ ힷ ힸ ힹ ힺ ힻ ힼ ힽ ힾ ힿ\
+/// ퟀ ퟁ ퟂ ퟃ ퟄ ퟅ ퟆ ퟋ ퟌ ퟍ ퟎ ퟏ ퟐ ퟑ ퟒ ퟓ\
+/// ퟔ ퟕ ퟖ ퟗ ퟘ ퟙ ퟚ ퟛ ퟜ ퟝ ퟞ ퟟ ퟠ ퟡ ퟢ ퟣ\
+/// ퟤ ퟥ ퟦ ퟧ ퟨ ퟩ ퟪ ퟫ ퟬ ퟭ ퟮ ퟯ ퟰ ퟱ ퟲ ퟳ\
+/// ퟴ ퟵ ퟶ ퟷ ퟸ ퟹ ퟺ ퟻ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{d7b0}: 'ힰ'
     pub const HANGUL_JUNGSEONG_O_DASH_YEO: char = 'ힰ';
@@ -152,13 +154,7 @@ pub mod constants {
     pub const HANGUL_JONGSEONG_PHIEUPH_DASH_THIEUTH: char = 'ퟻ';
 }
 
-/// \u{d7b0} → \u{d7ff}\
-///\
-/// ힰ ힱ ힲ ힳ ힴ ힵ ힶ ힷ ힸ ힹ ힺ ힻ ힼ ힽ ힾ ힿ
-/// ퟀ ퟁ ퟂ ퟃ ퟄ ퟅ ퟆ ퟋ ퟌ ퟍ ퟎ ퟏ ퟐ ퟑ ퟒ ퟓ
-/// ퟔ ퟕ ퟖ ퟗ ퟘ ퟙ ퟚ ퟛ ퟜ ퟝ ퟞ ퟟ ퟠ ퟡ ퟢ ퟣ
-/// ퟤ ퟥ ퟦ ퟧ ퟨ ퟩ ퟪ ퟫ ퟬ ퟭ ퟮ ퟯ ퟰ ퟱ ퟲ ퟳ
-/// ퟴ ퟵ ퟶ ퟷ ퟸ ퟹ ퟺ ퟻ
+/// An enum to represent all characters in the HangulJamoExtendedB block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum HangulJamoExtendedB {
     /// \u{d7b0}: 'ힰ'

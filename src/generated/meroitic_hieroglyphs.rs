@@ -1,7 +1,9 @@
 /// \u{10980} → \u{1099f}\
 ///\
-/// 𐦀 𐦁 𐦂 𐦃 𐦄 𐦅 𐦆 𐦇 𐦈 𐦉 𐦊 𐦋 𐦌 𐦍 𐦎 𐦏
-/// 𐦐 𐦑 𐦒 𐦓 𐦔 𐦕 𐦖 𐦗 𐦘 𐦙 𐦚 𐦛 𐦜 𐦝 𐦞
+/// 𐦀 𐦁 𐦂 𐦃 𐦄 𐦅 𐦆 𐦇 𐦈 𐦉 𐦊 𐦋 𐦌 𐦍 𐦎 𐦏\
+/// 𐦐 𐦑 𐦒 𐦓 𐦔 𐦕 𐦖 𐦗 𐦘 𐦙 𐦚 𐦛 𐦜 𐦝 𐦞\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10980}: '𐦀'
     pub const MEROITIC_HIEROGLYPHIC_LETTER_A: char = '𐦀';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const MEROITIC_HIEROGLYPHIC_SYMBOL_VIDJ: char = '𐦞';
 }
 
-/// \u{10980} → \u{1099f}\
-///\
-/// 𐦀 𐦁 𐦂 𐦃 𐦄 𐦅 𐦆 𐦇 𐦈 𐦉 𐦊 𐦋 𐦌 𐦍 𐦎 𐦏
-/// 𐦐 𐦑 𐦒 𐦓 𐦔 𐦕 𐦖 𐦗 𐦘 𐦙 𐦚 𐦛 𐦜 𐦝 𐦞
+/// An enum to represent all characters in the MeroiticHieroglyphs block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum MeroiticHieroglyphs {
     /// \u{10980}: '𐦀'

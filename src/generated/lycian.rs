@@ -1,7 +1,9 @@
 /// \u{10280} → \u{1029f}\
 ///\
-/// 𐊀 𐊁 𐊂 𐊃 𐊄 𐊅 𐊆 𐊇 𐊈 𐊉 𐊊 𐊋 𐊌 𐊍 𐊎 𐊏
-/// 𐊐 𐊑 𐊒 𐊓 𐊔 𐊕 𐊖 𐊗 𐊘 𐊙 𐊚 𐊛 𐊜
+/// 𐊀 𐊁 𐊂 𐊃 𐊄 𐊅 𐊆 𐊇 𐊈 𐊉 𐊊 𐊋 𐊌 𐊍 𐊎 𐊏\
+/// 𐊐 𐊑 𐊒 𐊓 𐊔 𐊕 𐊖 𐊗 𐊘 𐊙 𐊚 𐊛 𐊜\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10280}: '𐊀'
     pub const LETTER_A: char = '𐊀';
@@ -63,10 +65,7 @@ pub mod constants {
     pub const LETTER_X: char = '𐊜';
 }
 
-/// \u{10280} → \u{1029f}\
-///\
-/// 𐊀 𐊁 𐊂 𐊃 𐊄 𐊅 𐊆 𐊇 𐊈 𐊉 𐊊 𐊋 𐊌 𐊍 𐊎 𐊏
-/// 𐊐 𐊑 𐊒 𐊓 𐊔 𐊕 𐊖 𐊗 𐊘 𐊙 𐊚 𐊛 𐊜
+/// An enum to represent all characters in the Lycian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Lycian {
     /// \u{10280}: '𐊀'

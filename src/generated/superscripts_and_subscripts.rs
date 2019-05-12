@@ -1,8 +1,10 @@
 /// \u{2070} → \u{209f}\
 ///\
-/// ⁰ ⁱ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁺ ⁻ ⁼ ⁽ ⁾ ⁿ ₀ ₁
-/// ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₊ ₋ ₌ ₍ ₎ ₐ ₑ ₒ
-/// ₓ ₔ ₕ ₖ ₗ ₘ ₙ ₚ ₛ ₜ
+/// ⁰ ⁱ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁺ ⁻ ⁼ ⁽ ⁾ ⁿ ₀ ₁\
+/// ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₊ ₋ ₌ ₍ ₎ ₐ ₑ ₒ\
+/// ₓ ₔ ₕ ₖ ₗ ₘ ₙ ₚ ₛ ₜ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2070}: '⁰'
     pub const SUPERSCRIPT_ZERO: char = '⁰';
@@ -90,11 +92,7 @@ pub mod constants {
     pub const LATIN_SUBSCRIPT_SMALL_LETTER_T: char = 'ₜ';
 }
 
-/// \u{2070} → \u{209f}\
-///\
-/// ⁰ ⁱ ⁴ ⁵ ⁶ ⁷ ⁸ ⁹ ⁺ ⁻ ⁼ ⁽ ⁾ ⁿ ₀ ₁
-/// ₂ ₃ ₄ ₅ ₆ ₇ ₈ ₉ ₊ ₋ ₌ ₍ ₎ ₐ ₑ ₒ
-/// ₓ ₔ ₕ ₖ ₗ ₘ ₙ ₚ ₛ ₜ
+/// An enum to represent all characters in the SuperscriptsandSubscripts block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SuperscriptsandSubscripts {
     /// \u{2070}: '⁰'

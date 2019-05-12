@@ -1,6 +1,8 @@
 /// \u{1b130} → \u{1b16f}\
 ///\
-/// 𛅐 𛅑 𛅒 𛅤 𛅥 𛅦 𛅧
+/// 𛅐 𛅑 𛅒 𛅤 𛅥 𛅦 𛅧\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1b150}: '𛅐'
     pub const HIRAGANA_LETTER_SMALL_WI: char = '𛅐';
@@ -18,9 +20,7 @@ pub mod constants {
     pub const KATAKANA_LETTER_SMALL_N: char = '𛅧';
 }
 
-/// \u{1b130} → \u{1b16f}\
-///\
-/// 𛅐 𛅑 𛅒 𛅤 𛅥 𛅦 𛅧
+/// An enum to represent all characters in the SmallKanaExtension block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SmallKanaExtension {
     /// \u{1b150}: '𛅐'

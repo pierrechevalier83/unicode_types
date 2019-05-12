@@ -1,10 +1,12 @@
 /// \u{8a0} → \u{8ff}\
 ///\
-/// ࢠ ࢡ ࢢ ࢣ ࢤ ࢥ ࢦ ࢧ ࢨ ࢩ ࢪ ࢫ ࢬ ࢭ ࢮ ࢯ
-/// ࢰ ࢱ ࢲ ࢳ ࢴ ࢶ ࢷ ࢸ ࢹ ࢺ ࢻ ࢼ ࢽ ࣓ ࣔ ࣕ
-/// ࣖ ࣗ ࣘ ࣙ ࣚ ࣛ ࣜ ࣝ ࣞ ࣟ ࣠ ࣡ ࣢ ࣣ ࣤ ࣥ
-/// ࣦ ࣧ ࣨ ࣩ ࣪ ࣫ ࣬ ࣭ ࣮ ࣯ ࣰ ࣱ ࣲ ࣳ ࣴ ࣵ
-/// ࣶ ࣷ ࣸ ࣹ ࣺ ࣻ ࣼ ࣽ ࣾ
+/// ࢠ ࢡ ࢢ ࢣ ࢤ ࢥ ࢦ ࢧ ࢨ ࢩ ࢪ ࢫ ࢬ ࢭ ࢮ ࢯ\
+/// ࢰ ࢱ ࢲ ࢳ ࢴ ࢶ ࢷ ࢸ ࢹ ࢺ ࢻ ࢼ ࢽ ࣓ ࣔ ࣕ\
+/// ࣖ ࣗ ࣘ ࣙ ࣚ ࣛ ࣜ ࣝ ࣞ ࣟ ࣠ ࣡ ࣢ ࣣ ࣤ ࣥ\
+/// ࣦ ࣧ ࣨ ࣩ ࣪ ࣫ ࣬ ࣭ ࣮ ࣯ ࣰ ࣱ ࣲ ࣳ ࣴ ࣵ\
+/// ࣶ ࣷ ࣸ ࣹ ࣺ ࣻ ࣼ ࣽ ࣾ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{8a0}: 'ࢠ'
     pub const ARABIC_LETTER_BEH_WITH_SMALL_V_BELOW: char = 'ࢠ';
@@ -154,13 +156,7 @@ pub mod constants {
     pub const ARABIC_DAMMA_WITH_DOT: char = 'ࣾ';
 }
 
-/// \u{8a0} → \u{8ff}\
-///\
-/// ࢠ ࢡ ࢢ ࢣ ࢤ ࢥ ࢦ ࢧ ࢨ ࢩ ࢪ ࢫ ࢬ ࢭ ࢮ ࢯ
-/// ࢰ ࢱ ࢲ ࢳ ࢴ ࢶ ࢷ ࢸ ࢹ ࢺ ࢻ ࢼ ࢽ ࣓ ࣔ ࣕ
-/// ࣖ ࣗ ࣘ ࣙ ࣚ ࣛ ࣜ ࣝ ࣞ ࣟ ࣠ ࣡ ࣢ ࣣ ࣤ ࣥ
-/// ࣦ ࣧ ࣨ ࣩ ࣪ ࣫ ࣬ ࣭ ࣮ ࣯ ࣰ ࣱ ࣲ ࣳ ࣴ ࣵ
-/// ࣶ ࣷ ࣸ ࣹ ࣺ ࣻ ࣼ ࣽ ࣾ
+/// An enum to represent all characters in the ArabicExtendedA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum ArabicExtendedA {
     /// \u{8a0}: 'ࢠ'

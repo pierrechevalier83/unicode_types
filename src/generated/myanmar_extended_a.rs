@@ -1,7 +1,9 @@
 /// \u{aa60} → \u{aa7f}\
 ///\
-/// ꩠ ꩡ ꩢ ꩣ ꩤ ꩥ ꩦ ꩧ ꩨ ꩩ ꩪ ꩫ ꩬ ꩭ ꩮ ꩯ
-/// ꩰ ꩱ ꩲ ꩳ ꩴ ꩵ ꩶ ꩷ ꩸ ꩹ ꩺ ꩻ ꩼ ꩽ ꩾ
+/// ꩠ ꩡ ꩢ ꩣ ꩤ ꩥ ꩦ ꩧ ꩨ ꩩ ꩪ ꩫ ꩬ ꩭ ꩮ ꩯ\
+/// ꩰ ꩱ ꩲ ꩳ ꩴ ꩵ ꩶ ꩷ ꩸ ꩹ ꩺ ꩻ ꩼ ꩽ ꩾ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{aa60}: 'ꩠ'
     pub const MYANMAR_LETTER_KHAMTI_GA: char = 'ꩠ';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const MYANMAR_LETTER_SHWE_PALAUNG_CHA: char = 'ꩾ';
 }
 
-/// \u{aa60} → \u{aa7f}\
-///\
-/// ꩠ ꩡ ꩢ ꩣ ꩤ ꩥ ꩦ ꩧ ꩨ ꩩ ꩪ ꩫ ꩬ ꩭ ꩮ ꩯ
-/// ꩰ ꩱ ꩲ ꩳ ꩴ ꩵ ꩶ ꩷ ꩸ ꩹ ꩺ ꩻ ꩼ ꩽ ꩾ
+/// An enum to represent all characters in the MyanmarExtendedA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum MyanmarExtendedA {
     /// \u{aa60}: 'ꩠ'

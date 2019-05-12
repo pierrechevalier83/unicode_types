@@ -1,7 +1,9 @@
 /// \u{fe30} → \u{fe4f}\
 ///\
-/// ︰ ︱ ︲ ︳ ︴ ︵ ︶ ︷ ︸ ︹ ︺ ︻ ︼ ︽ ︾ ︿
-/// ﹀ ﹁ ﹂ ﹃ ﹄ ﹅ ﹆ ﹇ ﹈ ﹉ ﹊ ﹋ ﹌ ﹍ ﹎
+/// ︰ ︱ ︲ ︳ ︴ ︵ ︶ ︷ ︸ ︹ ︺ ︻ ︼ ︽ ︾ ︿\
+/// ﹀ ﹁ ﹂ ﹃ ﹄ ﹅ ﹆ ﹇ ﹈ ﹉ ﹊ ﹋ ﹌ ﹍ ﹎\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{fe30}: '︰'
     pub const PRESENTATION_FORM_FOR_VERTICAL_TWO_DOT_LEADER: char = '︰';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const CENTRELINE_LOW_LINE: char = '﹎';
 }
 
-/// \u{fe30} → \u{fe4f}\
-///\
-/// ︰ ︱ ︲ ︳ ︴ ︵ ︶ ︷ ︸ ︹ ︺ ︻ ︼ ︽ ︾ ︿
-/// ﹀ ﹁ ﹂ ﹃ ﹄ ﹅ ﹆ ﹇ ﹈ ﹉ ﹊ ﹋ ﹌ ﹍ ﹎
+/// An enum to represent all characters in the CJKCompatibilityForms block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CJKCompatibilityForms {
     /// \u{fe30}: '︰'

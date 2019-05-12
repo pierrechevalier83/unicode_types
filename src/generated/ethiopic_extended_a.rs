@@ -1,7 +1,9 @@
 /// \u{ab00} → \u{ab2f}\
 ///\
-/// ꬁ ꬂ ꬃ ꬄ ꬅ ꬆ ꬉ ꬊ ꬋ ꬌ ꬍ ꬎ ꬑ ꬒ ꬓ ꬔ
-/// ꬕ ꬖ ꬠ ꬡ ꬢ ꬣ ꬤ ꬥ ꬦ ꬨ ꬩ ꬪ ꬫ ꬬ ꬭ ꬮ
+/// ꬁ ꬂ ꬃ ꬄ ꬅ ꬆ ꬉ ꬊ ꬋ ꬌ ꬍ ꬎ ꬑ ꬒ ꬓ ꬔ\
+/// ꬕ ꬖ ꬠ ꬡ ꬢ ꬣ ꬤ ꬥ ꬦ ꬨ ꬩ ꬪ ꬫ ꬬ ꬭ ꬮ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{ab01}: 'ꬁ'
     pub const ETHIOPIC_SYLLABLE_TTHU: char = 'ꬁ';
@@ -69,10 +71,7 @@ pub mod constants {
     pub const ETHIOPIC_SYLLABLE_BBO: char = 'ꬮ';
 }
 
-/// \u{ab00} → \u{ab2f}\
-///\
-/// ꬁ ꬂ ꬃ ꬄ ꬅ ꬆ ꬉ ꬊ ꬋ ꬌ ꬍ ꬎ ꬑ ꬒ ꬓ ꬔ
-/// ꬕ ꬖ ꬠ ꬡ ꬢ ꬣ ꬤ ꬥ ꬦ ꬨ ꬩ ꬪ ꬫ ꬬ ꬭ ꬮ
+/// An enum to represent all characters in the EthiopicExtendedA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum EthiopicExtendedA {
     /// \u{ab01}: 'ꬁ'

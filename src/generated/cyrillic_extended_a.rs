@@ -1,7 +1,9 @@
 /// \u{2de0} → \u{2dff}\
 ///\
-/// ⷠ ⷡ ⷢ ⷣ ⷤ ⷥ ⷦ ⷧ ⷨ ⷩ ⷪ ⷫ ⷬ ⷭ ⷮ ⷯ
-/// ⷰ ⷱ ⷲ ⷳ ⷴ ⷵ ⷶ ⷷ ⷸ ⷹ ⷺ ⷻ ⷼ ⷽ ⷾ
+/// ⷠ ⷡ ⷢ ⷣ ⷤ ⷥ ⷦ ⷧ ⷨ ⷩ ⷪ ⷫ ⷬ ⷭ ⷮ ⷯ\
+/// ⷰ ⷱ ⷲ ⷳ ⷴ ⷵ ⷶ ⷷ ⷸ ⷹ ⷺ ⷻ ⷼ ⷽ ⷾ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2de0}: 'ⷠ'
     pub const COMBINING_CYRILLIC_LETTER_BE: char = 'ⷠ';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const COMBINING_CYRILLIC_LETTER_BIG_YUS: char = 'ⷾ';
 }
 
-/// \u{2de0} → \u{2dff}\
-///\
-/// ⷠ ⷡ ⷢ ⷣ ⷤ ⷥ ⷦ ⷧ ⷨ ⷩ ⷪ ⷫ ⷬ ⷭ ⷮ ⷯ
-/// ⷰ ⷱ ⷲ ⷳ ⷴ ⷵ ⷶ ⷷ ⷸ ⷹ ⷺ ⷻ ⷼ ⷽ ⷾ
+/// An enum to represent all characters in the CyrillicExtendedA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CyrillicExtendedA {
     /// \u{2de0}: 'ⷠ'

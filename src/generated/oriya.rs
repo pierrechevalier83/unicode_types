@@ -1,11 +1,13 @@
 /// \u{b00} → \u{b7f}\
 ///\
-/// ଁ ଂ ଃ ଅ ଆ ଇ ଈ ଉ ଊ ଋ ଌ ଏ ଐ ଓ ଔ କ
-/// ଖ ଗ ଘ ଙ ଚ ଛ ଜ ଝ ଞ ଟ ଠ ଡ ଢ ଣ ତ ଥ
-/// ଦ ଧ ନ ପ ଫ ବ ଭ ମ ଯ ର ଲ ଳ ଵ ଶ ଷ ସ
-/// ହ ଼ ଽ ା ି ୀ ୁ ୂ ୃ ୄ େ ୈ ୋ ୌ ୍ ୖ
-/// ୗ ଡ଼ ଢ଼ ୟ ୠ ୡ ୢ ୣ ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭
-/// ୮ ୯ ୰ ୱ ୲ ୳ ୴ ୵ ୶ ୷
+/// ଁ ଂ ଃ ଅ ଆ ଇ ଈ ଉ ଊ ଋ ଌ ଏ ଐ ଓ ଔ କ\
+/// ଖ ଗ ଘ ଙ ଚ ଛ ଜ ଝ ଞ ଟ ଠ ଡ ଢ ଣ ତ ଥ\
+/// ଦ ଧ ନ ପ ଫ ବ ଭ ମ ଯ ର ଲ ଳ ଵ ଶ ଷ ସ\
+/// ହ ଼ ଽ ା ି ୀ ୁ ୂ ୃ ୄ େ ୈ ୋ ୌ ୍ ୖ\
+/// ୗ ଡ଼ ଢ଼ ୟ ୠ ୡ ୢ ୣ ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭\
+/// ୮ ୯ ୰ ୱ ୲ ୳ ୴ ୵ ୶ ୷\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{b01}: 'ଁ'
     pub const SIGN_CANDRABINDU: char = 'ଁ';
@@ -189,14 +191,7 @@ pub mod constants {
     pub const FRACTION_THREE_SIXTEENTHS: char = '୷';
 }
 
-/// \u{b00} → \u{b7f}\
-///\
-/// ଁ ଂ ଃ ଅ ଆ ଇ ଈ ଉ ଊ ଋ ଌ ଏ ଐ ଓ ଔ କ
-/// ଖ ଗ ଘ ଙ ଚ ଛ ଜ ଝ ଞ ଟ ଠ ଡ ଢ ଣ ତ ଥ
-/// ଦ ଧ ନ ପ ଫ ବ ଭ ମ ଯ ର ଲ ଳ ଵ ଶ ଷ ସ
-/// ହ ଼ ଽ ା ି ୀ ୁ ୂ ୃ ୄ େ ୈ ୋ ୌ ୍ ୖ
-/// ୗ ଡ଼ ଢ଼ ୟ ୠ ୡ ୢ ୣ ୦ ୧ ୨ ୩ ୪ ୫ ୬ ୭
-/// ୮ ୯ ୰ ୱ ୲ ୳ ୴ ୵ ୶ ୷
+/// An enum to represent all characters in the Oriya block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Oriya {
     /// \u{b01}: 'ଁ'

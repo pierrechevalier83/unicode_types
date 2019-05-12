@@ -1,6 +1,8 @@
 /// \u{a830} → \u{a83f}\
 ///\
-/// ꠰ ꠱ ꠲ ꠳ ꠴ ꠵ ꠶ ꠷ ꠸ ꠹
+/// ꠰ ꠱ ꠲ ꠳ ꠴ ꠵ ꠶ ꠷ ꠸ ꠹\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a830}: '꠰'
     pub const NORTH_INDIC_FRACTION_ONE_QUARTER: char = '꠰';
@@ -24,9 +26,7 @@ pub mod constants {
     pub const NORTH_INDIC_QUANTITY_MARK: char = '꠹';
 }
 
-/// \u{a830} → \u{a83f}\
-///\
-/// ꠰ ꠱ ꠲ ꠳ ꠴ ꠵ ꠶ ꠷ ꠸ ꠹
+/// An enum to represent all characters in the CommonIndicNumberForms block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CommonIndicNumberForms {
     /// \u{a830}: '꠰'

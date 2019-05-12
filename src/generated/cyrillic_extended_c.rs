@@ -1,6 +1,8 @@
 /// \u{1c80} → \u{1c8f}\
 ///\
-/// ᲀ ᲁ ᲂ ᲃ ᲄ ᲅ ᲆ ᲇ ᲈ
+/// ᲀ ᲁ ᲂ ᲃ ᲄ ᲅ ᲆ ᲇ ᲈ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1c80}: 'ᲀ'
     pub const CYRILLIC_SMALL_LETTER_ROUNDED_VE: char = 'ᲀ';
@@ -22,9 +24,7 @@ pub mod constants {
     pub const CYRILLIC_SMALL_LETTER_UNBLENDED_UK: char = 'ᲈ';
 }
 
-/// \u{1c80} → \u{1c8f}\
-///\
-/// ᲀ ᲁ ᲂ ᲃ ᲄ ᲅ ᲆ ᲇ ᲈ
+/// An enum to represent all characters in the CyrillicExtendedC block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CyrillicExtendedC {
     /// \u{1c80}: 'ᲀ'

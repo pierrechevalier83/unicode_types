@@ -1,6 +1,8 @@
 /// \u{fe10} → \u{fe1f}\
 ///\
-/// ︐ ︑ ︒ ︓ ︔ ︕ ︖ ︗ ︘ ︙
+/// ︐ ︑ ︒ ︓ ︔ ︕ ︖ ︗ ︘ ︙\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{fe10}: '︐'
     pub const PRESENTATION_FORM_FOR_VERTICAL_COMMA: char = '︐';
@@ -24,9 +26,7 @@ pub mod constants {
     pub const PRESENTATION_FORM_FOR_VERTICAL_HORIZONTAL_ELLIPSIS: char = '︙';
 }
 
-/// \u{fe10} → \u{fe1f}\
-///\
-/// ︐ ︑ ︒ ︓ ︔ ︕ ︖ ︗ ︘ ︙
+/// An enum to represent all characters in the VerticalForms block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum VerticalForms {
     /// \u{fe10}: '︐'

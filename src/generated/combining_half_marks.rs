@@ -1,6 +1,8 @@
 /// \u{fe20} → \u{fe2f}\
 ///\
-/// ︠ ︡ ︢ ︣ ︤ ︥ ︦ ︧ ︨ ︩ ︪ ︫ ︬ ︭ ︮
+/// ︠ ︡ ︢ ︣ ︤ ︥ ︦ ︧ ︨ ︩ ︪ ︫ ︬ ︭ ︮\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{fe20}: '︠'
     pub const COMBINING_LIGATURE_LEFT_HALF: char = '︠';
@@ -34,9 +36,7 @@ pub mod constants {
     pub const COMBINING_CYRILLIC_TITLO_LEFT_HALF: char = '︮';
 }
 
-/// \u{fe20} → \u{fe2f}\
-///\
-/// ︠ ︡ ︢ ︣ ︤ ︥ ︦ ︧ ︨ ︩ ︪ ︫ ︬ ︭ ︮
+/// An enum to represent all characters in the CombiningHalfMarks block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CombiningHalfMarks {
     /// \u{fe20}: '︠'

@@ -1,8 +1,10 @@
 /// \u{500} → \u{52f}\
 ///\
-/// Ԁ ԁ Ԃ ԃ Ԅ ԅ Ԇ ԇ Ԉ ԉ Ԋ ԋ Ԍ ԍ Ԏ ԏ
-/// Ԑ ԑ Ԓ ԓ Ԕ ԕ Ԗ ԗ Ԙ ԙ Ԛ ԛ Ԝ ԝ Ԟ ԟ
-/// Ԡ ԡ Ԣ ԣ Ԥ ԥ Ԧ ԧ Ԩ ԩ Ԫ ԫ Ԭ ԭ Ԯ
+/// Ԁ ԁ Ԃ ԃ Ԅ ԅ Ԇ ԇ Ԉ ԉ Ԋ ԋ Ԍ ԍ Ԏ ԏ\
+/// Ԑ ԑ Ԓ ԓ Ԕ ԕ Ԗ ԗ Ԙ ԙ Ԛ ԛ Ԝ ԝ Ԟ ԟ\
+/// Ԡ ԡ Ԣ ԣ Ԥ ԥ Ԧ ԧ Ԩ ԩ Ԫ ԫ Ԭ ԭ Ԯ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{500}: 'Ԁ'
     pub const CYRILLIC_CAPITAL_LETTER_KOMI_DE: char = 'Ԁ';
@@ -100,11 +102,7 @@ pub mod constants {
     pub const CYRILLIC_CAPITAL_LETTER_EL_WITH_DESCENDER: char = 'Ԯ';
 }
 
-/// \u{500} → \u{52f}\
-///\
-/// Ԁ ԁ Ԃ ԃ Ԅ ԅ Ԇ ԇ Ԉ ԉ Ԋ ԋ Ԍ ԍ Ԏ ԏ
-/// Ԑ ԑ Ԓ ԓ Ԕ ԕ Ԗ ԗ Ԙ ԙ Ԛ ԛ Ԝ ԝ Ԟ ԟ
-/// Ԡ ԡ Ԣ ԣ Ԥ ԥ Ԧ ԧ Ԩ ԩ Ԫ ԫ Ԭ ԭ Ԯ
+/// An enum to represent all characters in the CyrillicSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum CyrillicSupplement {
     /// \u{500}: 'Ԁ'

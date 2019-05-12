@@ -1,10 +1,12 @@
 /// \u{1c00} → \u{1c4f}\
 ///\
-/// ᰀ ᰁ ᰂ ᰃ ᰄ ᰅ ᰆ ᰇ ᰈ ᰉ ᰊ ᰋ ᰌ ᰍ ᰎ ᰏ
-/// ᰐ ᰑ ᰒ ᰓ ᰔ ᰕ ᰖ ᰗ ᰘ ᰙ ᰚ ᰛ ᰜ ᰝ ᰞ ᰟ
-/// ᰠ ᰡ ᰢ ᰣ ᰤ ᰥ ᰦ ᰧ ᰨ ᰩ ᰪ ᰫ ᰬ ᰭ ᰮ ᰯ
-/// ᰰ ᰱ ᰲ ᰳ ᰴ ᰵ ᰶ ᰷ ᰻ ᰼ ᰽ ᰾ ᰿ ᱀ ᱁ ᱂
-/// ᱃ ᱄ ᱅ ᱆ ᱇ ᱈ ᱉ ᱍ ᱎ
+/// ᰀ ᰁ ᰂ ᰃ ᰄ ᰅ ᰆ ᰇ ᰈ ᰉ ᰊ ᰋ ᰌ ᰍ ᰎ ᰏ\
+/// ᰐ ᰑ ᰒ ᰓ ᰔ ᰕ ᰖ ᰗ ᰘ ᰙ ᰚ ᰛ ᰜ ᰝ ᰞ ᰟ\
+/// ᰠ ᰡ ᰢ ᰣ ᰤ ᰥ ᰦ ᰧ ᰨ ᰩ ᰪ ᰫ ᰬ ᰭ ᰮ ᰯ\
+/// ᰰ ᰱ ᰲ ᰳ ᰴ ᰵ ᰶ ᰷ ᰻ ᰼ ᰽ ᰾ ᰿ ᱀ ᱁ ᱂\
+/// ᱃ ᱄ ᱅ ᱆ ᱇ ᱈ ᱉ ᱍ ᱎ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1c00}: 'ᰀ'
     pub const LETTER_KA: char = 'ᰀ';
@@ -154,13 +156,7 @@ pub mod constants {
     pub const LETTER_TTHA: char = 'ᱎ';
 }
 
-/// \u{1c00} → \u{1c4f}\
-///\
-/// ᰀ ᰁ ᰂ ᰃ ᰄ ᰅ ᰆ ᰇ ᰈ ᰉ ᰊ ᰋ ᰌ ᰍ ᰎ ᰏ
-/// ᰐ ᰑ ᰒ ᰓ ᰔ ᰕ ᰖ ᰗ ᰘ ᰙ ᰚ ᰛ ᰜ ᰝ ᰞ ᰟ
-/// ᰠ ᰡ ᰢ ᰣ ᰤ ᰥ ᰦ ᰧ ᰨ ᰩ ᰪ ᰫ ᰬ ᰭ ᰮ ᰯ
-/// ᰰ ᰱ ᰲ ᰳ ᰴ ᰵ ᰶ ᰷ ᰻ ᰼ ᰽ ᰾ ᰿ ᱀ ᱁ ᱂
-/// ᱃ ᱄ ᱅ ᱆ ᱇ ᱈ ᱉ ᱍ ᱎ
+/// An enum to represent all characters in the Lepcha block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Lepcha {
     /// \u{1c00}: 'ᰀ'

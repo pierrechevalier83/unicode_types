@@ -1,6 +1,8 @@
 /// \u{fff0} → \u{ffff}\
 ///\
-/// ￹ ￺ ￻ ￼ �
+/// ￹ ￺ ￻ ￼ �\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{fff9}: '￹'
     pub const INTERLINEAR_ANNOTATION_ANCHOR: char = '￹';
@@ -14,9 +16,7 @@ pub mod constants {
     pub const REPLACEMENT_CHARACTER: char = '�';
 }
 
-/// \u{fff0} → \u{ffff}\
-///\
-/// ￹ ￺ ￻ ￼ �
+/// An enum to represent all characters in the Specials block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Specials {
     /// \u{fff9}: '￹'

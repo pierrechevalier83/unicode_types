@@ -1,6 +1,8 @@
 /// \u{17000} → \u{187ff}\
 ///\
-/// 𗀀 𘟷
+/// 𗀀 𘟷\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{17000}: '𗀀'
     pub const IDEOGRAPH_FIRST: char = '𗀀';
@@ -8,9 +10,7 @@ pub mod constants {
     pub const IDEOGRAPH_LAST: char = '𘟷';
 }
 
-/// \u{17000} → \u{187ff}\
-///\
-/// 𗀀 𘟷
+/// An enum to represent all characters in the Tangut block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Tangut {
     /// \u{17000}: '𗀀'

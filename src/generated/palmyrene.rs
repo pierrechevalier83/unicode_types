@@ -1,7 +1,9 @@
 /// \u{10860} → \u{1087f}\
 ///\
-/// 𐡠 𐡡 𐡢 𐡣 𐡤 𐡥 𐡦 𐡧 𐡨 𐡩 𐡪 𐡫 𐡬 𐡭 𐡮 𐡯
-/// 𐡰 𐡱 𐡲 𐡳 𐡴 𐡵 𐡶 𐡷 𐡸 𐡹 𐡺 𐡻 𐡼 𐡽 𐡾
+/// 𐡠 𐡡 𐡢 𐡣 𐡤 𐡥 𐡦 𐡧 𐡨 𐡩 𐡪 𐡫 𐡬 𐡭 𐡮 𐡯\
+/// 𐡰 𐡱 𐡲 𐡳 𐡴 𐡵 𐡶 𐡷 𐡸 𐡹 𐡺 𐡻 𐡼 𐡽 𐡾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10860}: '𐡠'
     pub const LETTER_ALEPH: char = '𐡠';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const NUMBER_TEN: char = '𐡾';
 }
 
-/// \u{10860} → \u{1087f}\
-///\
-/// 𐡠 𐡡 𐡢 𐡣 𐡤 𐡥 𐡦 𐡧 𐡨 𐡩 𐡪 𐡫 𐡬 𐡭 𐡮 𐡯
-/// 𐡰 𐡱 𐡲 𐡳 𐡴 𐡵 𐡶 𐡷 𐡸 𐡹 𐡺 𐡻 𐡼 𐡽 𐡾
+/// An enum to represent all characters in the Palmyrene block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Palmyrene {
     /// \u{10860}: '𐡠'

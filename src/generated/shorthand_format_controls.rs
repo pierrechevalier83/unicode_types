@@ -1,6 +1,8 @@
 /// \u{1bca0} → \u{1bcaf}\
 ///\
-/// 𛲠 𛲡 𛲢 𛲣
+/// 𛲠 𛲡 𛲢 𛲣\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1bca0}: '𛲠'
     pub const SHORTHAND_FORMAT_LETTER_OVERLAP: char = '𛲠';
@@ -12,9 +14,7 @@ pub mod constants {
     pub const SHORTHAND_FORMAT_UP_STEP: char = '𛲣';
 }
 
-/// \u{1bca0} → \u{1bcaf}\
-///\
-/// 𛲠 𛲡 𛲢 𛲣
+/// An enum to represent all characters in the ShorthandFormatControls block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum ShorthandFormatControls {
     /// \u{1bca0}: '𛲠'

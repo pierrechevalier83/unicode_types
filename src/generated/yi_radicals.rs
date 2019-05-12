@@ -1,9 +1,11 @@
 /// \u{a490} → \u{a4cf}\
 ///\
-/// ꒐ ꒑ ꒒ ꒓ ꒔ ꒕ ꒖ ꒗ ꒘ ꒙ ꒚ ꒛ ꒜ ꒝ ꒞ ꒟
-/// ꒠ ꒡ ꒢ ꒣ ꒤ ꒥ ꒦ ꒧ ꒨ ꒩ ꒪ ꒫ ꒬ ꒭ ꒮ ꒯
-/// ꒰ ꒱ ꒲ ꒳ ꒴ ꒵ ꒶ ꒷ ꒸ ꒹ ꒺ ꒻ ꒼ ꒽ ꒾ ꒿
-/// ꓀ ꓁ ꓂ ꓃ ꓄ ꓅ ꓆
+/// ꒐ ꒑ ꒒ ꒓ ꒔ ꒕ ꒖ ꒗ ꒘ ꒙ ꒚ ꒛ ꒜ ꒝ ꒞ ꒟\
+/// ꒠ ꒡ ꒢ ꒣ ꒤ ꒥ ꒦ ꒧ ꒨ ꒩ ꒪ ꒫ ꒬ ꒭ ꒮ ꒯\
+/// ꒰ ꒱ ꒲ ꒳ ꒴ ꒵ ꒶ ꒷ ꒸ ꒹ ꒺ ꒻ ꒼ ꒽ ꒾ ꒿\
+/// ꓀ ꓁ ꓂ ꓃ ꓄ ꓅ ꓆\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a490}: '꒐'
     pub const YI_RADICAL_QOT: char = '꒐';
@@ -117,12 +119,7 @@ pub mod constants {
     pub const YI_RADICAL_KE: char = '꓆';
 }
 
-/// \u{a490} → \u{a4cf}\
-///\
-/// ꒐ ꒑ ꒒ ꒓ ꒔ ꒕ ꒖ ꒗ ꒘ ꒙ ꒚ ꒛ ꒜ ꒝ ꒞ ꒟
-/// ꒠ ꒡ ꒢ ꒣ ꒤ ꒥ ꒦ ꒧ ꒨ ꒩ ꒪ ꒫ ꒬ ꒭ ꒮ ꒯
-/// ꒰ ꒱ ꒲ ꒳ ꒴ ꒵ ꒶ ꒷ ꒸ ꒹ ꒺ ꒻ ꒼ ꒽ ꒾ ꒿
-/// ꓀ ꓁ ꓂ ꓃ ꓄ ꓅ ꓆
+/// An enum to represent all characters in the YiRadicals block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum YiRadicals {
     /// \u{a490}: '꒐'

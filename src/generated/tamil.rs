@@ -1,10 +1,12 @@
 /// \u{b80} → \u{bff}\
 ///\
-/// ஂ ஃ அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ க ங
-/// ச ஜ ஞ ட ண த ந ன ப ம ய ர ற ல ள ழ
-/// வ ஶ ஷ ஸ ஹ ா ி ீ ு ூ ெ ே ை ொ ோ ௌ
-/// ் ௐ ௗ ௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯ ௰ ௱ ௲
-/// ௳ ௴ ௵ ௶ ௷ ௸ ௹ ௺
+/// ஂ ஃ அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ க ங\
+/// ச ஜ ஞ ட ண த ந ன ப ம ய ர ற ல ள ழ\
+/// வ ஶ ஷ ஸ ஹ ா ி ீ ு ூ ெ ே ை ொ ோ ௌ\
+/// ் ௐ ௗ ௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯ ௰ ௱ ௲\
+/// ௳ ௴ ௵ ௶ ௷ ௸ ௹ ௺\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{b82}: 'ஂ'
     pub const SIGN_ANUSVARA: char = 'ஂ';
@@ -152,13 +154,7 @@ pub mod constants {
     pub const NUMBER_SIGN: char = '௺';
 }
 
-/// \u{b80} → \u{bff}\
-///\
-/// ஂ ஃ அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ க ங
-/// ச ஜ ஞ ட ண த ந ன ப ம ய ர ற ல ள ழ
-/// வ ஶ ஷ ஸ ஹ ா ி ீ ு ூ ெ ே ை ொ ோ ௌ
-/// ் ௐ ௗ ௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯ ௰ ௱ ௲
-/// ௳ ௴ ௵ ௶ ௷ ௸ ௹ ௺
+/// An enum to represent all characters in the Tamil block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Tamil {
     /// \u{b82}: 'ஂ'

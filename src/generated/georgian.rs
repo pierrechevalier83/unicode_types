@@ -1,11 +1,13 @@
 /// \u{10a0} → \u{10ff}\
 ///\
-/// Ⴀ Ⴁ Ⴂ Ⴃ Ⴄ Ⴅ Ⴆ Ⴇ Ⴈ Ⴉ Ⴊ Ⴋ Ⴌ Ⴍ Ⴎ Ⴏ
-/// Ⴐ Ⴑ Ⴒ Ⴓ Ⴔ Ⴕ Ⴖ Ⴗ Ⴘ Ⴙ Ⴚ Ⴛ Ⴜ Ⴝ Ⴞ Ⴟ
-/// Ⴠ Ⴡ Ⴢ Ⴣ Ⴤ Ⴥ Ⴧ Ⴭ ა ბ გ დ ე ვ ზ თ
-/// ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ
-/// შ ჩ ც ძ წ ჭ ხ ჯ ჰ ჱ ჲ ჳ ჴ ჵ ჶ ჷ
-/// ჸ ჹ ჺ ჻ ჼ ჽ ჾ
+/// Ⴀ Ⴁ Ⴂ Ⴃ Ⴄ Ⴅ Ⴆ Ⴇ Ⴈ Ⴉ Ⴊ Ⴋ Ⴌ Ⴍ Ⴎ Ⴏ\
+/// Ⴐ Ⴑ Ⴒ Ⴓ Ⴔ Ⴕ Ⴖ Ⴗ Ⴘ Ⴙ Ⴚ Ⴛ Ⴜ Ⴝ Ⴞ Ⴟ\
+/// Ⴠ Ⴡ Ⴢ Ⴣ Ⴤ Ⴥ Ⴧ Ⴭ ა ბ გ დ ე ვ ზ თ\
+/// ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ\
+/// შ ჩ ც ძ წ ჭ ხ ჯ ჰ ჱ ჲ ჳ ჴ ჵ ჶ ჷ\
+/// ჸ ჹ ჺ ჻ ჼ ჽ ჾ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10a0}: 'Ⴀ'
     pub const CAPITAL_LETTER_AN: char = 'Ⴀ';
@@ -183,14 +185,7 @@ pub mod constants {
     pub const LETTER_HARD_SIGN: char = 'ჾ';
 }
 
-/// \u{10a0} → \u{10ff}\
-///\
-/// Ⴀ Ⴁ Ⴂ Ⴃ Ⴄ Ⴅ Ⴆ Ⴇ Ⴈ Ⴉ Ⴊ Ⴋ Ⴌ Ⴍ Ⴎ Ⴏ
-/// Ⴐ Ⴑ Ⴒ Ⴓ Ⴔ Ⴕ Ⴖ Ⴗ Ⴘ Ⴙ Ⴚ Ⴛ Ⴜ Ⴝ Ⴞ Ⴟ
-/// Ⴠ Ⴡ Ⴢ Ⴣ Ⴤ Ⴥ Ⴧ Ⴭ ა ბ გ დ ე ვ ზ თ
-/// ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ
-/// შ ჩ ც ძ წ ჭ ხ ჯ ჰ ჱ ჲ ჳ ჴ ჵ ჶ ჷ
-/// ჸ ჹ ჺ ჻ ჼ ჽ ჾ
+/// An enum to represent all characters in the Georgian block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Georgian {
     /// \u{10a0}: 'Ⴀ'

@@ -1,7 +1,9 @@
 /// \u{2580} → \u{259f}\
 ///\
-/// ▀ ▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▉ ▊ ▋ ▌ ▍ ▎ ▏
-/// ▐ ░ ▒ ▓ ▔ ▕ ▖ ▗ ▘ ▙ ▚ ▛ ▜ ▝ ▞
+/// ▀ ▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▉ ▊ ▋ ▌ ▍ ▎ ▏\
+/// ▐ ░ ▒ ▓ ▔ ▕ ▖ ▗ ▘ ▙ ▚ ▛ ▜ ▝ ▞\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2580}: '▀'
     pub const UPPER_HALF_BLOCK: char = '▀';
@@ -67,10 +69,7 @@ pub mod constants {
     pub const QUADRANT_UPPER_RIGHT_AND_LOWER_LEFT: char = '▞';
 }
 
-/// \u{2580} → \u{259f}\
-///\
-/// ▀ ▁ ▂ ▃ ▄ ▅ ▆ ▇ █ ▉ ▊ ▋ ▌ ▍ ▎ ▏
-/// ▐ ░ ▒ ▓ ▔ ▕ ▖ ▗ ▘ ▙ ▚ ▛ ▜ ▝ ▞
+/// An enum to represent all characters in the BlockElements block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum BlockElements {
     /// \u{2580}: '▀'

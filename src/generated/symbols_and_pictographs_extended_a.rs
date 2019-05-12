@@ -1,6 +1,8 @@
 /// \u{1fa70} → \u{1faff}\
 ///\
-/// 🩰 🩱 🩲 🩳 🩸 🩹 🩺 🪀 🪁 🪂 🪐 🪑 🪒 🪓 🪔 🪕
+/// 🩰 🩱 🩲 🩳 🩸 🩹 🩺 🪀 🪁 🪂 🪐 🪑 🪒 🪓 🪔 🪕\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1fa70}: '🩰'
     pub const BALLET_SHOES: char = '🩰';
@@ -36,9 +38,7 @@ pub mod constants {
     pub const BANJO: char = '🪕';
 }
 
-/// \u{1fa70} → \u{1faff}\
-///\
-/// 🩰 🩱 🩲 🩳 🩸 🩹 🩺 🪀 🪁 🪂 🪐 🪑 🪒 🪓 🪔 🪕
+/// An enum to represent all characters in the SymbolsandPictographsExtendedA block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SymbolsandPictographsExtendedA {
     /// \u{1fa70}: '🩰'

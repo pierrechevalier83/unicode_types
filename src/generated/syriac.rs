@@ -1,10 +1,12 @@
 /// \u{700} → \u{74f}\
 ///\
-/// ܀ ܁ ܂ ܃ ܄ ܅ ܆ ܇ ܈ ܉ ܊ ܋ ܌ ܍ ܏ ܐ
-/// ܑ ܒ ܓ ܔ ܕ ܖ ܗ ܘ ܙ ܚ ܛ ܜ ܝ ܞ ܟ ܠ
-/// ܡ ܢ ܣ ܤ ܥ ܦ ܧ ܨ ܩ ܪ ܫ ܬ ܭ ܮ ܯ ܰ
-/// ܱ ܲ ܳ ܴ ܵ ܶ ܷ ܸ ܹ ܺ ܻ ܼ ܽ ܾ ܿ ݀
-/// ݁ ݂ ݃ ݄ ݅ ݆ ݇ ݈ ݉ ݊ ݍ ݎ
+/// ܀ ܁ ܂ ܃ ܄ ܅ ܆ ܇ ܈ ܉ ܊ ܋ ܌ ܍ ܏ ܐ\
+/// ܑ ܒ ܓ ܔ ܕ ܖ ܗ ܘ ܙ ܚ ܛ ܜ ܝ ܞ ܟ ܠ\
+/// ܡ ܢ ܣ ܤ ܥ ܦ ܧ ܨ ܩ ܪ ܫ ܬ ܭ ܮ ܯ ܰ\
+/// ܱ ܲ ܳ ܴ ܵ ܶ ܷ ܸ ܹ ܺ ܻ ܼ ܽ ܾ ܿ ݀\
+/// ݁ ݂ ݃ ݄ ݅ ݆ ݇ ݈ ݉ ݊ ݍ ݎ\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{700}: '܀'
     pub const END_OF_PARAGRAPH: char = '܀';
@@ -160,13 +162,7 @@ pub mod constants {
     pub const LETTER_SOGDIAN_KHAPH: char = 'ݎ';
 }
 
-/// \u{700} → \u{74f}\
-///\
-/// ܀ ܁ ܂ ܃ ܄ ܅ ܆ ܇ ܈ ܉ ܊ ܋ ܌ ܍ ܏ ܐ
-/// ܑ ܒ ܓ ܔ ܕ ܖ ܗ ܘ ܙ ܚ ܛ ܜ ܝ ܞ ܟ ܠ
-/// ܡ ܢ ܣ ܤ ܥ ܦ ܧ ܨ ܩ ܪ ܫ ܬ ܭ ܮ ܯ ܰ
-/// ܱ ܲ ܳ ܴ ܵ ܶ ܷ ܸ ܹ ܺ ܻ ܼ ܽ ܾ ܿ ݀
-/// ݁ ݂ ݃ ݄ ݅ ݆ ݇ ݈ ݉ ݊ ݍ ݎ
+/// An enum to represent all characters in the Syriac block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Syriac {
     /// \u{700}: '܀'

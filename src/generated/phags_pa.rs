@@ -1,9 +1,11 @@
 /// \u{a840} → \u{a87f}\
 ///\
-/// ꡀ ꡁ ꡂ ꡃ ꡄ ꡅ ꡆ ꡇ ꡈ ꡉ ꡊ ꡋ ꡌ ꡍ ꡎ ꡏ
-/// ꡐ ꡑ ꡒ ꡓ ꡔ ꡕ ꡖ ꡗ ꡘ ꡙ ꡚ ꡛ ꡜ ꡝ ꡞ ꡟ
-/// ꡠ ꡡ ꡢ ꡣ ꡤ ꡥ ꡦ ꡧ ꡨ ꡩ ꡪ ꡫ ꡬ ꡭ ꡮ ꡯ
-/// ꡰ ꡱ ꡲ ꡳ ꡴ ꡵ ꡶ ꡷
+/// ꡀ ꡁ ꡂ ꡃ ꡄ ꡅ ꡆ ꡇ ꡈ ꡉ ꡊ ꡋ ꡌ ꡍ ꡎ ꡏ\
+/// ꡐ ꡑ ꡒ ꡓ ꡔ ꡕ ꡖ ꡗ ꡘ ꡙ ꡚ ꡛ ꡜ ꡝ ꡞ ꡟ\
+/// ꡠ ꡡ ꡢ ꡣ ꡤ ꡥ ꡦ ꡧ ꡨ ꡩ ꡪ ꡫ ꡬ ꡭ ꡮ ꡯ\
+/// ꡰ ꡱ ꡲ ꡳ ꡴ ꡵ ꡶ ꡷\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a840}: 'ꡀ'
     pub const PHAGS_DASH_PA_LETTER_KA: char = 'ꡀ';
@@ -119,12 +121,7 @@ pub mod constants {
     pub const PHAGS_DASH_PA_MARK_DOUBLE_SHAD: char = '꡷';
 }
 
-/// \u{a840} → \u{a87f}\
-///\
-/// ꡀ ꡁ ꡂ ꡃ ꡄ ꡅ ꡆ ꡇ ꡈ ꡉ ꡊ ꡋ ꡌ ꡍ ꡎ ꡏ
-/// ꡐ ꡑ ꡒ ꡓ ꡔ ꡕ ꡖ ꡗ ꡘ ꡙ ꡚ ꡛ ꡜ ꡝ ꡞ ꡟ
-/// ꡠ ꡡ ꡢ ꡣ ꡤ ꡥ ꡦ ꡧ ꡨ ꡩ ꡪ ꡫ ꡬ ꡭ ꡮ ꡯ
-/// ꡰ ꡱ ꡲ ꡳ ꡴ ꡵ ꡶ ꡷
+/// An enum to represent all characters in the Phagspa block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Phagspa {
     /// \u{a840}: 'ꡀ'

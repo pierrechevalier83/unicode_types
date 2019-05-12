@@ -1,9 +1,11 @@
 /// \u{1bc0} → \u{1bff}\
 ///\
-/// ᯀ ᯁ ᯂ ᯃ ᯄ ᯅ ᯆ ᯇ ᯈ ᯉ ᯊ ᯋ ᯌ ᯍ ᯎ ᯏ
-/// ᯐ ᯑ ᯒ ᯓ ᯔ ᯕ ᯖ ᯗ ᯘ ᯙ ᯚ ᯛ ᯜ ᯝ ᯞ ᯟ
-/// ᯠ ᯡ ᯢ ᯣ ᯤ ᯥ ᯦ ᯧ ᯨ ᯩ ᯪ ᯫ ᯬ ᯭ ᯮ ᯯ
-/// ᯰ ᯱ ᯲ ᯳ ᯼ ᯽ ᯾
+/// ᯀ ᯁ ᯂ ᯃ ᯄ ᯅ ᯆ ᯇ ᯈ ᯉ ᯊ ᯋ ᯌ ᯍ ᯎ ᯏ\
+/// ᯐ ᯑ ᯒ ᯓ ᯔ ᯕ ᯖ ᯗ ᯘ ᯙ ᯚ ᯛ ᯜ ᯝ ᯞ ᯟ\
+/// ᯠ ᯡ ᯢ ᯣ ᯤ ᯥ ᯦ ᯧ ᯨ ᯩ ᯪ ᯫ ᯬ ᯭ ᯮ ᯯ\
+/// ᯰ ᯱ ᯲ ᯳ ᯼ ᯽ ᯾\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1bc0}: 'ᯀ'
     pub const LETTER_A: char = 'ᯀ';
@@ -117,12 +119,7 @@ pub mod constants {
     pub const SYMBOL_BINDU_JUDUL: char = '᯾';
 }
 
-/// \u{1bc0} → \u{1bff}\
-///\
-/// ᯀ ᯁ ᯂ ᯃ ᯄ ᯅ ᯆ ᯇ ᯈ ᯉ ᯊ ᯋ ᯌ ᯍ ᯎ ᯏ
-/// ᯐ ᯑ ᯒ ᯓ ᯔ ᯕ ᯖ ᯗ ᯘ ᯙ ᯚ ᯛ ᯜ ᯝ ᯞ ᯟ
-/// ᯠ ᯡ ᯢ ᯣ ᯤ ᯥ ᯦ ᯧ ᯨ ᯩ ᯪ ᯫ ᯬ ᯭ ᯮ ᯯ
-/// ᯰ ᯱ ᯲ ᯳ ᯼ ᯽ ᯾
+/// An enum to represent all characters in the Batak block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Batak {
     /// \u{1bc0}: 'ᯀ'

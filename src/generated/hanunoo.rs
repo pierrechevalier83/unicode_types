@@ -1,7 +1,9 @@
 /// \u{1720} → \u{173f}\
 ///\
-/// ᜠ ᜡ ᜢ ᜣ ᜤ ᜥ ᜦ ᜧ ᜨ ᜩ ᜪ ᜫ ᜬ ᜭ ᜮ ᜯ
-/// ᜰ ᜱ ᜲ ᜳ ᜴ ᜵ ᜶
+/// ᜠ ᜡ ᜢ ᜣ ᜤ ᜥ ᜦ ᜧ ᜨ ᜩ ᜪ ᜫ ᜬ ᜭ ᜮ ᜯ\
+/// ᜰ ᜱ ᜲ ᜳ ᜴ ᜵ ᜶\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1720}: 'ᜠ'
     pub const LETTER_A: char = 'ᜠ';
@@ -51,10 +53,7 @@ pub mod constants {
     pub const PHILIPPINE_DOUBLE_PUNCTUATION: char = '᜶';
 }
 
-/// \u{1720} → \u{173f}\
-///\
-/// ᜠ ᜡ ᜢ ᜣ ᜤ ᜥ ᜦ ᜧ ᜨ ᜩ ᜪ ᜫ ᜬ ᜭ ᜮ ᜯ
-/// ᜰ ᜱ ᜲ ᜳ ᜴ ᜵ ᜶
+/// An enum to represent all characters in the Hanunoo block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum Hanunoo {
     /// \u{1720}: 'ᜠ'

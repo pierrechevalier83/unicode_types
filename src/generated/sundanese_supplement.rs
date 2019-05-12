@@ -1,6 +1,8 @@
 /// \u{1cc0} → \u{1ccf}\
 ///\
-/// ᳀ ᳁ ᳂ ᳃ ᳄ ᳅ ᳆ ᳇
+/// ᳀ ᳁ ᳂ ᳃ ᳄ ᳅ ᳆ ᳇\
+
+/// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1cc0}: '᳀'
     pub const SUNDANESE_PUNCTUATION_BINDU_SURYA: char = '᳀';
@@ -20,9 +22,7 @@ pub mod constants {
     pub const SUNDANESE_PUNCTUATION_BINDU_BA_SATANGA: char = '᳇';
 }
 
-/// \u{1cc0} → \u{1ccf}\
-///\
-/// ᳀ ᳁ ᳂ ᳃ ᳄ ᳅ ᳆ ᳇
+/// An enum to represent all characters in the SundaneseSupplement block.
 #[derive(Debug, Clone, Copy, Hash, PartialEq, Eq)]
 pub enum SundaneseSupplement {
     /// \u{1cc0}: '᳀'
