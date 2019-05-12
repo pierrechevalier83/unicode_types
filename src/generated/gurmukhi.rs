@@ -1,11 +1,3 @@
-/// \u{a00} → \u{a7f}
-///
-/// ਁ ਂ ਃ ਅ ਆ ਇ ਈ ਉ ਊ ਏ ਐ ਓ ਔ ਕ ਖ ਗ\
-/// ਘ ਙ ਚ ਛ ਜ ਝ ਞ ਟ ਠ ਡ ਢ ਣ ਤ ਥ ਦ ਧ\
-/// ਨ ਪ ਫ ਬ ਭ ਮ ਯ ਰ ਲ ਲ਼ ਵ ਸ਼ ਸ ਹ ਼ ਾ\
-/// ਿ ੀ ੁ ੂ ੇ ੈ ੋ ੌ ੍ ੑ ਖ਼ ਗ਼ ਜ਼ ੜ ਫ਼ ੦\
-/// ੧ ੨ ੩ ੪ ੫ ੬ ੭ ੮ ੯ ੰ ੱ ੲ ੳ ੴ ੵ ੶\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a01}: 'ਁ'

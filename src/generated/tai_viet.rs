@@ -1,11 +1,3 @@
-/// \u{aa80} → \u{aadf}
-///
-/// ꪀ ꪁ ꪂ ꪃ ꪄ ꪅ ꪆ ꪇ ꪈ ꪉ ꪊ ꪋ ꪌ ꪍ ꪎ ꪏ\
-/// ꪐ ꪑ ꪒ ꪓ ꪔ ꪕ ꪖ ꪗ ꪘ ꪙ ꪚ ꪛ ꪜ ꪝ ꪞ ꪟ\
-/// ꪠ ꪡ ꪢ ꪣ ꪤ ꪥ ꪦ ꪧ ꪨ ꪩ ꪪ ꪫ ꪬ ꪭ ꪮ ꪯ\
-/// ꪰ ꪱ ꪲ ꪳ ꪴ ꪵ ꪶ ꪷ ꪸ ꪹ ꪺ ꪻ ꪼ ꪽ ꪾ ꪿\
-/// ꫀ ꫁ ꫂ ꫛ ꫜ ꫝ ꫞\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{aa80}: 'ꪀ'

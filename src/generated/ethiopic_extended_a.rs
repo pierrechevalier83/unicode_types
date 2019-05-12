@@ -1,8 +1,3 @@
-/// \u{ab00} → \u{ab2f}
-///
-/// ꬁ ꬂ ꬃ ꬄ ꬅ ꬆ ꬉ ꬊ ꬋ ꬌ ꬍ ꬎ ꬑ ꬒ ꬓ ꬔ\
-/// ꬕ ꬖ ꬠ ꬡ ꬢ ꬣ ꬤ ꬥ ꬦ ꬨ ꬩ ꬪ ꬫ ꬬ ꬭ ꬮ\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{ab01}: 'ꬁ'

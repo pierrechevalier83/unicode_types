@@ -1,9 +1,3 @@
-/// \u{a930} → \u{a95f}
-///
-/// ꤰ ꤱ ꤲ ꤳ ꤴ ꤵ ꤶ ꤷ ꤸ ꤹ ꤺ ꤻ ꤼ ꤽ ꤾ ꤿ\
-/// ꥀ ꥁ ꥂ ꥃ ꥄ ꥅ ꥆ ꥇ ꥈ ꥉ ꥊ ꥋ ꥌ ꥍ ꥎ ꥏ\
-/// ꥐ ꥑ ꥒ ꥓\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a930}: 'ꤰ'

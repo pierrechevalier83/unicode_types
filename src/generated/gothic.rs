@@ -1,8 +1,3 @@
-/// \u{10330} → \u{1034f}
-///
-/// 𐌰 𐌱 𐌲 𐌳 𐌴 𐌵 𐌶 𐌷 𐌸 𐌹 𐌺 𐌻 𐌼 𐌽 𐌾 𐌿\
-/// 𐍀 𐍁 𐍂 𐍃 𐍄 𐍅 𐍆 𐍇 𐍈 𐍉 𐍊\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10330}: '𐌰'

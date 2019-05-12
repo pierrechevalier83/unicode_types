@@ -1,11 +1,3 @@
-/// \u{8a0} → \u{8ff}
-///
-/// ࢠ ࢡ ࢢ ࢣ ࢤ ࢥ ࢦ ࢧ ࢨ ࢩ ࢪ ࢫ ࢬ ࢭ ࢮ ࢯ\
-/// ࢰ ࢱ ࢲ ࢳ ࢴ ࢶ ࢷ ࢸ ࢹ ࢺ ࢻ ࢼ ࢽ ࣓ ࣔ ࣕ\
-/// ࣖ ࣗ ࣘ ࣙ ࣚ ࣛ ࣜ ࣝ ࣞ ࣟ ࣠ ࣡ ࣢ ࣣ ࣤ ࣥ\
-/// ࣦ ࣧ ࣨ ࣩ ࣪ ࣫ ࣬ ࣭ ࣮ ࣯ ࣰ ࣱ ࣲ ࣳ ࣴ ࣵ\
-/// ࣶ ࣷ ࣸ ࣹ ࣺ ࣻ ࣼ ࣽ ࣾ\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{8a0}: 'ࢠ'

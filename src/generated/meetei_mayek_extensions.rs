@@ -1,8 +1,3 @@
-/// \u{aae0} → \u{aaff}
-///
-/// ꫠ ꫡ ꫢ ꫣ ꫤ ꫥ ꫦ ꫧ ꫨ ꫩ ꫪ ꫫ ꫬ ꫭ ꫮ ꫯ\
-/// ꫰ ꫱ ꫲ ꫳ ꫴ ꫵ ꫶\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{aae0}: 'ꫠ'

@@ -1,9 +1,3 @@
-/// \u{1950} → \u{197f}
-///
-/// ᥐ ᥑ ᥒ ᥓ ᥔ ᥕ ᥖ ᥗ ᥘ ᥙ ᥚ ᥛ ᥜ ᥝ ᥞ ᥟ\
-/// ᥠ ᥡ ᥢ ᥣ ᥤ ᥥ ᥦ ᥧ ᥨ ᥩ ᥪ ᥫ ᥬ ᥭ ᥰ ᥱ\
-/// ᥲ ᥳ ᥴ\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1950}: 'ᥐ'

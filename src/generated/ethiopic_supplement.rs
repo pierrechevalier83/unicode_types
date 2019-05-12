@@ -1,8 +1,3 @@
-/// \u{1380} → \u{139f}
-///
-/// ᎀ ᎁ ᎂ ᎃ ᎄ ᎅ ᎆ ᎇ ᎈ ᎉ ᎊ ᎋ ᎌ ᎍ ᎎ ᎏ\
-/// ᎐ ᎑ ᎒ ᎓ ᎔ ᎕ ᎖ ᎗ ᎘ ᎙\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1380}: 'ᎀ'

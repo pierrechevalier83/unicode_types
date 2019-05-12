@@ -1,9 +1,3 @@
-/// \u{2400} → \u{243f}
-///
-/// ␀ ␁ ␂ ␃ ␄ ␅ ␆ ␇ ␈ ␉ ␊ ␋ ␌ ␍ ␎ ␏\
-/// ␐ ␑ ␒ ␓ ␔ ␕ ␖ ␗ ␘ ␙ ␚ ␛ ␜ ␝ ␞ ␟\
-/// ␠ ␡ ␢ ␣ ␤ ␥ ␦\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2400}: '␀'

@@ -1,8 +1,3 @@
-/// \u{2c60} → \u{2c7f}
-///
-/// Ⱡ ⱡ Ɫ Ᵽ Ɽ ⱥ ⱦ Ⱨ ⱨ Ⱪ ⱪ Ⱬ ⱬ Ɑ Ɱ Ɐ\
-/// Ɒ ⱱ Ⱳ ⱳ ⱴ Ⱶ ⱶ ⱷ ⱸ ⱹ ⱺ ⱻ ⱼ ⱽ Ȿ\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2c60}: 'Ⱡ'

@@ -1,7 +1,3 @@
-/// \u{1bca0} → \u{1bcaf}
-///
-/// 𛲠 𛲡 𛲢 𛲣\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1bca0}: '𛲠'

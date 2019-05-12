@@ -1,8 +1,3 @@
-/// \u{a8e0} → \u{a8ff}
-///
-/// ꣠ ꣡ ꣢ ꣣ ꣤ ꣥ ꣦ ꣧ ꣨ ꣩ ꣪ ꣫ ꣬ ꣭ ꣮ ꣯\
-/// ꣰ ꣱ ꣲ ꣳ ꣴ ꣵ ꣶ ꣷ ꣸ ꣹ ꣺ ꣻ ꣼ ꣽ ꣾ\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a8e0}: '꣠'

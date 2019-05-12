@@ -1,7 +1,3 @@
-/// \u{3400} → \u{4dbf}
-///
-/// 㐀 䶵\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{3400}: '㐀'

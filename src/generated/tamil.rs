@@ -1,11 +1,3 @@
-/// \u{b80} → \u{bff}
-///
-/// ஂ ஃ அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ க ங\
-/// ச ஜ ஞ ட ண த ந ன ப ம ய ர ற ல ள ழ\
-/// வ ஶ ஷ ஸ ஹ ா ி ீ ு ூ ெ ே ை ொ ோ ௌ\
-/// ் ௐ ௗ ௦ ௧ ௨ ௩ ௪ ௫ ௬ ௭ ௮ ௯ ௰ ௱ ௲\
-/// ௳ ௴ ௵ ௶ ௷ ௸ ௹ ௺\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{b82}: 'ஂ'

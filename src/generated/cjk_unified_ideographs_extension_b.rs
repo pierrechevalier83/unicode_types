@@ -1,7 +1,3 @@
-/// \u{20000} → \u{2a6df}
-///
-/// 𠀀 𪛖\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{20000}: '𠀀'

@@ -1,7 +1,3 @@
-/// \u{fe00} → \u{fe0f}
-///
-/// ︀ ︁ ︂ ︃ ︄ ︅ ︆ ︇ ︈ ︉ ︊ ︋ ︌ ︍ ︎\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{fe00}: '︀'

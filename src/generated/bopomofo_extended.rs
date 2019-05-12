@@ -1,8 +1,3 @@
-/// \u{31a0} → \u{31bf}
-///
-/// ㆠ ㆡ ㆢ ㆣ ㆤ ㆥ ㆦ ㆧ ㆨ ㆩ ㆪ ㆫ ㆬ ㆭ ㆮ ㆯ\
-/// ㆰ ㆱ ㆲ ㆳ ㆴ ㆵ ㆶ ㆷ ㆸ ㆹ ㆺ\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{31a0}: 'ㆠ'

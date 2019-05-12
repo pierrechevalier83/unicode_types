@@ -1,10 +1,3 @@
-/// \u{ab30} → \u{ab6f}
-///
-/// ꬰ ꬱ ꬲ ꬳ ꬴ ꬵ ꬶ ꬷ ꬸ ꬹ ꬺ ꬻ ꬼ ꬽ ꬾ ꬿ\
-/// ꭀ ꭁ ꭂ ꭃ ꭄ ꭅ ꭆ ꭇ ꭈ ꭉ ꭊ ꭋ ꭌ ꭍ ꭎ ꭏ\
-/// ꭐ ꭑ ꭒ ꭓ ꭔ ꭕ ꭖ ꭗ ꭘ ꭙ ꭚ ꭛ ꭜ ꭝ ꭞ ꭟ\
-/// ꭠ ꭡ ꭢ ꭣ ꭤ ꭥ ꭦ ꭧ\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{ab30}: 'ꬰ'

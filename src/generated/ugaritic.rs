@@ -1,8 +1,3 @@
-/// \u{10380} → \u{1039f}
-///
-/// 𐎀 𐎁 𐎂 𐎃 𐎄 𐎅 𐎆 𐎇 𐎈 𐎉 𐎊 𐎋 𐎌 𐎍 𐎎 𐎏\
-/// 𐎐 𐎑 𐎒 𐎓 𐎔 𐎕 𐎖 𐎗 𐎘 𐎙 𐎚 𐎛 𐎜 𐎝\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10380}: '𐎀'

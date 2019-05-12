@@ -1,9 +1,3 @@
-/// \u{1cd0} → \u{1cff}
-///
-/// ᳐ ᳑ ᳒ ᳓ ᳔ ᳕ ᳖ ᳗ ᳘ ᳙ ᳚ ᳛ ᳜ ᳝ ᳞ ᳟\
-/// ᳠ ᳡ ᳢ ᳣ ᳤ ᳥ ᳦ ᳧ ᳨ ᳩ ᳪ ᳫ ᳬ ᳭ ᳮ ᳯ\
-/// ᳰ ᳱ ᳲ ᳳ ᳴ ᳵ ᳶ ᳷ ᳸ ᳹ ᳺ\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1cd0}: '᳐'

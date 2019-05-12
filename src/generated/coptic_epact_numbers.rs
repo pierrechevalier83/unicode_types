@@ -1,8 +1,3 @@
-/// \u{102e0} → \u{102ff}
-///
-/// 𐋠 𐋡 𐋢 𐋣 𐋤 𐋥 𐋦 𐋧 𐋨 𐋩 𐋪 𐋫 𐋬 𐋭 𐋮 𐋯\
-/// 𐋰 𐋱 𐋲 𐋳 𐋴 𐋵 𐋶 𐋷 𐋸 𐋹 𐋺 𐋻\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{102e0}: '𐋠'

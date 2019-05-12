@@ -1,12 +1,3 @@
-/// \u{a6a0} → \u{a6ff}
-///
-/// ꚠ ꚡ ꚢ ꚣ ꚤ ꚥ ꚦ ꚧ ꚨ ꚩ ꚪ ꚫ ꚬ ꚭ ꚮ ꚯ\
-/// ꚰ ꚱ ꚲ ꚳ ꚴ ꚵ ꚶ ꚷ ꚸ ꚹ ꚺ ꚻ ꚼ ꚽ ꚾ ꚿ\
-/// ꛀ ꛁ ꛂ ꛃ ꛄ ꛅ ꛆ ꛇ ꛈ ꛉ ꛊ ꛋ ꛌ ꛍ ꛎ ꛏ\
-/// ꛐ ꛑ ꛒ ꛓ ꛔ ꛕ ꛖ ꛗ ꛘ ꛙ ꛚ ꛛ ꛜ ꛝ ꛞ ꛟ\
-/// ꛠ ꛡ ꛢ ꛣ ꛤ ꛥ ꛦ ꛧ ꛨ ꛩ ꛪ ꛫ ꛬ ꛭ ꛮ ꛯ\
-/// ꛰ ꛱ ꛲ ꛳ ꛴ ꛵ ꛶ ꛷\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a6a0}: 'ꚠ'

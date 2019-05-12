@@ -1,8 +1,3 @@
-/// \u{1700} → \u{171f}
-///
-/// ᜀ ᜁ ᜂ ᜃ ᜄ ᜅ ᜆ ᜇ ᜈ ᜉ ᜊ ᜋ ᜌ ᜎ ᜏ ᜐ\
-/// ᜑ ᜒ ᜓ ᜔\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1700}: 'ᜀ'

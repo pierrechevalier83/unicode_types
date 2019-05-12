@@ -1,9 +1,3 @@
-/// \u{750} → \u{77f}
-///
-/// ݐ ݑ ݒ ݓ ݔ ݕ ݖ ݗ ݘ ݙ ݚ ݛ ݜ ݝ ݞ ݟ\
-/// ݠ ݡ ݢ ݣ ݤ ݥ ݦ ݧ ݨ ݩ ݪ ݫ ݬ ݭ ݮ ݯ\
-/// ݰ ݱ ݲ ݳ ݴ ݵ ݶ ݷ ݸ ݹ ݺ ݻ ݼ ݽ ݾ\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{750}: 'ݐ'

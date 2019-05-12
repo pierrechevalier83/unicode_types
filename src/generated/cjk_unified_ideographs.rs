@@ -1,7 +1,3 @@
-/// \u{4e00} → \u{9fff}
-///
-/// 一 鿯\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{4e00}: '一'

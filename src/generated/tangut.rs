@@ -1,7 +1,3 @@
-/// \u{17000} → \u{187ff}
-///
-/// 𗀀 𘟷\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{17000}: '𗀀'

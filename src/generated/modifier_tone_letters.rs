@@ -1,8 +1,3 @@
-/// \u{a700} → \u{a71f}
-///
-/// ꜀ ꜁ ꜂ ꜃ ꜄ ꜅ ꜆ ꜇ ꜈ ꜉ ꜊ ꜋ ꜌ ꜍ ꜎ ꜏\
-/// ꜐ ꜑ ꜒ ꜓ ꜔ ꜕ ꜖ ꜗ ꜘ ꜙ ꜚ ꜛ ꜜ ꜝ ꜞ\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a700}: '꜀'

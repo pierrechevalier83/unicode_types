@@ -1,8 +1,3 @@
-/// \u{1760} → \u{177f}
-///
-/// ᝠ ᝡ ᝢ ᝣ ᝤ ᝥ ᝦ ᝧ ᝨ ᝩ ᝪ ᝫ ᝬ ᝮ ᝯ ᝰ\
-/// ᝲ ᝳ\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1760}: 'ᝠ'

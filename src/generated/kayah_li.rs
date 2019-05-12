@@ -1,9 +1,3 @@
-/// \u{a900} → \u{a92f}
-///
-/// ꤀ ꤁ ꤂ ꤃ ꤄ ꤅ ꤆ ꤇ ꤈ ꤉ ꤊ ꤋ ꤌ ꤍ ꤎ ꤏ\
-/// ꤐ ꤑ ꤒ ꤓ ꤔ ꤕ ꤖ ꤗ ꤘ ꤙ ꤚ ꤛ ꤜ ꤝ ꤞ ꤟ\
-/// ꤠ ꤡ ꤢ ꤣ ꤤ ꤥ ꤦ ꤧ ꤨ ꤩ ꤪ ꤫ ꤬ ꤭ ꤮\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a900}: '꤀'

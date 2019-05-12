@@ -1,11 +1,3 @@
-/// \u{1900} → \u{194f}
-///
-/// ᤀ ᤁ ᤂ ᤃ ᤄ ᤅ ᤆ ᤇ ᤈ ᤉ ᤊ ᤋ ᤌ ᤍ ᤎ ᤏ\
-/// ᤐ ᤑ ᤒ ᤓ ᤔ ᤕ ᤖ ᤗ ᤘ ᤙ ᤚ ᤛ ᤜ ᤝ ᤞ ᤠ\
-/// ᤡ ᤢ ᤣ ᤤ ᤥ ᤦ ᤧ ᤨ ᤩ ᤪ ᤫ ᤰ ᤱ ᤲ ᤳ ᤴ\
-/// ᤵ ᤶ ᤷ ᤸ ᤹ ᤺ ᤻ ᥀ ᥄ ᥅ ᥆ ᥇ ᥈ ᥉ ᥊ ᥋\
-/// ᥌ ᥍ ᥎\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{1900}: 'ᤀ'

@@ -1,7 +1,3 @@
-/// \u{f0000} → \u{fffff}
-///
-/// 󰀀 󿿽\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{f0000}: '󰀀'

@@ -1,8 +1,3 @@
-/// \u{10b40} → \u{10b5f}
-///
-/// 𐭀 𐭁 𐭂 𐭃 𐭄 𐭅 𐭆 𐭇 𐭈 𐭉 𐭊 𐭋 𐭌 𐭍 𐭎 𐭏\
-/// 𐭐 𐭑 𐭒 𐭓 𐭔 𐭕 𐭘 𐭙 𐭚 𐭛 𐭜 𐭝 𐭞\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{10b40}: '𐭀'

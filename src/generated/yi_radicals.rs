@@ -1,10 +1,3 @@
-/// \u{a490} → \u{a4cf}
-///
-/// ꒐ ꒑ ꒒ ꒓ ꒔ ꒕ ꒖ ꒗ ꒘ ꒙ ꒚ ꒛ ꒜ ꒝ ꒞ ꒟\
-/// ꒠ ꒡ ꒢ ꒣ ꒤ ꒥ ꒦ ꒧ ꒨ ꒩ ꒪ ꒫ ꒬ ꒭ ꒮ ꒯\
-/// ꒰ ꒱ ꒲ ꒳ ꒴ ꒵ ꒶ ꒷ ꒸ ꒹ ꒺ ꒻ ꒼ ꒽ ꒾ ꒿\
-/// ꓀ ꓁ ꓂ ꓃ ꓄ ꓅ ꓆\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{a490}: '꒐'

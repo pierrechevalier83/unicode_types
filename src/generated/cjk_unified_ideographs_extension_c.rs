@@ -1,7 +1,3 @@
-/// \u{2a700} → \u{2b73f}
-///
-/// 𪜀 𫜴\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{2a700}: '𪜀'

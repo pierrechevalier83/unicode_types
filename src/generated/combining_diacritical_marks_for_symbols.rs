@@ -1,9 +1,3 @@
-/// \u{20d0} → \u{20ff}
-///
-/// ⃐ ⃑ ⃒ ⃓ ⃔ ⃕ ⃖ ⃗ ⃘ ⃙ ⃚ ⃛ ⃜ ⃝ ⃞ ⃟\
-/// ⃠ ⃡ ⃢ ⃣ ⃤ ⃥ ⃦ ⃧ ⃨ ⃩ ⃪ ⃫ ⃬ ⃭ ⃮ ⃯\
-/// ⃰\
-
 /// A number of constants to give a name to all characters in this block.
 pub mod constants {
     /// \u{20d0}: '⃐'
